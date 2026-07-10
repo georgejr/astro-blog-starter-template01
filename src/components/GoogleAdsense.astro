@@ -1,0 +1,22 @@
+---
+// AdSense loader. Renders nothing until ADSENSE_CLIENT_ID is set in
+// src/lib/site.ts.
+//
+// Besides serving ads this script also delivers Google's own consent message
+// (certified CMP): enable and design it under AdSense → Privacy & messaging.
+// It shows the GDPR message to EEA/UK/CH visitors before any ad cookies are
+// set and feeds the choice into Consent Mode (see GoogleAnalytics.astro), so
+// loading it unconditionally here is intentional.
+import { ADSENSE_CLIENT_ID } from '../lib/site';
+---
+
+{
+  ADSENSE_CLIENT_ID && (
+    <script
+      is:inline
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+      crossorigin="anonymous"
+    />
+  )
+}

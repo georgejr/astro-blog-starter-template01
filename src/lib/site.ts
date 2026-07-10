@@ -1,5 +1,11 @@
 export const SITE_NAME = 'Solar Panel Calculator';
 
+// Third-party integration IDs. Leave empty until the service is connected —
+// the matching component renders nothing while the value is ''.
+export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
+export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
+export const ADSENSE_CLIENT_ID = 'ca-pub-9548133728498958'; // AdSense publisher id
+
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';
 
@@ -28,3 +34,6 @@ export const CALCULATOR_LINKS: NavLink[] = [
   { href: '/how-many-solar-panels-do-i-need/', label: 'How Many Solar Panels Do I Need?' },
   { href: '/solar-panel-size-calculator/', label: 'Solar Panel Size Calculator' },
 ];
+
+
+

@@ -13,8 +13,9 @@
  *        data-full-width-responsive="true"></ins>
  *   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
  *
- * The adsbygoogle.js loader script is added in BaseLayout.astro AFTER cookie
- * consent is granted (see CookieConsent.astro). Do not load it unconditionally.
+ * The adsbygoogle.js loader is GoogleAdsense.astro (activated by setting
+ * ADSENSE_CLIENT_ID in src/lib/site.ts); it also delivers Google's own
+ * consent message, so no separate cookie banner is needed.
  */
 interface Props {
   /** Identifier for the placement, e.g. "home-mid", "blog-top". */

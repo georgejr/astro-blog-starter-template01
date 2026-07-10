@@ -1,0 +1,49 @@
+---
+// Google Analytics 4 (gtag.js) with Consent Mode v2. Renders nothing until
+// GA_MEASUREMENT_ID is set in src/lib/site.ts.
+//
+// Consent handling: in the EEA/UK/CH storage defaults to denied and Google's
+// own consent message (configured in AdSense → Privacy & messaging, delivered
+// by the adsbygoogle.js loader — see GoogleAdsense.astro) asks the visitor
+// and updates consent automatically. Everywhere else defaults are granted.
+import { GA_MEASUREMENT_ID } from '../lib/site';
+
+// EEA members + UK + Switzerland: the regions covered by Google's GDPR
+// consent message. Keep in sync with the message's region settings.
+const CONSENT_REGIONS = [
+  'AT', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR',
+  'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT',
+  'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+];
+---
+
+{
+  GA_MEASUREMENT_ID && (
+    <script is:inline define:vars={{ gaId: GA_MEASUREMENT_ID, regions: CONSENT_REGIONS }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        region: regions,
+        wait_for_update: 500,
+      });
+      window.gtag('consent', 'default', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        analytics_storage: 'granted',
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', gaId);
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+      document.head.appendChild(s);
+    </script>
+  )
+}

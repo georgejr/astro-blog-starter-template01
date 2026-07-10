@@ -40,3 +40,19 @@ const year = new Date().getFullYear();
     <p class="mt-4 text-xs text-slate-400">&copy; {year} {SITE_NAME}. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  // Re-opens Google's consent message (AdSense Privacy & messaging) so
+  // visitors can revise their choice. No-op until the AdSense script loads.
+  document.querySelectorAll('[data-cookie-settings]').forEach((el) => {
+    el.addEventListener('click', (event) => {
+      event.preventDefault();
+      const w = window as typeof window & {
+        googlefc?: { callbackQueue?: unknown[]; showRevocationMessage?: () => void };
+      };
+      w.googlefc = w.googlefc || {};
+      w.googlefc.callbackQueue = w.googlefc.callbackQueue || [];
+      w.googlefc.callbackQueue.push(() => w.googlefc?.showRevocationMessage?.());
+    });
+  });
+</script>

@@ -1,0 +1,12 @@
+---
+// Google Search Console ownership verification meta tag. Renders nothing
+// until GOOGLE_SITE_VERIFICATION is set in src/lib/site.ts. Consent-free:
+// it is a static meta tag, no cookies or scripts involved.
+import { GOOGLE_SITE_VERIFICATION } from '../lib/site';
+---
+
+{
+  GOOGLE_SITE_VERIFICATION && (
+    <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
+  )
+}

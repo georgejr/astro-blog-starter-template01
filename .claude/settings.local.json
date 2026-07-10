@@ -4,7 +4,9 @@
       "PowerShell(git *)",
       "PowerShell(npm run *)",
       "PowerShell(npm install *)",
-      "PowerShell(npx wrangler deploy --dry-run)"
+      "PowerShell(npx wrangler deploy --dry-run)",
+      "PowerShell(Set-Content *)",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }
