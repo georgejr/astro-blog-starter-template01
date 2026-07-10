@@ -1,0 +1,67 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'How much does a home solar battery cost?',
+    answer:
+      'A small backup battery (10–13 kWh, one or two essential circuits) runs roughly $9,000 installed. A whole-home setup with multiple batteries is typically around $18,000 or more. Prices vary by brand, capacity, and installer.',
+  },
+  {
+    question: 'Is a solar battery worth it financially?',
+    answer:
+      'Usually only if your utility has time-of-use rates, demand charges, or poor net metering — or if you value backup power during outages. With full net metering, the grid already acts as a free “battery,” so the pure ROI of a battery is often weak.',
+  },
+  {
+    question: 'Do I need a battery for solar panels to work?',
+    answer:
+      'No. Grid-tied solar works without any battery — excess production is exported to the grid. However, most grid-tied systems shut down during outages unless you add a battery or special inverter for backup.',
+  },
+  {
+    question: 'How long can a battery power my home?',
+    answer:
+      'A 10–13 kWh battery typically runs essential loads (fridge, lights, internet, some outlets) for 12–24 hours. Whole-home backup including AC or electric heating requires significantly more capacity.',
+  },
+  {
+    question: 'Does the federal tax credit apply to batteries?',
+    answer:
+      'Yes — standalone and solar-paired batteries over 3 kWh generally qualify for the 30% federal Residential Clean Energy Credit. This calculator applies the credit to the solar system only, so treat battery figures as conservative. Confirm with a tax professional.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="Solar Battery Calculator – Backup Cost & Payback Impact"
+  description="Estimate how a home battery changes your solar project: total cost with a small backup or whole-home battery, and the impact on your payback period."
+  h1="Solar Battery Calculator"
+  subtitle="See how adding a backup or whole-home battery changes your total solar cost and payback period."
+  faqs={faqs}
+  variant="battery"
+  defaultBattery="small"
+>
+  <Fragment slot="intro">
+    <p>
+      Batteries are the most misunderstood part of a solar quote. They are excellent for
+      <strong>backup power</strong> and for shifting usage under <strong>time-of-use rates</strong>,
+      but they rarely improve pure return on investment. This calculator shows your solar
+      estimate side by side with the added cost and extended payback of a small backup battery
+      (~$9,000) or a whole-home battery (~$18,000).
+    </p>
+    <p>
+      Pick a battery option below and compare the “with battery” payback against the solar-only
+      figure to see exactly what the backup capability costs you.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">When a battery makes sense</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li><strong>Frequent outages:</strong> backup power has real value that ROI math does not capture.</li>
+        <li><strong>Time-of-use rates:</strong> charge from solar at midday, discharge during expensive evening peaks.</li>
+        <li><strong>Poor or no net metering:</strong> storing excess production beats exporting it for pennies.</li>
+        <li><strong>Low bills with full net metering:</strong> a battery is probably not financially necessary.</li>
+      </ul>
+    </section>
+  </Fragment>
+</CalculatorLanding>

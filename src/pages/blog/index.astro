@@ -1,111 +1,54 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { CALCULATOR_LINKS } from '../../lib/site';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+
+const dateFormat = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout
+  title="Solar Blog – Guides on Solar Panels, Costs & Savings"
+  description="Practical guides on solar panel sizing, costs, savings, batteries, and tax credits — written to help homeowners make informed solar decisions."
+>
+  <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <header class="mx-auto max-w-2xl text-center">
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Solar Blog</h1>
+      <p class="mt-4 text-lg text-slate-600">
+        Practical, no-hype guides on solar sizing, costs, batteries, and payback.
+      </p>
+    </header>
+
+    <ul class="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
+      {posts.map((post) => (
+        <li>
+          <a
+            href={`/blog/${post.id}/`}
+            class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-brand-400 hover:shadow-md"
+          >
+            <time datetime={post.data.date.toISOString()} class="text-xs font-medium text-slate-400 uppercase">
+              {dateFormat.format(post.data.date)}
+            </time>
+            <h2 class="mt-2 font-semibold text-slate-900">{post.data.title}</h2>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{post.data.description}</p>
+            <span class="mt-4 text-sm font-medium text-brand-700">Read article &rarr;</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="mx-auto mt-16 max-w-4xl">
+      <AdSlot name="blog-index" />
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
+    </div>
+  </div>
+</BaseLayout>

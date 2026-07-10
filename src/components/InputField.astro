@@ -1,0 +1,36 @@
+---
+interface Props {
+  id: string;
+  label: string;
+  unit?: string;
+  value?: number | string;
+  min?: number;
+  max?: number;
+  step?: number | string;
+  optional?: boolean;
+  hint?: string;
+}
+
+const { id, label, unit, value, min, max, step = 'any', optional = false, hint } = Astro.props;
+---
+
+<div>
+  <label for={id} class="block text-sm font-medium text-slate-700">
+    {label}
+    {unit && <span class="text-slate-400">({unit})</span>}
+    {optional && <span class="text-xs font-normal text-slate-400"> — optional</span>}
+  </label>
+  <input
+    type="number"
+    id={id}
+    name={id}
+    value={value}
+    min={min}
+    max={max}
+    step={step}
+    inputmode="decimal"
+    class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+  />
+  {hint && <p class="mt-1 text-xs text-slate-500">{hint}</p>}
+  <p class="mt-1 hidden text-xs font-medium text-red-600" data-error-for={id}></p>
+</div>

@@ -1,0 +1,58 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import { SITE_NAME } from '../lib/site';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Optional override; defaults to the canonical URL of the current path. */
+  canonical?: string;
+  /** Extra JSON-LD structured data blocks to inject into <head>. */
+  structuredData?: object[];
+}
+
+const { title, description, canonical, structuredData = [] } = Astro.props;
+
+// TODO: canonical URLs use the placeholder domain from astro.config.mjs —
+// swap `site` there for the real domain before launch.
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta name="twitter:card" content="summary" />
+    {structuredData.map((data) => (
+      <script type="application/ld+json" set:html={JSON.stringify(data)} />
+    ))}
+    <!-- TODO: before launch:
+      - Google Search Console verification meta tag (consent-free, can go here directly)
+      - AdSense account meta tag if required for site verification
+      Consent-gated scripts (AdSense loader, GA4, Clarity) are loaded by
+      CookieConsent.astro AFTER the visitor accepts — do not add them here.
+    -->
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <CookieConsent />
+  </body>
+</html>

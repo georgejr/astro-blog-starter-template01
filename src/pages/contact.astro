@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact – Solar Panel Calculator"
+  description="Contact the Solar Panel Calculator team with questions, feedback, or partnership inquiries."
+>
+  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <header class="text-center">
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Contact</h1>
+      <p class="mt-4 text-lg text-slate-600">
+        Questions about the calculator, feedback, or partnership ideas? Drop us a message.
+      </p>
+    </header>
+
+    {/*
+      TODO: connect this form to a real backend. Options:
+      - Formspark: set action="https://submit-form.com/YOUR_FORM_ID" method="POST"
+      - Tally: replace the form with a Tally embed
+      - Custom API route: point action to a Cloudflare Worker / Pages Function
+    */}
+    <form
+      action="#"
+      method="POST"
+      class="mt-10 grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:grid-cols-2 sm:p-8"
+      data-contact-form
+    >
+      <div>
+        <label for="contact-name" class="block text-sm font-medium text-slate-700">Name</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          required
+          autocomplete="name"
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+        />
+      </div>
+      <div>
+        <label for="contact-email" class="block text-sm font-medium text-slate-700">Email</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          required
+          autocomplete="email"
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+        />
+      </div>
+      <div class="sm:col-span-2">
+        <label for="contact-message" class="block text-sm font-medium text-slate-700">Message</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="5"
+          required
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+        ></textarea>
+      </div>
+      <div class="sm:col-span-2">
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-brand-700 sm:w-auto"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</BaseLayout>
+
+<script>
+  // Placeholder handler until a real form backend is connected (see TODO above).
+  document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      if (button) {
+        button.textContent = 'Thanks! Message noted.';
+        button.disabled = true;
+        button.classList.add('opacity-70', 'cursor-default');
+      }
+    });
+  });
+</script>

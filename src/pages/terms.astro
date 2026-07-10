@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { DISCLAIMER_TEXT } from '../lib/site';
+---
+
+<BaseLayout
+  title="Terms of Use – Solar Panel Calculator"
+  description="Terms of use for Solar Panel Calculator: acceptable use, estimate disclaimer, and limitation of liability."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Terms of Use</h1>
+    <p class="mt-2 text-sm text-slate-500">Last updated: July 8, 2026</p>
+
+    <div class="mt-8 space-y-8 leading-relaxed text-slate-600">
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Acceptance of terms</h2>
+        <p class="mt-3">
+          By using this website and its calculators, you agree to these terms. If you do not
+          agree, please do not use the site.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Estimates only — no professional advice</h2>
+        <p class="mt-3">{DISCLAIMER_TEXT}</p>
+        <p class="mt-3">
+          Nothing on this site constitutes financial, tax, legal, or engineering advice. Tax
+          credit eligibility in particular depends on your individual circumstances.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">No warranty</h2>
+        <p class="mt-3">
+          The site and its tools are provided "as is" without warranties of any kind, express or
+          implied, including accuracy, fitness for a particular purpose, or availability.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Limitation of liability</h2>
+        <p class="mt-3">
+          To the maximum extent permitted by law, we are not liable for any damages arising from
+          your use of this site, including decisions made based on calculator estimates.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Intellectual property</h2>
+        <p class="mt-3">
+          All content, design, and code on this site are owned by us or our licensors. You may
+          not republish or redistribute site content without permission.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Changes</h2>
+        <p class="mt-3">
+          We may update these terms at any time. Continued use of the site after changes
+          constitutes acceptance of the updated terms.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-slate-900">Contact</h2>
+        <p class="mt-3">
+          Questions about these terms? Reach out via the <a href="/contact/" class="text-brand-700 underline">contact page</a>.
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

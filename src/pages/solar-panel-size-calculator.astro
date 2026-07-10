@@ -1,0 +1,66 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'What does system size in kW actually mean?',
+    answer:
+      'It is the combined rated output of all panels under ideal test conditions (kilowatts peak, kWp). An 8 kW system has, for example, 20 panels of 400 W each. Real-world output is lower due to weather, temperature, and system losses.',
+  },
+  {
+    question: 'What size solar system does a typical home need?',
+    answer:
+      'Most US homes land between 6 and 12 kW. Homes with electric heating, EVs, or pools often need more; efficient homes in sunny states need less. Your electricity bill is the best sizing input.',
+  },
+  {
+    question: 'Why does the calculator use a 78% performance ratio?',
+    answer:
+      'Panels lose output to heat, wiring, inverter conversion, soiling, and mismatch. A performance ratio of 0.75–0.80 is a standard industry assumption for well-installed residential systems; we use 0.78.',
+  },
+  {
+    question: 'Should I oversize my solar system?',
+    answer:
+      'Modest oversizing (10–20%) can make sense if you expect an EV or heat pump soon, and if your utility allows it. Oversizing far beyond your usage rarely pays off where net metering credits export at below-retail rates.',
+  },
+  {
+    question: 'How does system size relate to yearly production?',
+    answer:
+      'Yearly kWh ≈ system kW × daily sun hours × 365 × performance ratio. An 8 kW system with 4.5 sun hours produces roughly 10,200 kWh per year at a 0.78 performance ratio.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="Solar Panel Size Calculator – System Size in kW"
+  description="Calculate the solar system size (kW) your home needs from your electricity usage, sun hours, and desired bill offset. Free kWp sizing tool."
+  h1="Solar Panel Size Calculator"
+  subtitle="Convert your electricity usage into the right system size in kilowatts — and see the panels, cost, and payback that go with it."
+  faqs={faqs}
+  variant="size"
+>
+  <Fragment slot="intro">
+    <p>
+      System size in kilowatts is the anchor number of every solar quote — it drives the panel
+      count, the price, and the production estimate. This calculator sizes your system from
+      <strong>actual usage</strong> (derived from your bill), your local <strong>sun hours</strong>,
+      and a realistic 78% performance ratio, rather than guessing from house square footage.
+    </p>
+    <p>
+      Once you know your kW figure, you can sanity-check any installer proposal: a quote
+      significantly larger than your calculated size deserves an explanation.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">The sizing formula</h2>
+      <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+        system kW = target yearly kWh ÷ (sun hours × 365 × 0.78)
+      </p>
+      <p class="mt-4 text-slate-600">
+        Example: to produce 11,000 kWh per year with 4.5 sun hours per day, you need
+        11,000 ÷ (4.5 × 365 × 0.78) ≈ <strong>8.6 kW</strong> — about 22 panels at 400 W.
+      </p>
+    </section>
+  </Fragment>
+</CalculatorLanding>

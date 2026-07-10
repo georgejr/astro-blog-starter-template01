@@ -1,0 +1,65 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'What is a good ROI for residential solar?',
+    answer:
+      'A payback period of 7 years or less is generally considered excellent — over a 25-year panel lifetime that implies a strong return. Payback between 7 and 11 years is still reasonable; beyond 11 years, the financial case weakens unless electricity prices rise.',
+  },
+  {
+    question: 'How is solar payback period calculated?',
+    answer:
+      'Net system cost (after the 30% federal tax credit) divided by yearly electricity savings. For example, a $15,785 net cost with $2,108 yearly savings pays back in about 7.5 years.',
+  },
+  {
+    question: 'Does the calculator account for rising electricity prices?',
+    answer:
+      'No — it assumes today’s rate stays flat, which is conservative. US electricity prices have historically risen 2–3% per year, so your actual payback is likely somewhat faster than the estimate.',
+  },
+  {
+    question: 'What happens after the payback period?',
+    answer:
+      'Panels typically carry 25-year production warranties and keep working beyond that. Every kilowatt-hour generated after payback is essentially free electricity, minus minor maintenance and a possible inverter replacement around year 12–15.',
+  },
+  {
+    question: 'Is solar a better investment than the stock market?',
+    answer:
+      'They are different: solar returns are tax-free savings, low-risk, and locked to your home, while market returns are liquid but volatile. Many homeowners treat solar as a bond-like investment with an inflation hedge on electricity prices.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="Solar ROI Calculator – Savings & Payback Period"
+  description="Calculate your solar return on investment: yearly savings, monthly savings, and payback period based on your electricity bill and local installation prices."
+  h1="Solar ROI Calculator"
+  subtitle="Find out how quickly a solar system pays for itself — yearly savings, monthly savings, and payback period."
+  faqs={faqs}
+  variant="roi"
+>
+  <Fragment slot="intro">
+    <p>
+      The financial case for solar comes down to two numbers: what the system costs after
+      incentives, and how much it saves you per year. This calculator estimates both from your
+      electricity bill, then computes the <strong>payback period</strong> — the years until your
+      accumulated savings cover the net cost.
+    </p>
+    <p>
+      The estimate is conservative: it assumes flat electricity prices and full self-consumption
+      of your chosen bill offset. Rising utility rates or good net metering typically improve the
+      real-world return.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Reading your payback result</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li><strong>Under 7 years:</strong> strong solar candidate — high rates or good sun make the math work clearly in your favor.</li>
+        <li><strong>7–11 years:</strong> moderate — still a solid long-term investment given 25-year panel lifetimes.</li>
+        <li><strong>Over 11 years:</strong> longer payback — worth revisiting if your rates rise, prices fall, or new incentives appear.</li>
+      </ul>
+    </section>
+  </Fragment>
+</CalculatorLanding>

@@ -1,0 +1,112 @@
+---
+// Result card skeleton. Values are filled in client-side by the SolarCalculator
+// script via the data-result hooks. The `variant` prop controls which metrics
+// lead the card, so each landing page emphasizes what its keyword promises.
+
+export type CalculatorVariant = 'general' | 'cost' | 'roi' | 'battery' | 'panels' | 'size';
+
+interface Props {
+  variant?: CalculatorVariant;
+}
+
+const { variant = 'general' } = Astro.props;
+
+const METRIC_LABELS: Record<string, string> = {
+  systemSize: 'Estimated system size',
+  panelCount: 'Panels needed',
+  yearlyProduction: 'Yearly production',
+  roofArea: 'Roof area needed',
+  grossCost: 'Gross cost',
+  taxCredit: 'Federal tax credit',
+  netCost: 'Net cost',
+  payback: 'Payback period',
+  yearlySavings: 'Yearly savings',
+  monthlySavings: 'Monthly savings',
+  lifetimeSavings: 'Savings over 25 years',
+};
+
+// First two metrics render as large green cards, the next two as blue accent
+// cards, the rest as standard tiles.
+const VARIANT_ORDER: Record<CalculatorVariant, string[]> = {
+  general: ['systemSize', 'panelCount', 'netCost', 'payback', 'yearlyProduction', 'roofArea', 'grossCost', 'taxCredit', 'yearlySavings', 'monthlySavings'],
+  cost: ['grossCost', 'netCost', 'taxCredit', 'payback', 'systemSize', 'panelCount', 'yearlySavings', 'monthlySavings', 'yearlyProduction', 'roofArea'],
+  roi: ['payback', 'lifetimeSavings', 'yearlySavings', 'monthlySavings', 'netCost', 'taxCredit', 'systemSize', 'panelCount', 'yearlyProduction', 'roofArea'],
+  battery: ['netCost', 'payback', 'yearlySavings', 'monthlySavings', 'systemSize', 'panelCount', 'yearlyProduction', 'roofArea', 'grossCost', 'taxCredit'],
+  panels: ['panelCount', 'roofArea', 'systemSize', 'yearlyProduction', 'netCost', 'payback', 'grossCost', 'taxCredit', 'yearlySavings', 'monthlySavings'],
+  size: ['systemSize', 'yearlyProduction', 'panelCount', 'roofArea', 'netCost', 'payback', 'grossCost', 'taxCredit', 'yearlySavings', 'monthlySavings'],
+};
+
+const keys = VARIANT_ORDER[variant];
+
+function cardClass(index: number): string {
+  if (index < 2) return 'rounded-xl bg-brand-50 p-4';
+  if (index < 4) return 'rounded-xl bg-accent-600/10 p-4';
+  return 'rounded-xl bg-slate-50 p-4';
+}
+
+function labelClass(index: number): string {
+  if (index < 2) return 'text-xs font-medium tracking-wide text-brand-800 uppercase';
+  if (index < 4) return 'text-xs font-medium tracking-wide text-accent-700 uppercase';
+  return 'text-xs font-medium tracking-wide text-slate-500 uppercase';
+}
+
+function valueClass(index: number): string {
+  if (index < 2) return 'mt-1 text-2xl font-bold text-brand-900';
+  if (index < 4) return 'mt-1 text-2xl font-bold text-accent-700';
+  return 'mt-1 text-xl font-semibold text-slate-900';
+}
+
+const batteryBox =
+  variant === 'battery'
+    ? 'mt-6 rounded-xl border-2 border-brand-300 bg-brand-50 p-4'
+    : 'mt-4 hidden rounded-xl border border-slate-200 bg-slate-50 p-4';
+---
+
+<div
+  id="calculator-results"
+  class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg sm:p-8"
+  aria-live="polite"
+>
+  <div class="flex flex-wrap items-center justify-between gap-3">
+    <h3 class="text-lg font-bold text-slate-900">Your Solar Estimate</h3>
+    <span data-result="ratingBadge" class="rounded-full px-3 py-1 text-xs font-semibold"></span>
+  </div>
+
+  {variant === 'battery' && (
+    <div data-result="batterySection" class={batteryBox}>
+      <p class="text-sm font-semibold text-slate-900">With battery</p>
+      <p class="mt-1 text-sm text-slate-600">
+        Total cost including battery: <strong data-result="totalWithBattery"></strong>
+        &middot; Payback: <strong data-result="paybackWithBattery"></strong>
+      </p>
+    </div>
+  )}
+
+  <dl class="mt-6 grid gap-x-6 gap-y-4 sm:grid-cols-2">
+    {keys.map((key, index) => (
+      <div class={cardClass(index)}>
+        <dt class={labelClass(index)}>{METRIC_LABELS[key]}</dt>
+        <dd data-result={key} class={valueClass(index)}></dd>
+      </div>
+    ))}
+  </dl>
+
+  {variant !== 'battery' && (
+    <div data-result="batterySection" class={batteryBox}>
+      <p class="text-sm font-semibold text-slate-900">With battery</p>
+      <p class="mt-1 text-sm text-slate-600">
+        Total cost including battery: <strong data-result="totalWithBattery"></strong>
+        &middot; Payback: <strong data-result="paybackWithBattery"></strong>
+      </p>
+    </div>
+  )}
+
+  <div class="mt-4 flex flex-wrap gap-2" data-result="badges"></div>
+
+  <p data-result="batteryAdvice" class="mt-4 text-sm text-slate-600"></p>
+
+  <p class="mt-6 border-t border-slate-100 pt-4 text-xs leading-relaxed text-slate-500">
+    <strong>This is an estimate.</strong> Actual results depend on roof direction, shading,
+    local incentives, utility rules, and installer pricing.
+  </p>
+</div>

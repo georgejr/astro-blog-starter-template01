@@ -1,0 +1,269 @@
+---
+import InputField from './InputField.astro';
+import CalculatorResult, { type CalculatorVariant } from './CalculatorResult.astro';
+import type { BatteryOption } from '../lib/solar/types';
+
+interface Props {
+  heading?: string;
+  /** Which metrics the result card should lead with. */
+  variant?: CalculatorVariant;
+  /** Pre-selected battery option (battery landing defaults to 'small'). */
+  defaultBattery?: BatteryOption;
+}
+
+const { heading = 'Solar Calculator', variant = 'general', defaultBattery = 'none' } = Astro.props;
+---
+
+<section id="calculator" class="scroll-mt-24">
+  <div class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+    <form
+      id="solar-calculator-form"
+      class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
+      novalidate
+    >
+      <h2 class="text-lg font-bold text-slate-900">{heading}</h2>
+      <p class="mt-1 text-sm text-slate-500">
+        Adjust the values below — results update instantly.
+      </p>
+
+      <div class="mt-6 grid gap-5 sm:grid-cols-2">
+        <InputField
+          id="monthlyBill"
+          label="Monthly electricity bill"
+          unit="USD/month"
+          value={180}
+          min={20}
+          max={1000}
+          step={5}
+        />
+        <InputField
+          id="electricityRate"
+          label="Electricity rate"
+          unit="USD/kWh"
+          value={0.17}
+          min={0.05}
+          max={0.6}
+          step={0.01}
+        />
+        <InputField
+          id="sunHoursPerDay"
+          label="Average sun hours per day"
+          value={4.5}
+          min={2}
+          max={7}
+          step={0.1}
+          hint="Typical US range: 3.5–6.5 depending on state."
+        />
+        <div>
+          <label for="desiredOffset" class="block text-sm font-medium text-slate-700">
+            Desired bill offset
+          </label>
+          <select
+            id="desiredOffset"
+            name="desiredOffset"
+            class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+          >
+            <option value="0.5">50%</option>
+            <option value="0.75">75%</option>
+            <option value="0.9" selected>90%</option>
+            <option value="1">100%</option>
+          </select>
+        </div>
+        <div>
+          <label for="panelWattage" class="block text-sm font-medium text-slate-700">
+            Panel wattage
+          </label>
+          <select
+            id="panelWattage"
+            name="panelWattage"
+            class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+          >
+            <option value="350">350 W</option>
+            <option value="400" selected>400 W</option>
+            <option value="450">450 W</option>
+          </select>
+        </div>
+        <InputField
+          id="costPerWatt"
+          label="Installed cost per watt"
+          unit="USD/W"
+          value={2.75}
+          min={1.5}
+          max={5}
+          step={0.05}
+        />
+        <InputField
+          id="roofAreaSqFt"
+          label="Roof usable area"
+          unit="sq ft"
+          optional
+          min={0}
+          step={10}
+          hint="Leave empty if unknown."
+        />
+        <div>
+          <label for="batteryOption" class="block text-sm font-medium text-slate-700">
+            Battery option
+          </label>
+          <select
+            id="batteryOption"
+            name="batteryOption"
+            class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:ring-2 focus:ring-brand-200 focus:outline-none"
+          >
+            <option value="none" selected={defaultBattery === 'none'}>No battery</option>
+            <option value="small" selected={defaultBattery === 'small'}>Small backup battery (~$9,000)</option>
+            <option value="whole-home" selected={defaultBattery === 'whole-home'}>Whole-home battery (~$18,000)</option>
+          </select>
+        </div>
+        <div class="flex items-center gap-3 sm:col-span-2">
+          <input
+            type="checkbox"
+            id="includeFederalTaxCredit"
+            name="includeFederalTaxCredit"
+            checked
+            class="h-5 w-5 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+          />
+          <label for="includeFederalTaxCredit" class="text-sm font-medium text-slate-700">
+            Apply 30% federal tax credit
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <CalculatorResult variant={variant} />
+  </div>
+</section>
+
+<script>
+  import {
+    calculateSolar,
+    validateInput,
+    RATING_LABELS,
+  } from '../lib/solar/calculateSolar';
+  import type { SolarCalculatorInput, BatteryOption } from '../lib/solar/types';
+  import {
+    formatCurrency,
+    formatKw,
+    formatKwh,
+    formatNumber,
+    formatSqFt,
+    formatYears,
+  } from '../lib/solar/formatters';
+
+  const form = document.getElementById('solar-calculator-form') as HTMLFormElement | null;
+  const results = document.getElementById('calculator-results');
+
+  if (form && results) {
+    const slot = (name: string) =>
+      results.querySelector<HTMLElement>(`[data-result="${name}"]`);
+
+    const numberValue = (id: string): number =>
+      Number.parseFloat((form.elements.namedItem(id) as HTMLInputElement).value);
+
+    const readInput = (): SolarCalculatorInput => {
+      const roofRaw = (form.elements.namedItem('roofAreaSqFt') as HTMLInputElement).value.trim();
+      return {
+        monthlyBill: numberValue('monthlyBill'),
+        electricityRate: numberValue('electricityRate'),
+        sunHoursPerDay: numberValue('sunHoursPerDay'),
+        desiredOffset: numberValue('desiredOffset'),
+        panelWattage: numberValue('panelWattage'),
+        costPerWatt: numberValue('costPerWatt'),
+        roofAreaSqFt: roofRaw === '' ? undefined : Number.parseFloat(roofRaw),
+        batteryOption: (form.elements.namedItem('batteryOption') as HTMLSelectElement)
+          .value as BatteryOption,
+        includeFederalTaxCredit: (
+          form.elements.namedItem('includeFederalTaxCredit') as HTMLInputElement
+        ).checked,
+      };
+    };
+
+    const clearErrors = () => {
+      form.querySelectorAll<HTMLElement>('[data-error-for]').forEach((el) => {
+        el.textContent = '';
+        el.classList.add('hidden');
+      });
+    };
+
+    const showBadge = (label: string, tone: 'good' | 'warn' | 'info') => {
+      const tones = {
+        good: 'bg-brand-100 text-brand-800',
+        warn: 'bg-amber-100 text-amber-800',
+        info: 'bg-sky-100 text-sky-800',
+      };
+      const badge = document.createElement('span');
+      badge.className = `rounded-full px-3 py-1 text-xs font-semibold ${tones[tone]}`;
+      badge.textContent = label;
+      slot('badges')?.appendChild(badge);
+    };
+
+    const update = () => {
+      clearErrors();
+      const input = readInput();
+      const errors = validateInput(input);
+
+      if (errors.length > 0) {
+        for (const error of errors) {
+          const el = form.querySelector<HTMLElement>(`[data-error-for="${error.field}"]`);
+          if (el) {
+            el.textContent = error.message;
+            el.classList.remove('hidden');
+          }
+        }
+        return;
+      }
+
+      const r = calculateSolar(input);
+
+      // Not every variant renders every card, so set defensively.
+      const set = (name: string, value: string) => {
+        const el = slot(name);
+        if (el) el.textContent = value;
+      };
+
+      set('systemSize', formatKw(r.systemSizeKw));
+      set('panelCount', `${formatNumber(r.panelCount)} panels`);
+      set('yearlyProduction', formatKwh(r.targetProductionKwh));
+      set('roofArea', formatSqFt(r.requiredRoofAreaSqFt));
+      set('grossCost', formatCurrency(r.grossCost));
+      set('taxCredit', r.taxCredit > 0 ? `−${formatCurrency(r.taxCredit)}` : '—');
+      set('netCost', formatCurrency(r.netCost));
+      set('payback', formatYears(r.paybackYears));
+      set('yearlySavings', `${formatCurrency(r.yearlySavings)} / year`);
+      set('monthlySavings', `${formatCurrency(r.monthlySavings)} / month`);
+      set('lifetimeSavings', formatCurrency(r.yearlySavings * 25));
+
+      const ratingBadge = slot('ratingBadge')!;
+      ratingBadge.textContent = RATING_LABELS[r.rating];
+      ratingBadge.className = `rounded-full px-3 py-1 text-xs font-semibold ${
+        r.rating === 'strong'
+          ? 'bg-brand-100 text-brand-800'
+          : r.rating === 'moderate'
+            ? 'bg-sky-100 text-sky-800'
+            : 'bg-amber-100 text-amber-800'
+      }`;
+
+      const batterySection = slot('batterySection')!;
+      if (input.batteryOption !== 'none') {
+        batterySection.classList.remove('hidden');
+        set('totalWithBattery', formatCurrency(r.totalCostWithBattery));
+        set('paybackWithBattery', formatYears(r.paybackWithBattery));
+      } else {
+        batterySection.classList.add('hidden');
+      }
+
+      const badges = slot('badges')!;
+      badges.innerHTML = '';
+      if (r.rating === 'strong') showBadge('Good fit', 'good');
+      if (r.roofFits === false) showBadge('Roof area warning', 'warn');
+      if (r.rating === 'long') showBadge('Long payback warning', 'warn');
+      if (input.batteryOption === 'none') showBadge('Battery optional', 'info');
+
+      slot('batteryAdvice')!.textContent = r.batteryAdvice;
+    };
+
+    form.addEventListener('input', update);
+    form.addEventListener('submit', (event) => event.preventDefault());
+    update();
+  }
+</script>

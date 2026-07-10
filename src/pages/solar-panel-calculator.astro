@@ -1,0 +1,67 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'How accurate is this solar panel calculator?',
+    answer:
+      'It gives a realistic ballpark based on your electricity bill, local sun hours, and typical US installation prices. Actual results depend on your roof orientation, shading, utility rules, and installer quotes, so treat it as a starting point, not a final design.',
+  },
+  {
+    question: 'What information do I need to use the calculator?',
+    answer:
+      'Just your average monthly electricity bill and your electricity rate (both are on your utility bill). Everything else — sun hours, panel wattage, cost per watt — has sensible US defaults you can adjust.',
+  },
+  {
+    question: 'Does the calculator include the federal tax credit?',
+    answer:
+      'Yes. By default it applies the 30% federal Residential Clean Energy Credit to the gross installation cost. You can toggle it off if you are not eligible. State and local incentives are not included.',
+  },
+  {
+    question: 'How is the payback period calculated?',
+    answer:
+      'Payback period is the net installation cost (after the tax credit) divided by your estimated yearly savings. A payback under 7 years is generally considered strong; over 11 years suggests solar may be less attractive at current prices.',
+  },
+  {
+    question: 'Can I use this calculator outside the United States?',
+    answer:
+      'The defaults assume US prices and the US federal tax credit, but you can adjust the electricity rate, cost per watt, and sun hours to roughly model other countries. Disable the tax credit for non-US estimates.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="Solar Panel Calculator – Size, Cost, Savings & Payback"
+  description="Free solar panel calculator. Estimate your solar system size in kW, number of panels, installation cost, yearly savings, and payback period from your electricity bill."
+  h1="Solar Panel Calculator"
+  subtitle="Estimate your solar system size, cost, savings, and payback time in minutes — no signup required."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      Sizing a solar system starts with one number: how much electricity your home actually uses.
+      This calculator works backwards from your <strong>monthly electricity bill</strong> to
+      estimate how many kilowatts of solar you need, how many panels that means, what it will
+      roughly cost, and how quickly the system pays for itself.
+    </p>
+    <p>
+      All assumptions are visible and adjustable — sun hours, panel wattage, installed cost per
+      watt, and the 30% federal tax credit — so you can tune the estimate to your situation. When
+      you are ready for exact numbers, request a quote from a local installer.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">How the estimate works</h2>
+      <ol class="mt-4 list-decimal space-y-2 pl-5 text-slate-600">
+        <li>Your monthly bill divided by your electricity rate gives your monthly usage in kWh.</li>
+        <li>Your yearly usage times your desired bill offset gives the target solar production.</li>
+        <li>Target production, local sun hours, and a 78% system performance ratio give the system size in kW.</li>
+        <li>System size divided by panel wattage gives the panel count (rounded up).</li>
+        <li>System size times the installed cost per watt gives the gross cost; the 30% federal tax credit is subtracted if enabled.</li>
+        <li>Net cost divided by yearly savings gives the payback period.</li>
+      </ol>
+    </section>
+  </Fragment>
+</CalculatorLanding>

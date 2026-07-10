@@ -1,0 +1,27 @@
+---
+import type { NavLink } from '../lib/site';
+
+interface Props {
+  links: NavLink[];
+  heading?: string;
+}
+
+const { links, heading = 'Related Calculators' } = Astro.props;
+---
+
+<section class="mx-auto max-w-3xl" aria-label={heading}>
+  <h2 class="text-2xl font-bold text-slate-900">{heading}</h2>
+  <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+    {links.map((link) => (
+      <li>
+        <a
+          href={link.href}
+          class="flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-brand-400 hover:text-brand-700"
+        >
+          {link.label}
+          <span aria-hidden="true" class="text-brand-500">&rarr;</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

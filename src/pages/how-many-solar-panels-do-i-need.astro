@@ -1,0 +1,80 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'How many solar panels does the average US home need?',
+    answer:
+      'A typical US home using around 900 kWh per month needs roughly 16–22 panels at 400 W each, depending on local sun hours. Homes in sunny states need fewer panels than homes in cloudier regions for the same usage.',
+  },
+  {
+    question: 'How many panels do I need per 1,000 kWh of monthly usage?',
+    answer:
+      'As a rule of thumb, offsetting 1,000 kWh per month takes roughly 18–24 panels at 400 W with 4–5 sun hours per day. Use the calculator above with your exact bill and rate for a tighter estimate.',
+  },
+  {
+    question: 'Does panel wattage change how many panels I need?',
+    answer:
+      'Yes — higher-wattage panels mean fewer panels for the same system size. Switching from 350 W to 450 W panels cuts the panel count by about 22%, which matters on small roofs.',
+  },
+  {
+    question: 'How much roof space do the panels take?',
+    answer:
+      'Plan on about 20 sq ft per residential panel including spacing. A 20-panel system therefore needs roughly 400 sq ft of unshaded, usable roof area, ideally facing south.',
+  },
+  {
+    question: 'What if my roof cannot fit enough panels?',
+    answer:
+      'You can use higher-wattage panels, target a lower bill offset (say 75% instead of 100%), consider ground-mount, or simply install what fits — a partial offset still reduces your bill proportionally.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="How Many Solar Panels Do I Need? – Free Panel Count Calculator"
+  description="Work out how many solar panels your home needs from your monthly electricity bill, local sun hours, and panel wattage. Includes roof area check."
+  h1="How Many Solar Panels Do I Need?"
+  subtitle="Enter your electricity bill and get an instant panel count, plus the roof area they will need."
+  faqs={faqs}
+  variant="panels"
+>
+  <Fragment slot="intro">
+    <p>
+      The number of panels you need depends on three things: how much electricity you use, how
+      much sun your roof gets, and the wattage of each panel. This calculator derives your usage
+      from your <strong>monthly bill</strong>, sizes a system to your chosen bill offset, and
+      divides by panel wattage to give an exact count — rounded up, because you cannot install
+      half a panel.
+    </p>
+    <p>
+      If you know your usable roof area, enter it too: the calculator checks whether the panels
+      actually fit at roughly 20 sq ft per panel.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Quick reference: panels by monthly usage</h2>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Monthly usage</th>
+              <th class="py-2 pr-4 font-semibold">System size*</th>
+              <th class="py-2 font-semibold">400 W panels</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">500 kWh</td><td class="py-2 pr-4">~4.2 kW</td><td class="py-2">~11 panels</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,000 kWh</td><td class="py-2 pr-4">~8.4 kW</td><td class="py-2">~21 panels</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,500 kWh</td><td class="py-2 pr-4">~12.6 kW</td><td class="py-2">~32 panels</td></tr>
+            <tr><td class="py-2 pr-4">2,000 kWh</td><td class="py-2 pr-4">~16.9 kW</td><td class="py-2">~43 panels</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        *Assumes 100% offset, 4.5 sun hours/day, 78% performance ratio. Your numbers will differ — use the calculator above.
+      </p>
+    </section>
+  </Fragment>
+</CalculatorLanding>

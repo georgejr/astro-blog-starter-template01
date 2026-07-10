@@ -1,50 +1,136 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SolarCalculator from '../components/SolarCalculator.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import AdSlot from '../components/AdSlot.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+import { CALCULATOR_LINKS, SITE_NAME, SITE_TAGLINE } from '../lib/site';
+import { webAppSchema } from '../lib/schema';
+
+const whyItems = [
+  {
+    title: 'No signup required',
+    text: 'Get your full estimate instantly — no email, no phone number, no sales calls.',
+  },
+  {
+    title: 'Based on your real bill',
+    text: 'Uses your electricity bill, roof size, and location assumptions instead of generic averages.',
+  },
+  {
+    title: 'Clear financial picture',
+    text: 'See estimated system size, net cost after tax credit, and payback period side by side.',
+  },
+];
+
+const estimateItems = [
+  'System size in kWp',
+  'Number of panels',
+  'Yearly energy production',
+  'Estimated installation cost',
+  'Estimated yearly savings',
+  'Payback period',
+  'Optional battery recommendation',
+];
+
+const structuredData = [
+  webAppSchema(SITE_NAME, SITE_TAGLINE, new URL('/', Astro.site).href),
+];
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout
+  title="Solar Panel Calculator – Free Solar Cost & Savings Estimator"
+  description="Free solar panel calculator for US homeowners. Estimate system size, panel count, installation cost, tax credit, savings, and payback time in minutes."
+  structuredData={structuredData}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-50 to-white">
+    <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
+      <h1 class="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+        Solar Panel Calculator
+      </h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">{SITE_TAGLINE}</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="#calculator"
+          class="rounded-xl bg-brand-600 px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-brand-700"
+        >
+          Calculate My Solar Setup
+        </a>
+        <a
+          href="/solar-panel-calculator/"
+          class="rounded-xl border border-slate-300 bg-white px-8 py-4 text-lg font-semibold text-slate-700 shadow-sm transition hover:border-brand-400 hover:text-brand-700"
+        >
+          Full Calculator Page
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">Free · No signup · US assumptions, fully adjustable</p>
+    </div>
+  </section>
+
+  <!-- Calculator preview -->
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <AdSlot name="home-top" />
+    <SolarCalculator heading="Try it now" />
+  </section>
+
+  <!-- Why use this calculator -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <h2 class="text-center text-3xl font-bold text-slate-900">Why use this calculator?</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        {whyItems.map((item) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-semibold text-slate-900">{item.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <AdSlot name="home-mid" format="rectangle" />
+  </div>
+
+  <!-- What it estimates -->
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="grid items-center gap-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-bold text-slate-900">What it estimates</h2>
+        <p class="mt-3 text-slate-600">
+          One set of inputs, a complete picture of your potential solar project:
+        </p>
+        <ul class="mt-6 space-y-3">
+          {estimateItems.map((item) => (
+            <li class="flex items-start gap-3 text-slate-700">
+              <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-700" aria-hidden="true">✓</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">Example result</p>
+        <dl class="mt-4 space-y-2 font-mono text-sm text-slate-700">
+          <div class="flex justify-between"><dt>System size</dt><dd class="font-semibold">8.2 kW</dd></div>
+          <div class="flex justify-between"><dt>Panels needed</dt><dd class="font-semibold">21 panels</dd></div>
+          <div class="flex justify-between"><dt>Yearly production</dt><dd class="font-semibold">12,400 kWh</dd></div>
+          <div class="flex justify-between"><dt>Gross cost</dt><dd class="font-semibold">$22,550</dd></div>
+          <div class="flex justify-between"><dt>Tax credit</dt><dd class="font-semibold text-brand-700">−$6,765</dd></div>
+          <div class="flex justify-between"><dt>Net cost</dt><dd class="font-semibold">$15,785</dd></div>
+          <div class="flex justify-between"><dt>Yearly savings</dt><dd class="font-semibold">$2,108</dd></div>
+          <div class="flex justify-between"><dt>Payback period</dt><dd class="font-semibold text-accent-700">7.5 years</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer + calculator links -->
+  <section class="mx-auto max-w-6xl space-y-12 px-4 pb-16 sm:px-6">
+    <div class="mx-auto max-w-3xl">
+      <DisclaimerBox />
+    </div>
+    <AdSlot name="home-bottom" />
+    <RelatedLinks links={CALCULATOR_LINKS} heading="All Calculators" />
+  </section>
+</BaseLayout>

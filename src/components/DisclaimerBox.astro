@@ -1,0 +1,14 @@
+---
+import { DISCLAIMER_TEXT } from '../lib/site';
+
+interface Props {
+  text?: string;
+}
+
+const { text = DISCLAIMER_TEXT } = Astro.props;
+---
+
+<aside class="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900">
+  <p class="font-semibold">Estimate only</p>
+  <p class="mt-1">{text}</p>
+</aside>

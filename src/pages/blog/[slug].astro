@@ -1,0 +1,78 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DisclaimerBox from '../../components/DisclaimerBox.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { CALCULATOR_LINKS } from '../../lib/site';
+import { articleSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateFormat = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const structuredData = [
+  articleSchema({
+    headline: post.data.title,
+    description: post.data.description,
+    url: new URL(`/blog/${post.id}/`, Astro.site).href,
+    datePublished: post.data.date.toISOString(),
+  }),
+];
+---
+
+<BaseLayout
+  title={`${post.data.title} – Solar Blog`}
+  description={post.data.description}
+  structuredData={structuredData}
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <header>
+      <a href="/blog/" class="text-sm font-medium text-brand-700 hover:underline">&larr; All articles</a>
+      <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        {post.data.title}
+      </h1>
+      <time datetime={post.data.date.toISOString()} class="mt-3 block text-sm text-slate-500">
+        {dateFormat.format(post.data.date)}
+      </time>
+    </header>
+
+    <AdSlot name="blog-top" />
+
+    <div
+      class="blog-content mt-8 space-y-5 leading-relaxed text-slate-700
+        [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-slate-900
+        [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-slate-900
+        [&_a]:text-brand-700 [&_a]:underline
+        [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5
+        [&_ol]:list-decimal [&_ol]:space-y-1 [&_ol]:pl-5
+        [&_table]:w-full [&_table]:border-collapse [&_table]:text-sm
+        [&_th]:border-b [&_th]:border-slate-300 [&_th]:py-2 [&_th]:pr-4 [&_th]:text-left [&_th]:font-semibold [&_th]:text-slate-900
+        [&_td]:border-b [&_td]:border-slate-200 [&_td]:py-2 [&_td]:pr-4
+        [&_blockquote]:border-l-4 [&_blockquote]:border-brand-300 [&_blockquote]:pl-4 [&_blockquote]:text-slate-600 [&_blockquote]:italic
+        [&_strong]:text-slate-900"
+    >
+      <Content />
+    </div>
+
+    <AdSlot name="blog-bottom" format="rectangle" />
+
+    <div class="mt-12 space-y-12">
+      <DisclaimerBox />
+      <RelatedLinks links={CALCULATOR_LINKS} />
+    </div>
+  </article>
+</BaseLayout>

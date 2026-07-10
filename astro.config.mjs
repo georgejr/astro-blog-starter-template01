@@ -1,17 +1,16 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
 
-import cloudflare from "@astrojs/cloudflare";
+// TODO: replace with the production domain before deploying to Cloudflare Pages.
+const SITE_URL = 'https://example-solar-calculator.pages.dev';
 
-// https://astro.build/config
 export default defineConfig({
-	site: "https://example.com",
-	integrations: [mdx(), sitemap()],
-	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
-	}),
+  site: SITE_URL,
+  trailingSlash: 'always',
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

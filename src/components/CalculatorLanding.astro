@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SolarCalculator from './SolarCalculator.astro';
+import type { CalculatorVariant } from './CalculatorResult.astro';
+import type { BatteryOption } from '../lib/solar/types';
+import FaqSection, { type FaqItem } from './FaqSection.astro';
+import RelatedLinks from './RelatedLinks.astro';
+import DisclaimerBox from './DisclaimerBox.astro';
+import AdSlot from './AdSlot.astro';
+import { faqSchema, webAppSchema } from '../lib/schema';
+import { CALCULATOR_LINKS, type NavLink } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  subtitle: string;
+  faqs: FaqItem[];
+  relatedLinks?: NavLink[];
+  variant?: CalculatorVariant;
+  defaultBattery?: BatteryOption;
+}
+
+const {
+  title,
+  description,
+  h1,
+  subtitle,
+  faqs,
+  relatedLinks,
+  variant = 'general',
+  defaultBattery = 'none',
+} = Astro.props;
+
+const related =
+  relatedLinks ?? CALCULATOR_LINKS.filter((link) => link.href !== Astro.url.pathname);
+
+const structuredData = [
+  webAppSchema(h1, description, new URL(Astro.url.pathname, Astro.site).href),
+  faqSchema(faqs),
+];
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <header class="mx-auto max-w-3xl text-center">
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{h1}</h1>
+      <p class="mt-4 text-lg text-slate-600">{subtitle}</p>
+    </header>
+
+    <div class="mx-auto mt-8 max-w-3xl space-y-4 leading-relaxed text-slate-600">
+      <slot name="intro" />
+    </div>
+
+    <AdSlot name="calc-above" />
+
+    <div class="mt-10">
+      <SolarCalculator heading={h1} variant={variant} defaultBattery={defaultBattery} />
+    </div>
+
+    <div class="mx-auto mt-10 max-w-3xl space-y-10">
+      <slot name="explanation" />
+      <DisclaimerBox />
+    </div>
+
+    <AdSlot name="calc-mid" format="rectangle" />
+
+    <div class="mt-14 space-y-14">
+      <FaqSection faqs={faqs} />
+      <AdSlot name="calc-bottom" />
+      <RelatedLinks links={related} />
+    </div>
+  </article>
+</BaseLayout>

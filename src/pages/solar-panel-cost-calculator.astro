@@ -1,0 +1,67 @@
+---
+import CalculatorLanding from '../components/CalculatorLanding.astro';
+
+const faqs = [
+  {
+    question: 'How much do solar panels cost in the US?',
+    answer:
+      'Most residential installations fall between $2.50 and $3.50 per watt installed before incentives. A typical 8 kW system therefore costs roughly $20,000–$28,000 gross, or $14,000–$19,600 after the 30% federal tax credit.',
+  },
+  {
+    question: 'What does “cost per watt” include?',
+    answer:
+      'Installed cost per watt covers panels, inverter, racking, wiring, labor, permits, and installer overhead. It does not include batteries, roof repairs, or electrical panel upgrades, which are quoted separately.',
+  },
+  {
+    question: 'How does the 30% federal tax credit work?',
+    answer:
+      'The Residential Clean Energy Credit lets you deduct 30% of the total system cost from your federal income taxes. It is a credit, not a rebate — you need sufficient tax liability to use it. Consult a tax professional about your eligibility.',
+  },
+  {
+    question: 'Do batteries change the cost significantly?',
+    answer:
+      'Yes. A small backup battery adds roughly $9,000 and a whole-home battery around $18,000 installed. Batteries extend the payback period, so add one for backup power or time-of-use savings, not purely for ROI.',
+  },
+  {
+    question: 'Why do installer quotes differ from this estimate?',
+    answer:
+      'Installers price based on your actual roof complexity, equipment brand, local labor rates, and permitting costs. Get at least three quotes and compare their price per watt against this calculator to spot outliers.',
+  },
+];
+---
+
+<CalculatorLanding
+  title="Solar Panel Cost Calculator – Price, Tax Credit & Net Cost"
+  description="Estimate solar panel installation cost from your electricity bill: gross cost, 30% federal tax credit, and net cost after incentives. Free, no signup."
+  h1="Solar Panel Cost Calculator"
+  subtitle="See what a right-sized solar system would cost for your home — gross price, tax credit, and net cost after incentives."
+  faqs={faqs}
+  variant="cost"
+>
+  <Fragment slot="intro">
+    <p>
+      Solar pricing is usually quoted in <strong>dollars per watt installed</strong>. National
+      averages hover around $2.75/W, but real quotes range from about $2.50 to $3.50 depending on
+      your state, roof, and equipment. This calculator first sizes a system to your electricity
+      usage, then applies your chosen cost per watt to estimate the gross price, the 30% federal
+      tax credit, and your final net cost.
+    </p>
+    <p>
+      Adjust the cost per watt to match quotes you receive — it is the single biggest lever on
+      your total price and payback period.
+    </p>
+  </Fragment>
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What drives solar installation cost</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li><strong>System size:</strong> larger systems cost more in total but usually less per watt.</li>
+        <li><strong>Equipment tier:</strong> premium panels and microinverters add $0.25–$0.75/W.</li>
+        <li><strong>Roof complexity:</strong> steep, multi-plane, or tile roofs increase labor cost.</li>
+        <li><strong>Local market:</strong> labor rates and permitting fees vary widely by state and city.</li>
+        <li><strong>Batteries:</strong> optional, but they add $9,000–$18,000+ to the project.</li>
+      </ul>
+    </section>
+  </Fragment>
+</CalculatorLanding>
