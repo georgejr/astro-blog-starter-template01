@@ -1,37 +1,85 @@
 ---
 /**
- * AdSense slot placeholder.
+ * AdSense ad slot.
  *
- * TODO: when the AdSense account is approved, replace the placeholder <div>
- * below with the real ad unit, e.g.:
- *
- *   <ins class="adsbygoogle"
- *        style="display:block"
- *        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
- *        data-ad-slot="YYYYYYYYYY"
- *        data-ad-format="auto"
- *        data-full-width-responsive="true"></ins>
- *   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
- *
- * The adsbygoogle.js loader is GoogleAdsense.astro (activated by setting
- * ADSENSE_CLIENT_ID in src/lib/site.ts); it also delivers Google's own
- * consent message, so no separate cookie banner is needed.
+ * Renders a real ad unit when ADSENSE_CLIENT_ID is set and the format has a
+ * slot id in ADSENSE_SLOTS (src/lib/site.ts); otherwise a dashed placeholder
+ * box. The adsbygoogle.js loader itself is added once per page by
+ * GoogleAdsense.astro — only the per-unit <ins> + push() call lives here.
  */
+import { ADSENSE_CLIENT_ID, ADSENSE_IN_FEED_LAYOUT_KEY, ADSENSE_SLOTS } from '../lib/site';
+import type { AdFormat } from '../lib/site';
+
 interface Props {
   /** Identifier for the placement, e.g. "home-mid", "blog-top". */
   name: string;
-  /** Rough shape of the unit — controls the placeholder height. */
-  format?: 'horizontal' | 'rectangle';
+  /** Ad unit type — picks the slot id and the <ins> attributes. */
+  format?: AdFormat;
 }
 
 const { name, format = 'horizontal' } = Astro.props;
-const heightClass = format === 'rectangle' ? 'min-h-[250px]' : 'min-h-[90px]';
+
+// Per-format <ins> attributes, mirroring the embed code AdSense provides.
+const INS_ATTRS: Record<AdFormat, Record<string, string>> = {
+  horizontal: {
+    style: 'display:block',
+    'data-ad-format': 'auto',
+    'data-full-width-responsive': 'true',
+  },
+  rectangle: {
+    style: 'display:block',
+    'data-ad-format': 'auto',
+    'data-full-width-responsive': 'true',
+  },
+  'in-feed': {
+    style: 'display:block',
+    'data-ad-format': 'fluid',
+    'data-ad-layout-key': ADSENSE_IN_FEED_LAYOUT_KEY,
+  },
+  'in-article': {
+    style: 'display:block; text-align:center;',
+    'data-ad-layout': 'in-article',
+    'data-ad-format': 'fluid',
+  },
+  multiplex: {
+    style: 'display:block',
+    'data-ad-format': 'autorelaxed',
+  },
+};
+
+const PLACEHOLDER_HEIGHTS: Record<AdFormat, string> = {
+  horizontal: 'min-h-[90px]',
+  rectangle: 'min-h-[250px]',
+  'in-feed': 'min-h-[120px]',
+  'in-article': 'min-h-[120px]',
+  multiplex: 'min-h-[280px]',
+};
+
+const adSlot = ADSENSE_CLIENT_ID ? ADSENSE_SLOTS[format] : '';
+// In-feed units sit inside a list/grid cell, so no outer margin there.
+const wrapperClass = format === 'in-feed' ? 'w-full' : 'mx-auto my-8 w-full max-w-3xl';
 ---
 
-<div
-  class={`ad-slot mx-auto my-8 flex w-full max-w-3xl items-center justify-center rounded-lg border border-dashed border-slate-300 bg-slate-50 ${heightClass}`}
-  data-ad-placement={name}
-  aria-hidden="true"
->
-  <span class="text-xs tracking-wide text-slate-400 uppercase">Advertisement</span>
-</div>
+{
+  adSlot ? (
+    <div class={wrapperClass} data-ad-placement={name}>
+      <ins
+        class="adsbygoogle"
+        data-ad-client={ADSENSE_CLIENT_ID}
+        data-ad-slot={adSlot}
+        {...INS_ATTRS[format]}
+      />
+      <script is:inline>
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  ) : (
+    <div
+      class={`ad-slot flex items-center justify-center rounded-lg border border-dashed border-slate-300 bg-slate-50 ${wrapperClass} ${PLACEHOLDER_HEIGHTS[format]}`}
+      data-ad-placement={name}
+      aria-hidden="true"
+    >
+      <span class="text-xs tracking-wide text-slate-400 uppercase">Advertisement</span>
+    </div>
+  )
+}
