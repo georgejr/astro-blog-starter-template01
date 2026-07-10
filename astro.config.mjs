@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
-// TODO: replace with the production domain before deploying to Cloudflare Pages.
-const SITE_URL = 'https://example-solar-calculator.pages.dev';
+const SITE_URL = 'https://sunmetriclab.com';
 
 export default defineConfig({
   site: SITE_URL,
