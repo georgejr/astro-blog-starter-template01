@@ -12,7 +12,7 @@ export type AdFormat = 'horizontal' | 'rectangle' | 'in-feed' | 'in-article' | '
 
 export const ADSENSE_SLOTS: Record<AdFormat, string> = {
   horizontal: '8103168523', // "sunmetric vizszintes"
-  rectangle: '',
+  rectangle: '8103168523', // reuses the responsive "sunmetric vizszintes" unit for now
   'in-feed': '3892460772', // content feed unit (blog list)
   'in-article': '9224678507', // in-article unit (inside posts)
   multiplex: '7911596832', // autorelaxed "recommended content" grid (below posts)
