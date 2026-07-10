@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git *)",
+      "PowerShell(npm run *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npx wrangler deploy --dry-run)"
+    ]
+  }
+}
