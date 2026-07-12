@@ -5,9 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run validate:content && npm run lint:content-style && astro build && npm run check:links",
     "preview": "astro preview",
     "deploy": "wrangler deploy",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "lint:content-style": "tsx scripts/lint-content-style.ts",
+    "check:links": "node scripts/check-links.mjs",
+    "test": "vitest run",
     "astro": "astro"
   },
   "dependencies": {
@@ -18,7 +22,10 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.23.0",
     "typescript": "^5.8.3",
+    "vitest": "^4.1.10",
     "wrangler": "^4.110.0"
   }
 }

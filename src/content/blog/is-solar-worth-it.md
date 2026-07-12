@@ -1,11 +1,20 @@
 ---
 title: "Is Solar Worth It? An Honest Framework for Deciding"
 description: "A practical framework for deciding whether solar panels are worth it for your home: the five factors that matter, when solar is a clear yes, and when to wait."
-date: "2026-02-02"
-keywords:
-  - is solar worth it
+publishDate: 2026-07-08T08:00:00Z
+category: "Savings & ROI"
+tags:
+  - solar savings
+  - decision guide
+primaryKeyword: "is solar worth it"
+secondaryKeywords:
   - solar payback
   - solar savings
+relatedCalculators:
+  - solar-roi-calculator
+  - solar-panel-calculator
+relatedArticles:
+  - average-solar-panel-cost
 ---
 
 "Is solar worth it?" has no universal answer — and anyone who gives you one without asking about your electricity rate and roof is selling something. What does exist is a reliable framework: five factors that determine nearly all of the outcome. Score well on most of them and solar is one of the better home investments available; score poorly and your money is better placed elsewhere.

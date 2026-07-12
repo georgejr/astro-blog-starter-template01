@@ -1,11 +1,21 @@
 ---
 title: "The Federal Solar Tax Credit Explained: How the 30% Credit Works"
 description: "How the 30% federal Residential Clean Energy Credit works: what qualifies, how to claim it, common misconceptions, and how it changes your solar payback."
-date: "2026-03-09"
-keywords:
-  - solar tax credit
+publishDate: 2026-07-08T08:00:00Z
+category: "Incentives & Tax Credits"
+tags:
+  - tax credit
+  - incentives
+primaryKeyword: "federal solar tax credit"
+secondaryKeywords:
   - residential clean energy credit
   - solar incentives
+relatedCalculators:
+  - solar-panel-cost-calculator
+  - solar-roi-calculator
+relatedArticles:
+  - average-solar-panel-cost
+  - solar-payback-period-explained
 ---
 
 The federal Residential Clean Energy Credit — the "solar tax credit" — is the largest single incentive for US home solar. It reduces the effective cost of a typical system by tens of thousands of dollars over the market, and it is also one of the most misunderstood parts of the purchase. Here is how it actually works.

@@ -1,12 +1,21 @@
 ---
 title: "How Many Solar Panels Do You Need for 1,000 kWh Per Month?"
 description: "Calculate how many solar panels you need to cover 1,000 kWh of monthly electricity usage, with system size, roof area, and cost estimates."
-date: "2026-01-19"
-keywords:
-  - solar panels
-  - solar calculator
+publishDate: 2026-07-08T08:00:00Z
+category: "System Sizing"
+tags:
+  - system size
+  - panel count
+primaryKeyword: "solar panels for 1000 kwh per month"
+secondaryKeywords:
   - solar system size
-  - 1000 kwh
+  - solar panel count
+relatedCalculators:
+  - how-many-solar-panels-do-i-need
+  - solar-panel-calculator
+relatedArticles:
+  - how-many-solar-panels-for-1500-kwh-per-month
+  - how-many-solar-panels-for-2000-kwh-per-month
 ---
 
 Using 1,000 kWh per month puts you slightly above the US household average of about 900 kWh — the most common territory for solar shoppers. Systems in this range are big enough to deliver meaningful savings but small enough to fit on most roofs.

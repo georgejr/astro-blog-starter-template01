@@ -30,13 +30,33 @@ export function articleSchema(options: {
   description: string;
   url: string;
   datePublished: string;
+  dateModified?: string;
+  author?: string;
+  publisher?: string;
 }): object {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: options.headline,
     description: options.description,
     url: options.url,
+    mainEntityOfPage: options.url,
     datePublished: options.datePublished,
+    ...(options.dateModified ? { dateModified: options.dateModified } : {}),
+    ...(options.author ? { author: { '@type': 'Organization', name: options.author } } : {}),
+    ...(options.publisher ? { publisher: { '@type': 'Organization', name: options.publisher } } : {}),
+  };
+}
+
+export function breadcrumbSchema(items: { name: string; url: string }[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
   };
 }

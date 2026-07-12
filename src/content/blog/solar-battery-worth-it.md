@@ -1,11 +1,20 @@
 ---
 title: "Is a Solar Battery Worth It? Costs, Benefits, and When to Skip It"
 description: "An honest look at home solar batteries: what they cost, when they pay off, when they don't, and how to decide between backup value and pure ROI."
-date: "2026-02-23"
-keywords:
+publishDate: 2026-07-08T08:00:00Z
+category: "Batteries & Storage"
+tags:
   - solar battery
+  - battery backup
+primaryKeyword: "is a solar battery worth it"
+secondaryKeywords:
   - home battery cost
   - battery backup
+relatedCalculators:
+  - solar-battery-calculator
+relatedArticles:
+  - is-solar-worth-it
+  - solar-payback-period-explained
 ---
 
 Batteries are where solar quotes get expensive and emotions get involved. A battery roughly doubles the complexity of the decision: unlike panels, whose value is straightforward avoided electricity, a battery's value is a mix of backup security, rate arbitrage, and export avoidance — and for many homes, that mix does not add up financially. Here is how to think it through.

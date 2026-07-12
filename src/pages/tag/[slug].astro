@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { CALCULATOR_LINKS } from '../../lib/site';
+import { getPublishedPosts } from '../../lib/content';
+import { taxonomySlug } from '../../lib/taxonomy';
+
+// A tag route exists only while at least one published article carries the
+// tag. Tags of scheduled/draft articles produce no page.
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  const tags = new Map<string, { label: string; posts: typeof posts }>();
+  for (const post of posts) {
+    for (const tag of post.data.tags) {
+      const slug = taxonomySlug(tag);
+      const existing = tags.get(slug);
+      if (existing) existing.posts.push(post);
+      else tags.set(slug, { label: tag, posts: [post] });
+    }
+  }
+  return [...tags.entries()].map(([slug, { label, posts: tagged }]) => ({
+    params: { slug },
+    props: { tag: label, posts: tagged },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<BaseLayout
+  title={`${tag} – Solar Blog`}
+  description={`Published SunMetricLab articles tagged “${tag}”: practical solar guides for US homeowners.`}
+>
+  <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <header class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-medium text-brand-700">
+        <a href="/blog/" class="hover:underline">Solar Blog</a>
+      </p>
+      <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        Tag: {tag}
+      </h1>
+      <p class="mt-4 text-lg text-slate-600">
+        {posts.length} {posts.length === 1 ? 'article' : 'articles'} with this tag.
+      </p>
+    </header>
+
+    <ul class="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
+      {posts.map((post) => (
+        <li>
+          <PostCard post={post} />
+        </li>
+      ))}
+    </ul>
+
+    <div class="mx-auto mt-16 max-w-4xl">
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
+    </div>
+  </div>
+</BaseLayout>

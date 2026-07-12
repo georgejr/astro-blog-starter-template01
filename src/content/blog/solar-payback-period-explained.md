@@ -1,11 +1,20 @@
 ---
 title: "Solar Payback Period Explained: How to Calculate It and What's Good"
 description: "What solar payback period means, how to calculate it from net cost and yearly savings, what counts as a good payback, and the factors that shorten or extend it."
-date: "2026-02-09"
-keywords:
-  - solar payback period
+publishDate: 2026-07-08T08:00:00Z
+category: "Payback"
+tags:
+  - payback period
+  - solar savings
+primaryKeyword: "solar payback period"
+secondaryKeywords:
   - solar roi
   - solar savings
+relatedCalculators:
+  - solar-roi-calculator
+relatedArticles:
+  - is-solar-worth-it
+  - average-solar-panel-cost
 ---
 
 The payback period is the most useful single number in solar: how many years until the system's accumulated savings equal what you paid for it. After that point, every kilowatt-hour is essentially free electricity for the rest of the system's 25+ year life. Here is how it is calculated, what a good number looks like, and where the simple formula can mislead you.

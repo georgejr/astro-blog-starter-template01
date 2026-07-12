@@ -1,11 +1,21 @@
 ---
 title: "How Roof Size Affects Your Solar System (and What to Do About a Small Roof)"
 description: "How much roof area solar panels need, how to estimate your usable roof space, and practical options when your roof is too small for a full-offset system."
-date: "2026-03-02"
-keywords:
-  - roof size solar
+publishDate: 2026-07-08T08:00:00Z
+category: "Roof & Shading"
+tags:
+  - roof area
+  - system size
+primaryKeyword: "roof size solar panels"
+secondaryKeywords:
   - solar roof area
-  - solar panel space
+  - small roof solar
+relatedCalculators:
+  - solar-panel-size-calculator
+  - how-many-solar-panels-do-i-need
+relatedArticles:
+  - solar-panel-wattage-explained
+  - how-many-solar-panels-for-1000-kwh-per-month
 ---
 
 Your electricity usage decides how much solar you *want*; your roof decides how much you can *have*. For most homes the roof is generous enough that it never becomes the constraint — but for high-usage households, shaded lots, and complex roof lines, usable area is the number that shapes the whole project.

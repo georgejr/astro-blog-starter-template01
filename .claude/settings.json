@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx eslint *)",
+      "Bash(npx tsc --noEmit *)",
+      "Bash(npx prettier --check *)",
+      "Bash(php -l *)",
+      "Bash(node --check *)",
+      "Bash(npx jest *)",
+      "mcp__figma-dev-mode-mcp-server__get_design_context",
+      "mcp__figma-dev-mode-mcp-server__get_screenshot"
+    ]
+  }
+}

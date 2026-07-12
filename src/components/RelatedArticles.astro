@@ -1,0 +1,41 @@
+---
+// Related-articles block for a post page. Sources are resolved centrally in
+// src/lib/content.ts from the published set only: explicit relatedArticles
+// frontmatter first (missing/future/draft/self silently dropped), topped up
+// with deterministic relevance scoring. Recalculated on every build, so older
+// posts gain links to newer content as it publishes — without editing their
+// Markdown.
+import type { BlogEntry } from '../lib/content';
+import { articlePath, getRelatedForPost } from '../lib/content';
+
+interface Props {
+  post: BlogEntry;
+  heading?: string;
+}
+
+const { post, heading = 'Related reading' } = Astro.props;
+const related = await getRelatedForPost(post);
+---
+
+{
+  related.length > 0 && (
+    <section class="mt-12">
+      <h2 class="text-xl font-bold text-slate-900">{heading}</h2>
+      <ul class="mt-4 grid gap-4 sm:grid-cols-2">
+        {related.map((entry) => (
+          <li>
+            <a
+              href={articlePath(entry)}
+              class="block h-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-brand-400 hover:shadow-md"
+            >
+              <span class="font-medium text-slate-900">{entry.data.title}</span>
+              <span class="mt-1 block text-sm leading-relaxed text-slate-600">
+                {entry.data.description}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

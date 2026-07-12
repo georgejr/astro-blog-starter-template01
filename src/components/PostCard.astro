@@ -1,0 +1,30 @@
+---
+// Article card used by the blog index, category and tag pages. Callers are
+// responsible for passing published entries only (via src/lib/content.ts).
+import type { BlogEntry } from '../lib/content';
+import { articlePath } from '../lib/content';
+
+interface Props {
+  post: BlogEntry;
+}
+
+const { post } = Astro.props;
+
+const dateFormat = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<a
+  href={articlePath(post)}
+  class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-brand-400 hover:shadow-md"
+>
+  <time datetime={post.data.publishDate.toISOString()} class="text-xs font-medium text-slate-400 uppercase">
+    {dateFormat.format(post.data.publishDate)}
+  </time>
+  <h2 class="mt-2 font-semibold text-slate-900">{post.data.title}</h2>
+  <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{post.data.description}</p>
+  <span class="mt-4 text-sm font-medium text-brand-700">Read article &rarr;</span>
+</a>
