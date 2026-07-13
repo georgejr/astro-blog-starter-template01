@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DisclaimerBox from '../../components/DisclaimerBox.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import BidvertiserBanner from '../../components/BidvertiserBanner.astro';
+import { CALCULATOR_LINKS } from '../../lib/site';
+import {
+  STATE_SOLAR,
+  ASSUMPTIONS,
+  netCost,
+  annualSavings,
+  paybackYears,
+  stateSlug,
+} from '../../data/state-solar';
+
+const kw = ASSUMPTIONS.representativeKw;
+const usd = (n: number) => `$${Math.round(n / 100) * 100}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const rows = [...STATE_SOLAR].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout
+  title="2026 Solar Panel Cost by State: Estimates for All 50 States"
+  description="A modeled state-by-state comparison of solar panel costs, average sun hours and electricity rates, 6/8/10 kW system prices, estimated yearly savings, and payback period."
+>
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <header class="mx-auto max-w-3xl text-center">
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        2026 Solar Panel Cost by State
+      </h1>
+      <p class="mt-4 text-lg text-slate-600">
+        A modeled comparison across all 50 states: how average sun hours and electricity rates
+        change the price of a solar system, the yearly savings, and how long it takes to break even.
+        Pick a state for its own breakdown, or scan the full table below.
+      </p>
+    </header>
+
+    <div class="mx-auto mt-8 max-w-3xl rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-900">
+      <p class="font-semibold">How to read these numbers</p>
+      <p class="mt-2">
+        These are <strong>estimates from a transparent model</strong>, not surveyed 2026 prices.
+        Each state's average daily <strong>peak sun hours</strong> is a stable climate figure; the
+        <strong>electricity rate</strong> is a rounded approximation that varies by utility — check
+        your own bill. System prices assume roughly
+        ${ASSUMPTIONS.grossPricePerWatt.low.toFixed(2)}–${ASSUMPTIONS.grossPricePerWatt.high.toFixed(2)}/watt
+        installed (a small regional adjustment on a ${ASSUMPTIONS.grossPricePerWatt.mid.toFixed(2)}/watt
+        baseline), before the {Math.round(ASSUMPTIONS.federalCreditRate * 100)}% federal Residential
+        Clean Energy Credit. Savings assume production offsets power at the retail rate, which is
+        optimistic where export credits are lower. Use the figures for rough comparison, then run
+        your address through the calculators.
+      </p>
+    </div>
+
+    <BidvertiserBanner />
+
+    <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
+      <table class="w-full min-w-[720px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-slate-50 text-left text-slate-600">
+            <th class="px-4 py-3 font-semibold">State</th>
+            <th class="px-4 py-3 font-semibold">Avg rate (¢/kWh)</th>
+            <th class="px-4 py-3 font-semibold">Sun hrs/day</th>
+            <th class="px-4 py-3 font-semibold">6 kW net</th>
+            <th class="px-4 py-3 font-semibold">8 kW net</th>
+            <th class="px-4 py-3 font-semibold">10 kW net</th>
+            <th class="px-4 py-3 font-semibold">Savings/yr (8 kW)</th>
+            <th class="px-4 py-3 font-semibold">Payback (8 kW)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((s) => (
+            <tr class="border-t border-slate-200 hover:bg-slate-50">
+              <td class="px-4 py-3 font-medium">
+                <a href={`/solar-panel-cost-by-state/${stateSlug(s)}/`} class="text-brand-700 hover:underline">
+                  {s.name}
+                </a>
+              </td>
+              <td class="px-4 py-3">{s.rateCents}</td>
+              <td class="px-4 py-3">{s.sunHours.toFixed(1)}</td>
+              <td class="px-4 py-3">{usd(netCost(6, s.tier))}</td>
+              <td class="px-4 py-3">{usd(netCost(8, s.tier))}</td>
+              <td class="px-4 py-3">{usd(netCost(10, s.tier))}</td>
+              <td class="px-4 py-3">{usd(annualSavings(kw, s))}</td>
+              <td class="px-4 py-3">{paybackYears(kw, s).toFixed(1)} yrs</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-3 text-xs text-slate-500">
+      Net cost is after the {Math.round(ASSUMPTIONS.federalCreditRate * 100)}% federal credit.
+      Savings and payback use a {kw} kW system as a representative size.
+    </p>
+
+    <div class="mt-12 space-y-12">
+      <div class="mx-auto max-w-3xl">
+        <DisclaimerBox />
+      </div>
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Run the numbers for your home" />
+    </div>
+  </div>
+</BaseLayout>

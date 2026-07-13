@@ -28,6 +28,14 @@ const blog = defineCollection({
     relatedArticles: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     author: z.string().default('SunMetricLab Editorial Team'),
+    // Optional headline figure for the generated OG/share image. When present,
+    // the OG card renders it as a mini-infographic; otherwise a title card.
+    ogStat: z
+      .object({
+        value: z.string().min(1),
+        label: z.string().min(1),
+      })
+      .optional(),
   }),
 });
 

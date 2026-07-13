@@ -28,6 +28,7 @@ const dateFormat = new Intl.DateTimeFormat('en-US', {
 });
 
 const canonicalUrl = new URL(articlePath(post), Astro.site).href;
+const ogImage = new URL(`/og/${Astro.params.slug}.png`, Astro.site).href;
 const categoryUrl = new URL(`/category/${taxonomySlug(post.data.category)}/`, Astro.site).href;
 
 const structuredData = [
@@ -53,6 +54,7 @@ const structuredData = [
   title={`${post.data.title} – Solar Blog`}
   description={post.data.description}
   structuredData={structuredData}
+  ogImage={ogImage}
 >
   <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
     <header>
