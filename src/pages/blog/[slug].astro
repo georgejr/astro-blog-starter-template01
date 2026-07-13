@@ -5,6 +5,7 @@ import DisclaimerBox from '../../components/DisclaimerBox.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import BidvertiserWidget from '../../components/BidvertiserWidget.astro';
 import { CALCULATOR_LINKS, SITE_NAME } from '../../lib/site';
 import { articleSchema, breadcrumbSchema } from '../../lib/schema';
 import { articlePath, getPrevNext, getPublishedPaths } from '../../lib/content';
@@ -127,6 +128,6 @@ const structuredData = [
       <RelatedLinks links={CALCULATOR_LINKS} />
     </div>
 
-    <AdSlot name="blog-related" format="multiplex" />
+    <BidvertiserWidget slot="article-bottom" rows={2} cols={5} mobilecols={1} />
   </article>
 </BaseLayout>

@@ -6,7 +6,7 @@ import type { BatteryOption } from '../lib/solar/types';
 import FaqSection, { type FaqItem } from './FaqSection.astro';
 import RelatedLinks from './RelatedLinks.astro';
 import DisclaimerBox from './DisclaimerBox.astro';
-import AdSlot from './AdSlot.astro';
+import BidvertiserBanner from './BidvertiserBanner.astro';
 import { faqSchema, webAppSchema } from '../lib/schema';
 import { CALCULATOR_LINKS, type NavLink } from '../lib/site';
 
@@ -52,7 +52,7 @@ const structuredData = [
       <slot name="intro" />
     </div>
 
-    <AdSlot name="calc-above" />
+    <BidvertiserBanner />
 
     <div class="mt-10">
       <SolarCalculator heading={h1} variant={variant} defaultBattery={defaultBattery} />
@@ -63,11 +63,11 @@ const structuredData = [
       <DisclaimerBox />
     </div>
 
-    <AdSlot name="calc-mid" format="rectangle" />
+    <BidvertiserBanner />
 
     <div class="mt-14 space-y-14">
       <FaqSection faqs={faqs} />
-      <AdSlot name="calc-bottom" />
+      <BidvertiserBanner />
       <RelatedLinks links={related} />
     </div>
   </article>
