@@ -1,13 +1,53 @@
 ---
 /**
- * Legacy ad-slot placeholder. Monetization moved to Monetag, which places its
- * own formats from a site-wide script (see Monetag.astro) rather than fixed
- * in-content slots, so this component intentionally renders nothing. The
- * `<AdSlot />` call sites are kept so layout/markup history stays intact and
- * a future slot-based network could be wired back in here.
+ * Ad placement: renders a Bidvertiser native widget (ad unit 2106253) at each
+ * of the former AdSense positions across the site.
+ *
+ * The widget's stock code hardcodes the container id `ntv_2106253` and finds
+ * it with getElementById, so multiple copies on one page would collide. Each
+ * AdSlot therefore derives a per-placement container id from `name` (unique
+ * per page); the Bidvertiser ad-unit id (bvlinksownid) stays 2106253.
  */
 interface Props {
-  name?: string;
+  /** Placement id, unique per page (e.g. "home-top", "blog-bottom"). */
+  name: string;
+  /** Kept for call-site compatibility; only affects wrapper width. */
   format?: string;
 }
+
+const { name, format = 'horizontal' } = Astro.props;
+const containerId = `ntv_${name.replace(/[^a-zA-Z0-9]/g, '_')}`;
+const wrapperClass = format === 'in-feed' ? 'w-full' : 'mx-auto my-8 w-full max-w-3xl';
 ---
+
+<div class={wrapperClass} data-ad-placement={name}>
+  <div id={containerId}></div>
+  <script is:inline define:vars={{ containerId }}>
+    (function (d) {
+      var params = {
+        bvwidgetid: containerId,
+        bvlinksownid: 2106253,
+        rows: 1,
+        cols: 4,
+        textpos: 'below',
+        imagewidth: 150,
+        mobilecols: 2,
+        cb: new Date().getTime(),
+      };
+      params.bvwidgetid = containerId + params.cb;
+      d.getElementById(containerId).id = params.bvwidgetid;
+      var qs = Object.keys(params)
+        .reduce(function (a, k) {
+          a.push(k + '=' + encodeURIComponent(params[k]));
+          return a;
+        }, [])
+        .join(String.fromCharCode(38));
+      var s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      var p = 'https:' == document.location.protocol ? 'https' : 'http';
+      s.src = p + '://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?' + qs;
+      d.getElementById(params.bvwidgetid).appendChild(s);
+    })(document);
+  </script>
+</div>
