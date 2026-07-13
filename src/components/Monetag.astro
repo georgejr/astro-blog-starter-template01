@@ -1,0 +1,14 @@
+---
+// Monetag Multitag — the site-wide smart tag that replaces AdSense. Included
+// in <head> on every page (via BaseLayout and BaseHead). Monetag places its
+// formats itself from this one script, so there is no per-slot ad markup.
+// data-cfasync="false" stops Cloudflare Rocket Loader from deferring it.
+import { MONETAG_MULTITAG_ZONE } from '../lib/site';
+---
+
+<script
+  is:inline
+  src="https://quge5.com/88/tag.min.js"
+  data-zone={MONETAG_MULTITAG_ZONE}
+  async
+  data-cfasync="false"></script>

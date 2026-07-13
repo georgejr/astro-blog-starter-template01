@@ -4,22 +4,11 @@ export const SITE_NAME = 'Solar Panel Calculator';
 // the matching component renders nothing while the value is ''.
 export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
 export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
-export const ADSENSE_CLIENT_ID = 'ca-pub-9548133728498958'; // AdSense publisher id
-
-// Ad unit slot ids per AdSlot format. A format with an empty slot renders
-// the dashed placeholder instead of a real ad.
-export type AdFormat = 'horizontal' | 'rectangle' | 'in-feed' | 'in-article' | 'multiplex';
-
-export const ADSENSE_SLOTS: Record<AdFormat, string> = {
-  horizontal: '8103168523', // "sunmetric vizszintes"
-  rectangle: '8103168523', // reuses the responsive "sunmetric vizszintes" unit for now
-  'in-feed': '3892460772', // content feed unit (blog list)
-  'in-article': '9224678507', // in-article unit (inside posts)
-  multiplex: '7911596832', // autorelaxed "recommended content" grid (below posts)
-};
-
-// Layout key of the in-feed ad unit (comes with the unit's embed code).
-export const ADSENSE_IN_FEED_LAYOUT_KEY = '-6t+ed+2i-1n-4w';
+// Monetag zone ids. Monetization is script-based (a site-wide Multitag plus a
+// vignette on article pages), not per-slot markup — see Monetag.astro and
+// MonetagVignette.astro. There are no ad-unit slot ids to configure.
+export const MONETAG_MULTITAG_ZONE = '259117';
+export const MONETAG_VIGNETTE_ZONE = '11278311';
 
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';

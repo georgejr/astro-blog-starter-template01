@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import GoogleAdsense from '../components/GoogleAdsense.astro';
+import Monetag from '../components/Monetag.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import SearchConsole from '../components/SearchConsole.astro';
 import { SITE_NAME } from '../lib/site';
@@ -47,11 +47,11 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
     ))}
     <SearchConsole />
     <GoogleAnalytics />
-    <GoogleAdsense />
-    <!-- Consent: Google's own consent message (AdSense → Privacy & messaging)
-      handles GDPR consent for EEA/UK/CH visitors; Consent Mode v2 defaults
-      are set in GoogleAnalytics.astro. Fill in the IDs in src/lib/site.ts
-      to activate GA4 / AdSense / Search Console verification. -->
+    <Monetag />
+    <!-- Ads: Monetag Multitag (site-wide, Monetag.astro) + a vignette on
+      article pages (MonetagVignette.astro). Monetag also serves push via
+      /sw.js at the site root. Analytics: GA4 with Consent Mode v2 defaults in
+      GoogleAnalytics.astro. Configure ids/zones in src/lib/site.ts. -->
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />
