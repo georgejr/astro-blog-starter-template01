@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import Monetag from './Monetag.astro';
 
 interface Props {
 	title: string;
@@ -25,8 +26,8 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="impact-site-verification" value="81060dfc-271c-4176-9cb0-0fd0b5a598ed" />
 <meta name="monetag" content="60b2514c56bda5932c319bf4abf6e045" />
 
-<!-- Monetag Multitag (site-wide, same as BaseLayout) -->
-<script is:inline src="https://quge5.com/88/tag.min.js" data-zone="259117" async data-cfasync="false"></script>
+<!-- Monetag site-wide tags (same set as BaseLayout) -->
+<Monetag />
 
 <!-- Font preloads -->
 <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
