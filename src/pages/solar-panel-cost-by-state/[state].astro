@@ -22,21 +22,23 @@ export async function getStaticPaths() {
 
 const { s } = Astro.props;
 
-const usd = (n: number) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
-const kwh = (n: number) => `${Math.round(n / 10) * 10} kWh`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const usd = (n) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
+const kwh = (n) => `${(Math.round(n / 10) * 10).toLocaleString('en-US')} kWh`;
 const kw = ASSUMPTIONS.representativeKw;
-
 const sizes = [6, 8, 10];
 const payback = paybackYears(kw, s);
+const creditPct = Math.round(ASSUMPTIONS.federalCreditRate * 100);
 
-const sunDesc = s.sunHours >= 5.5 ? 'well above the national average' : s.sunHours >= 4.5 ? 'about average for the US' : 'below the national average';
-const rateDesc = s.rateCents >= 22 ? 'among the higher rates in the country' : s.rateCents >= 15 ? 'in the mid-range nationally' : 'on the lower end nationally';
+const sunDesc =
+  s.sunHours >= 5.5 ? 'well above the national average' : s.sunHours >= 4.5 ? 'about average for the US' : 'below the national average';
+const rateDesc =
+  s.rateCents >= 22 ? 'among the higher rates in the country' : s.rateCents >= 15 ? 'in the mid-range nationally' : 'on the lower end nationally';
 const closer =
   payback <= 9
-    ? `High electricity prices, strong sun, or both put ${s.name} among the faster paybacks in this comparison — solar tends to make financial sense here for homeowners with suitable roofs.`
+    ? `Strong sun, high electricity prices, or both put ${s.name} among the faster paybacks in this comparison, and solar tends to make financial sense here for homeowners with suitable roofs.`
     : payback <= 13
-      ? `That is a middle-of-the-pack payback. Whether solar is worth it in ${s.name} often comes down to your specific rate, roof, and any state or utility incentives.`
-      : `Longer paybacks like this are common where power is cheap or sun is limited. In ${s.name}, the federal credit and any local incentives carry more of the case, and shifting usage into daylight hours matters more.`;
+      ? `That is a middle-of-the-pack payback, so whether solar is worth it in ${s.name} often comes down to your specific rate, roof, and any state or utility incentives.`
+      : `Longer paybacks like this are common where power is cheap or sun is limited. In ${s.name} the federal credit and any local incentives carry more of the case, and shifting usage into daylight hours matters more.`;
 
 const canonicalUrl = new URL(`/solar-panel-cost-by-state/${stateSlug(s)}/`, Astro.site).href;
 const structuredData = [
@@ -57,8 +59,8 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={`Solar Panel Cost in ${s.name}: 2026 Estimate, Savings & Payback`}
-  description={`A modeled estimate of solar panel costs in ${s.name}: 6/8/10 kW system prices after the federal credit, yearly savings, and payback based on ${s.name}'s sun hours and electricity rate.`}
+  title={`Solar Panel Cost in ${s.name}: 2026 Estimate, Savings and Payback`}
+  description={`A modeled estimate of solar panel costs in ${s.name}: 6/8/10 kW system prices after the federal credit, yearly savings, and payback based on the state's sun hours and electricity rate.`}
   structuredData={structuredData}
 >
   <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -70,7 +72,7 @@ const structuredData = [
     </h1>
 
     <p class="mt-6 leading-relaxed text-slate-700">
-      {s.name} averages about <strong>{s.sunHours.toFixed(1)} peak sun hours a day</strong> — {sunDesc} —
+      {s.name} averages about <strong>{s.sunHours.toFixed(1)} peak sun hours a day</strong> ({sunDesc})
       with an approximate residential electricity rate near <strong>{s.rateCents}¢/kWh</strong>, {rateDesc}.
       In the model used here, an {kw} kW system in {s.name} produces roughly
       <strong>{kwh(annualProduction(kw, s))}</strong> a year and trims about
@@ -83,8 +85,8 @@ const structuredData = [
     <h2 class="mt-10 text-2xl font-bold text-slate-900">Estimated system cost and payback in {s.name}</h2>
     <p class="mt-2 text-slate-600">
       Costs assume roughly ${ASSUMPTIONS.grossPricePerWatt[s.tier].toFixed(2)}/watt installed for {s.name};
-      net cost is after the {Math.round(ASSUMPTIONS.federalCreditRate * 100)}% federal Residential Clean
-      Energy Credit. Savings and payback use {s.name}'s sun hours and rate above.
+      net cost is after the {creditPct}% federal Residential Clean Energy Credit. Savings and payback use
+      the state's sun hours and rate above.
     </p>
 
     <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
@@ -116,12 +118,12 @@ const structuredData = [
 
     <h2 class="mt-10 text-2xl font-bold text-slate-900">What moves the numbers in {s.name}</h2>
     <p class="mt-2 leading-relaxed text-slate-700">
-      Two inputs drive most of the difference between states: how much sun a system sees and what
-      each offset kilowatt-hour is worth. {s.name}'s {s.sunHours.toFixed(1)} sun hours set production,
-      and its ~{s.rateCents}¢/kWh rate sets what that production saves. The bigger unknowns are your
-      roof, shading, and how your utility compensates exported power — a lower export rate can pull
-      real savings below the retail-rate figure above. The calculators let you replace these state
-      averages with your own bill and roof.
+      Two inputs drive most of the difference between states: how much sun a system sees and what each
+      offset kilowatt-hour is worth. {s.name}'s {s.sunHours.toFixed(1)} sun hours set production, and its
+      roughly {s.rateCents}¢/kWh rate sets what that production saves. The bigger unknowns are your roof,
+      shading, and how your utility compensates exported power, since a lower export rate can pull real
+      savings below the retail-rate figure above. The calculators let you replace these state averages
+      with your own bill and roof.
     </p>
 
     <div class="mt-10 space-y-10">
