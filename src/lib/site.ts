@@ -4,13 +4,11 @@ export const SITE_NAME = 'Solar Panel Calculator';
 // the matching component renders nothing while the value is ''.
 export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
 export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
-// Monetag zone ids. Monetization is script-based (site-wide tags plus a
-// vignette on article pages), not per-slot markup — see Monetag.astro and
-// MonetagVignette.astro. There are no ad-unit slot ids to configure.
-export const MONETAG_MULTITAG_ZONE = '259117';
+// Monetag config. Monetization is script-based (a site-wide zone tag plus a
+// vignette on the homepage and article pages), not per-slot markup — see
+// Monetag.astro and MonetagVignette.astro.
 export const MONETAG_VIGNETTE_ZONE = '11278311';
-// Additional site-wide Monetag zone tag (separate CDN/format).
-export const MONETAG_TAG2_SRC = 'https://5gvci.com/act/files/tag.min.js?z=11278348';
+export const MONETAG_TAG_SRC = 'https://5gvci.com/act/files/tag.min.js?z=11278348';
 
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';

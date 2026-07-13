@@ -1,15 +1,10 @@
 ---
-// Site-wide Monetag tags that replace AdSense. Rendered in <head> on every
-// page (via BaseLayout and, for BlogPost pages, via BaseHead). Monetag places
-// its own formats from these scripts, so there is no per-slot ad markup.
-// data-cfasync="false" stops Cloudflare Rocket Loader from deferring them.
-import { MONETAG_MULTITAG_ZONE, MONETAG_TAG2_SRC } from '../lib/site';
+// Site-wide Monetag zone tag (replaces AdSense). Rendered in <head> on every
+// page via BaseLayout and, for BlogPost pages, via BaseHead.
+// data-cfasync="false" stops Cloudflare Rocket Loader from deferring it.
+// (The quge5 "Multitag" was removed at the site owner's request; the vignette
+// interstitial lives in MonetagVignette.astro.)
+import { MONETAG_TAG_SRC } from '../lib/site';
 ---
 
-<script
-  is:inline
-  src="https://quge5.com/88/tag.min.js"
-  data-zone={MONETAG_MULTITAG_ZONE}
-  async
-  data-cfasync="false"></script>
-<script is:inline src={MONETAG_TAG2_SRC} async data-cfasync="false"></script>
+<script is:inline src={MONETAG_TAG_SRC} async data-cfasync="false"></script>
