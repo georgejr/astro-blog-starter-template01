@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SolarCalculator from '../components/SolarCalculator.astro';
 import DisclaimerBox from '../components/DisclaimerBox.astro';
 import AdSlot from '../components/AdSlot.astro';
+import BidvertiserBanner from '../components/BidvertiserBanner.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 import { CALCULATOR_LINKS, SITE_NAME, SITE_TAGLINE } from '../lib/site';
 import { webAppSchema } from '../lib/schema';
@@ -69,6 +70,7 @@ const structuredData = [
 
   <!-- Calculator preview -->
   <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <BidvertiserBanner />
     <AdSlot name="home-top" />
     <SolarCalculator heading="Try it now" />
   </section>
