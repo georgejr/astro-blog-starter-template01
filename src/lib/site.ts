@@ -4,10 +4,11 @@ export const SITE_NAME = 'Solar Panel Calculator';
 // the matching component renders nothing while the value is ''.
 export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
 export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
-// Monetag config. Monetization is script-based (a site-wide zone tag plus a
-// vignette on the homepage and article pages), not per-slot markup — see
-// Monetag.astro and MonetagVignette.astro.
+// Monetag config. Monetization is script-based, not per-slot markup: a
+// site-wide zone tag + a banner zone (both in Monetag.astro), plus a vignette
+// interstitial on the homepage and article pages (MonetagVignette.astro).
 export const MONETAG_VIGNETTE_ZONE = '11278311';
+export const MONETAG_BANNER_ZONE = '11278424';
 export const MONETAG_TAG_SRC = 'https://5gvci.com/act/files/tag.min.js?z=11278348';
 
 export const SITE_TAGLINE =

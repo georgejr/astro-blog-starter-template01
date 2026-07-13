@@ -1,10 +1,22 @@
 ---
-// Site-wide Monetag zone tag (replaces AdSense). Rendered in <head> on every
-// page via BaseLayout and, for BlogPost pages, via BaseHead.
-// data-cfasync="false" stops Cloudflare Rocket Loader from deferring it.
-// (The quge5 "Multitag" was removed at the site owner's request; the vignette
-// interstitial lives in MonetagVignette.astro.)
-import { MONETAG_TAG_SRC } from '../lib/site';
+// Site-wide Monetag tags (replace AdSense). Rendered in <head> on every page
+// via BaseLayout and, for BlogPost pages, via BaseHead:
+//   1. the 5gvci zone tag, and
+//   2. the banner zone loader (Monetag places the banner per the zone config).
+// data-cfasync="false" stops Cloudflare Rocket Loader from deferring them.
+// The vignette interstitial lives separately in MonetagVignette.astro.
+import { MONETAG_BANNER_ZONE, MONETAG_TAG_SRC } from '../lib/site';
 ---
 
 <script is:inline src={MONETAG_TAG_SRC} async data-cfasync="false"></script>
+<script is:inline define:vars={{ zone: MONETAG_BANNER_ZONE }}>
+  (function (s) {
+    s.dataset.zone = zone;
+    s.src = 'https://nap5k.com/tag.min.js';
+  })(
+    [document.documentElement, document.body]
+      .filter(Boolean)
+      .pop()
+      .appendChild(document.createElement('script')),
+  );
+</script>
