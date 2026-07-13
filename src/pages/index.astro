@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SolarCalculator from '../components/SolarCalculator.astro';
 import DisclaimerBox from '../components/DisclaimerBox.astro';
 import AdSlot from '../components/AdSlot.astro';
-import MonetagVignette from '../components/MonetagVignette.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 import { CALCULATOR_LINKS, SITE_NAME, SITE_TAGLINE } from '../lib/site';
 import { webAppSchema } from '../lib/schema';
@@ -134,6 +133,4 @@ const structuredData = [
     <AdSlot name="home-bottom" />
     <RelatedLinks links={CALCULATOR_LINKS} heading="All Calculators" />
   </section>
-
-  <MonetagVignette />
 </BaseLayout>

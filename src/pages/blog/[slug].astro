@@ -5,7 +5,6 @@ import DisclaimerBox from '../../components/DisclaimerBox.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import MonetagVignette from '../../components/MonetagVignette.astro';
 import { CALCULATOR_LINKS, SITE_NAME } from '../../lib/site';
 import { articleSchema, breadcrumbSchema } from '../../lib/schema';
 import { articlePath, getPrevNext, getPublishedPaths } from '../../lib/content';
@@ -130,6 +129,4 @@ const structuredData = [
 
     <AdSlot name="blog-related" format="multiplex" />
   </article>
-
-  <MonetagVignette />
 </BaseLayout>

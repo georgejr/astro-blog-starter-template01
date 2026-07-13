@@ -4,16 +4,6 @@ export const SITE_NAME = 'Solar Panel Calculator';
 // the matching component renders nothing while the value is ''.
 export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
 export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
-// Monetag config. Monetization is script-based, not per-slot markup — all
-// three formats are page-level tags that Monetag positions itself:
-//   - a site-wide zone tag and an In-Page Push zone (both in Monetag.astro),
-//   - a vignette interstitial on the homepage and article pages
-//     (MonetagVignette.astro).
-// None of these is a traditional in-content display banner; adding real
-// horizontal banners would need a Monetag "Banner" zone wired into AdSlot.
-export const MONETAG_VIGNETTE_ZONE = '11278311';
-export const MONETAG_INPAGE_ZONE = '11278424';
-export const MONETAG_TAG_SRC = 'https://5gvci.com/act/files/tag.min.js?z=11278348';
 
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';
