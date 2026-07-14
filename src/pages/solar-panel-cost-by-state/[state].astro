@@ -14,6 +14,7 @@ import {
   annualSavings,
   paybackYears,
   stateSlug,
+  netMeteringPosture,
 } from '../../data/state-solar';
 
 export async function getStaticPaths() {
@@ -124,6 +125,22 @@ const structuredData = [
       shading, and how your utility compensates exported power, since a lower export rate can pull real
       savings below the retail-rate figure above. The calculators let you replace these state averages
       with your own bill and roof.
+    </p>
+
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Incentives and net metering in {s.name}</h2>
+    <p class="mt-2 leading-relaxed text-slate-700">
+      The largest incentive is federal and identical everywhere: the 30% Residential Clean Energy
+      Credit lowers the net cost of an owned system, and the net figures above already apply it. What
+      changes from state to state is how your utility pays for the power you export. {s.name} generally
+      uses {netMeteringPosture(s)} — and since export compensation moves payback more than almost any
+      other local factor, confirm your own utility's current terms before you sign anything.
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-700">
+      Beyond the federal credit, many states also exempt the added home value from property tax or
+      solar equipment from sales tax, and some run performance-based programs such as SREC markets.
+      These change often, so instead of trusting a static number, check the regularly updated
+      <a href="https://www.dsireusa.org/" rel="nofollow" class="text-brand-700 underline">DSIRE database</a>
+      for what {s.name} currently offers, and hold any figure a salesperson quotes up against it.
     </p>
 
     <div class="mt-10 space-y-10">

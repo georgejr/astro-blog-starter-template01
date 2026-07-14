@@ -78,6 +78,28 @@ export const STATE_SOLAR: StateSolar[] = [
   { name: 'Wyoming', abbr: 'WY', sunHours: 5.3, rateCents: 12, tier: 'mid' },
 ];
 
+// General export-compensation posture per state — a stable, structural
+// description (not a dollar value). Distinctive states are called out; the
+// rest use the historically common retail-rate default. Always paired in the
+// UI with a "verify current terms via DSIRE" caveat, since these shift.
+const NET_METERING_OVERRIDES: Record<string, string> = {
+  CA: 'net billing, where exports are credited below the retail rate (a NEM 3.0-style structure)',
+  AZ: 'export credits set below the retail rate',
+  NV: 'export credits below the retail rate that have stepped down over time',
+  HI: 'no standard net metering — self-supply and separate export programs instead',
+  TX: 'no statewide net-metering mandate, so buyback plans vary by retailer and utility',
+  ID: 'utility-specific export terms, with several utilities having moved off full retail',
+  MI: 'an inflow/outflow billing structure rather than one-to-one net metering',
+};
+
+/** The state's general export-compensation posture (structural, not a price). */
+export function netMeteringPosture(s: StateSolar): string {
+  return (
+    NET_METERING_OVERRIDES[s.abbr] ??
+    'retail-rate net metering, where exported energy credits near the retail rate'
+  );
+}
+
 /** URL slug for a state, e.g. "New York" -> "new-york". */
 export function stateSlug(s: StateSolar): string {
   return s.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
