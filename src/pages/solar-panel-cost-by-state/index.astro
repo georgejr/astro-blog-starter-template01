@@ -14,7 +14,7 @@ import {
 } from '../../data/state-solar';
 
 const kw = ASSUMPTIONS.representativeKw;
-const usd = (n: number) => `$${Math.round(n / 100) * 100}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const usd = (n: number) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
 const rows = [...STATE_SOLAR].sort((a, b) => a.name.localeCompare(b.name));
 ---
 

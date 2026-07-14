@@ -75,7 +75,7 @@ const structuredData = [
       {s.name} averages about <strong>{s.sunHours.toFixed(1)} peak sun hours a day</strong> ({sunDesc})
       with an approximate residential electricity rate near <strong>{s.rateCents}¢/kWh</strong>, {rateDesc}.
       In the model used here, an {kw} kW system in {s.name} produces roughly
-      <strong>{kwh(annualProduction(kw, s))}</strong> a year and trims about
+      <strong>{kwh(annualProduction(kw, s.sunHours))}</strong> a year and trims about
       <strong>{usd(annualSavings(kw, s))}</strong> off annual electricity costs, paying back its net
       cost in about <strong>{payback.toFixed(1)} years</strong>. {closer}
     </p>
@@ -107,7 +107,7 @@ const structuredData = [
               <td class="px-4 py-3 font-medium">{size} kW</td>
               <td class="px-4 py-3">{usd(grossCost(size, s.tier))}</td>
               <td class="px-4 py-3">{usd(netCost(size, s.tier))}</td>
-              <td class="px-4 py-3">{kwh(annualProduction(size, s))}</td>
+              <td class="px-4 py-3">{kwh(annualProduction(size, s.sunHours))}</td>
               <td class="px-4 py-3">{usd(annualSavings(size, s))}</td>
               <td class="px-4 py-3">{paybackYears(size, s).toFixed(1)} yrs</td>
             </tr>
