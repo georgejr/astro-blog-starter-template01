@@ -1,5 +1,18 @@
+# All search engines and AI crawlers are welcome to index the site.
 User-agent: *
 Allow: /
 
-# TODO: replace with the production domain before launch
-Sitemap: https://example-solar-calculator.pages.dev/sitemap-index.xml
+# OpenAI / ChatGPT crawlers
+# OAI-SearchBot: indexing for ChatGPT search
+# ChatGPT-User: live fetches when a user asks ChatGPT about a page
+# GPTBot: OpenAI's general crawler
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://sunmetriclab.com/sitemap-index.xml

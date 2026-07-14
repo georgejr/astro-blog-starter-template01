@@ -1,0 +1,4 @@
+# Relative redirects only — Cloudflare Workers static assets reject absolute
+# URLs here (a www->apex host redirect must be a zone-level Redirect Rule).
+# Alias the conventional /sitemap.xml to the generated sitemap index.
+/sitemap.xml /sitemap-index.xml 301
