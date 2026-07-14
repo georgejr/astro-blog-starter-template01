@@ -16,6 +16,9 @@ export { BUILD_TIME, articlePath, articleSlug, isPublished } from './publishing'
 
 export type BlogEntry = CollectionEntry<'blog'>;
 
+/** Articles per page on the blog index and its pagination pages. */
+export const BLOG_PAGE_SIZE = 12;
+
 /** All published articles, newest first. */
 export async function getPublishedPosts(now: Date = BUILD_TIME): Promise<BlogEntry[]> {
   return publishedSorted(await getCollection('blog'), now);

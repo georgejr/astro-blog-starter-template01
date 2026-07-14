@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import RelatedLinks from '../../../components/RelatedLinks.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import PostGrid from '../../../components/PostGrid.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { CALCULATOR_LINKS } from '../../../lib/site';
+import { getPublishedPosts, BLOG_PAGE_SIZE } from '../../../lib/content';
+
+// Pages 2..N of the blog. Page 1 lives at /blog/ (blog/index.astro), so the
+// paginate() page 1 is filtered out here to avoid duplicate content.
+export async function getStaticPaths({ paginate }) {
+  const posts = await getPublishedPosts();
+  return paginate(posts, { pageSize: BLOG_PAGE_SIZE }).filter(
+    (entry) => Number(entry.params.page) >= 2,
+  );
+}
+
+const { page } = Astro.props;
+const prevUrl = page.currentPage === 2 ? '/blog/' : page.url.prev;
+---
+
+<BaseLayout
+  title={`Solar Blog – Page ${page.currentPage} of ${page.lastPage}`}
+  description="More practical guides on solar panel sizing, costs, savings, batteries, and tax credits for US homeowners."
+>
+  <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <header class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-medium text-brand-700">
+        <a href="/blog/" class="hover:underline">Solar Blog</a>
+      </p>
+      <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        More solar guides
+      </h1>
+      <p class="mt-4 text-lg text-slate-600">Page {page.currentPage} of {page.lastPage}.</p>
+    </header>
+
+    <PostGrid posts={page.data} />
+
+    <Pagination
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+      prevUrl={prevUrl}
+      nextUrl={page.url.next}
+    />
+
+    <div class="mx-auto mt-16 max-w-4xl">
+      <AdSlot name="blog-index" />
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
+    </div>
+  </div>
+</BaseLayout>

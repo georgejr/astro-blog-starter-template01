@@ -17,10 +17,11 @@ export interface NavLink {
 }
 
 export const NAV_LINKS: NavLink[] = [
-  { href: '/solar-panel-calculator/', label: 'Solar Calculator' },
+  { href: '/solar-panel-calculator/', label: 'Calculator' },
   { href: '/solar-panel-cost-calculator/', label: 'Cost' },
   { href: '/solar-roi-calculator/', label: 'ROI' },
   { href: '/solar-battery-calculator/', label: 'Battery' },
+  { href: '/solar-panel-cost-by-state/', label: 'Cost by State' },
   { href: '/blog/', label: 'Blog' },
   { href: '/contact/', label: 'Contact' },
 ];

@@ -1,0 +1,24 @@
+---
+// Prev/next pager for the blog. Posts are newest-first, so "prev" (toward
+// page 1) is newer and "next" (toward the last page) is older.
+interface Props {
+  currentPage: number;
+  lastPage: number;
+  prevUrl?: string | undefined;
+  nextUrl?: string | undefined;
+}
+
+const { currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
+const linkClass =
+  'rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:border-brand-400 hover:text-brand-700';
+---
+
+{
+  lastPage > 1 && (
+    <nav class="mx-auto mt-12 flex max-w-4xl items-center justify-between border-t border-slate-200 pt-6" aria-label="Blog pagination">
+      {prevUrl ? <a href={prevUrl} class={linkClass}>&larr; Newer</a> : <span />}
+      <span class="text-sm text-slate-500">Page {currentPage} of {lastPage}</span>
+      {nextUrl ? <a href={nextUrl} class={linkClass}>Older &rarr;</a> : <span />}
+    </nav>
+  )
+}

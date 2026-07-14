@@ -2,17 +2,20 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import PostCard from '../../components/PostCard.astro';
+import PostGrid from '../../components/PostGrid.astro';
+import Pagination from '../../components/Pagination.astro';
 import { CALCULATOR_LINKS } from '../../lib/site';
-import { getPublishedPosts } from '../../lib/content';
+import { getPublishedPosts, BLOG_PAGE_SIZE } from '../../lib/content';
 import { CATEGORIES, taxonomySlug } from '../../lib/taxonomy';
 
-// Published articles only (newest first); scheduled/draft posts are filtered
-// at the data source in src/lib/content.ts, never in the UI.
-const posts = await getPublishedPosts();
+// Page 1 of the blog. Pages 2+ live at /blog/page/<n>/ (blog/page/[page].astro),
+// which keeps the article route /blog/<slug>/ free of a pagination conflict.
+const allPosts = await getPublishedPosts();
+const posts = allPosts.slice(0, BLOG_PAGE_SIZE);
+const lastPage = Math.max(1, Math.ceil(allPosts.length / BLOG_PAGE_SIZE));
 
 const categories = CATEGORIES.filter((category) =>
-  posts.some((post) => post.data.category === category),
+  allPosts.some((post) => post.data.category === category),
 );
 ---
 
@@ -40,20 +43,13 @@ const categories = CATEGORIES.filter((category) =>
       )}
     </header>
 
-    <ul class="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
-      {posts.map((post, index) => (
-        <>
-          <li>
-            <PostCard post={post} />
-          </li>
-          {index === 3 && (
-            <li class="sm:col-span-2" aria-hidden="true">
-              <AdSlot name="blog-feed" format="in-feed" />
-            </li>
-          )}
-        </>
-      ))}
-    </ul>
+    <PostGrid posts={posts} />
+
+    <Pagination
+      currentPage={1}
+      lastPage={lastPage}
+      nextUrl={lastPage > 1 ? '/blog/page/2/' : undefined}
+    />
 
     <div class="mx-auto mt-16 max-w-4xl">
       <AdSlot name="blog-index" />

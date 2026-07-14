@@ -1,0 +1,6 @@
+# Redirect the www subdomain to the canonical apex domain.
+# Cloudflare Workers static assets honor this file. For this to take effect,
+# www.sunmetriclab.com must first route to the Worker (add it as a custom
+# domain in the Cloudflare dashboard); the most robust alternative is a
+# Cloudflare Redirect Rule at the zone level.
+https://www.sunmetriclab.com/* https://sunmetriclab.com/:splat 301
