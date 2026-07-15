@@ -3,6 +3,7 @@ title: "Marine Solar: Sizing and Wiring Panels for a Boat"
 description: "Solar panels for a boat need marine-specific sizing and wiring. How to size an array from your house-battery draw and protect it from salt and motion."
 publishDate: 2026-12-16T08:00:00Z
 category: "Off-Grid & Mobile"
+author: "SunMetricLab Editorial Team"
 tags:
   - marine solar
   - boats

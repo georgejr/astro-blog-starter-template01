@@ -3,6 +3,7 @@ title: "How Often Should You Really Clean Solar Panels?"
 description: "How often to clean solar panels depends on your climate, not a calendar. How dust, pollen, and rainfall set the right schedule for your roof."
 publishDate: 2026-12-15T08:00:00Z
 category: "Maintenance & Lifespan"
+author: "SunMetricLab Editorial Team"
 tags:
   - cleaning
   - maintenance

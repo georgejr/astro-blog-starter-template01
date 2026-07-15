@@ -3,6 +3,7 @@ title: "Sizing a Home Battery for CPAP, Oxygen, and Other Medical Gear"
 description: "Home battery backup for medical devices needs guaranteed runtime. How to size storage for a CPAP or oxygen concentrator and wire it to work in an outage."
 publishDate: 2026-12-18T08:00:00Z
 category: "Batteries & Storage"
+author: "SunMetricLab Editorial Team"
 tags:
   - medical devices
   - backup power

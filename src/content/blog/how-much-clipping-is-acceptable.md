@@ -1,8 +1,10 @@
 ---
 title: "How Much Inverter Clipping Should You Actually Tolerate?"
 description: "How much inverter clipping is acceptable depends on your climate and roof orientation. Here's the working threshold and when a flat-topped curve should worry you."
+slug: "how-much-clipping-is-acceptable"
 publishDate: 2026-12-30T08:00:00Z
 category: "Inverters & Components"
+author: "SunMetricLab Editorial Team"
 tags:
   - inverters
   - clipping

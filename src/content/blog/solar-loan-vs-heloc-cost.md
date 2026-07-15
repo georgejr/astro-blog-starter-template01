@@ -3,6 +3,7 @@ title: "Solar Loan vs HELOC: Which Financing Costs Less Over Time?"
 description: "Solar loan vs HELOC: how each is priced, where the hidden dealer fee lives, and how to compare total interest and fees before financing your panels."
 publishDate: 2026-12-19T16:00:00Z
 category: "Solar Costs"
+author: "SunMetricLab Editorial Team"
 tags:
   - financing
   - heloc

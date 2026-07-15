@@ -1,8 +1,10 @@
 ---
 title: "Sizing a Battery to Carry a Whole Home Through a Multi-Day Outage"
 description: "Sizing a battery for a multi-day power outage means pairing storage with solar recharge. Here's how to size both to run a whole house for several days off-grid."
+slug: "battery-sizing-multi-day-outage"
 publishDate: 2026-12-31T16:00:00Z
 category: "Batteries & Storage"
+author: "SunMetricLab Editorial Team"
 tags:
   - batteries
   - backup power
@@ -34,7 +36,7 @@ This is why the honest way to think about battery runtime is in terms of your ac
 
 For a single-day or overnight outage, the tank-only approach can work if the tank is big enough or the loads are trimmed enough. Stack two or three batteries, or discipline yourself to run only essentials, and a battery bank alone can genuinely carry a home from an evening outage through to the next morning. The problem is specifically the multi-day case. Once an outage stretches past a single night, a battery with no way to refill is just a countdown timer. Every kilowatt-hour you use is gone until grid power returns, and if the grid stays down for three days, you'd need three days' worth of storage sitting fully charged when the outage began — on the order of 90 kWh for a whole average home, which is six or seven batteries' worth of capacity bought and installed on the chance you'll someday need it all at once. Almost nobody sizes storage that way, because it means paying for an enormous amount of capacity that sits idle 360 days a year. The economics push hard toward a different answer.
 
-That different answer is recharge. If the battery can be topped up during the outage, the whole equation changes: instead of needing to store the entire multi-day load in advance, you only need to store enough to bridge from one recharge to the next — essentially, enough to get through each night. During a grid outage a generator can provide that recharge, but the option most solar homeowners already have, or can build toward, is the array on the roof. A properly configured solar-plus-storage system keeps generating through a blackout and uses that generation to both run the house during the day and refill the battery for the coming night. That capability doesn't happen automatically — it depends on how the system is wired and configured, since an ordinary grid-tied array actually shuts down in an outage for safety — and understanding what does and doesn't keep working when the grid fails is worth getting straight first, which [this look at what happens when the grid goes down with a battery](/blog/solar-battery-during-power-outage/) walks through. The key point for sizing is that a system built to recharge from solar transforms a multi-day outage from an endurance test into a daily cycle.
+That different answer is recharge. If the battery can be topped up during the outage, the whole equation changes: instead of needing to store the entire multi-day load in advance, you only need to store enough to bridge from one recharge to the next — essentially, enough to get through each night. During a grid outage a generator can provide that recharge, but the option most solar homeowners already have, or can build toward, is the array on the roof. A properly configured solar-plus-storage system keeps generating through a blackout and uses that generation to both run the house during the day and refill the battery for the coming night. That capability doesn't happen automatically — it depends on how the system is wired and configured, since an ordinary grid-tied array actually shuts down in an outage for safety and won't power anything unless it's paired with storage designed to island. The key point for sizing is that a system built to recharge from solar transforms a multi-day outage from an endurance test into a daily cycle.
 
 ## Sizing the pair so each day refills
 

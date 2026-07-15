@@ -1,8 +1,10 @@
 ---
 title: "Paying Off a Solar Loan Early: What It Saves and What It Doesn't"
 description: "Paying off a solar loan early can cut interest, but reamortization and the tax-credit paydown decide how much. Here's what prepayment really does to your payment."
+slug: "pay-off-solar-loan-early"
 publishDate: 2027-01-01T08:00:00Z
 category: "Solar Costs"
+author: "SunMetricLab Editorial Team"
 tags:
   - solar loans
   - prepayment

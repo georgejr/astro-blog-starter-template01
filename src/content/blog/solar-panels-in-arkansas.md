@@ -3,6 +3,7 @@ title: "Arkansas Solar: A Young Market Reworking Its Net-Metering Rules"
 description: "Solar panels in Arkansas sit in a young market with evolving net metering and new leasing options. Why low rates lengthen payback and how to run the numbers."
 publishDate: 2026-12-18T16:00:00Z
 category: "State Guides"
+author: "SunMetricLab Editorial Team"
 tags:
   - arkansas
   - net metering

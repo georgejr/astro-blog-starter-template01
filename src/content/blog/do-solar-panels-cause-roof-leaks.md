@@ -1,8 +1,10 @@
 ---
 title: "Do Solar Panels Cause Roof Leaks? Separating Myth From Risk"
 description: "Do solar panels cause roof leaks? Properly flashed mounts rarely do. Here's what actually causes leaks, when the real risk shows up, and how to protect your roof."
+slug: "do-solar-panels-cause-roof-leaks"
 publishDate: 2026-12-30T16:00:00Z
 category: "Myths & Comparisons"
+author: "SunMetricLab Editorial Team"
 tags:
   - roof leaks
   - mounting

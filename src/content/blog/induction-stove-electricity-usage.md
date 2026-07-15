@@ -3,6 +3,7 @@ title: "How Much Electricity an Induction Stove Really Uses"
 description: "Induction stove electricity usage in real terms: how many watts a burner pulls, the kWh a cooktop adds each month, and what it does to your bill."
 publishDate: 2026-12-16T16:00:00Z
 category: "Electricity Usage"
+author: "SunMetricLab Editorial Team"
 tags:
   - induction
   - kitchen

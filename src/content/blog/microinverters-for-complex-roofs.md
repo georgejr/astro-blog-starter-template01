@@ -3,6 +3,7 @@ title: "Why Complex, Multi-Angle Roofs Often Point Toward Microinverters"
 description: "Microinverters for a complex roof solve what string inverters struggle with: dormers, hips, and several small faces. Why per-panel electronics fit cut-up roofs."
 publishDate: 2026-12-19T08:00:00Z
 category: "Inverters & Components"
+author: "SunMetricLab Editorial Team"
 tags:
   - microinverters
   - complex roof

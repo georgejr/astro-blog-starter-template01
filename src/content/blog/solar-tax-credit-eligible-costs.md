@@ -3,6 +3,7 @@ title: "Which Solar Project Costs Actually Qualify for the Federal Credit"
 description: "What costs qualify for the solar tax credit: equipment, wiring, labor, permits, and sales tax all count. Where the line falls and what to keep off it."
 publishDate: 2026-12-15T16:00:00Z
 category: "Incentives & Tax Credits"
+author: "SunMetricLab Editorial Team"
 tags:
   - tax credit
   - eligible costs
@@ -21,7 +22,7 @@ relatedArticles:
   - battery-storage-tax-credit
 ogStat:
   value: "30%"
-  label: "credit on all eligible project costs"
+  label: "of all qualifying solar costs"
 ---
 
 When people picture the federal solar tax credit, they usually picture it applying to the panels — as if the government is handing back a slice of the hardware cost and nothing else. That mental model quietly undersells the credit, because the Residential Clean Energy Credit is calculated on the full qualifying cost of the project, not just the glass on the roof. The credit is 30% of what you spend on an eligible residential solar installation, claimed on your federal return under IRS guidance, and the word doing the heavy lifting there is "eligible." Understanding which line items on your invoice count toward that qualifying total, and which ones don't, is worth real money: on a typical residential project, the difference between counting only the panels and counting the entire eligible installation can be thousands of dollars of credit.
