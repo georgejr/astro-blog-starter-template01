@@ -1,0 +1,134 @@
+---
+import InputField from '../InputField.astro';
+---
+
+<div>
+  <form id="cmp-form" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" novalidate>
+    <h2 class="text-lg font-bold text-slate-900">Your numbers</h2>
+    <p class="mt-1 text-sm text-slate-500">The three options update side by side as you type.</p>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <InputField id="gross" label="System price (before credit)" unit="USD" value={22000} min={5000} max={80000} step={100} />
+      <InputField id="savings" label="First-year bill savings" unit="USD/year" value={1800} min={200} max={12000} step={50} />
+      <InputField id="rateInc" label="Yearly rate increase" unit="%" value={3} min={0} max={10} step={0.5} />
+      <InputField id="apr" label="Loan interest (APR)" unit="%" value={7} min={0} max={20} step={0.1} />
+      <InputField id="term" label="Loan term" unit="years" value={15} min={1} max={30} step={1} />
+      <InputField id="leaseMonthly" label="Starting lease/PPA payment" unit="USD/month" value={130} min={0} max={600} step={5} />
+      <InputField id="leaseEsc" label="Lease yearly escalator" unit="%" value={2.9} min={0} max={6} step={0.1} />
+    </div>
+  </form>
+
+  <div id="cmp-results" class="mt-8 grid gap-5 md:grid-cols-3">
+    <div data-card="cash" class="rounded-2xl border-2 border-slate-200 bg-slate-50 p-6">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900">Pay cash</h3>
+        <span data-card-badge="cash" class="hidden rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-800">Best 25-yr value</span>
+      </div>
+      <p class="mt-4 text-xs font-semibold tracking-wide text-slate-500 uppercase">25-year net benefit</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="cash-net">—</p>
+      <dl class="mt-4 space-y-2 text-sm">
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Upfront cost</dt><dd class="font-semibold" data-result="cash-upfront">—</dd></div>
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Owns system + credit</dt><dd class="font-semibold text-brand-700">Yes</dd></div>
+      </dl>
+    </div>
+
+    <div data-card="loan" class="rounded-2xl border-2 border-slate-200 bg-slate-50 p-6">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900">Solar loan</h3>
+        <span data-card-badge="loan" class="hidden rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-800">Best 25-yr value</span>
+      </div>
+      <p class="mt-4 text-xs font-semibold tracking-wide text-slate-500 uppercase">25-year net benefit</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="loan-net">—</p>
+      <dl class="mt-4 space-y-2 text-sm">
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Monthly payment</dt><dd class="font-semibold" data-result="loan-monthly">—</dd></div>
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Total interest</dt><dd class="font-semibold" data-result="loan-interest">—</dd></div>
+      </dl>
+    </div>
+
+    <div data-card="lease" class="rounded-2xl border-2 border-slate-200 bg-slate-50 p-6">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900">Lease / PPA</h3>
+        <span data-card-badge="lease" class="hidden rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-800">Best 25-yr value</span>
+      </div>
+      <p class="mt-4 text-xs font-semibold tracking-wide text-slate-500 uppercase">25-year net benefit</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="lease-net">—</p>
+      <dl class="mt-4 space-y-2 text-sm">
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Starting payment</dt><dd class="font-semibold" data-result="lease-monthly">—</dd></div>
+        <div class="flex justify-between border-t border-slate-200 pt-2"><dt class="text-slate-600">Owns system + credit</dt><dd class="font-semibold text-amber-700">No</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <p id="cmp-verdict" class="mt-6 rounded-lg bg-slate-50 p-4 text-sm leading-relaxed text-slate-600"></p>
+</div>
+
+<script>
+  const form = document.getElementById('cmp-form') as HTMLFormElement | null;
+  const panel = document.getElementById('cmp-results');
+  const verdict = document.getElementById('cmp-verdict');
+  if (form && panel && verdict) {
+    const num = (id: string) => Number.parseFloat((form.elements.namedItem(id) as HTMLInputElement).value) || 0;
+    const usd = (n: number) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    const set = (name: string, value: string) => { const el = panel.querySelector<HTMLElement>(`[data-result="${name}"]`); if (el) el.textContent = value; };
+
+    const update = () => {
+      const gross = num('gross');
+      const savings0 = num('savings');
+      const esc = num('rateInc') / 100;
+      const apr = num('apr');
+      const term = num('term');
+      const leaseM = num('leaseMonthly');
+      const leaseEsc = num('leaseEsc') / 100;
+
+      const credit = gross * 0.3;
+      const netCash = gross - credit;
+
+      // 25-year escalating bill savings
+      let S = 0;
+      for (let y = 0; y < 25; y++) S += savings0 * Math.pow(1 + esc, y);
+
+      // Loan
+      const n = term * 12;
+      const r = apr / 100 / 12;
+      const payment = r === 0 ? gross / n : (gross * r) / (1 - Math.pow(1 + r, -n));
+      const totalLoanPaid = payment * n;
+      const loanInterest = totalLoanPaid - gross;
+
+      // 25-year escalating lease payments
+      let L = 0;
+      for (let y = 0; y < 25; y++) L += leaseM * 12 * Math.pow(1 + leaseEsc, y);
+
+      const cashNet = S - netCash;
+      const loanNet = S + credit - totalLoanPaid;
+      const leaseNet = S - L;
+
+      set('cash-net', usd(cashNet));
+      set('cash-upfront', usd(netCash));
+      set('loan-net', usd(loanNet));
+      set('loan-monthly', `${usd(payment)}/mo`);
+      set('loan-interest', usd(loanInterest));
+      set('lease-net', usd(leaseNet));
+      set('lease-monthly', `${usd(leaseM)}/mo`);
+
+      const options = [
+        { key: 'cash', label: 'paying cash', net: cashNet },
+        { key: 'loan', label: 'a solar loan', net: loanNet },
+        { key: 'lease', label: 'a lease or PPA', net: leaseNet },
+      ];
+      const best = options.reduce((a, b) => (b.net > a.net ? b : a));
+
+      for (const o of options) {
+        const card = panel.querySelector<HTMLElement>(`[data-card="${o.key}"]`);
+        const badge = panel.querySelector<HTMLElement>(`[data-card-badge="${o.key}"]`);
+        const isBest = o.key === best.key;
+        if (card) card.className = `rounded-2xl border-2 p-6 ${isBest ? 'border-brand-500 bg-brand-50' : 'border-slate-200 bg-slate-50'}`;
+        if (badge) badge.classList.toggle('hidden', !isBest);
+      }
+
+      verdict.textContent =
+        `On these assumptions, ${best.label} shows the largest 25-year net benefit (${usd(best.net)}). Cash and loans keep ownership and the 30% federal credit; a lease or PPA needs no money down but forgoes the credit and the equity, so it usually trails on lifetime value while easing upfront cost. The order can flip with the loan rate, lease escalator, and how fast electricity prices rise — adjust the inputs to your real offers.`;
+    };
+    form.addEventListener('input', update);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    update();
+  }
+</script>

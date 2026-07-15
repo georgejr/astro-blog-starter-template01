@@ -1,0 +1,60 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import SolarPaymentComparator from '../components/calculators/SolarPaymentComparator.astro';
+
+const faqs = [
+  {
+    question: 'Is it better to buy or lease solar panels?',
+    answer:
+      'Buying — with cash or a loan — keeps ownership and the 30% federal tax credit, which usually gives the best lifetime value. A lease or PPA needs little or no money down and hands maintenance to the provider, but you forgo the credit and the equity, so it typically trails on 25-year net benefit. This tool compares all three on your own numbers.',
+  },
+  {
+    question: 'How is the 25-year net benefit calculated?',
+    answer:
+      'It adds up 25 years of electricity bill savings (grown by your rate-increase assumption) and subtracts what each option costs: the net price for cash, the total loan payments (minus the credit) for a loan, and the escalating lease payments for a lease. It’s a planning estimate, not a quote.',
+  },
+  {
+    question: 'Does a lease or PPA get the federal tax credit?',
+    answer:
+      'No. With a lease or power-purchase agreement, the third-party owner claims the 30% credit, not you. That’s a big part of why owned systems tend to come out ahead over the full system life, even though a lease can look cheaper month to month.',
+  },
+  {
+    question: 'Which option has the lowest upfront cost?',
+    answer:
+      'A lease or PPA usually starts at $0 down, and a loan can too. Paying cash has the highest upfront cost but no interest and the fastest path to free electricity once it’s recovered. The right trade-off depends on your cash, rate, and how long you’ll stay in the home.',
+  },
+];
+---
+
+<ToolLanding
+  title="Solar Payment Comparison: Cash vs. Loan vs. Lease"
+  description="Compare paying cash, taking a solar loan, and leasing side by side: monthly cost, total interest, and 25-year net benefit, on your own numbers."
+  h1="Cash vs. Loan vs. Lease Comparator"
+  subtitle="Put the three ways to pay for solar side by side and see which delivers the most over 25 years."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      How you pay for solar changes the economics as much as the system itself. Paying cash and taking
+      a loan both keep ownership and the 30% federal credit; a lease or PPA trades that away for a low
+      upfront cost. Enter your numbers to see all three <strong>side by side</strong> — monthly cost
+      and 25-year net benefit — and which comes out ahead for your situation.
+    </p>
+  </Fragment>
+
+  <SolarPaymentComparator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What the comparison is really weighing</h2>
+      <p class="mt-3">
+        Every column earns the same electricity savings; what differs is the cost of getting there.
+        Cash pays once and avoids interest. A loan spreads the cost and adds interest, but still keeps
+        the credit and the equity. A lease or PPA removes the upfront hurdle and the maintenance
+        worry, at the price of the credit and long-run ownership. The highlighted card is simply the
+        largest 25-year net benefit on your inputs — but the monthly numbers, your available cash, and
+        how long you plan to stay in the home all matter alongside that single figure.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

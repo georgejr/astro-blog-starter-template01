@@ -82,6 +82,12 @@ export const calculators: Calculator[] = [
     href: '/federal-tax-credit-calculator/',
     keywords: ['federal tax credit', '30 percent', 'residential clean energy credit', 'itc'],
   },
+  {
+    id: 'solar-payment-comparison',
+    title: 'Cash vs. Loan vs. Lease Comparator',
+    href: '/solar-payment-comparison/',
+    keywords: ['cash vs loan vs lease', 'buy vs lease solar', 'ppa', 'payment comparison'],
+  },
 ];
 
 export const calculatorIds = new Set(calculators.map((c) => c.id));

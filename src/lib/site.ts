@@ -39,6 +39,7 @@ export const CALCULATOR_LINKS: NavLink[] = [
   { href: '/heat-pump-calculator/', label: 'Heat Pump Cost Calculator' },
   { href: '/electricity-bill-calculator/', label: 'Electricity Bill Calculator' },
   { href: '/federal-tax-credit-calculator/', label: 'Federal Solar Tax Credit Calculator' },
+  { href: '/solar-payment-comparison/', label: 'Cash vs. Loan vs. Lease Comparator' },
 ];
 
 
