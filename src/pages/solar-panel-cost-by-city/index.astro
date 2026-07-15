@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DisclaimerBox from '../../components/DisclaimerBox.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import BidvertiserBanner from '../../components/BidvertiserBanner.astro';
+import { CALCULATOR_LINKS } from '../../lib/site';
+import { CITIES, cityAsState, citySlug, cityState } from '../../data/city-solar';
+import { ASSUMPTIONS, netCost, annualSavings, paybackYears } from '../../data/state-solar';
+
+const kw = ASSUMPTIONS.representativeKw;
+const usd = (n: number) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
+const rows = [...CITIES].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout
+  title="Solar Panel Cost by City: 2026 Estimates for Major US Cities"
+  description="A modeled city-by-city comparison of solar panel costs, average sun hours and electricity rates, 6/8/10 kW system prices, estimated yearly savings, and payback."
+>
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <header class="mx-auto max-w-3xl text-center">
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        Solar Panel Cost by City
+      </h1>
+      <p class="mt-4 text-lg text-slate-600">
+        A modeled look at how solar economics change across major US cities. Pick a city for its own
+        breakdown, or scan the table. Rates and install-cost tiers follow each city's state; sun
+        hours are city-level estimates.
+      </p>
+    </header>
+
+    <div class="mx-auto mt-8 max-w-3xl rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-900">
+      <p class="font-semibold">How to read these numbers</p>
+      <p class="mt-2">
+        These are <strong>estimates from a transparent model</strong>, not surveyed local prices. Sun
+        hours are stable city-level climate figures; the electricity rate and install-cost tier come
+        from the city's state, so cities in the same state share those. System prices assume roughly
+        ${ASSUMPTIONS.grossPricePerWatt.low.toFixed(2)}–${ASSUMPTIONS.grossPricePerWatt.high.toFixed(2)}/watt
+        before the {Math.round(ASSUMPTIONS.federalCreditRate * 100)}% federal credit, and savings
+        assume production offsets power at the retail rate. Use them for rough comparison, then run
+        your own address through the calculators.
+      </p>
+    </div>
+
+    <BidvertiserBanner />
+
+    <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
+      <table class="w-full min-w-[720px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-slate-50 text-left text-slate-600">
+            <th class="px-4 py-3 font-semibold">City</th>
+            <th class="px-4 py-3 font-semibold">State</th>
+            <th class="px-4 py-3 font-semibold">Rate (¢/kWh)</th>
+            <th class="px-4 py-3 font-semibold">Sun hrs/day</th>
+            <th class="px-4 py-3 font-semibold">8 kW net</th>
+            <th class="px-4 py-3 font-semibold">Savings/yr (8 kW)</th>
+            <th class="px-4 py-3 font-semibold">Payback (8 kW)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((c) => {
+            const s = cityAsState(c);
+            return (
+              <tr class="border-t border-slate-200 hover:bg-slate-50">
+                <td class="px-4 py-3 font-medium">
+                  <a href={`/solar-panel-cost-by-city/${citySlug(c)}/`} class="text-brand-700 hover:underline">
+                    {c.name}
+                  </a>
+                </td>
+                <td class="px-4 py-3">{cityState(c).name}</td>
+                <td class="px-4 py-3">{s.rateCents}</td>
+                <td class="px-4 py-3">{c.sunHours.toFixed(1)}</td>
+                <td class="px-4 py-3">{usd(netCost(8, s.tier))}</td>
+                <td class="px-4 py-3">{usd(annualSavings(kw, s))}</td>
+                <td class="px-4 py-3">{paybackYears(kw, s).toFixed(1)} yrs</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-3 text-xs text-slate-500">
+      Net cost is after the {Math.round(ASSUMPTIONS.federalCreditRate * 100)}% federal credit; savings
+      and payback use an {kw} kW system as a representative size. For state incentives and net-metering
+      structure, see the state guide linked from each city page.
+    </p>
+
+    <div class="mt-12 space-y-12">
+      <div class="mx-auto max-w-3xl">
+        <DisclaimerBox />
+      </div>
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Run the numbers for your home" />
+    </div>
+  </div>
+</BaseLayout>

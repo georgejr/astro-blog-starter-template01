@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DisclaimerBox from '../../components/DisclaimerBox.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import BidvertiserBanner from '../../components/BidvertiserBanner.astro';
+import { CALCULATOR_LINKS, SITE_NAME } from '../../lib/site';
+import { articleSchema, breadcrumbSchema } from '../../lib/schema';
+import { CITIES, cityAsState, cityState, citySlug } from '../../data/city-solar';
+import {
+  ASSUMPTIONS,
+  grossCost,
+  netCost,
+  annualProduction,
+  annualSavings,
+  paybackYears,
+  stateSlug,
+  netMeteringPosture,
+} from '../../data/state-solar';
+
+export function getStaticPaths() {
+  return CITIES.map((c) => ({ params: { city: citySlug(c) }, props: { c } }));
+}
+
+const { c } = Astro.props;
+const s = cityAsState(c);
+const state = cityState(c);
+
+const usd = (n) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
+const kwh = (n) => `${(Math.round(n / 10) * 10).toLocaleString('en-US')} kWh`;
+const kw = ASSUMPTIONS.representativeKw;
+const sizes = [6, 8, 10];
+const payback = paybackYears(kw, s);
+const creditPct = Math.round(ASSUMPTIONS.federalCreditRate * 100);
+
+const sunDesc =
+  c.sunHours >= 5.5 ? 'well above the national average' : c.sunHours >= 4.5 ? 'about average for the US' : 'below the national average';
+
+const canonicalUrl = new URL(`/solar-panel-cost-by-city/${citySlug(c)}/`, Astro.site).href;
+const structuredData = [
+  articleSchema({
+    headline: `Solar Panel Cost in ${c.name}, ${c.stateAbbr} (2026 Estimate)`,
+    description: `Modeled solar panel cost, savings, and payback for ${c.name}, ${c.stateAbbr}.`,
+    url: canonicalUrl,
+    datePublished: '2026-07-15T00:00:00Z',
+    author: SITE_NAME,
+    publisher: SITE_NAME,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: new URL('/', Astro.site).href },
+    { name: 'Solar Panel Cost by City', url: new URL('/solar-panel-cost-by-city/', Astro.site).href },
+    { name: c.name, url: canonicalUrl },
+  ]),
+];
+---
+
+<BaseLayout
+  title={`Solar Panel Cost in ${c.name}, ${c.stateAbbr}: 2026 Estimate & Payback`}
+  description={`A modeled estimate of solar panel costs in ${c.name}, ${c.stateAbbr}: 6/8/10 kW system prices after the federal credit, yearly savings, and payback based on local sun hours and the state electricity rate.`}
+  structuredData={structuredData}
+>
+  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <nav class="text-sm font-medium text-brand-700" aria-label="Breadcrumb">
+      <a href="/solar-panel-cost-by-city/" class="hover:underline">&larr; All cities</a>
+    </nav>
+    <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+      Solar Panel Cost in {c.name}, {c.stateAbbr} (2026 Estimate)
+    </h1>
+
+    <p class="mt-6 leading-relaxed text-slate-700">
+      {c.name} averages about <strong>{c.sunHours.toFixed(1)} peak sun hours a day</strong> ({sunDesc}),
+      and pairs with {state.name}'s approximate residential rate near <strong>{s.rateCents}¢/kWh</strong>.
+      In the model used here, an {kw} kW system produces roughly
+      <strong>{kwh(annualProduction(kw, c.sunHours))}</strong> a year and trims about
+      <strong>{usd(annualSavings(kw, s))}</strong> off annual electricity costs, paying back its net
+      cost in about <strong>{payback.toFixed(1)} years</strong>. Local shading, roof, and your
+      utility's export terms move the real figure.
+    </p>
+
+    <BidvertiserBanner />
+
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Estimated system cost and payback in {c.name}</h2>
+    <p class="mt-2 text-slate-600">
+      Costs assume roughly ${ASSUMPTIONS.grossPricePerWatt[s.tier].toFixed(2)}/watt installed;
+      net cost is after the {creditPct}% federal Residential Clean Energy Credit. Savings use {c.name}'s
+      sun hours and {state.name}'s rate.
+    </p>
+
+    <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
+      <table class="w-full min-w-[520px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-slate-50 text-left text-slate-600">
+            <th class="px-4 py-3 font-semibold">System size</th>
+            <th class="px-4 py-3 font-semibold">Gross cost</th>
+            <th class="px-4 py-3 font-semibold">Net after credit</th>
+            <th class="px-4 py-3 font-semibold">Yearly production</th>
+            <th class="px-4 py-3 font-semibold">Yearly savings</th>
+            <th class="px-4 py-3 font-semibold">Payback</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sizes.map((size) => (
+            <tr class="border-t border-slate-200">
+              <td class="px-4 py-3 font-medium">{size} kW</td>
+              <td class="px-4 py-3">{usd(grossCost(size, s.tier))}</td>
+              <td class="px-4 py-3">{usd(netCost(size, s.tier))}</td>
+              <td class="px-4 py-3">{kwh(annualProduction(size, c.sunHours))}</td>
+              <td class="px-4 py-3">{usd(annualSavings(size, s))}</td>
+              <td class="px-4 py-3">{paybackYears(size, s).toFixed(1)} yrs</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Incentives and rates around {c.name}</h2>
+    <p class="mt-2 leading-relaxed text-slate-700">
+      The 30% federal Residential Clean Energy Credit applies everywhere and is already in the net
+      figures above. Beyond it, what your exported power is worth is set at the state and utility
+      level: {state.name} generally uses {netMeteringPosture(state)}. Because that moves payback more
+      than almost any local factor, confirm your own utility's current terms. For the full state
+      picture — property/sales-tax treatment and net-metering structure — see the
+      <a href={`/solar-panel-cost-by-state/${stateSlug(state)}/`} class="text-brand-700 underline">{state.name} solar cost guide</a>.
+    </p>
+
+    <div class="mt-10 space-y-10">
+      <DisclaimerBox />
+      <RelatedLinks links={CALCULATOR_LINKS} heading="Estimate your own system" />
+    </div>
+  </article>
+</BaseLayout>
