@@ -1,0 +1,59 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import ElectricityBillCalculator from '../components/calculators/ElectricityBillCalculator.astro';
+
+const faqs = [
+  {
+    question: 'How is an electricity bill calculated?',
+    answer:
+      'Most residential bills are the energy you use (kWh × rate) plus a fixed monthly service charge, and sometimes taxes or riders. This calculator covers the two big pieces — energy and the fixed fee — which drive the bulk of a typical bill.',
+  },
+  {
+    question: 'What is the fixed charge and can solar remove it?',
+    answer:
+      'The fixed (or service/connection) charge is a flat monthly fee for being connected to the grid, regardless of how much power you use. Solar offsets the energy portion of your bill but not this fixed fee, so a grid-tied home keeps paying it.',
+  },
+  {
+    question: 'Why is my all-in cost per kWh higher than my rate?',
+    answer:
+      'Because the fixed charge is spread across the kilowatt-hours you use. The fewer kWh you buy, the more that fixed fee raises your effective per-kWh cost — which is why very low usage can make each unit feel expensive.',
+  },
+  {
+    question: 'How much electricity does a typical home use?',
+    answer:
+      'A US home averages roughly 850–900 kWh per month, but it ranges widely — a small apartment might use 300–500 kWh while an all-electric house with a pool or EV can exceed 2,000 kWh. Use your own bills for the most accurate figure.',
+  },
+];
+---
+
+<ToolLanding
+  title="Electricity Bill Calculator – Estimate Your Monthly & Yearly Cost"
+  description="Estimate your monthly and yearly electricity bill from your kWh usage, rate, and fixed charge — and see your true all-in cost per kilowatt-hour."
+  h1="Electricity Bill Calculator"
+  subtitle="Estimate your monthly and yearly electricity cost, and see how the fixed charge changes your real per-kWh price."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      Your electricity bill is mostly two numbers: the power you use times your rate, plus a fixed
+      monthly fee for the grid connection. Enter your usage, rate, and fixed charge to see the monthly
+      and yearly totals — and your true <strong>all-in cost per kilowatt-hour</strong>, which is the
+      figure that matters when you weigh solar or efficiency upgrades.
+    </p>
+  </Fragment>
+
+  <ElectricityBillCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Why the fixed charge matters for solar</h2>
+      <p class="mt-3">
+        Solar reduces the energy portion of your bill, sometimes to near zero, but the fixed
+        connection fee stays as long as you're grid-tied. That's why a "$0 electricity bill" is rare
+        even with a large system: the fixed charge sets a floor. Knowing your all-in cost per kWh —
+        energy plus that fee spread across your usage — gives a more honest sense of what each unit of
+        electricity actually costs you, and what solar can and can't offset.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

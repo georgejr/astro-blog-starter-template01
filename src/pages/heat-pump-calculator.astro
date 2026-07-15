@@ -1,0 +1,59 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import HeatPumpCalculator from '../components/calculators/HeatPumpCalculator.astro';
+
+const faqs = [
+  {
+    question: 'How much does a heat pump cost to run vs. a gas furnace?',
+    answer:
+      'It depends on your electricity rate, gas price, and the heat pump’s seasonal efficiency (COP). Where electricity is moderately priced and gas is expensive, a heat pump often costs less to run; where gas is cheap and power is expensive, gas can still win. This tool compares your own numbers.',
+  },
+  {
+    question: 'What is COP and why does it matter?',
+    answer:
+      'COP (coefficient of performance) is how many units of heat the pump delivers per unit of electricity. A seasonal COP of 3 means roughly three units of heat for one of electricity. Cold-climate units hold a COP around 2–3 across a winter, which is what most of the running cost hinges on.',
+  },
+  {
+    question: 'How do I find my yearly heating therms?',
+    answer:
+      'Look at winter natural-gas bills, which usually list therms (or CCF, close to therms). Add up the heating-season months, or take your annual total and subtract a typical summer month for water heating and cooking. One therm is about 29.3 kWh of heat energy.',
+  },
+  {
+    question: 'Does this include air conditioning?',
+    answer:
+      'No — this is a heating-only comparison. A heat pump also cools in summer, replacing a separate air conditioner, so its full value is usually higher than the heating numbers alone suggest.',
+  },
+];
+---
+
+<ToolLanding
+  title="Heat Pump Cost Calculator – Running Cost vs. Gas Furnace"
+  description="Estimate the yearly running cost of a heat pump versus a gas furnace from your heating therms, gas price, furnace efficiency, heat pump COP, and electricity rate."
+  h1="Heat Pump Cost Calculator"
+  subtitle="Compare what it costs to heat your home with a heat pump versus a gas furnace, using your own energy prices."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      Switching from a gas furnace to a heat pump changes heat from something you burn into something
+      you run on electricity, so the comparison depends on both fuel prices and how efficiently each
+      system delivers heat. Enter your yearly heating gas, prices, and efficiencies to see the annual
+      running-cost difference.
+    </p>
+  </Fragment>
+
+  <HeatPumpCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">How the comparison works</h2>
+      <p class="mt-3">
+        The tool converts your gas therms into the actual heat delivered (adjusted for furnace
+        efficiency), then works out how much electricity a heat pump would need to deliver that same
+        heat at the COP you set, and prices both. The result is a running-cost estimate, not an
+        install-cost analysis — equipment price, ductwork, and any electrical upgrades are separate,
+        and a heat pump’s summer cooling is a bonus this heating comparison leaves out.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

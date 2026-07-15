@@ -1,0 +1,82 @@
+---
+import InputField from '../InputField.astro';
+---
+
+<section class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+  <form
+    id="loan-form"
+    class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
+    novalidate
+  >
+    <h2 class="text-lg font-bold text-slate-900">Loan details</h2>
+    <p class="mt-1 text-sm text-slate-500">Results update as you type.</p>
+
+    <div class="mt-6 grid gap-5 sm:grid-cols-2">
+      <InputField id="amount" label="Amount financed" unit="USD" value={20000} min={1000} max={100000} step={100} hint="Net system cost after any down payment." />
+      <InputField id="apr" label="Interest rate (APR)" unit="%" value={7} min={0} max={20} step={0.1} />
+      <InputField id="term" label="Loan term" unit="years" value={15} min={1} max={30} step={1} />
+      <InputField id="savings" label="Est. monthly bill savings" unit="USD/month" value={150} min={0} max={2000} step={5} hint="From the solar the loan pays for." />
+    </div>
+  </form>
+
+  <div id="loan-results" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">Monthly payment</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="payment">—</p>
+    </div>
+    <dl class="mt-6 space-y-3 text-sm">
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Total interest</dt><dd class="font-semibold text-slate-900" data-result="interest">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Total repaid</dt><dd class="font-semibold text-slate-900" data-result="total">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Payment vs. savings</dt><dd class="font-semibold" data-result="net">—</dd></div>
+    </dl>
+    <p class="mt-6 rounded-lg bg-white p-4 text-sm leading-relaxed text-slate-600" data-result="verdict"></p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('loan-form') as HTMLFormElement | null;
+  const panel = document.getElementById('loan-results');
+  if (form && panel) {
+    const num = (id: string) => Number.parseFloat((form.elements.namedItem(id) as HTMLInputElement).value) || 0;
+    const usd = (n: number) =>
+      n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    const set = (name: string, value: string) => {
+      const el = panel.querySelector<HTMLElement>(`[data-result="${name}"]`);
+      if (el) el.textContent = value;
+    };
+
+    const update = () => {
+      const amount = num('amount');
+      const apr = num('apr');
+      const years = num('term');
+      const savings = num('savings');
+      const n = years * 12;
+      const r = apr / 100 / 12;
+      const payment = r === 0 ? amount / n : (amount * r) / (1 - Math.pow(1 + r, -n));
+      const totalPaid = payment * n;
+      const interest = totalPaid - amount;
+
+      set('payment', `${usd(payment)}/mo`);
+      set('interest', usd(interest));
+      set('total', usd(totalPaid));
+
+      const netEl = panel.querySelector<HTMLElement>('[data-result="net"]');
+      const diff = savings - payment;
+      if (netEl) {
+        netEl.textContent = diff >= 0 ? `+${usd(diff)}/mo` : `−${usd(-diff)}/mo`;
+        netEl.className = `font-semibold ${diff >= 0 ? 'text-brand-700' : 'text-amber-700'}`;
+      }
+
+      set(
+        'verdict',
+        diff >= 0
+          ? `At these terms the estimated bill savings cover the loan payment with about ${usd(diff)} a month to spare, so the system is cash-flow positive from day one. You still pay ${usd(interest)} in interest over the loan, which is the real cost of financing versus paying cash.`
+          : `The loan payment runs about ${usd(-diff)} a month more than the estimated bill savings, so expect a modest monthly outlay until the loan is paid off. A longer term lowers the payment but raises the ${usd(interest)} of total interest; a larger down payment or lower rate does the opposite.`,
+      );
+    };
+
+    form.addEventListener('input', update);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    update();
+  }
+</script>

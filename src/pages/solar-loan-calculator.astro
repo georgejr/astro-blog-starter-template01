@@ -1,0 +1,58 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import SolarLoanCalculator from '../components/calculators/SolarLoanCalculator.astro';
+
+const faqs = [
+  {
+    question: 'How is a solar loan payment calculated?',
+    answer:
+      'It uses the standard amortizing-loan formula: the amount financed, the interest rate (APR), and the term in years determine a fixed monthly payment. Early payments are mostly interest; later ones are mostly principal.',
+  },
+  {
+    question: 'Is a solar loan worth it if I pay interest?',
+    answer:
+      'Often yes, as long as the estimated electricity savings are close to or above the monthly payment. You trade some interest cost for keeping your cash, and once the loan is paid off the savings continue for the rest of the system’s life. Paying cash avoids interest entirely but ties up capital.',
+  },
+  {
+    question: 'What is a "cash-flow positive" solar loan?',
+    answer:
+      'It means the monthly bill savings are larger than the monthly loan payment, so the system effectively pays for itself each month with a little left over. Whether that happens depends on your rate, system size, loan term, and APR.',
+  },
+  {
+    question: 'Should I choose a longer or shorter loan term?',
+    answer:
+      'A longer term lowers the monthly payment (easier cash flow) but increases total interest. A shorter term costs less interest overall but raises the monthly payment. This calculator lets you compare both against your estimated savings.',
+  },
+];
+---
+
+<ToolLanding
+  title="Solar Loan Calculator – Monthly Payment & Interest"
+  description="Estimate your solar loan monthly payment, total interest, and whether the system is cash-flow positive against your electricity bill savings."
+  h1="Solar Loan Calculator"
+  subtitle="See your monthly payment, total interest, and how the payment compares to your estimated bill savings."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      Most residential solar is financed rather than paid for in cash, so the number that matters
+      day to day is the <strong>monthly loan payment</strong> — and how it stacks up against the
+      electricity you stop buying. Enter the amount financed, your rate, and the term to see both.
+    </p>
+  </Fragment>
+
+  <SolarLoanCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Reading the result</h2>
+      <p class="mt-3">
+        The monthly payment is fixed for the life of the loan. Total interest is what financing
+        costs you versus paying cash — a longer term shrinks the payment but grows that interest.
+        The "payment vs. savings" line is the one to watch: when estimated bill savings exceed the
+        payment, the system carries itself each month; when they don’t, you’re covering a small
+        gap until the loan is retired, after which the savings are yours.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

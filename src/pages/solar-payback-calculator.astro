@@ -1,0 +1,59 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import SolarPaybackCalculator from '../components/calculators/SolarPaybackCalculator.astro';
+
+const faqs = [
+  {
+    question: 'What is a good solar payback period?',
+    answer:
+      'Under 7 years is strong, 7–11 years is reasonable, and beyond 11 years the case weakens unless electricity prices rise. Because panels usually last 25+ years, even a 10-year payback leaves many years of essentially free electricity.',
+  },
+  {
+    question: 'How does the rate-increase setting change payback?',
+    answer:
+      'Rising electricity prices make each year of savings larger than the last, so payback arrives sooner than the flat-rate "simple" figure. US residential rates have historically risen around 2–3% per year, though the future is not guaranteed.',
+  },
+  {
+    question: 'Why enter the net cost instead of the sticker price?',
+    answer:
+      'Payback should be measured against what you actually pay. Net cost is the system price after the 30% federal tax credit (and any other upfront incentives), which is the number your savings have to recover.',
+  },
+  {
+    question: 'Does this include financing interest?',
+    answer:
+      'No — this is a cash-payback model. If you finance the system, use the Solar Loan Calculator to see the monthly payment and interest, then compare that against your bill savings.',
+  },
+];
+---
+
+<ToolLanding
+  title="Solar Payback Calculator – Break-Even & Lifetime Savings"
+  description="Estimate your solar payback period from net cost and yearly savings, including the effect of rising electricity rates, plus 25-year lifetime savings and return."
+  h1="Solar Payback Calculator"
+  subtitle="Find your break-even year from net cost and yearly savings — with or without rising electricity rates — plus lifetime savings."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      Payback is the year your accumulated electricity savings finally cover what the system cost
+      you. Enter the <strong>net cost</strong> (after the 30% federal credit) and your
+      <strong>first-year savings</strong>, then adjust the rate-increase assumption to see how much
+      sooner rising utility prices bring break-even.
+    </p>
+  </Fragment>
+
+  <SolarPaybackCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Simple vs. escalated payback</h2>
+      <p class="mt-3">
+        The "simple" figure assumes today's rate never changes — a deliberately conservative floor.
+        The headline payback grows your yearly savings by the rate-increase you set, which is closer
+        to how utility bills have actually behaved. The gap between the two is a fair sense of the
+        uncertainty: your real payback usually lands between them, closer to the escalated number in
+        markets where rates climb steadily.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

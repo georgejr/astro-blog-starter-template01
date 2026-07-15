@@ -1,0 +1,59 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import FederalTaxCreditCalculator from '../components/calculators/FederalTaxCreditCalculator.astro';
+
+const faqs = [
+  {
+    question: 'How much is the federal solar tax credit?',
+    answer:
+      'The federal Residential Clean Energy Credit is 30% of the qualifying cost of an owned solar system, including installation and often a paired battery. It reduces the federal income tax you owe rather than paying cash back.',
+  },
+  {
+    question: 'What does "nonrefundable" mean for this credit?',
+    answer:
+      'It means the credit can lower your tax bill to zero but not below — you can only use as much as you owe in a given year. If the credit is larger than your tax liability, the unused portion generally carries forward to future years until it is used up.',
+  },
+  {
+    question: 'How do I know my tax liability?',
+    answer:
+      'It is roughly the total federal income tax you owe for the year (before subtracting what was withheld from paychecks), which appears on your tax return. Withholding does not reduce the credit you can claim; liability does. A tax professional can confirm your figure.',
+  },
+  {
+    question: 'Who can claim the credit?',
+    answer:
+      'Generally an owner of the system at their US residence with enough tax liability to use it. Leased systems and power-purchase agreements usually mean the third party — not you — claims it. Always verify eligibility and current rules with the IRS or a tax professional before relying on the number.',
+  },
+];
+---
+
+<ToolLanding
+  title="Federal Solar Tax Credit Calculator – 30% Credit & Carryover"
+  description="Estimate your 30% federal Residential Clean Energy Credit, how much you can use against this year's tax liability, any carryover, and your net system cost."
+  h1="Federal Solar Tax Credit Calculator"
+  subtitle="See your 30% federal credit, how much offsets this year's taxes, what carries forward, and your net cost."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      The federal Residential Clean Energy Credit is worth 30% of a qualifying owned solar system —
+      but because it's <strong>nonrefundable</strong>, how much you can use in a single year depends
+      on your tax liability. Enter the project cost and your liability to see the credit, what you can
+      claim now, and what carries forward.
+    </p>
+  </Fragment>
+
+  <FederalTaxCreditCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Credit, liability, and carryover</h2>
+      <p class="mt-3">
+        The credit is a straightforward 30% of qualifying cost. The catch is that it offsets tax you
+        owe, not cash — so if your liability is smaller than the credit, you claim what you can this
+        year and carry the rest to later years. This estimate is for planning only; eligibility,
+        qualifying costs, and the rules for carrying the credit forward should be confirmed with the
+        IRS or a tax professional, since tax situations vary and policy can change.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

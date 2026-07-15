@@ -1,0 +1,69 @@
+---
+import InputField from '../InputField.astro';
+---
+
+<section class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+  <form id="ev-form" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" novalidate>
+    <h2 class="text-lg font-bold text-slate-900">Your driving</h2>
+    <p class="mt-1 text-sm text-slate-500">Results update as you type.</p>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2">
+      <InputField id="miles" label="Miles driven per year" unit="miles" value={12000} min={1000} max={40000} step={500} />
+      <InputField id="efficiency" label="EV efficiency" unit="mi/kWh" value={3.5} min={2} max={5} step={0.1} hint="Most EVs: 3–4 mi/kWh." />
+      <InputField id="rate" label="Electricity rate" unit="USD/kWh" value={0.17} min={0.05} max={0.6} step={0.01} />
+      <InputField id="gasPrice" label="Gas price (for comparison)" unit="USD/gal" value={3.5} min={2} max={7} step={0.1} />
+      <InputField id="mpg" label="Gas car it replaces" unit="mpg" value={28} min={10} max={60} step={1} />
+    </div>
+  </form>
+
+  <div id="ev-results" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">Annual charging cost</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="annualCost">—</p>
+    </div>
+    <dl class="mt-6 space-y-3 text-sm">
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Electricity added per year</dt><dd class="font-semibold text-slate-900" data-result="kwh">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Cost per mile</dt><dd class="font-semibold text-slate-900" data-result="perMile">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Same miles on gas</dt><dd class="font-semibold text-slate-900" data-result="gasCost">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Yearly savings vs. gas</dt><dd class="font-semibold text-brand-700" data-result="savings">—</dd></div>
+    </dl>
+    <p class="mt-6 rounded-lg bg-white p-4 text-sm leading-relaxed text-slate-600" data-result="verdict"></p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('ev-form') as HTMLFormElement | null;
+  const panel = document.getElementById('ev-results');
+  if (form && panel) {
+    const num = (id: string) => Number.parseFloat((form.elements.namedItem(id) as HTMLInputElement).value) || 0;
+    const usd = (n: number) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    const set = (name: string, value: string) => { const el = panel.querySelector<HTMLElement>(`[data-result="${name}"]`); if (el) el.textContent = value; };
+
+    const update = () => {
+      const miles = num('miles');
+      const eff = num('efficiency') || 1;
+      const rate = num('rate');
+      const gasPrice = num('gasPrice');
+      const mpg = num('mpg') || 1;
+      const kwh = (miles / eff) * 1.1; // ~10% charging losses
+      const cost = kwh * rate;
+      const perMile = miles > 0 ? cost / miles : 0;
+      const gasCost = (miles / mpg) * gasPrice;
+      const savings = gasCost - cost;
+
+      set('annualCost', `${usd(cost)}/yr`);
+      set('kwh', `${Math.round(kwh).toLocaleString('en-US')} kWh`);
+      set('perMile', `${(perMile * 100).toFixed(1)}¢/mile`);
+      set('gasCost', `${usd(gasCost)}/yr`);
+
+      const sEl = panel.querySelector<HTMLElement>('[data-result="savings"]');
+      if (sEl) { sEl.textContent = savings >= 0 ? `${usd(savings)}/yr` : `−${usd(-savings)}/yr`; sEl.className = `font-semibold ${savings >= 0 ? 'text-brand-700' : 'text-amber-700'}`; }
+
+      set('verdict', savings >= 0
+        ? `Charging this EV runs about ${usd(cost)} a year (${(perMile * 100).toFixed(1)}¢ per mile), versus roughly ${usd(gasCost)} for the same miles in a ${mpg}-mpg gas car — a saving near ${usd(savings)} a year at these prices. Charging from your own solar would cut the electricity cost further.`
+        : `At ${usd(rate)}/kWh and ${usd(gasPrice)}/gal, charging costs about ${usd(cost)} a year versus ${usd(gasCost)} on gas, so gas is currently cheaper by about ${usd(-savings)}. That flips quickly if gas prices rise or you charge on cheaper off-peak or solar power.`);
+    };
+    form.addEventListener('input', update);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    update();
+  }
+</script>

@@ -1,0 +1,58 @@
+---
+import ToolLanding from '../components/ToolLanding.astro';
+import EvChargingCalculator from '../components/calculators/EvChargingCalculator.astro';
+
+const faqs = [
+  {
+    question: 'How much does it cost to charge an EV at home?',
+    answer:
+      'It depends on how far you drive, the car’s efficiency, and your electricity rate. As a rough guide, a typical EV uses about 0.3 kWh per mile, so 12,000 miles a year is roughly 3,600–4,000 kWh — at 17¢/kWh that’s around $600–700 a year before charging losses.',
+  },
+  {
+    question: 'Is charging an EV cheaper than buying gas?',
+    answer:
+      'Usually yes at typical US prices, because electricity per mile tends to cost less than gasoline per mile. The gap widens with cheap off-peak power or home solar and narrows when electricity is expensive or gas is cheap. This tool shows both so you can compare your own numbers.',
+  },
+  {
+    question: 'Why does the calculator add charging losses?',
+    answer:
+      'Some energy is lost as heat in the charger and battery, so the grid delivers more kWh than the car stores. The estimate adds about 10% to account for that, which is typical for Level 2 home charging.',
+  },
+  {
+    question: 'How does solar change EV charging cost?',
+    answer:
+      'If you charge during the day from your own panels, the marginal cost of those kWh is close to zero once the system is paid off — so an EV can sharply increase the value of a solar array by soaking up daytime production.',
+  },
+];
+---
+
+<ToolLanding
+  title="EV Charging Cost Calculator – Home Charging vs. Gas"
+  description="Estimate the yearly and per-mile cost of charging an electric car at home from your miles, efficiency, and electricity rate, and compare it against gasoline."
+  h1="EV Charging Cost Calculator"
+  subtitle="See what it costs to charge an EV at home each year, per mile, and how that compares to filling a gas tank."
+  faqs={faqs}
+>
+  <Fragment slot="intro">
+    <p>
+      An electric car mostly turns your driving into extra electricity use, so its running cost comes
+      down to three things: how far you drive, how efficient the car is, and what you pay per
+      kilowatt-hour. Enter those to see the yearly and <strong>per-mile</strong> cost, then compare it
+      against the same miles on gasoline.
+    </p>
+  </Fragment>
+
+  <EvChargingCalculator slot="tool" />
+
+  <Fragment slot="explanation">
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Where the number comes from</h2>
+      <p class="mt-3">
+        The estimate divides your annual miles by the car's efficiency to get kilowatt-hours, adds
+        about 10% for charging losses, and multiplies by your rate. The gas comparison does the same
+        for a car of the mpg you enter. Both are illustrative — real costs shift with weather,
+        driving style, and whether you charge on peak, off-peak, or solar power.
+      </p>
+    </section>
+  </Fragment>
+</ToolLanding>

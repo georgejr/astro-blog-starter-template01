@@ -1,0 +1,70 @@
+---
+import InputField from '../InputField.astro';
+---
+
+<section class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+  <form id="payback-form" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" novalidate>
+    <h2 class="text-lg font-bold text-slate-900">Your numbers</h2>
+    <p class="mt-1 text-sm text-slate-500">Results update as you type.</p>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2">
+      <InputField id="netCost" label="Net system cost" unit="USD" value={16000} min={2000} max={80000} step={100} hint="After the 30% federal credit." />
+      <InputField id="annualSavings" label="First-year bill savings" unit="USD/year" value={1800} min={100} max={12000} step={50} />
+      <InputField id="rateIncrease" label="Yearly electricity rate increase" unit="%" value={3} min={0} max={10} step={0.5} hint="US rates have historically risen 2–3%/yr." />
+    </div>
+  </form>
+
+  <div id="payback-results" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">Payback period</p>
+      <p class="text-3xl font-extrabold text-slate-900" data-result="payback">—</p>
+    </div>
+    <dl class="mt-6 space-y-3 text-sm">
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">Simple payback (flat rates)</dt><dd class="font-semibold text-slate-900" data-result="simple">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">25-year savings</dt><dd class="font-semibold text-slate-900" data-result="lifetime">—</dd></div>
+      <div class="flex justify-between border-t border-slate-200 pt-3"><dt class="text-slate-600">25-year return on cost</dt><dd class="font-semibold text-brand-700" data-result="roi">—</dd></div>
+    </dl>
+    <p class="mt-6 rounded-lg bg-white p-4 text-sm leading-relaxed text-slate-600" data-result="verdict"></p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('payback-form') as HTMLFormElement | null;
+  const panel = document.getElementById('payback-results');
+  if (form && panel) {
+    const num = (id: string) => Number.parseFloat((form.elements.namedItem(id) as HTMLInputElement).value) || 0;
+    const usd = (n: number) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    const set = (name: string, value: string) => { const el = panel.querySelector<HTMLElement>(`[data-result="${name}"]`); if (el) el.textContent = value; };
+
+    const update = () => {
+      const netCost = num('netCost');
+      const annual = num('annualSavings');
+      const esc = num('rateIncrease') / 100;
+      const simple = annual > 0 ? netCost / annual : 0;
+
+      let cum = 0;
+      let payback = 0;
+      for (let y = 0; y < 60; y++) {
+        const yr = annual * Math.pow(1 + esc, y);
+        if (cum + yr >= netCost && payback === 0) {
+          payback = y + (netCost - cum) / yr;
+          break;
+        }
+        cum += yr;
+      }
+      let lifetime = 0;
+      for (let y = 0; y < 25; y++) lifetime += annual * Math.pow(1 + esc, y);
+      const roi = netCost > 0 ? ((lifetime - netCost) / netCost) * 100 : 0;
+
+      set('payback', payback > 0 ? `${payback.toFixed(1)} yrs` : '—');
+      set('simple', simple > 0 ? `${simple.toFixed(1)} yrs` : '—');
+      set('lifetime', usd(lifetime));
+      set('roi', `${Math.round(roi)}%`);
+
+      const rating = payback <= 7 ? 'a strong result' : payback <= 11 ? 'a middle-of-the-pack result' : 'a longer payback';
+      set('verdict', `With rate increases of ${(esc * 100).toFixed(1)}% a year, the system pays back in about ${payback.toFixed(1)} years — ${rating}. Over a 25-year panel life it returns roughly ${usd(lifetime)} in savings against a ${usd(netCost)} net cost. Faster rate increases shorten payback; flat rates give the ${simple.toFixed(1)}-year simple figure.`);
+    };
+    form.addEventListener('input', update);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    update();
+  }
+</script>

@@ -33,6 +33,12 @@ export const CALCULATOR_LINKS: NavLink[] = [
   { href: '/solar-battery-calculator/', label: 'Solar Battery Calculator' },
   { href: '/how-many-solar-panels-do-i-need/', label: 'How Many Solar Panels Do I Need?' },
   { href: '/solar-panel-size-calculator/', label: 'Solar Panel Size Calculator' },
+  { href: '/solar-loan-calculator/', label: 'Solar Loan Calculator' },
+  { href: '/solar-payback-calculator/', label: 'Solar Payback Calculator' },
+  { href: '/ev-charging-calculator/', label: 'EV Charging Cost Calculator' },
+  { href: '/heat-pump-calculator/', label: 'Heat Pump Cost Calculator' },
+  { href: '/electricity-bill-calculator/', label: 'Electricity Bill Calculator' },
+  { href: '/federal-tax-credit-calculator/', label: 'Federal Solar Tax Credit Calculator' },
 ];
 
 
