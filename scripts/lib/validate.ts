@@ -145,8 +145,8 @@ export function validatePlan(plan: PlanEntry[], existingArticles: RawArticle[]):
   const issues: ValidationIssue[] = [];
   const err = (slug: string, message: string) => issues.push({ file: `plan:${slug}`, message });
 
-  if (plan.length !== 300) {
-    issues.push({ file: 'content-plan.json', message: `plan must contain exactly 300 entries, found ${plan.length}` });
+  if (plan.length !== 500) {
+    issues.push({ file: 'content-plan.json', message: `plan must contain exactly 500 entries, found ${plan.length}` });
   }
 
   const planSlugs = new Set<string>();

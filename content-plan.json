@@ -5006,5 +5006,3509 @@
     "relatedCalculators": [
       "solar-battery-calculator"
     ]
+  },
+  {
+    "title": "Solar in Alabama: Strong Sun, Steep Utility Fees on Rooftop Power",
+    "slug": "solar-panels-in-alabama",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-10T08:00:00Z",
+    "primaryKeyword": "solar panels in alabama",
+    "secondaryKeywords": [
+      "alabama solar",
+      "alabama solar incentives",
+      "solar in alabama"
+    ],
+    "searchIntent": "Alabama pairs some of the Deep South's strongest sunshine with utility fees and weak export credits that blunt rooftop returns, so system design leans toward maximizing self-consumption.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "What a Solar Dealer Fee Really Costs You on a Financed System",
+    "slug": "solar-dealer-fee-explained",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2026-12-10T16:00:00Z",
+    "primaryKeyword": "solar dealer fee",
+    "secondaryKeywords": [
+      "solar loan dealer fee",
+      "hidden solar financing fee",
+      "why financed solar costs more"
+    ],
+    "searchIntent": "Buyers offered a low-APR solar loan want to understand how the lender dealer fee is folded into the price and why the financed number tops a cash quote.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "How Much Solar Saves When You Run a Swimming Pool Pump",
+    "slug": "solar-savings-with-pool",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2026-12-11T08:00:00Z",
+    "primaryKeyword": "solar savings with a pool",
+    "secondaryKeywords": [
+      "solar for pool electricity",
+      "pool pump solar savings",
+      "offset pool electric bill with solar"
+    ],
+    "searchIntent": "Pool owners want to estimate how much of a pump and heater electric load home solar can offset and how it reshapes their annual savings.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Solar Payback When You Finance the System With a HELOC",
+    "slug": "solar-payback-with-heloc",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2026-12-11T16:00:00Z",
+    "primaryKeyword": "solar payback with heloc",
+    "secondaryKeywords": [
+      "heloc solar payback period",
+      "home equity solar break even",
+      "financing solar with equity payback"
+    ],
+    "searchIntent": "Owners paying for solar with a home equity line want to see how variable HELOC interest and interest-only draws reshape the break-even timeline.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payback-calculator"
+    ]
+  },
+  {
+    "title": "How Big a Battery Keeps a Fridge and Freezer Cold in an Outage?",
+    "slug": "battery-to-run-fridge-and-freezer",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2026-12-12T08:00:00Z",
+    "primaryKeyword": "solar battery to run a refrigerator and freezer",
+    "secondaryKeywords": [
+      "battery backup for fridge and freezer",
+      "keep food cold during outage",
+      "battery for two refrigerators"
+    ],
+    "searchIntent": "A homeowner focused on saving food wants to size a battery that keeps both a refrigerator and a chest freezer cold through a typical outage.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "The Right DC-to-AC Ratio Changes With Your Climate",
+    "slug": "dc-ac-ratio-by-climate",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2026-12-12T16:00:00Z",
+    "primaryKeyword": "best dc to ac ratio for hot climates",
+    "secondaryKeywords": [
+      "dc ac ratio by climate",
+      "array oversizing hot weather",
+      "inverter loading ratio heat"
+    ],
+    "searchIntent": "A homeowner comparing quotes wants to know why a hot, hazy climate justifies a different array-to-inverter ratio than a cool, sunny one.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "How Many Solar Panels Do You Need for 800 kWh a Month?",
+    "slug": "solar-panels-800-kwh-per-month",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2026-12-13T08:00:00Z",
+    "primaryKeyword": "solar panels for 800 kwh per month",
+    "secondaryKeywords": [
+      "800 kwh solar system size",
+      "how many panels for 800 kwh"
+    ],
+    "searchIntent": "A modest-usage household wants the panel count and kW size that offsets 800 kWh of monthly consumption.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much Electricity Does a Clothes Dryer Actually Use?",
+    "slug": "clothes-dryer-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2026-12-13T16:00:00Z",
+    "primaryKeyword": "how much electricity does a dryer use",
+    "secondaryKeywords": [
+      "electric dryer kwh per load",
+      "clothes dryer energy usage"
+    ],
+    "searchIntent": "A homeowner wants per-load and monthly kWh figures for an electric clothes dryer to see its share of the bill.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Can You Put Solar Panels on a Wood Shake Roof?",
+    "slug": "solar-panels-wood-shake-roof",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2026-12-14T08:00:00Z",
+    "primaryKeyword": "solar panels on wood shake roof",
+    "secondaryKeywords": [
+      "cedar shake roof solar",
+      "wood shingle roof solar mounting"
+    ],
+    "searchIntent": "An owner of a wood shake or cedar roof wants to know whether panels can mount safely and what fire and durability issues apply.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Do You Need to Be Home When Solar Panels Are Installed?",
+    "slug": "do-i-need-to-be-home-solar-install",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2026-12-14T16:00:00Z",
+    "primaryKeyword": "do i need to be home for solar installation",
+    "secondaryKeywords": [
+      "solar install homeowner presence",
+      "be present for solar install"
+    ],
+    "searchIntent": "A homeowner with a booked install date wants to know whether they must be present and how to prepare pets, parking, and access.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "How Often Should You Really Clean Solar Panels?",
+    "slug": "solar-cleaning-frequency",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2026-12-15T08:00:00Z",
+    "primaryKeyword": "how often to clean solar panels",
+    "secondaryKeywords": [
+      "solar cleaning schedule by climate",
+      "how frequently clean solar"
+    ],
+    "searchIntent": "An owner wants a cleaning frequency guide that adapts to their climate, dust, pollen, and rainfall rather than a one-size rule.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Which Solar Project Costs Actually Qualify for the Federal Credit",
+    "slug": "solar-tax-credit-eligible-costs",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2026-12-15T16:00:00Z",
+    "primaryKeyword": "what costs qualify for the solar tax credit",
+    "secondaryKeywords": [
+      "solar tax credit eligible expenses",
+      "what does the solar tax credit cover",
+      "labor and wiring solar credit"
+    ],
+    "searchIntent": "A homeowner filing for the credit wants a clear list of which line items on their solar invoice — equipment, wiring, labor, permitting, sales tax — count toward the qualifying cost.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Marine Solar: Sizing and Wiring Panels for a Boat",
+    "slug": "marine-solar-panel-setup",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2026-12-16T08:00:00Z",
+    "primaryKeyword": "solar panels for a boat",
+    "secondaryKeywords": [
+      "marine solar system sizing",
+      "sailboat solar setup",
+      "boat house battery solar charging"
+    ],
+    "searchIntent": "A boat owner wants a marine-specific framework for sizing panels, protecting gear from salt and motion, and keeping the house battery topped up at anchor.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "How Much Electricity an Induction Stove Really Uses",
+    "slug": "induction-stove-electricity-usage",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2026-12-16T16:00:00Z",
+    "primaryKeyword": "induction stove electricity usage",
+    "secondaryKeywords": [
+      "induction cooktop kwh per month",
+      "induction vs gas energy use",
+      "how many watts induction range"
+    ],
+    "searchIntent": "A homeowner switching from gas to induction wants to know how many kWh a cooktop adds each month and what it means for their bill.",
+    "relatedCalculators": [
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Work Better in Extreme Heat? Not Quite",
+    "slug": "do-solar-panels-work-in-extreme-heat",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2026-12-17T08:00:00Z",
+    "primaryKeyword": "do solar panels work in extreme heat",
+    "secondaryKeywords": [
+      "solar panels hot weather efficiency",
+      "temperature coefficient solar",
+      "does heat reduce solar output"
+    ],
+    "searchIntent": "This piece corrects the assumption that more sun heat means more power by explaining how high cell temperatures actually cut a panel voltage and output.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar in Alaska: Midnight-Sun Summers and Long, Dark Winters",
+    "slug": "solar-panels-in-alaska",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-17T16:00:00Z",
+    "primaryKeyword": "solar panels in alaska",
+    "secondaryKeywords": [
+      "alaska solar",
+      "solar panels alaska",
+      "solar in alaska"
+    ],
+    "searchIntent": "Alaska's extreme high latitude swings from near-endless summer daylight to dark winters while remote-community rates rank among the nation's highest, reshaping how owners size and value an array.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Sizing a Home Battery for CPAP, Oxygen, and Other Medical Gear",
+    "slug": "battery-backup-for-medical-devices",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2026-12-18T08:00:00Z",
+    "primaryKeyword": "home battery backup for medical devices",
+    "secondaryKeywords": [
+      "battery for cpap during outage",
+      "oxygen concentrator backup power",
+      "medical device power backup"
+    ],
+    "searchIntent": "A household that depends on medical equipment wants to size a battery that guarantees runtime for devices like a CPAP or oxygen concentrator during an outage.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Arkansas Solar: A Young Market Reworking Its Net-Metering Rules",
+    "slug": "solar-panels-in-arkansas",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-18T16:00:00Z",
+    "primaryKeyword": "solar panels in arkansas",
+    "secondaryKeywords": [
+      "arkansas solar",
+      "arkansas net metering",
+      "solar in arkansas"
+    ],
+    "searchIntent": "Arkansas is a young solar market where recently expanded leasing and evolving net-metering rules are opening access even though low retail rates keep paybacks longer.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-payback-calculator"
+    ]
+  },
+  {
+    "title": "Why Complex, Multi-Angle Roofs Often Point Toward Microinverters",
+    "slug": "microinverters-for-complex-roofs",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2026-12-19T08:00:00Z",
+    "primaryKeyword": "microinverters for a complex roof",
+    "secondaryKeywords": [
+      "microinverters multiple roof planes",
+      "best inverter for cut-up roof",
+      "panel level power complex roof"
+    ],
+    "searchIntent": "A homeowner with dormers, hips, and several small roof faces wants to understand why per-panel electronics simplify a cut-up layout.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Solar Loan vs HELOC: Which Financing Costs Less Over Time?",
+    "slug": "solar-loan-vs-heloc-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2026-12-19T16:00:00Z",
+    "primaryKeyword": "solar loan vs heloc",
+    "secondaryKeywords": [
+      "home equity loan for solar",
+      "financing solar with heloc",
+      "cheapest way to finance solar"
+    ],
+    "searchIntent": "Homeowners with equity want to compare the total interest and fees of a dedicated solar loan against tapping a home equity line to pay for panels.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payment-comparison"
+    ]
+  },
+  {
+    "title": "Solar Savings When You Work From Home All Day",
+    "slug": "solar-savings-working-from-home",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2026-12-20T08:00:00Z",
+    "primaryKeyword": "solar savings working from home",
+    "secondaryKeywords": [
+      "solar for remote workers",
+      "daytime electricity use solar",
+      "work from home solar benefit"
+    ],
+    "searchIntent": "Remote workers want to know why running appliances and HVAC during daylight lets a home consume its own solar and boosts savings versus an empty daytime house.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Delaware Solar and the SREC Market That Sweetens the Math",
+    "slug": "solar-panels-in-delaware",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-20T16:00:00Z",
+    "primaryKeyword": "solar panels in delaware",
+    "secondaryKeywords": [
+      "delaware solar",
+      "delaware srec",
+      "solar in delaware"
+    ],
+    "searchIntent": "Delaware's compact mid-Atlantic grid pairs moderate-to-high rates with an SREC market whose tradable credits add a second revenue stream on top of bill savings.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "federal-tax-credit-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Work in the Rain? What Really Happens",
+    "slug": "do-solar-panels-work-in-rain",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2026-12-21T08:00:00Z",
+    "primaryKeyword": "do solar panels work in the rain",
+    "secondaryKeywords": [
+      "solar panels rainy day output",
+      "do solar panels charge when raining",
+      "rain and solar production"
+    ],
+    "searchIntent": "The article explains that panels keep producing reduced power in rain from diffuse light and that the rinse can actually help output afterward.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Can a Home Battery Run a Well Pump? Sizing for a Big Surge Load",
+    "slug": "battery-to-run-a-well-pump",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2026-12-21T16:00:00Z",
+    "primaryKeyword": "solar battery to run a well pump",
+    "secondaryKeywords": [
+      "battery backup for well pump",
+      "well pump surge power",
+      "run well pump during outage"
+    ],
+    "searchIntent": "A rural homeowner on a private well wants to know whether a battery can handle the high startup surge of a well pump and how much capacity keeps water flowing.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Hawaii Solar: The Highest Rates in America Meet a Saturated Grid",
+    "slug": "solar-panels-in-hawaii",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-22T08:00:00Z",
+    "primaryKeyword": "solar panels in hawaii",
+    "secondaryKeywords": [
+      "hawaii solar",
+      "hawaii electricity rates",
+      "solar in hawaii"
+    ],
+    "searchIntent": "Hawaii's nation-topping electricity rates make solar compelling, but saturated island grids have replaced standard net metering with self-supply programs that make a battery essential to capture value.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How an Inverter Replacement Resets Your Solar Payback",
+    "slug": "payback-after-inverter-replacement",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2026-12-22T16:00:00Z",
+    "primaryKeyword": "solar payback after inverter replacement",
+    "secondaryKeywords": [
+      "inverter replacement break even",
+      "mid-life inverter cost payback",
+      "solar payback with inverter swap"
+    ],
+    "searchIntent": "Owners facing a mid-life inverter swap want to know how much that one-time cost pushes back the point where the system has fully paid for itself.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "When Can You Claim the Solar Tax Credit? Timing Rules Explained",
+    "slug": "when-to-claim-solar-tax-credit",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2026-12-23T08:00:00Z",
+    "primaryKeyword": "when can you claim the solar tax credit",
+    "secondaryKeywords": [
+      "what tax year for solar credit",
+      "placed in service date solar",
+      "claim solar credit paid vs installed"
+    ],
+    "searchIntent": "Someone whose install and payment straddle two tax years wants to know which year the credit belongs to and what the placed-in-service date really means.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator"
+    ]
+  },
+  {
+    "title": "Running an Off-Grid Well Pump on Solar Power",
+    "slug": "solar-well-pump-off-grid",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2026-12-23T16:00:00Z",
+    "primaryKeyword": "solar powered well pump off grid",
+    "secondaryKeywords": [
+      "solar water pump sizing",
+      "off grid water pumping solar",
+      "dc submersible pump solar"
+    ],
+    "searchIntent": "A rural property owner wants to size a solar array and controller to pump water from a well without grid power or a large battery bank.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Hybrid Inverter Now or a Separate Battery Inverter Later?",
+    "slug": "hybrid-inverter-vs-battery-inverter-later",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2026-12-24T08:00:00Z",
+    "primaryKeyword": "hybrid inverter or add a battery inverter later",
+    "secondaryKeywords": [
+      "hybrid vs ac coupled battery cost",
+      "future battery inverter choice",
+      "storage ready inverter decision"
+    ],
+    "searchIntent": "A buyer unsure about future storage wants to weigh paying for a hybrid inverter today against adding a separate battery inverter when the battery finally arrives.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Idaho Solar: Great Sun Fighting Some of the Cheapest Hydropower",
+    "slug": "solar-panels-in-idaho",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-24T16:00:00Z",
+    "primaryKeyword": "solar panels in idaho",
+    "secondaryKeywords": [
+      "idaho solar",
+      "idaho net metering",
+      "solar in idaho"
+    ],
+    "searchIntent": "Idaho enjoys strong intermountain summer sun yet leans on inexpensive hydropower, so low retail rates stretch payback and make utility-specific net-metering terms decisive.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Can You Refinance a Solar Loan, and Does It Actually Save Money?",
+    "slug": "refinance-solar-loan",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2026-12-25T08:00:00Z",
+    "primaryKeyword": "refinancing a solar loan",
+    "secondaryKeywords": [
+      "refinance solar panel loan",
+      "lower solar loan interest",
+      "solar loan refinance options"
+    ],
+    "searchIntent": "Owners stuck with a high-rate solar loan want to know whether refinancing into a cheaper product is possible and what fees eat into the savings.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payment-comparison"
+    ]
+  },
+  {
+    "title": "Sizing Solar for a 1,200 kWh Monthly Electric Bill",
+    "slug": "solar-panels-1200-kwh-per-month",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2026-12-25T16:00:00Z",
+    "primaryKeyword": "solar panels for 1200 kwh per month",
+    "secondaryKeywords": [
+      "1200 kwh solar system",
+      "how big a system for 1200 kwh"
+    ],
+    "searchIntent": "An average-to-higher-usage home wants to translate a 1,200 kWh monthly bill into a target array size.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Electric Oven and Stove Energy Use, Broken Down by the kWh",
+    "slug": "electric-oven-stove-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2026-12-26T08:00:00Z",
+    "primaryKeyword": "how much electricity does an electric oven use",
+    "secondaryKeywords": [
+      "electric stove kwh per hour",
+      "cooking electricity usage"
+    ],
+    "searchIntent": "A cook wants realistic kWh figures for an electric oven and stovetop so they can gauge how much cooking adds to usage.",
+    "relatedCalculators": [
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Solar Panels on a Slate Roof: What Makes It Tricky",
+    "slug": "solar-panels-slate-roof",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2026-12-26T16:00:00Z",
+    "primaryKeyword": "solar panels on slate roof",
+    "secondaryKeywords": [
+      "slate roof solar mounting",
+      "solar on slate tiles"
+    ],
+    "searchIntent": "A slate-roof owner wants to understand the specialized hooks, breakage risk, and added labor that mounting on brittle slate demands.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Will Your Power Be Off During a Solar Installation?",
+    "slug": "power-shutoff-during-solar-install",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2026-12-27T08:00:00Z",
+    "primaryKeyword": "will power be off during solar installation",
+    "secondaryKeywords": [
+      "electricity shut off solar install",
+      "power interruption solar day"
+    ],
+    "searchIntent": "A homeowner wants to know when and for how long the crew must cut power during the install so they can plan around the outage.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Critter Guards for Solar Panels: Options and Costs",
+    "slug": "solar-panel-critter-guards",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2026-12-27T16:00:00Z",
+    "primaryKeyword": "solar panel critter guard cost",
+    "secondaryKeywords": [
+      "bird netting for solar panels",
+      "squirrel guard solar installation"
+    ],
+    "searchIntent": "A homeowner wants to compare mesh critter guards and bird netting, their installed cost, and how well each keeps animals out.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Heat Pump Water Heater Electricity Use vs Electric Resistance",
+    "slug": "heat-pump-water-heater-usage",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2026-12-28T08:00:00Z",
+    "primaryKeyword": "heat pump water heater electricity usage",
+    "secondaryKeywords": [
+      "heat pump water heater kwh",
+      "hpwh vs electric resistance cost",
+      "hybrid water heater energy use"
+    ],
+    "searchIntent": "A homeowner replacing a water heater wants to compare the annual kWh of a heat-pump model against a standard electric-resistance tank.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Battery Backup for a Sump Pump: Keeping the Basement Dry",
+    "slug": "battery-backup-for-a-sump-pump",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2026-12-28T16:00:00Z",
+    "primaryKeyword": "battery backup for a sump pump",
+    "secondaryKeywords": [
+      "sump pump battery during storm",
+      "basement flooding power outage",
+      "sump pump backup power"
+    ],
+    "searchIntent": "A homeowner in a flood-prone area wants to size a battery that keeps a sump pump cycling through the storm outages that threaten to flood the basement.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Is 100% Offset the Goal? Picking an Offset That Saves the Most",
+    "slug": "best-solar-offset-for-savings",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2026-12-29T08:00:00Z",
+    "primaryKeyword": "best solar offset percentage",
+    "secondaryKeywords": [
+      "ideal solar offset target",
+      "should i offset 100 percent",
+      "right size solar for savings"
+    ],
+    "searchIntent": "Buyers deciding how big to build want to see why targeting slightly under full offset can maximize dollar savings where exports are paid below retail.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Indiana Solar After Net Metering: Why Self-Use Now Rules the Math",
+    "slug": "solar-panels-in-indiana",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-29T16:00:00Z",
+    "primaryKeyword": "solar panels in indiana",
+    "secondaryKeywords": [
+      "indiana solar",
+      "indiana net metering",
+      "solar in indiana"
+    ],
+    "searchIntent": "Indiana has phased out full-retail net metering in favor of lower instantaneous-netting credits, pushing homeowners toward self-consumption and storage to protect the economics.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How Much Inverter Clipping Should You Actually Tolerate?",
+    "slug": "how-much-clipping-is-acceptable",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2026-12-30T08:00:00Z",
+    "primaryKeyword": "how much inverter clipping is acceptable",
+    "secondaryKeywords": [
+      "acceptable clipping losses",
+      "clipping by climate and orientation",
+      "is inverter clipping bad"
+    ],
+    "searchIntent": "A homeowner who sees a flat-topped production estimate wants a rule of thumb for how much clipping is fine given their climate and roof orientation.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Cause Roof Leaks? Separating Myth From Risk",
+    "slug": "do-solar-panels-cause-roof-leaks",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2026-12-30T16:00:00Z",
+    "primaryKeyword": "do solar panels cause roof leaks",
+    "secondaryKeywords": [
+      "solar panel roof penetration leaks",
+      "do roof mounts leak",
+      "flashing solar panel leaks"
+    ],
+    "searchIntent": "This explainer states up front that properly flashed mounts rarely leak, then details what actually causes leaks and how to prevent them.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Iowa Solar: Farm-Country Ground Mounts and Steady Net Metering",
+    "slug": "solar-panels-in-iowa",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2026-12-31T08:00:00Z",
+    "primaryKeyword": "solar panels in iowa",
+    "secondaryKeywords": [
+      "iowa solar",
+      "iowa net metering",
+      "farm solar iowa"
+    ],
+    "searchIntent": "Iowa combines retained net metering with abundant rural land, making farm-scale ground-mounted arrays a distinctive path alongside cold-winter production planning.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Sizing a Battery to Carry a Whole Home Through a Multi-Day Outage",
+    "slug": "battery-sizing-multi-day-outage",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2026-12-31T16:00:00Z",
+    "primaryKeyword": "sizing a battery for a multi-day power outage",
+    "secondaryKeywords": [
+      "whole home battery for long outage",
+      "multi day backup power",
+      "battery and solar recharge during outage"
+    ],
+    "searchIntent": "A homeowner preparing for rare but long grid failures wants to size battery capacity and solar recharge to run a whole house for several days.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Paying Off a Solar Loan Early: What It Saves and What It Doesn't",
+    "slug": "pay-off-solar-loan-early",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-01T08:00:00Z",
+    "primaryKeyword": "paying off solar loan early",
+    "secondaryKeywords": [
+      "solar loan prepayment",
+      "solar loan reamortization",
+      "prepay solar loan tax credit"
+    ],
+    "searchIntent": "Borrowers planning to apply the federal credit as a lump sum want to see how prepaying a solar loan changes the payment and total interest and where reamortization matters.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "federal-tax-credit-calculator"
+    ]
+  },
+  {
+    "title": "Kansas Solar: Big Plains Sun Versus Demand Charges on Rooftops",
+    "slug": "solar-panels-in-kansas",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-01T16:00:00Z",
+    "primaryKeyword": "solar panels in kansas",
+    "secondaryKeywords": [
+      "kansas solar",
+      "kansas demand charges",
+      "solar in kansas"
+    ],
+    "searchIntent": "Kansas offers powerful Great Plains sun, but demand charges and the absence of a strong net-metering mandate mean bill structure matters as much as sunshine to the payoff.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Solar Payback With Partial Shade on the Roof",
+    "slug": "solar-payback-with-partial-shade",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-01-02T08:00:00Z",
+    "primaryKeyword": "solar payback with shade",
+    "secondaryKeywords": [
+      "shaded roof solar break even",
+      "partial shading payback period",
+      "trees and solar payback"
+    ],
+    "searchIntent": "Buyers with a partly shaded roof want to see how lost production from shading stretches their payback and when the project stops making sense.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Claiming the Solar Tax Credit on a Co-Owned Home",
+    "slug": "solar-tax-credit-co-owned-home",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-01-02T16:00:00Z",
+    "primaryKeyword": "solar tax credit for a co-owned home",
+    "secondaryKeywords": [
+      "split solar tax credit between owners",
+      "unmarried co-owners solar credit",
+      "solar credit shared ownership"
+    ],
+    "searchIntent": "Two unmarried co-owners who paid for one solar system want to know how the credit is divided between their separate tax returns.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator"
+    ]
+  },
+  {
+    "title": "Choosing an Off-Grid Inverter: Sine Wave, Surge, and Charging",
+    "slug": "off-grid-inverter-selection",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-01-03T08:00:00Z",
+    "primaryKeyword": "how to choose an off grid inverter",
+    "secondaryKeywords": [
+      "pure sine wave vs modified sine",
+      "inverter charger off grid",
+      "off grid inverter surge rating"
+    ],
+    "searchIntent": "Someone building an off-grid system wants to know how to match inverter wattage, surge capacity, and waveform to their loads and battery voltage.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Solar Savings for an All-Electric Home With No Gas Bill",
+    "slug": "solar-savings-all-electric-home",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-01-03T16:00:00Z",
+    "primaryKeyword": "solar savings all electric home",
+    "secondaryKeywords": [
+      "all electric house solar",
+      "no gas home solar savings",
+      "solar for electric-only home"
+    ],
+    "searchIntent": "Owners of a home that runs everything on electricity want to understand why their higher baseline load makes solar savings larger than a mixed gas-and-electric household.",
+    "relatedCalculators": [
+      "heat-pump-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "What a Solar Inverter Replacement Really Costs, Line by Line",
+    "slug": "inverter-replacement-cost",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-04T08:00:00Z",
+    "primaryKeyword": "solar inverter replacement cost",
+    "secondaryKeywords": [
+      "cost to replace solar inverter",
+      "inverter swap labor cost",
+      "out of pocket inverter replacement"
+    ],
+    "searchIntent": "An owner planning for the day an inverter dies wants a line-by-line look at hardware, labor, and permit costs and when a warranty covers them.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Kentucky Solar: Coal-Cheap Power and Shrinking Export Credits",
+    "slug": "solar-panels-in-kentucky",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-04T16:00:00Z",
+    "primaryKeyword": "solar panels in kentucky",
+    "secondaryKeywords": [
+      "kentucky solar",
+      "kentucky net metering",
+      "solar in kentucky"
+    ],
+    "searchIntent": "Kentucky's coal-heavy grid keeps retail rates low, and its shift from retail net metering to avoided-cost export credits makes right-sizing to on-site use critical.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Will a Battery Actually Save You Money on Time-of-Use Rates?",
+    "slug": "battery-time-of-use-savings-math",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-05T08:00:00Z",
+    "primaryKeyword": "will a battery save money on time-of-use rates",
+    "secondaryKeywords": [
+      "battery peak off-peak price spread",
+      "time of use battery breakeven",
+      "battery rate arbitrage math"
+    ],
+    "searchIntent": "A homeowner on a time-of-use plan wants to run the breakeven math on whether the peak-to-off-peak price spread covers the cost of cycling a battery every day.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Louisiana Solar: Hurricane-Ready Panels in a Low-Rate Market",
+    "slug": "solar-panels-in-louisiana",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-05T16:00:00Z",
+    "primaryKeyword": "solar panels in louisiana",
+    "secondaryKeywords": [
+      "louisiana solar",
+      "hurricane rated solar",
+      "solar in louisiana"
+    ],
+    "searchIntent": "Louisiana's hot, hurricane-exposed Gulf climate demands wind-rated mounting while its low rates and avoided-cost buyback push owners to value resilience and self-use over exports.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "The 'No-Cost' Solar Loan: What's Really Baked Into the Price",
+    "slug": "no-cost-solar-loan-reality",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-06T08:00:00Z",
+    "primaryKeyword": "no cost solar loan",
+    "secondaryKeywords": [
+      "zero out of pocket solar",
+      "solar loan buydown",
+      "no money down solar cost"
+    ],
+    "searchIntent": "Shoppers hearing a no-cost or nothing-out-of-pocket pitch want to understand the rate buydown that quietly raises the cash-equivalent price of the system.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payment-comparison"
+    ]
+  },
+  {
+    "title": "Solar Panels for 2,500 kWh a Month: How Big Should You Go?",
+    "slug": "solar-panels-2500-kwh-per-month",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-01-06T16:00:00Z",
+    "primaryKeyword": "solar panels for 2500 kwh per month",
+    "secondaryKeywords": [
+      "2500 kwh solar system size",
+      "large home solar sizing"
+    ],
+    "searchIntent": "A high-consumption household wants the array size and panel count needed to cover a heavy 2,500 kWh monthly load.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much Electricity Does a Dishwasher Use per Cycle?",
+    "slug": "dishwasher-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-01-07T08:00:00Z",
+    "primaryKeyword": "how much electricity does a dishwasher use",
+    "secondaryKeywords": [
+      "dishwasher kwh per cycle",
+      "dishwasher energy consumption"
+    ],
+    "searchIntent": "A homeowner wants per-cycle and monthly consumption for a dishwasher, including the hidden cost of heated drying.",
+    "relatedCalculators": [
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Who Pays if Solar Panels Cause a Roof Leak?",
+    "slug": "solar-and-roof-warranty-coordination",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-01-07T16:00:00Z",
+    "primaryKeyword": "solar roof leak responsibility",
+    "secondaryKeywords": [
+      "who fixes solar roof leak",
+      "roofer vs installer warranty"
+    ],
+    "searchIntent": "A homeowner wants to know how to coordinate roofer and solar-installer warranties so a future leak does not fall through the cracks.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Can Solar Panels Be Installed in Winter? What to Expect",
+    "slug": "installing-solar-in-winter",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-01-08T08:00:00Z",
+    "primaryKeyword": "can solar panels be installed in winter",
+    "secondaryKeywords": [
+      "winter solar installation",
+      "installing solar in cold weather"
+    ],
+    "searchIntent": "A homeowner considering a cold-season install wants to know how snow, frozen roofs, and short days affect scheduling and safety.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "How to File a Homeowners Insurance Claim for Solar Damage",
+    "slug": "filing-solar-insurance-claim",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-01-08T16:00:00Z",
+    "primaryKeyword": "how to file a solar insurance claim",
+    "secondaryKeywords": [
+      "solar damage insurance claim steps",
+      "claim for storm-damaged panels"
+    ],
+    "searchIntent": "An owner with storm or impact damage wants a step-by-step process for documenting and filing a homeowners claim on their array.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "What It Costs to Run an All-Electric Home Each Month",
+    "slug": "all-electric-home-running-cost",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-01-09T08:00:00Z",
+    "primaryKeyword": "all electric home running cost",
+    "secondaryKeywords": [
+      "cost to run a fully electric house",
+      "electric only home utility cost",
+      "all electric home monthly bill"
+    ],
+    "searchIntent": "A homeowner going all-electric wants a realistic monthly running-cost estimate once heating, hot water, cooking, and driving all run on electricity.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Raise Your Property Taxes?",
+    "slug": "do-solar-panels-raise-property-taxes",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-01-09T16:00:00Z",
+    "primaryKeyword": "do solar panels raise property taxes",
+    "secondaryKeywords": [
+      "solar added home value property tax",
+      "does solar increase assessment",
+      "property tax after solar install"
+    ],
+    "searchIntent": "This article leads with the fact that many states exempt the added value, then explains how assessments and exemptions actually treat a solar system.",
+    "relatedCalculators": [
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Why Home Batteries Age Even When You Barely Use Them",
+    "slug": "battery-calendar-vs-cycle-aging",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-10T08:00:00Z",
+    "primaryKeyword": "battery calendar aging vs cycle aging",
+    "secondaryKeywords": [
+      "home battery calendar degradation",
+      "does a battery age when not used",
+      "battery aging factors"
+    ],
+    "searchIntent": "A long-term owner wants to understand how calendar aging and cycle aging each eat into a home battery, and why a lightly used pack still loses capacity over the years.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Maine Solar: High Rates and Heat Pumps Make Cold-Climate Sense",
+    "slug": "solar-panels-in-maine",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-10T16:00:00Z",
+    "primaryKeyword": "solar panels in maine",
+    "secondaryKeywords": [
+      "maine solar",
+      "maine net energy billing",
+      "solar in maine"
+    ],
+    "searchIntent": "Maine's high electricity rates, favorable net energy billing, and rapid heat-pump adoption combine to make solar surprisingly strong despite short, snowy winters.",
+    "relatedCalculators": [
+      "heat-pump-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "What Those Current Transformer Clamps in Your Panel Are For",
+    "slug": "consumption-monitoring-cts",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-11T08:00:00Z",
+    "primaryKeyword": "solar consumption monitoring cts",
+    "secondaryKeywords": [
+      "current transformer clamps solar",
+      "whole home consumption monitoring",
+      "ct clamps net metering data"
+    ],
+    "searchIntent": "A new system owner wants to understand what the current transformer clamps do and why whole-home consumption data matters for self-use and battery planning.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Will Your Solar Loan Payment Beat Your Monthly Savings?",
+    "slug": "solar-loan-payment-vs-savings-cash-flow",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-01-11T16:00:00Z",
+    "primaryKeyword": "solar loan payment vs savings",
+    "secondaryKeywords": [
+      "solar cash flow positive",
+      "does solar loan payment exceed savings",
+      "monthly solar payment vs bill"
+    ],
+    "searchIntent": "Financed buyers want to know whether the loan payment stays below their bill savings every month, including low-production winter months when cash flow can turn negative.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payment-comparison"
+    ]
+  },
+  {
+    "title": "Mississippi Solar: Deep-South Sun in an Emerging Rooftop Market",
+    "slug": "solar-panels-in-mississippi",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-12T08:00:00Z",
+    "primaryKeyword": "solar panels in mississippi",
+    "secondaryKeywords": [
+      "mississippi solar",
+      "mississippi net metering",
+      "solar in mississippi"
+    ],
+    "searchIntent": "Mississippi is an emerging Deep-South market with abundant sun but modest bill-credit compensation, so the economics hinge on covering heavy summer cooling loads directly.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Solar Payback on a Vacation or Second Home",
+    "slug": "solar-payback-second-home",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-01-12T16:00:00Z",
+    "primaryKeyword": "solar payback on a second home",
+    "secondaryKeywords": [
+      "vacation home solar payback",
+      "part-time home solar break even",
+      "second property solar returns"
+    ],
+    "searchIntent": "Owners of a lightly occupied second home want to understand why low usage and part-time presence lengthen the payback compared with a primary residence.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Are Solar Rebates Taxable Income? What the IRS Expects",
+    "slug": "are-solar-rebates-taxable",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-01-13T08:00:00Z",
+    "primaryKeyword": "are solar rebates taxable income",
+    "secondaryKeywords": [
+      "is a solar rebate taxable",
+      "do you report solar rebates on taxes",
+      "utility rebate tax treatment"
+    ],
+    "searchIntent": "A homeowner who received a utility or state rebate wants to know whether that money counts as taxable income when they file.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "How to Size a Solar Charge Controller for Amps and Volts",
+    "slug": "solar-charge-controller-sizing",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-01-13T16:00:00Z",
+    "primaryKeyword": "how to size a solar charge controller",
+    "secondaryKeywords": [
+      "charge controller amp rating",
+      "mppt controller sizing formula",
+      "what size charge controller do i need"
+    ],
+    "searchIntent": "A DIY builder wants a simple method to calculate the amp rating and voltage window a charge controller needs for their panel array and battery bank.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "What It Costs to Add an EV Charger During a Solar Install",
+    "slug": "ev-charger-install-cost-with-solar",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-14T08:00:00Z",
+    "primaryKeyword": "ev charger installation cost",
+    "secondaryKeywords": [
+      "level 2 charger install with solar",
+      "cost to add ev charger",
+      "ev charger wiring cost"
+    ],
+    "searchIntent": "Homeowners bundling an EV charger with panels want a breakdown of the wiring, breaker, and labor costs and why doing it during the solar job can be cheaper.",
+    "relatedCalculators": [
+      "ev-charging-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Home Battery in a Hot Garage vs a Conditioned Room: Does It Matter?",
+    "slug": "battery-hot-garage-vs-conditioned-space",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-14T16:00:00Z",
+    "primaryKeyword": "solar battery in a hot garage",
+    "secondaryKeywords": [
+      "battery temperature and lifespan",
+      "conditioned space for home battery",
+      "garage battery heat"
+    ],
+    "searchIntent": "A homeowner deciding where to mount storage wants to know how the heat of an uninsulated garage compares with a conditioned space for battery output and lifespan.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Missouri Solar: Utility Rebates and Four-Season Production Swings",
+    "slug": "solar-panels-in-missouri",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-15T08:00:00Z",
+    "primaryKeyword": "solar panels in missouri",
+    "secondaryKeywords": [
+      "missouri solar",
+      "missouri solar rebates",
+      "solar in missouri"
+    ],
+    "searchIntent": "Missouri's solar uptake has leaned on utility rebate programs, and its four-season climate produces pronounced summer-to-winter output swings owners must plan around.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Rapid Shutdown Rules by Code Year: What Applies to Your Install",
+    "slug": "rapid-shutdown-nec-editions",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-15T16:00:00Z",
+    "primaryKeyword": "rapid shutdown nec code editions",
+    "secondaryKeywords": [
+      "module level rapid shutdown code",
+      "rapid shutdown by code year",
+      "electrical code solar shutdown history"
+    ],
+    "searchIntent": "A homeowner wants to see how rapid shutdown requirements tightened across successive electrical code editions and which one their jurisdiction enforces.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Is Solar a Scam? Sorting the Real Risks From the Hype",
+    "slug": "is-solar-a-scam",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-01-16T08:00:00Z",
+    "primaryKeyword": "is solar a scam",
+    "secondaryKeywords": [
+      "are solar panels a scam",
+      "solar sales scam warning signs",
+      "is going solar worth the risk"
+    ],
+    "searchIntent": "This piece states that solar itself is legitimate, then separates the genuine physics and savings from the misleading sales pitches that give it a bad name.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Montana Solar: High-Altitude Sun and a Huge Seasonal Daylight Swing",
+    "slug": "solar-panels-in-montana",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-16T16:00:00Z",
+    "primaryKeyword": "solar panels in montana",
+    "secondaryKeywords": [
+      "montana solar",
+      "montana net metering",
+      "solar in montana"
+    ],
+    "searchIntent": "Montana blends high-altitude, high-clarity sun with one of the country's largest seasonal daylight swings, while retained net metering supports banking summer surplus for winter.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Solar Savings on an Electric or Heat-Pump Water Heater",
+    "slug": "solar-savings-electric-water-heater",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-01-17T08:00:00Z",
+    "primaryKeyword": "solar savings electric water heater",
+    "secondaryKeywords": [
+      "solar for water heating",
+      "heat pump water heater solar",
+      "offset water heater with solar"
+    ],
+    "searchIntent": "Owners with an electric or heat-pump water heater want to estimate how much of that steady load solar can cover and add to their yearly savings.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Sizing a Battery Today for the Heat Pump and EV You Add Later",
+    "slug": "future-proofing-battery-capacity",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-17T16:00:00Z",
+    "primaryKeyword": "future-proofing home battery capacity",
+    "secondaryKeywords": [
+      "battery sizing for future electrification",
+      "battery for heat pump and ev",
+      "plan battery capacity ahead"
+    ],
+    "searchIntent": "A homeowner electrifying in stages wants to decide how much battery capacity to buy now so it still fits after a future heat pump and EV raise demand.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Nebraska Solar: How an All-Public-Power State Shapes the Rules",
+    "slug": "solar-panels-in-nebraska",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-18T08:00:00Z",
+    "primaryKeyword": "solar panels in nebraska",
+    "secondaryKeywords": [
+      "nebraska solar",
+      "public power solar",
+      "solar in nebraska"
+    ],
+    "searchIntent": "Nebraska is unique as an all-public-power state, so its municipal and public-district utilities, not a statewide mandate, set the net-metering and interconnection terms that drive returns.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Main Panel Upgrade for Solar: What Actually Drives the Cost",
+    "slug": "main-panel-upgrade-cost-drivers",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-18T16:00:00Z",
+    "primaryKeyword": "main service panel upgrade cost",
+    "secondaryKeywords": [
+      "200 amp panel upgrade for solar",
+      "service upgrade cost solar",
+      "why panel upgrade costs vary"
+    ],
+    "searchIntent": "Buyers told they need a service upgrade want to know which factors, from amperage to meter relocation and utility rules, push the panel-upgrade price up or down.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "What a 9kW Solar System Produces and Who It Fits",
+    "slug": "9kw-solar-system",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-01-19T08:00:00Z",
+    "primaryKeyword": "9kw solar system output",
+    "secondaryKeywords": [
+      "9kw solar system panels",
+      "9 kw solar production per year"
+    ],
+    "searchIntent": "Shoppers quoted a 9 kW array want its yearly generation and the household usage profile it comfortably serves.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Hot Tubs and Your Power Bill: What They Really Cost to Run",
+    "slug": "hot-tub-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-01-19T16:00:00Z",
+    "primaryKeyword": "how much electricity does a hot tub use",
+    "secondaryKeywords": [
+      "hot tub kwh per month",
+      "spa electricity consumption"
+    ],
+    "searchIntent": "A spa owner wants to quantify how much a hot tub adds to monthly usage and how climate and settings swing that figure.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Removing and Reinstalling Solar Panels for a New Roof",
+    "slug": "remove-reinstall-solar-for-roof-replacement",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-01-20T08:00:00Z",
+    "primaryKeyword": "remove and reinstall solar panels for roof",
+    "secondaryKeywords": [
+      "solar removal for reroofing",
+      "detach and reset solar cost"
+    ],
+    "searchIntent": "An owner who needs to re-roof under an existing array wants to know how detach-and-reset works and what it typically costs.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "How Weather Delays a Solar Installation and What to Do",
+    "slug": "solar-install-weather-delays",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-01-20T16:00:00Z",
+    "primaryKeyword": "solar installation weather delays",
+    "secondaryKeywords": [
+      "rain delay solar install",
+      "weather postpone solar installation"
+    ],
+    "searchIntent": "A homeowner whose install date is threatened by weather wants to know which conditions force a reschedule and how crews handle it.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Filing a Solar Panel Warranty Claim Without the Runaround",
+    "slug": "filing-solar-warranty-claim",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-01-21T08:00:00Z",
+    "primaryKeyword": "how to file a solar panel warranty claim",
+    "secondaryKeywords": [
+      "solar warranty claim process",
+      "manufacturer solar claim steps"
+    ],
+    "searchIntent": "An owner with a failing panel or inverter wants to know how to invoke the manufacturer or workmanship warranty and what proof they need.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "A Home Electrification Roadmap: What Order to Electrify In",
+    "slug": "home-electrification-roadmap",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-01-21T16:00:00Z",
+    "primaryKeyword": "home electrification roadmap",
+    "secondaryKeywords": [
+      "order to electrify your home",
+      "electrification plan homeowner",
+      "when to replace gas appliances"
+    ],
+    "searchIntent": "A homeowner planning to ditch fossil fuels wants a sensible sequence for replacing furnace, water heater, stove, and car without overloading their panel or budget.",
+    "relatedCalculators": [
+      "heat-pump-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "How Many Panels Go on a String? Voltage Windows Made Simple",
+    "slug": "solar-string-sizing-basics",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-22T08:00:00Z",
+    "primaryKeyword": "how many panels per string",
+    "secondaryKeywords": [
+      "solar string sizing",
+      "inverter voltage window",
+      "cold weather string voltage"
+    ],
+    "searchIntent": "A curious homeowner wants a plain explanation of how installers decide the number of panels per string within an inverter voltage window.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "New Hampshire Solar: High Rates and No Sales Tax on Your System",
+    "slug": "solar-panels-in-new-hampshire",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-22T16:00:00Z",
+    "primaryKeyword": "solar panels in new hampshire",
+    "secondaryKeywords": [
+      "new hampshire solar",
+      "nh solar",
+      "solar in new hampshire"
+    ],
+    "searchIntent": "New Hampshire's high rates and absence of a state sales tax lower the net installed cost, helping cold-climate arrays pencil out despite winter production dips.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Does Solar Still Pay Back If You Plan to Downsize?",
+    "slug": "solar-payback-when-downsizing",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-01-23T08:00:00Z",
+    "primaryKeyword": "solar payback when downsizing",
+    "secondaryKeywords": [
+      "downsizing home solar",
+      "solar before moving to smaller home",
+      "shrinking usage solar payback"
+    ],
+    "searchIntent": "Owners expecting to move to a smaller home or cut usage want to know whether solar can still break even before their electricity needs shrink.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "How to Actually Sell Your SRECs: Brokers, Markets, and Contracts",
+    "slug": "how-to-sell-srecs",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-01-23T16:00:00Z",
+    "primaryKeyword": "how to sell srecs",
+    "secondaryKeywords": [
+      "srec broker vs aggregator",
+      "srec spot vs long term contract",
+      "register solar for srecs"
+    ],
+    "searchIntent": "An owner in an SREC state wants the step-by-step mechanics of registering their system and choosing between spot sales, brokers, and long-term contracts.",
+    "relatedCalculators": [
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Upgrading Your RV to a Lithium Battery for Solar",
+    "slug": "rv-lithium-battery-solar",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-01-24T08:00:00Z",
+    "primaryKeyword": "rv lithium battery for solar",
+    "secondaryKeywords": [
+      "rv lead acid to lithium upgrade",
+      "lifepo4 for rv solar",
+      "rv battery upgrade considerations"
+    ],
+    "searchIntent": "An RVer with lead-acid batteries wants to know what changes when switching to lithium for solar — capacity, charging profile, and converter compatibility.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Frequent Short Outages or One Long One? Size the Battery Differently",
+    "slug": "battery-frequent-short-vs-rare-long-outages",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-24T16:00:00Z",
+    "primaryKeyword": "sizing a battery for frequent short outages",
+    "secondaryKeywords": [
+      "battery for brief power flickers",
+      "short outages vs long outages battery",
+      "backup for unreliable grid"
+    ],
+    "searchIntent": "A homeowner with a flickery grid wants to know why many brief outages call for a different battery strategy than a single rare multi-day failure.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Is Solar Cheaper Than Just Paying the Electric Company?",
+    "slug": "solar-vs-paying-utility",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-01-25T08:00:00Z",
+    "primaryKeyword": "is solar cheaper than paying the electric company",
+    "secondaryKeywords": [
+      "solar vs staying on the grid cost",
+      "buy solar or keep paying utility",
+      "lifetime cost solar vs utility"
+    ],
+    "searchIntent": "This comparison frames solar as a prepaid decades of electricity and shows when its lifetime cost beats a rising utility bill and when it does not.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "North Dakota Solar: Strong Summer Sun Against Rock-Bottom Rates",
+    "slug": "solar-panels-in-north-dakota",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-25T16:00:00Z",
+    "primaryKeyword": "solar panels in north dakota",
+    "secondaryKeywords": [
+      "north dakota solar",
+      "north dakota electricity rates",
+      "solar in north dakota"
+    ],
+    "searchIntent": "North Dakota gets strong summer sun but sits on some of the nation's cheapest coal-and-wind power, so extremely low rates are the main hurdle to a fast payback.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Does a Home Battery Add Resale Value the Way Panels Do?",
+    "slug": "solar-battery-home-value",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-01-26T08:00:00Z",
+    "primaryKeyword": "does a solar battery add home value",
+    "secondaryKeywords": [
+      "battery resale value",
+      "home battery appraisal",
+      "does storage increase home value"
+    ],
+    "searchIntent": "Owners weighing storage want to know whether a home battery lifts resale value and appraisal like panels or is treated as a depreciating appliance.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How Much a Critical-Load Backup Panel Adds to Your Solar Bill",
+    "slug": "critical-load-panel-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-26T16:00:00Z",
+    "primaryKeyword": "critical load panel cost",
+    "secondaryKeywords": [
+      "backup subpanel cost",
+      "essential loads panel price",
+      "partial backup wiring cost"
+    ],
+    "searchIntent": "Owners planning partial backup want to budget for the subpanel, wiring, and labor of separating critical loads rather than backing up the whole house.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Reading an Inverter Efficiency Curve, Not Just the Headline Number",
+    "slug": "inverter-efficiency-curve",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-27T08:00:00Z",
+    "primaryKeyword": "solar inverter efficiency curve",
+    "secondaryKeywords": [
+      "inverter part load efficiency",
+      "efficiency vs load inverter",
+      "oversized inverter low output loss"
+    ],
+    "searchIntent": "A spec-sheet reader wants to interpret how inverter efficiency shifts across the load range and why an oversized inverter loses ground at low output.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Oklahoma Solar: Plains Sun, Severe Storms, and Weak Net Metering",
+    "slug": "solar-panels-in-oklahoma",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-27T16:00:00Z",
+    "primaryKeyword": "solar panels in oklahoma",
+    "secondaryKeywords": [
+      "oklahoma solar",
+      "oklahoma net metering",
+      "solar in oklahoma"
+    ],
+    "searchIntent": "Oklahoma's Southern Plains deliver strong sun and wind alongside severe-storm and hail exposure, while weak net-metering rules make on-site usage the core of the savings case.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Pairing a Battery With a Generator: How to Size a Smaller Pack",
+    "slug": "battery-generator-hybrid-sizing",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-28T08:00:00Z",
+    "primaryKeyword": "sizing a battery with a backup generator",
+    "secondaryKeywords": [
+      "battery and generator hybrid backup",
+      "downsize battery with generator",
+      "generator battery combo sizing"
+    ],
+    "searchIntent": "A homeowner who already owns or wants a generator wants to size a smaller battery that handles quiet overnight loads while the generator covers extended runtime.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Rhode Island Solar: High Rates and a Strong State Growth Program",
+    "slug": "solar-panels-in-rhode-island",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-28T16:00:00Z",
+    "primaryKeyword": "solar panels in rhode island",
+    "secondaryKeywords": [
+      "rhode island solar",
+      "rhode island renewable energy growth",
+      "solar in rhode island"
+    ],
+    "searchIntent": "Rhode Island couples some of New England's highest rates with a robust state renewable-growth tariff, making dense coastal rooftops worth developing despite limited roof space.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "South Dakota Solar: No Net-Metering Mandate, So Self-Use Wins",
+    "slug": "solar-panels-in-south-dakota",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-01-29T08:00:00Z",
+    "primaryKeyword": "solar panels in south dakota",
+    "secondaryKeywords": [
+      "south dakota solar",
+      "south dakota net metering",
+      "solar in south dakota"
+    ],
+    "searchIntent": "South Dakota has no statewide net-metering mandate, so cold-climate owners must design around self-consumption and storage rather than counting on generous export credits.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "What Solar Monitoring Add-Ons Cost and When They're Worth It",
+    "slug": "solar-monitoring-add-on-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-01-29T16:00:00Z",
+    "primaryKeyword": "solar monitoring cost",
+    "secondaryKeywords": [
+      "consumption monitoring add-on",
+      "panel-level monitoring price",
+      "solar monitoring hardware cost"
+    ],
+    "searchIntent": "Shoppers reviewing quote line items want to know what consumption and panel-level monitoring hardware adds and whether the upgrade earns its price.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Solar vs the Stock Market: Comparing the Real Return",
+    "slug": "solar-roi-vs-stock-market",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-01-30T08:00:00Z",
+    "primaryKeyword": "solar vs stock market investment",
+    "secondaryKeywords": [
+      "solar as an investment",
+      "solar return vs index fund",
+      "is solar a good investment return"
+    ],
+    "searchIntent": "Finance-minded homeowners want to compare the effective, tax-free return of buying solar against putting the same cash into an index fund.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-payback-calculator"
+    ]
+  },
+  {
+    "title": "Which Input Moves Solar Payback the Most? A Sensitivity Check",
+    "slug": "solar-payback-sensitivity-analysis",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-01-30T16:00:00Z",
+    "primaryKeyword": "solar payback sensitivity",
+    "secondaryKeywords": [
+      "what changes solar payback most",
+      "solar payback input ranking",
+      "solar break even sensitivity"
+    ],
+    "searchIntent": "Analytical buyers want each payback input ranked by how many years it swings the break-even point, so they know which assumption to nail down first.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How Much Battery Does an All-Electric Home Really Need?",
+    "slug": "battery-for-all-electric-home",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-01-31T08:00:00Z",
+    "primaryKeyword": "home battery for an all-electric house",
+    "secondaryKeywords": [
+      "battery for gas-free home",
+      "all electric home backup power",
+      "heat pump induction battery sizing"
+    ],
+    "searchIntent": "An owner of a gas-free home with heat pumps and induction cooking wants to size storage that keeps electric heating and cooking loads running when the grid drops.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Grounding and Bonding a Solar System, Explained for Homeowners",
+    "slug": "solar-system-grounding-bonding",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-01-31T16:00:00Z",
+    "primaryKeyword": "solar panel grounding and bonding",
+    "secondaryKeywords": [
+      "solar equipment grounding",
+      "array bonding lightning",
+      "grounding electrode solar"
+    ],
+    "searchIntent": "A homeowner wants a clear picture of how a solar array is grounded and bonded and why it matters for safety and lightning protection.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "11kW Solar Systems: Panel Count, Output, and Ideal Homes",
+    "slug": "11kw-solar-system",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-02-01T08:00:00Z",
+    "primaryKeyword": "11kw solar system how many panels",
+    "secondaryKeywords": [
+      "11kw solar system output",
+      "11 kw solar system size"
+    ],
+    "searchIntent": "Buyers comparing larger quotes want the panel count and annual production behind an 11 kW system.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "How Much Electricity a Well Pump Uses and Why It Spikes",
+    "slug": "well-pump-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-01T16:00:00Z",
+    "primaryKeyword": "how much electricity does a well pump use",
+    "secondaryKeywords": [
+      "well pump kwh usage",
+      "submersible pump energy cost"
+    ],
+    "searchIntent": "A rural homeowner wants to understand a well pump’s intermittent but heavy draw and its impact on monthly kWh.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "How to Measure Shade on Your Own Roof Before Going Solar",
+    "slug": "measure-shade-on-your-roof",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-02-02T08:00:00Z",
+    "primaryKeyword": "how to measure shade for solar",
+    "secondaryKeywords": [
+      "diy solar shade assessment",
+      "check roof shading yourself"
+    ],
+    "searchIntent": "A DIY-minded homeowner wants simple methods and apps for gauging how much shade their roof gets across the day and seasons.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "What Happens When Your Solar Install Fails Inspection",
+    "slug": "failed-solar-inspection",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-02-02T16:00:00Z",
+    "primaryKeyword": "solar failed inspection",
+    "secondaryKeywords": [
+      "solar install failed inspection reasons",
+      "reinspection after solar failure"
+    ],
+    "searchIntent": "A homeowner whose system did not pass the city or utility inspection wants to know common failure reasons and how re-inspection works.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "When to Budget for a Solar Inverter Replacement",
+    "slug": "inverter-replacement-cost-timing",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-02-03T08:00:00Z",
+    "primaryKeyword": "when to replace solar inverter",
+    "secondaryKeywords": [
+      "solar inverter replacement cost",
+      "inverter lifespan budgeting"
+    ],
+    "searchIntent": "A long-term owner wants to know when inverters typically need replacing and how to set money aside for that mid-life expense.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Performance-Based Solar Incentives vs Upfront Rebates",
+    "slug": "performance-based-solar-incentives",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-02-03T16:00:00Z",
+    "primaryKeyword": "performance based solar incentives",
+    "secondaryKeywords": [
+      "production based incentive solar",
+      "pbi vs rebate solar",
+      "how pbi payments work"
+    ],
+    "searchIntent": "A shopper comparing incentive programs wants to understand how production-based payments are metered and paid out versus a one-time upfront rebate.",
+    "relatedCalculators": [
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Powering a Refrigerator Off-Grid Without Draining the Bank",
+    "slug": "off-grid-refrigerator-power",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-02-04T08:00:00Z",
+    "primaryKeyword": "powering a refrigerator off grid",
+    "secondaryKeywords": [
+      "off grid fridge solar sizing",
+      "dc compressor fridge solar",
+      "how much solar to run a fridge off grid"
+    ],
+    "searchIntent": "An off-grid resident wants to size solar and storage to run a refrigerator continuously, and to compare a DC compressor fridge against an AC unit.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much Does a Heat Pump Add to Your Electric Bill?",
+    "slug": "heat-pump-electric-bill-increase",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-04T16:00:00Z",
+    "primaryKeyword": "how much does a heat pump add to your electric bill",
+    "secondaryKeywords": [
+      "heat pump monthly electricity cost",
+      "heat pump kwh usage winter",
+      "electric bill after heat pump"
+    ],
+    "searchIntent": "A homeowner replacing gas or oil heat with a heat pump wants to estimate the added kWh and dollar impact on their electric bill through the seasons.",
+    "relatedCalculators": [
+      "heat-pump-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Is Leasing Solar a Bad Idea? An Honest Look",
+    "slug": "is-leasing-solar-a-bad-idea",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-02-05T08:00:00Z",
+    "primaryKeyword": "is leasing solar worth it",
+    "secondaryKeywords": [
+      "solar lease pros and cons",
+      "downsides of leasing solar panels",
+      "should i lease or buy solar"
+    ],
+    "searchIntent": "This article explains that a lease is not automatically bad but trades the tax credit and best savings for zero upfront cost, and shows who each path suits.",
+    "relatedCalculators": [
+      "solar-payment-comparison",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Tennessee Solar: How the TVA Grid Shapes Rooftop Payback",
+    "slug": "solar-panels-in-tennessee",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-05T16:00:00Z",
+    "primaryKeyword": "solar panels in tennessee",
+    "secondaryKeywords": [
+      "tennessee solar",
+      "tva solar",
+      "solar in tennessee"
+    ],
+    "searchIntent": "Tennessee sits inside the Tennessee Valley Authority grid, where TVA and local power companies, not a conventional state commission, shape the connection and compensation rules for rooftop solar.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Adding a Battery to Solar That Is Already Ten Years Old",
+    "slug": "adding-battery-to-old-solar",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-02-06T08:00:00Z",
+    "primaryKeyword": "adding a battery to old solar panels",
+    "secondaryKeywords": [
+      "retrofit battery aging solar array",
+      "battery for old string inverter",
+      "ac couple battery to old system"
+    ],
+    "searchIntent": "An owner of an aging array wants to know how to add storage to an older system built around a legacy string inverter without ripping out what still works.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Vermont Solar: Strong Net Metering Offsets Short Winter Days",
+    "slug": "solar-panels-in-vermont",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-06T16:00:00Z",
+    "primaryKeyword": "solar panels in vermont",
+    "secondaryKeywords": [
+      "vermont solar",
+      "vermont net metering",
+      "solar in vermont"
+    ],
+    "searchIntent": "Vermont's strong net-metering program and location adders help offset short, snowy winter days, making solar viable in a cold, high-rate, renewables-friendly state.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Why You Should Never Put an Inverter in a Hot Attic",
+    "slug": "inverter-heat-derating-placement",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-02-07T08:00:00Z",
+    "primaryKeyword": "solar inverter heat derating",
+    "secondaryKeywords": [
+      "inverter in hot attic",
+      "inverter shade placement",
+      "inverter temperature derating output"
+    ],
+    "searchIntent": "A homeowner planning where hardware goes wants to know how attic heat derates inverter output and shortens life compared with a shaded exterior wall.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "3kW Solar System Cost: Pricing a Small, Low-Usage Setup",
+    "slug": "3kw-solar-system-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-02-07T16:00:00Z",
+    "primaryKeyword": "3kw solar system cost",
+    "secondaryKeywords": [
+      "3 kw solar price",
+      "small solar system cost",
+      "cost of a 3kw system"
+    ],
+    "searchIntent": "Owners of a small or low-usage home want the installed price range for a 3 kW array and why per-watt pricing runs higher at tiny sizes.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much the Federal Tax Credit Improves Your Solar ROI",
+    "slug": "tax-credit-effect-on-solar-roi",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-02-08T08:00:00Z",
+    "primaryKeyword": "tax credit impact on solar roi",
+    "secondaryKeywords": [
+      "tax credit and solar return",
+      "roi with and without tax credit",
+      "how much does the tax credit help"
+    ],
+    "searchIntent": "Buyers want to quantify how claiming the federal credit lifts their return and payback versus running the numbers without any incentive.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "West Virginia Solar: Cheap Coal Power and Ridgeline Shade",
+    "slug": "solar-panels-in-west-virginia",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-08T16:00:00Z",
+    "primaryKeyword": "solar panels in west virginia",
+    "secondaryKeywords": [
+      "west virginia solar",
+      "wv solar",
+      "solar in west virginia"
+    ],
+    "searchIntent": "West Virginia's cheap coal-based power and heavily forested, mountainous terrain create shading and payback challenges even though the state retains net metering.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Monocrystalline vs Polycrystalline Panels: Does It Matter?",
+    "slug": "monocrystalline-vs-polycrystalline-panels",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-02-09T08:00:00Z",
+    "primaryKeyword": "monocrystalline vs polycrystalline solar panels",
+    "secondaryKeywords": [
+      "mono vs poly solar panels",
+      "are monocrystalline panels better",
+      "poly panel efficiency vs mono"
+    ],
+    "searchIntent": "This comparison states that mono panels now dominate for good reason, then details the real efficiency, space, and cost differences for a home buyer.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How to Compare Home Batteries Without Getting Lost in Brand Names",
+    "slug": "how-to-compare-home-batteries",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-02-09T16:00:00Z",
+    "primaryKeyword": "how to compare home batteries",
+    "secondaryKeywords": [
+      "home battery spec comparison",
+      "usable kwh vs rated kwh",
+      "compare battery power and warranty"
+    ],
+    "searchIntent": "A shopper wants a brand-neutral checklist for lining up batteries on usable capacity, continuous power, efficiency, and warranty rather than marketing labels.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Wisconsin Solar: A Utility-by-Utility Buyback Patchwork",
+    "slug": "solar-panels-in-wisconsin",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-10T08:00:00Z",
+    "primaryKeyword": "solar panels in wisconsin",
+    "secondaryKeywords": [
+      "wisconsin solar",
+      "wisconsin net metering",
+      "solar in wisconsin"
+    ],
+    "searchIntent": "Wisconsin's solar economics vary utility by utility because buyback rates are set locally, and its Great Lakes climate brings lake-effect clouds and heavy winter snow.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "How Adding a Battery Later Changes Your Solar Payback",
+    "slug": "payback-adding-battery-later",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-02-10T16:00:00Z",
+    "primaryKeyword": "payback adding a battery later",
+    "secondaryKeywords": [
+      "battery retrofit payback",
+      "add storage years later break even",
+      "battery after solar payback"
+    ],
+    "searchIntent": "Owners who went solar first want to see how bolting on a battery years later affects the combined payback versus buying storage upfront.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-payback-calculator"
+    ]
+  },
+  {
+    "title": "Does a Utility Rebate Shrink Your Federal Solar Tax Credit?",
+    "slug": "rebate-reduces-solar-tax-credit-basis",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-02-11T08:00:00Z",
+    "primaryKeyword": "does a utility rebate reduce the solar tax credit",
+    "secondaryKeywords": [
+      "rebate reduces solar credit basis",
+      "subtract rebate before solar credit",
+      "incentive order of operations tax credit"
+    ],
+    "searchIntent": "A homeowner who got both a rebate and the federal credit wants to know whether the rebate must be subtracted from cost before the credit is calculated.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Solar Generators for RV and Camping: What Size You Need",
+    "slug": "solar-generator-for-rv-camping",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-02-11T16:00:00Z",
+    "primaryKeyword": "solar generator for rv camping",
+    "secondaryKeywords": [
+      "portable power station for rv",
+      "solar generator sizing camping",
+      "best solar generator size boondocking"
+    ],
+    "searchIntent": "A camper deciding on an all-in-one solar generator wants to match its watt-hour capacity and input to the loads and days between charges on a trip.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "Do You Even Need Power Optimizers on an Unshaded Roof?",
+    "slug": "power-optimizers-without-shade",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-02-12T08:00:00Z",
+    "primaryKeyword": "do i need power optimizers without shade",
+    "secondaryKeywords": [
+      "optimizers on unshaded roof",
+      "are power optimizers worth it",
+      "string vs optimizers no shade"
+    ],
+    "searchIntent": "A homeowner with a clean, unshaded roof wants to decide whether per-panel optimizers add enough value to justify their cost and extra parts.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Wyoming Solar: High-Altitude Sun Versus the Cheapest Coal Power",
+    "slug": "solar-panels-in-wyoming",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-12T16:00:00Z",
+    "primaryKeyword": "solar panels in wyoming",
+    "secondaryKeywords": [
+      "wyoming solar",
+      "wyoming net metering",
+      "solar in wyoming"
+    ],
+    "searchIntent": "Wyoming's high-altitude plains get abundant sun and wind, but the nation's cheapest coal power and a net-metering system cap combine to lengthen the road to payback.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "15kW Solar System Cost: What a Large Home Array Runs",
+    "slug": "15kw-solar-system-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-02-13T08:00:00Z",
+    "primaryKeyword": "15kw solar system cost",
+    "secondaryKeywords": [
+      "15 kw solar price",
+      "large solar system cost",
+      "cost of a 15kw system"
+    ],
+    "searchIntent": "Owners of a big, high-consumption home want the installed cost of a 15 kW system and how economies of scale change the per-watt figure.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much Power Does a 12kW Solar System Really Make?",
+    "slug": "12kw-solar-system",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-02-13T16:00:00Z",
+    "primaryKeyword": "12kw solar system production",
+    "secondaryKeywords": [
+      "12kw solar system output",
+      "12 kw solar how many panels"
+    ],
+    "searchIntent": "Owners of large or all-electric homes want a realistic annual output figure for a 12 kW array before committing.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Space Heaters and Electricity: The True Cost of Plug-In Heat",
+    "slug": "space-heater-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-14T08:00:00Z",
+    "primaryKeyword": "space heater electricity usage",
+    "secondaryKeywords": [
+      "space heater kwh per hour",
+      "portable heater energy cost"
+    ],
+    "searchIntent": "A homeowner leaning on portable plug-in heaters wants to measure how much those 1,500-watt units inflate winter usage.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Chimney Shadows and Solar Panels: Planning Around the Problem",
+    "slug": "chimney-shade-solar-panels",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-02-14T16:00:00Z",
+    "primaryKeyword": "chimney shading solar panels",
+    "secondaryKeywords": [
+      "chimney shadow on solar array",
+      "panel layout around chimney"
+    ],
+    "searchIntent": "A homeowner with a chimney near the array wants to understand its moving shadow and how designers lay panels out to dodge it.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Where Installers Run Conduit and Wiring for Your Solar",
+    "slug": "solar-conduit-wiring-routing",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-02-15T08:00:00Z",
+    "primaryKeyword": "solar panel conduit routing",
+    "secondaryKeywords": [
+      "solar wiring run options",
+      "interior vs exterior solar conduit"
+    ],
+    "searchIntent": "A homeowner concerned about appearance wants to know where conduit and wiring get routed and whether interior runs are possible.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "How to Track Your Solar Panels' Real Degradation Over Time",
+    "slug": "track-solar-degradation",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-02-15T16:00:00Z",
+    "primaryKeyword": "how to track solar panel degradation",
+    "secondaryKeywords": [
+      "measure solar output decline",
+      "compare solar production year over year"
+    ],
+    "searchIntent": "A data-driven owner wants a method for measuring their own array’s year-over-year output loss and spotting abnormal decline early.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How Many Extra Solar Panels Does an EV Need?",
+    "slug": "extra-solar-panels-for-ev",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-16T08:00:00Z",
+    "primaryKeyword": "extra solar panels for an ev",
+    "secondaryKeywords": [
+      "panels needed per ev mile",
+      "solar array size for electric car",
+      "add panels for ev charging"
+    ],
+    "searchIntent": "A homeowner wants to know how many additional panels their yearly EV mileage adds to a solar array.",
+    "relatedCalculators": [
+      "ev-charging-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Permits and Inspections for Adding a Home Battery, Step by Step",
+    "slug": "home-battery-permits-inspection",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-02-16T16:00:00Z",
+    "primaryKeyword": "home battery permit and inspection process",
+    "secondaryKeywords": [
+      "battery storage permit",
+      "energy storage inspection",
+      "adding battery interconnection"
+    ],
+    "searchIntent": "A homeowner adding storage wants to know what permits, inspections, and utility sign-offs a battery install triggers and how long each step tends to take.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Solar Savings When You Electrify Your Whole House",
+    "slug": "solar-savings-home-electrification",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-02-17T08:00:00Z",
+    "primaryKeyword": "solar savings with home electrification",
+    "secondaryKeywords": [
+      "electrify everything solar",
+      "solar plus heat pump and ev",
+      "whole home electrification savings"
+    ],
+    "searchIntent": "Owners replacing gas appliances with electric ones want to see how the growing electric load compounds solar savings across heating, hot water, and driving.",
+    "relatedCalculators": [
+      "heat-pump-calculator",
+      "ev-charging-calculator"
+    ]
+  },
+  {
+    "title": "Washington, D.C. Solar: A Top SREC Market on City Rooftops",
+    "slug": "solar-panels-in-washington-dc",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-17T16:00:00Z",
+    "primaryKeyword": "solar panels in washington dc",
+    "secondaryKeywords": [
+      "washington dc solar",
+      "dc srec",
+      "solar in washington dc"
+    ],
+    "searchIntent": "Washington, D.C. runs one of the country's most valuable SREC markets, rewarding even small rowhouse rooftops, though dense urban roofs and historic districts complicate layout and permitting.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Will Your Electrical Service Handle Solar? Volts, Phases, and Amps",
+    "slug": "inverter-electrical-service-compatibility",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-02-18T08:00:00Z",
+    "primaryKeyword": "solar inverter and electrical service size",
+    "secondaryKeywords": [
+      "240v split phase solar",
+      "inverter voltage compatibility home",
+      "service size for solar inverter"
+    ],
+    "searchIntent": "A homeowner wants to know how their home voltage, phase, and service amperage shape which inverter fits and whether an upgrade is needed.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Need Direct Sunlight to Work?",
+    "slug": "do-solar-panels-need-direct-sunlight",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-02-18T16:00:00Z",
+    "primaryKeyword": "do solar panels need direct sunlight",
+    "secondaryKeywords": [
+      "solar panels indirect light",
+      "do panels work in shade",
+      "diffuse light solar production"
+    ],
+    "searchIntent": "This explainer states up front that panels produce from diffuse light too, then quantifies how much less indirect and partial-shade conditions yield.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar in the Pacific Northwest: Bright Summers, Dark Wet Winters",
+    "slug": "solar-in-the-pacific-northwest",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-19T08:00:00Z",
+    "primaryKeyword": "solar in the pacific northwest",
+    "secondaryKeywords": [
+      "pacific northwest solar",
+      "solar in washington and oregon",
+      "pnw solar production"
+    ],
+    "searchIntent": "The Pacific Northwest offsets its dark, wet winters with long, bright summer days, so annual production hinges on banking a big summer surplus against a deep seasonal trough.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Financing a Home Battery: Loans, Interest, and the True Cost",
+    "slug": "financing-a-home-battery",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-02-19T16:00:00Z",
+    "primaryKeyword": "financing a home battery",
+    "secondaryKeywords": [
+      "home battery loan",
+      "battery storage financing options",
+      "cost of financing a battery"
+    ],
+    "searchIntent": "A buyer who cannot pay cash wants to understand how loan terms and interest change the real lifetime cost of a standalone home battery.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "20kW Solar System Cost: Pricing a High-Usage Whole-Home Array",
+    "slug": "20kw-solar-system-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-02-20T08:00:00Z",
+    "primaryKeyword": "20kw solar system cost",
+    "secondaryKeywords": [
+      "20 kw solar price",
+      "very large residential solar cost",
+      "cost of a 20kw system"
+    ],
+    "searchIntent": "Buyers with heavy electric heating, pools, or multiple EVs want the installed price of a 20 kW array and whether such a large residential system is worth building.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Desert Southwest Solar: Managing Heat, Dust, and Monsoon Season",
+    "slug": "solar-in-the-desert-southwest",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-20T16:00:00Z",
+    "primaryKeyword": "solar in the desert southwest",
+    "secondaryKeywords": [
+      "desert solar",
+      "solar in hot climates",
+      "southwest solar heat"
+    ],
+    "searchIntent": "Solar in the desert Southwest must be engineered for extreme heat that derates panels, blowing dust that soils glass, and monsoon storms, all of which shave output from otherwise elite sun.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "How Much Your Loan APR Stretches Solar Payback",
+    "slug": "solar-payback-by-loan-apr",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-02-21T08:00:00Z",
+    "primaryKeyword": "solar payback by loan interest rate",
+    "secondaryKeywords": [
+      "loan apr and solar break even",
+      "interest rate effect on payback",
+      "solar payback high interest loan"
+    ],
+    "searchIntent": "Financed buyers want to see roughly how many extra years each point of loan APR adds to the time it takes solar to break even.",
+    "relatedCalculators": [
+      "solar-loan-calculator",
+      "solar-payback-calculator"
+    ]
+  },
+  {
+    "title": "Do You Get the Solar Tax Credit If You Lease Your Panels?",
+    "slug": "own-vs-lease-solar-tax-credit",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-02-21T16:00:00Z",
+    "primaryKeyword": "solar tax credit for leased panels",
+    "secondaryKeywords": [
+      "do leased solar panels qualify for tax credit",
+      "who claims the credit on a solar lease",
+      "ppa solar tax credit eligibility"
+    ],
+    "searchIntent": "A homeowner weighing a lease or PPA wants to know why the ownership requirement means the third party, not them, claims the federal credit.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-payment-comparison"
+    ]
+  },
+  {
+    "title": "Off-Grid Solar Wire Gauge: Sizing Cable for 12V and 24V",
+    "slug": "off-grid-solar-wire-sizing",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-02-22T08:00:00Z",
+    "primaryKeyword": "off grid solar wire gauge",
+    "secondaryKeywords": [
+      "solar cable size calculator off grid",
+      "wire size for 12v solar",
+      "voltage drop off grid wiring"
+    ],
+    "searchIntent": "A DIY installer wants to choose wire gauge for panel, battery, and inverter runs so voltage drop stays low and the wiring stays safe at low-voltage current.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "Solar Savings for a Big Family in a High-Usage Home",
+    "slug": "solar-savings-large-household",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-02-22T16:00:00Z",
+    "primaryKeyword": "solar savings for a large family",
+    "secondaryKeywords": [
+      "solar for high usage home",
+      "big household solar savings",
+      "solar for a family of five"
+    ],
+    "searchIntent": "Large households want to understand why their above-average consumption lets solar erase a bigger share of the bill than a typical two-person home.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "The 120% Rule: When Solar Backfeed Forces a Panel Upgrade",
+    "slug": "solar-120-percent-rule-busbar",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-02-23T08:00:00Z",
+    "primaryKeyword": "solar 120 percent rule",
+    "secondaryKeywords": [
+      "busbar rating solar backfeed",
+      "main panel upgrade for solar",
+      "line side tap vs load side"
+    ],
+    "searchIntent": "A homeowner wants to understand the busbar backfeed rule that decides whether solar can connect to the existing panel or needs an upgrade or line-side tap.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Solar in Hurricane-Prone Gulf States: Wind Codes and Salt Air",
+    "slug": "solar-in-hurricane-prone-gulf-states",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-23T16:00:00Z",
+    "primaryKeyword": "solar in gulf coast hurricane states",
+    "secondaryKeywords": [
+      "gulf coast solar",
+      "hurricane solar panels",
+      "coastal wind rated solar"
+    ],
+    "searchIntent": "Solar across the hurricane-prone Gulf states lives or dies on wind-uplift-rated mounting, stricter coastal building codes, salt-air corrosion, and insurance considerations unique to storm country.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Will You Ever Hit Your Battery Warranty Throughput Limit?",
+    "slug": "battery-warranty-throughput-projection",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-02-24T08:00:00Z",
+    "primaryKeyword": "how much battery throughput will i use",
+    "secondaryKeywords": [
+      "battery throughput warranty limit",
+      "estimate battery cycles per year",
+      "battery energy throughput math"
+    ],
+    "searchIntent": "A cautious buyer wants to project annual energy throughput against the warranty cap to see whether normal use would ever reach the guaranteed limit.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "High-Altitude Solar in the Mountain West: Thin Air, Intense UV",
+    "slug": "high-altitude-solar-mountain-west",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-02-24T16:00:00Z",
+    "primaryKeyword": "high altitude solar in the mountain west",
+    "secondaryKeywords": [
+      "high altitude solar",
+      "rocky mountain solar",
+      "mountain west solar"
+    ],
+    "searchIntent": "High-altitude Mountain West arrays receive intense, thin-air sunlight and elevated UV that boost output, but must also handle deep cold, heavy snow, and wide daily temperature swings.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "What Solar Costs on a Mobile or Manufactured Home",
+    "slug": "mobile-home-solar-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-02-25T08:00:00Z",
+    "primaryKeyword": "solar panels on a mobile home cost",
+    "secondaryKeywords": [
+      "manufactured home solar price",
+      "solar for a double-wide",
+      "mobile home roof solar cost"
+    ],
+    "searchIntent": "Manufactured-home owners want to know how roof structure, ground-mount options, and lot ownership change the cost of going solar on a mobile home.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "Sizing Your Solar Array for an EV You Haven't Bought Yet",
+    "slug": "sizing-solar-for-future-ev",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-02-25T16:00:00Z",
+    "primaryKeyword": "sizing solar for a future ev",
+    "secondaryKeywords": [
+      "future-proof solar for ev",
+      "add headroom for electric car"
+    ],
+    "searchIntent": "A homeowner planning to buy an electric car later wants to build charging headroom into the system they install today.",
+    "relatedCalculators": [
+      "ev-charging-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "What Powers an All-Electric Home and How Many kWh It Takes",
+    "slug": "all-electric-home-electricity-usage",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-26T08:00:00Z",
+    "primaryKeyword": "all electric home electricity usage",
+    "secondaryKeywords": [
+      "all electric house kwh per month",
+      "no gas home energy use"
+    ],
+    "searchIntent": "A homeowner going gas-free wants a realistic total-kWh picture once heating, hot water, and cooking are all electric.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Flat vs Pitched Roofs for Solar: The Real Trade-Offs",
+    "slug": "flat-vs-pitched-roof-solar",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-02-26T16:00:00Z",
+    "primaryKeyword": "flat vs pitched roof solar",
+    "secondaryKeywords": [
+      "flat versus sloped roof solar",
+      "tilt racking vs flush mount"
+    ],
+    "searchIntent": "A homeowner comparing roof types wants an honest look at how flat and pitched roofs differ in output, cost, and layout for solar.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
+  },
+  {
+    "title": "The Net Meter Swap: The Utility's Part of Going Solar",
+    "slug": "net-meter-installation",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-02-27T08:00:00Z",
+    "primaryKeyword": "net meter installation for solar",
+    "secondaryKeywords": [
+      "bidirectional meter swap solar",
+      "utility meter change for solar"
+    ],
+    "searchIntent": "A new solar owner wants to understand the utility’s bidirectional meter swap, when it happens, and why it gates permission to operate.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "What Happens to Solar Panels at the End of Their Life?",
+    "slug": "solar-system-end-of-life",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-02-27T16:00:00Z",
+    "primaryKeyword": "solar system end of life",
+    "secondaryKeywords": [
+      "decommissioning solar panels",
+      "removing an old solar system"
+    ],
+    "searchIntent": "An owner nearing the end of their system’s service life wants to understand decommissioning, removal, and the choices at end of life.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Sizing Solar for a Fully Electrified Home: EV, Heat Pump, Induction",
+    "slug": "sizing-solar-for-electrification",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-02-28T08:00:00Z",
+    "primaryKeyword": "sizing solar for home electrification",
+    "secondaryKeywords": [
+      "solar for all electric home",
+      "how many panels for electrified home",
+      "solar plus heat pump plus ev sizing"
+    ],
+    "searchIntent": "A homeowner electrifying heat, hot water, cooking, and driving wants to size a solar array against the much larger combined electric load.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Home Wind Turbine vs Solar Panels: Which Makes Sense?",
+    "slug": "home-wind-turbine-vs-solar",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-02-28T16:00:00Z",
+    "primaryKeyword": "home wind turbine vs solar panels",
+    "secondaryKeywords": [
+      "residential wind vs solar",
+      "small wind turbine for home",
+      "wind or solar for a house"
+    ],
+    "searchIntent": "This comparison explains why rooftop solar beats a small wind turbine for most homes and the rare siting conditions where residential wind competes.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Putting a Dollar Value on Never Losing Power",
+    "slug": "value-of-backup-power",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-03-01T08:00:00Z",
+    "primaryKeyword": "dollar value of backup power",
+    "secondaryKeywords": [
+      "what is backup power worth",
+      "cost of a power outage to a home",
+      "value of home battery backup"
+    ],
+    "searchIntent": "A homeowner weighing a battery on more than payback wants a method to price spoiled food, hotel nights, and lost work into the value of backup power.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Solar in the Cold, Snowy North: Snow Load and Winter Output",
+    "slug": "solar-in-cold-snowy-northern-states",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-01T16:00:00Z",
+    "primaryKeyword": "solar in cold snowy northern states",
+    "secondaryKeywords": [
+      "northern states solar",
+      "snow load solar panels",
+      "winter solar production"
+    ],
+    "searchIntent": "Solar in the cold, snowy northern states is shaped by roof snow load, winter production shortfalls, and the reflected-light bonus that fresh snow can add on clear days.",
+    "relatedCalculators": [
+      "how-many-solar-panels-do-i-need",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Backup Gateways vs Transfer Switches: What Actually Islands a Home",
+    "slug": "backup-gateway-transfer-switch",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-03-02T08:00:00Z",
+    "primaryKeyword": "solar backup gateway vs transfer switch",
+    "secondaryKeywords": [
+      "automatic transfer switch solar",
+      "backup gateway islanding",
+      "whole home backup switch"
+    ],
+    "searchIntent": "A homeowner planning battery backup wants to know what a backup gateway or transfer switch does to safely disconnect from the grid and power the house.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "How Much Solar Saves If You Run a Hot Tub Year-Round",
+    "slug": "solar-savings-hot-tub",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-03-02T16:00:00Z",
+    "primaryKeyword": "solar savings with a hot tub",
+    "secondaryKeywords": [
+      "hot tub electricity cost solar",
+      "spa solar savings",
+      "offset hot tub with solar"
+    ],
+    "searchIntent": "Hot tub and spa owners want to estimate the year-round electricity that solar can offset and how it changes their overall savings picture.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar in the Humid Southeast: Heavy AC Loads and Storm Season",
+    "slug": "solar-in-the-humid-southeast",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-03T08:00:00Z",
+    "primaryKeyword": "solar in the humid southeast",
+    "secondaryKeywords": [
+      "southeast solar",
+      "humid climate solar",
+      "solar for air conditioning load"
+    ],
+    "searchIntent": "Solar in the humid Southeast is sized around heavy air-conditioning loads, frequent thunderstorms, and haze, with abundant cooling-season sun aligning production to peak demand.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Why Solar Payback Runs Long Where Electricity Is Cheap",
+    "slug": "solar-payback-low-electricity-rates",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-03-03T16:00:00Z",
+    "primaryKeyword": "solar payback with low electricity rates",
+    "secondaryKeywords": [
+      "cheap electricity solar payback",
+      "low rate solar break even",
+      "is solar worth it low rates"
+    ],
+    "searchIntent": "Buyers in low-rate utility territory want to understand why a cheap per-kWh price stretches payback and what would have to change to shorten it.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "State Solar Tax Credits: How They Stack on the Federal One",
+    "slug": "state-solar-tax-credits",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-03-04T08:00:00Z",
+    "primaryKeyword": "state solar tax credits",
+    "secondaryKeywords": [
+      "states with a solar tax credit",
+      "state vs federal solar credit",
+      "how state solar credits work"
+    ],
+    "searchIntent": "A homeowner wants to understand how a separate state income-tax credit for solar is claimed and how it interacts with the federal credit.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Does RV Rooftop Solar Charge While You Drive?",
+    "slug": "rv-solar-charging-while-driving",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-03-04T16:00:00Z",
+    "primaryKeyword": "does rv solar charge while driving",
+    "secondaryKeywords": [
+      "rv solar vs alternator charging",
+      "solar and dc-dc charger rv",
+      "charging rv batteries on the road"
+    ],
+    "searchIntent": "An RVer wants to know whether rooftop solar keeps charging in motion and how it works alongside the vehicle alternator and a DC-DC charger.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar on New Construction: Bundled Cost vs a Later Retrofit",
+    "slug": "new-construction-solar-cost",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-03-05T08:00:00Z",
+    "primaryKeyword": "solar on new construction cost",
+    "secondaryKeywords": [
+      "builder solar package cost",
+      "solar in a new build",
+      "new home solar vs retrofit price"
+    ],
+    "searchIntent": "Buyers of a new build want to weigh the price of a builder-bundled solar package against adding panels themselves after closing.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "How Much Extra Battery to Buy for Winter and Years of Wear",
+    "slug": "oversizing-battery-for-winter-and-degradation",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-03-05T16:00:00Z",
+    "primaryKeyword": "how much extra battery capacity to buy",
+    "secondaryKeywords": [
+      "oversize battery for degradation",
+      "battery capacity buffer winter",
+      "battery headroom sizing"
+    ],
+    "searchIntent": "A buyer wants to know how much headroom to add to a battery so cold weather and years of capacity fade do not leave it short later on.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Solar in New England: High Rates, Old Roofs, and Real Winters",
+    "slug": "solar-in-new-england",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-06T08:00:00Z",
+    "primaryKeyword": "solar in new england",
+    "secondaryKeywords": [
+      "new england solar",
+      "northeast solar",
+      "solar in high rate states"
+    ],
+    "searchIntent": "Solar in New England contends with high electricity rates, older and complex roofs, and genuine winters, a mix that rewards careful roof assessment and often pairs well with heat pumps.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Keeping Solar Monitoring Online: Wi-Fi, Ethernet, and Dead Spots",
+    "slug": "solar-monitoring-connectivity",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-03-06T16:00:00Z",
+    "primaryKeyword": "solar monitoring wifi connection",
+    "secondaryKeywords": [
+      "solar monitoring offline fix",
+      "inverter ethernet vs wifi",
+      "monitoring gateway signal"
+    ],
+    "searchIntent": "A system owner wants practical guidance on connecting inverter monitoring to the network and preventing the dropouts that hide production data.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Do Solar Panels Cause Health Problems? The EMF Myth",
+    "slug": "solar-panel-health-myths",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-03-07T08:00:00Z",
+    "primaryKeyword": "do solar panels cause health problems",
+    "secondaryKeywords": [
+      "solar panel emf safety",
+      "are solar panels dangerous to health",
+      "solar inverter emf myth"
+    ],
+    "searchIntent": "This article states plainly that home solar poses no established health risk, then addresses EMF, toxicity, and fire fears with what the evidence shows.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar on the Great Plains: Wind, Hail Country, and Open Land",
+    "slug": "solar-on-the-great-plains",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-07T16:00:00Z",
+    "primaryKeyword": "solar on the great plains",
+    "secondaryKeywords": [
+      "great plains solar",
+      "ground mount solar plains",
+      "tornado alley solar"
+    ],
+    "searchIntent": "Solar on the Great Plains must be sited for relentless wind and hail-belt storms, and the region's wide-open land makes ground-mounted arrays an especially attractive option.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar Savings When Your Utility Bills Demand Charges",
+    "slug": "solar-savings-demand-charges",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-03-08T08:00:00Z",
+    "primaryKeyword": "solar savings with demand charges",
+    "secondaryKeywords": [
+      "residential demand charge solar",
+      "solar and peak demand fees",
+      "battery for demand charges"
+    ],
+    "searchIntent": "Owners on a rate with residential demand charges want to understand why panels alone barely dent that fee and where a battery is needed to save.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Battery Backup for Winter Storms: Cold, Heat Loads, and Runtime",
+    "slug": "battery-for-winter-storm-outages",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-03-08T16:00:00Z",
+    "primaryKeyword": "home battery for winter power outages",
+    "secondaryKeywords": [
+      "battery in cold weather outage",
+      "backup heat during winter outage",
+      "winter storm battery runtime"
+    ],
+    "searchIntent": "A homeowner in a cold region wants to size a battery for winter outages while accounting for reduced cold-weather capacity and the heavy loads of staying warm.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "heat-pump-calculator"
+    ]
+  },
+  {
+    "title": "Solar in the Great Lakes Region: Lake-Effect Clouds and Snow",
+    "slug": "solar-in-the-great-lakes-region",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-09T08:00:00Z",
+    "primaryKeyword": "solar in the great lakes region",
+    "secondaryKeywords": [
+      "great lakes solar",
+      "midwest solar",
+      "lake effect clouds solar"
+    ],
+    "searchIntent": "Solar in the Great Lakes region works around persistent lake-effect cloud cover and heavy snow, so accurate production modeling and winter planning are central to sizing.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Solar Interconnection Fees: The Utility Charges Quotes Skip",
+    "slug": "solar-interconnection-fees",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-03-09T16:00:00Z",
+    "primaryKeyword": "solar interconnection fees",
+    "secondaryKeywords": [
+      "utility interconnection charges",
+      "solar application fee",
+      "net metering setup fee"
+    ],
+    "searchIntent": "Homeowners comparing quotes want to understand the application, study, and metering charges a utility levies to connect a solar system to the grid.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Sizing Solar When Shade Takes Part of Your Roof Off the Table",
+    "slug": "sizing-solar-with-partial-shade",
+    "cluster": "Sizing (expansion)",
+    "category": "System Sizing",
+    "publishDate": "2027-03-10T08:00:00Z",
+    "primaryKeyword": "sizing solar system with partial shade",
+    "secondaryKeywords": [
+      "solar sizing limited roof space",
+      "partial shade panel count"
+    ],
+    "searchIntent": "A homeowner whose usable roof is reduced by shade wants to size a system around the panels that will actually perform.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Base Load vs Peak Load: Reading the Shape of Your Power Use",
+    "slug": "base-load-vs-peak-load-home",
+    "cluster": "Electricity usage (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-03-10T16:00:00Z",
+    "primaryKeyword": "base load vs peak load home electricity",
+    "secondaryKeywords": [
+      "household base load explained",
+      "peak demand home energy"
+    ],
+    "searchIntent": "A data-minded homeowner wants to separate their always-on base load from short peak spikes and why the distinction matters for solar and storage.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Which Roof Shapes Work Best for Solar Panels?",
+    "slug": "roof-shape-solar-suitability",
+    "cluster": "Roof & shading (expansion)",
+    "category": "Roof & Shading",
+    "publishDate": "2027-03-11T08:00:00Z",
+    "primaryKeyword": "best roof shape for solar",
+    "secondaryKeywords": [
+      "gable vs hip roof solar",
+      "roof geometry for solar panels"
+    ],
+    "searchIntent": "A homeowner wants to know how gable, hip, gambrel, and other roof shapes affect how many panels fit and how well they produce.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Setting Up Your Solar Monitoring App After Installation",
+    "slug": "solar-monitoring-setup",
+    "cluster": "Installation (expansion)",
+    "category": "Installation",
+    "publishDate": "2027-03-11T16:00:00Z",
+    "primaryKeyword": "how to set up solar monitoring",
+    "secondaryKeywords": [
+      "register solar monitoring app",
+      "connect inverter to wifi"
+    ],
+    "searchIntent": "A brand-new solar owner wants a walkthrough for registering the monitoring app and confirming every panel reports correctly.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "What Solar Panel Maintenance Actually Costs Each Year",
+    "slug": "solar-maintenance-cost-per-year",
+    "cluster": "Maintenance & lifespan (expansion)",
+    "category": "Maintenance & Lifespan",
+    "publishDate": "2027-03-12T08:00:00Z",
+    "primaryKeyword": "solar maintenance cost per year",
+    "secondaryKeywords": [
+      "annual solar upkeep cost",
+      "lifetime solar operating cost"
+    ],
+    "searchIntent": "A prospective or current owner wants a realistic annual operating-and-maintenance budget to fold into their long-term solar math.",
+    "relatedCalculators": [
+      "solar-roi-calculator",
+      "solar-panel-cost-calculator"
+    ]
+  },
+  {
+    "title": "Electric vs Gas Appliances: Which Costs More to Run?",
+    "slug": "electric-vs-gas-appliance-cost",
+    "cluster": "Electrification (expansion)",
+    "category": "Electricity Usage",
+    "publishDate": "2027-03-12T16:00:00Z",
+    "primaryKeyword": "electric vs gas appliance running cost",
+    "secondaryKeywords": [
+      "gas vs electric operating cost",
+      "cost to run electric vs gas dryer",
+      "compare fuel cost home appliances"
+    ],
+    "searchIntent": "A homeowner weighing electric against gas versions of a dryer, stove, or water heater wants a method to compare their real running costs on local rates.",
+    "relatedCalculators": [
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "AC and DC Disconnects: The Switches That Make Solar Safe to Service",
+    "slug": "solar-disconnect-switches",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-03-13T08:00:00Z",
+    "primaryKeyword": "solar disconnect switches explained",
+    "secondaryKeywords": [
+      "ac disconnect vs dc disconnect",
+      "solar service disconnect",
+      "utility disconnect solar"
+    ],
+    "searchIntent": "A homeowner wants to understand the AC and DC disconnect switches on a solar install and why utilities and electricians require them.",
+    "relatedCalculators": [
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Coastal Solar: Beating Salt-Air Corrosion Near the Ocean",
+    "slug": "solar-in-coastal-salt-air-climates",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-13T16:00:00Z",
+    "primaryKeyword": "coastal solar salt air corrosion",
+    "secondaryKeywords": [
+      "coastal solar panels",
+      "salt air corrosion solar",
+      "marine grade solar racking"
+    ],
+    "searchIntent": "Solar installed near the coast faces salt-air corrosion that attacks racking and connectors, making marine-grade hardware and corrosion-resistant mounting the deciding design factors.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar Payback on a West- or East-Facing Roof",
+    "slug": "solar-payback-west-facing-roof",
+    "cluster": "Payback (expansion)",
+    "category": "Payback",
+    "publishDate": "2027-03-14T08:00:00Z",
+    "primaryKeyword": "solar payback west facing roof",
+    "secondaryKeywords": [
+      "east facing solar payback",
+      "roof orientation and payback",
+      "non-south roof solar break even"
+    ],
+    "searchIntent": "Owners without a south-facing roof want to know how east or west orientation trims annual production and lengthens their payback period.",
+    "relatedCalculators": [
+      "solar-payback-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Do You Have to Itemize to Claim the Solar Tax Credit?",
+    "slug": "itemize-for-solar-tax-credit",
+    "cluster": "Incentives (expansion)",
+    "category": "Incentives & Tax Credits",
+    "publishDate": "2027-03-14T16:00:00Z",
+    "primaryKeyword": "do you have to itemize for the solar tax credit",
+    "secondaryKeywords": [
+      "solar tax credit standard deduction",
+      "itemize or standard deduction solar",
+      "claim solar credit without itemizing"
+    ],
+    "searchIntent": "A taxpayer who takes the standard deduction wants reassurance about whether they can still claim the residential clean energy credit for solar.",
+    "relatedCalculators": [
+      "federal-tax-credit-calculator"
+    ]
+  },
+  {
+    "title": "How Much Solar It Takes to Run an RV Air Conditioner Off-Grid",
+    "slug": "solar-to-run-rv-air-conditioner",
+    "cluster": "Off-grid & mobile (expansion)",
+    "category": "Off-Grid & Mobile",
+    "publishDate": "2027-03-15T08:00:00Z",
+    "primaryKeyword": "solar panels to run rv air conditioner off grid",
+    "secondaryKeywords": [
+      "solar for rv ac boondocking",
+      "run rv air conditioner on battery",
+      "soft start rv ac solar"
+    ],
+    "searchIntent": "A boondocker wants a realistic picture of the panels, battery, and inverter needed to run an RV air conditioner off-grid, and why a soft start helps.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Keeping a Home Office Online: Battery Sizing for Remote Work",
+    "slug": "battery-backup-for-home-office",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-03-15T16:00:00Z",
+    "primaryKeyword": "battery backup for a home office",
+    "secondaryKeywords": [
+      "keep working during power outage",
+      "battery for computer and internet",
+      "remote work backup power"
+    ],
+    "searchIntent": "A remote worker wants to size a modest battery that keeps computers, monitors, and internet gear running through the outages that would otherwise stop the workday.",
+    "relatedCalculators": [
+      "solar-battery-calculator"
+    ]
+  },
+  {
+    "title": "Solar Battery vs a Whole-House Standby Generator",
+    "slug": "solar-battery-vs-standby-generator",
+    "cluster": "Myths & comparisons (expansion)",
+    "category": "Myths & Comparisons",
+    "publishDate": "2027-03-16T08:00:00Z",
+    "primaryKeyword": "solar battery vs whole house generator",
+    "secondaryKeywords": [
+      "home battery vs standby generator",
+      "solar backup vs natural gas generator",
+      "battery or generator for whole house"
+    ],
+    "searchIntent": "This comparison contrasts a solar battery with a permanently installed standby generator on runtime, fuel, maintenance, and long-term ownership cost.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Solar in Wildfire Country: Smoke Haze and Backup When Grids Cut",
+    "slug": "solar-in-wildfire-smoke-prone-regions",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-16T16:00:00Z",
+    "primaryKeyword": "solar in wildfire prone regions",
+    "secondaryKeywords": [
+      "wildfire smoke solar",
+      "solar during power shutoffs",
+      "smoke haze solar output"
+    ],
+    "searchIntent": "Solar in wildfire-prone Western regions must account for smoke haze that temporarily cuts output and for public-safety power shutoffs, where paired storage restores resilience.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar Savings on Summer Air Conditioning Bills",
+    "slug": "solar-savings-with-air-conditioning",
+    "cluster": "Savings & ROI (expansion)",
+    "category": "Savings & ROI",
+    "publishDate": "2027-03-17T08:00:00Z",
+    "primaryKeyword": "solar savings on air conditioning",
+    "secondaryKeywords": [
+      "solar to offset ac",
+      "summer cooling solar savings",
+      "air conditioning electric bill solar"
+    ],
+    "searchIntent": "Owners with heavy summer cooling want to see how well midday solar production lines up with peak air-conditioning demand to cut their hottest bills.",
+    "relatedCalculators": [
+      "electricity-bill-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Why the Same Solar System Costs More in Some States",
+    "slug": "regional-solar-cost-differences",
+    "cluster": "Costs (expansion)",
+    "category": "Solar Costs",
+    "publishDate": "2027-03-17T16:00:00Z",
+    "primaryKeyword": "why does solar cost more in some states",
+    "secondaryKeywords": [
+      "regional solar price differences",
+      "solar cost by region",
+      "what makes solar expensive locally"
+    ],
+    "searchIntent": "Readers comparing national averages to local bids want to know how labor rates, permitting friction, and market competition create a wide geographic price spread.",
+    "relatedCalculators": [
+      "solar-panel-cost-calculator",
+      "solar-roi-calculator"
+    ]
+  },
+  {
+    "title": "Sizing an Inverter So You Can Add Panels Down the Road",
+    "slug": "inverter-sizing-for-future-expansion",
+    "cluster": "Inverters & components (expansion)",
+    "category": "Inverters & Components",
+    "publishDate": "2027-03-18T08:00:00Z",
+    "primaryKeyword": "sizing an inverter for future panel expansion",
+    "secondaryKeywords": [
+      "inverter headroom for more panels",
+      "expandable solar inverter",
+      "oversize inverter for expansion"
+    ],
+    "searchIntent": "A homeowner who may add panels later wants to know how to leave inverter headroom now without wasting money on capacity that sits idle.",
+    "relatedCalculators": [
+      "solar-panel-size-calculator",
+      "solar-panel-calculator"
+    ]
+  },
+  {
+    "title": "Solar in Mountainous, Forested Terrain: Ridgelines and Shade",
+    "slug": "solar-in-mountainous-forested-terrain",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-18T16:00:00Z",
+    "primaryKeyword": "solar in mountainous forested terrain",
+    "secondaryKeywords": [
+      "mountain terrain solar",
+      "tree shading solar",
+      "ridgeline shading solar"
+    ],
+    "searchIntent": "Solar in mountainous, forested terrain battles ridgeline horizon shading and tree cover, so sun-path and shade analysis often matter more than raw regional sun figures.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "how-many-solar-panels-do-i-need"
+    ]
+  },
+  {
+    "title": "Using a Home Battery to Dodge Residential Demand Charges",
+    "slug": "battery-for-demand-charges",
+    "cluster": "Batteries (expansion)",
+    "category": "Batteries & Storage",
+    "publishDate": "2027-03-19T08:00:00Z",
+    "primaryKeyword": "home battery for demand charges",
+    "secondaryKeywords": [
+      "residential demand charge battery",
+      "peak demand shaving home",
+      "battery to cut demand fees"
+    ],
+    "searchIntent": "A homeowner billed on a residential demand charge wants to understand how a battery shaves the brief peaks that set those fees and whether it pays off.",
+    "relatedCalculators": [
+      "solar-battery-calculator",
+      "electricity-bill-calculator"
+    ]
+  },
+  {
+    "title": "Matching Solar Design to Your Climate Zone: A Regional Guide",
+    "slug": "solar-panel-design-by-climate-zone",
+    "cluster": "State guides (expansion)",
+    "category": "State Guides",
+    "publishDate": "2027-03-19T16:00:00Z",
+    "primaryKeyword": "solar panel design by climate zone",
+    "secondaryKeywords": [
+      "solar by climate",
+      "regional solar design",
+      "climate zone solar planning"
+    ],
+    "searchIntent": "This guide maps the major US climate zones to the design choices that matter most in each, from heat derating and snow load to wind rating and corrosion protection.",
+    "relatedCalculators": [
+      "solar-panel-calculator",
+      "solar-panel-size-calculator"
+    ]
   }
 ]

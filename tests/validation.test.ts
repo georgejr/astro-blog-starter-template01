@@ -104,12 +104,12 @@ describe('validatePlan', () => {
     relatedCalculators: ['solar-panel-calculator'],
   });
 
-  it('requires exactly 300 rows', () => {
-    const plan = Array.from({ length: 299 }, (_, i) => entry(`slug-${i}`, i));
+  it('requires exactly 500 rows', () => {
+    const plan = Array.from({ length: 499 }, (_, i) => entry(`slug-${i}`, i));
     const issues = validatePlan(plan, []);
-    expect(issues.some((i) => i.message.includes('exactly 300'))).toBe(true);
+    expect(issues.some((i) => i.message.includes('exactly 500'))).toBe(true);
 
-    const fullPlan = Array.from({ length: 300 }, (_, i) => entry(`slug-${i}`, i));
+    const fullPlan = Array.from({ length: 500 }, (_, i) => entry(`slug-${i}`, i));
     expect(validatePlan(fullPlan, [])).toHaveLength(0);
   });
 
