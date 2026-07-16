@@ -1,7 +1,7 @@
 ---
 title: "How Home Solar Batteries Work, From Sunlight to Backup Power"
 description: "How do solar batteries work? A plain-English tour of charging, discharging, backup power, capacity ratings, and the chemistry inside a home battery."
-publishDate: 2026-07-16T08:00:00Z
+publishDate: 2026-07-16T01:00:00Z
 category: "Batteries & Storage"
 tags:
   - solar batteries
