@@ -105,6 +105,24 @@ const structuredData = [
       <Content />
     </div>
 
+    {post.data.tags.length > 0 && (
+      <div class="mt-8 border-t border-slate-200 pt-6">
+        <h2 class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Tags</h2>
+        <ul class="mt-3 flex flex-wrap gap-2">
+          {post.data.tags.map((tag) => (
+            <li>
+              <a
+                href={`/tag/${taxonomySlug(tag)}/`}
+                class="inline-block rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm font-medium text-brand-700 hover:border-brand-300 hover:bg-brand-50"
+              >
+                {tag}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
     <AdSlot name="blog-bottom" format="in-article" />
 
     <RelatedArticles post={post} />
