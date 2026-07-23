@@ -1,0 +1,33 @@
+---
+// Unregisters any service worker previously installed on this origin and clears
+// its caches. A third-party ad/push worker (3nbf4.com, served from /sw.js) was
+// registered here and kept injecting ads in returning visitors' browsers. This
+// site ships no service worker of its own, so unregistering all of them on
+// every page load is safe and removes the ad worker on the visitor's next
+// visit. Paired with the self-destroying /sw.js as a belt-and-suspenders. Once
+// traffic has cycled through and the ad worker is gone everywhere, this
+// component (and public/sw.js) can be removed.
+---
+
+<script is:inline>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .getRegistrations()
+      .then(function (registrations) {
+        registrations.forEach(function (registration) {
+          registration.unregister();
+        });
+      })
+      .catch(function () {});
+    if (window.caches && caches.keys) {
+      caches
+        .keys()
+        .then(function (keys) {
+          keys.forEach(function (key) {
+            caches.delete(key);
+          });
+        })
+        .catch(function () {});
+    }
+  }
+</script>

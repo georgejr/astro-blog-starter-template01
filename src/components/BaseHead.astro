@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import ServiceWorkerCleanup from './ServiceWorkerCleanup.astro';
 
 interface Props {
 	title: string;
@@ -13,6 +14,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 ---
+
+<!-- Remove any previously-installed third-party ad service worker -->
+<ServiceWorkerCleanup />
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
@@ -43,7 +47,6 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
-<meta name='admaven-placement' content='BqTCHqjY4'/>
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
