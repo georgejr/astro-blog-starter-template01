@@ -1,8 +1,6 @@
 ---
 // Two-column article grid shared by the blog index and its pagination pages.
-// An in-feed ad is injected after the fourth card.
 import PostCard from './PostCard.astro';
-import AdSlot from './AdSlot.astro';
 import type { BlogEntry } from '../lib/content';
 
 interface Props {
@@ -13,16 +11,11 @@ const { posts } = Astro.props;
 ---
 
 <ul class="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
-  {posts.map((post, index) => (
+  {posts.map((post) => (
     <>
       <li>
         <PostCard post={post} />
       </li>
-      {index === 3 && (
-        <li class="sm:col-span-2" aria-hidden="true">
-          <AdSlot name="blog-feed" format="in-feed" />
-        </li>
-      )}
     </>
   ))}
 </ul>

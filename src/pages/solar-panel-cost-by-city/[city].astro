@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DisclaimerBox from '../../components/DisclaimerBox.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
-import BidvertiserBanner from '../../components/BidvertiserBanner.astro';
 import { CALCULATOR_LINKS, SITE_NAME } from '../../lib/site';
 import { articleSchema, breadcrumbSchema } from '../../lib/schema';
 import { CITIES, cityAsState, cityState, citySlug } from '../../data/city-solar';
@@ -75,8 +74,6 @@ const structuredData = [
       cost in about <strong>{payback.toFixed(1)} years</strong>. Local shading, roof, and your
       utility's export terms move the real figure.
     </p>
-
-    <BidvertiserBanner />
 
     <h2 class="mt-10 text-2xl font-bold text-slate-900">Estimated system cost and payback in {c.name}</h2>
     <p class="mt-2 text-slate-600">

@@ -7,7 +7,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import FaqSection, { type FaqItem } from './FaqSection.astro';
 import RelatedLinks from './RelatedLinks.astro';
 import DisclaimerBox from './DisclaimerBox.astro';
-import BidvertiserBanner from './BidvertiserBanner.astro';
 import { faqSchema, webAppSchema } from '../lib/schema';
 import { CALCULATOR_LINKS, type NavLink } from '../lib/site';
 
@@ -41,8 +40,6 @@ const structuredData = [
       <slot name="intro" />
     </div>
 
-    <BidvertiserBanner />
-
     <div class="mt-10">
       <slot name="tool" />
     </div>
@@ -52,11 +49,8 @@ const structuredData = [
       <DisclaimerBox />
     </div>
 
-    <BidvertiserBanner />
-
     <div class="mt-14 space-y-14">
       <FaqSection faqs={faqs} />
-      <BidvertiserBanner />
       <RelatedLinks links={related} />
     </div>
   </article>

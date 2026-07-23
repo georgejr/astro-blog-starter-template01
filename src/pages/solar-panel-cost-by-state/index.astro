@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DisclaimerBox from '../../components/DisclaimerBox.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
-import BidvertiserBanner from '../../components/BidvertiserBanner.astro';
 import { CALCULATOR_LINKS } from '../../lib/site';
 import {
   STATE_SOLAR,
@@ -49,8 +48,6 @@ const rows = [...STATE_SOLAR].sort((a, b) => a.name.localeCompare(b.name));
         your address through the calculators.
       </p>
     </div>
-
-    <BidvertiserBanner />
 
     <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
       <table class="w-full min-w-[720px] border-collapse text-sm">

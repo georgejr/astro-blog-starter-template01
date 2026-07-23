@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
-import AdSlot from '../../components/AdSlot.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { CALCULATOR_LINKS } from '../../lib/site';
 import { getPublishedPosts } from '../../lib/content';
@@ -47,7 +46,6 @@ const { category, posts } = Astro.props;
     </ul>
 
     <div class="mx-auto mt-16 max-w-4xl">
-      <AdSlot name="category-ads" />
       <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
     </div>
   </div>

@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
-import AdSlot from '../../../components/AdSlot.astro';
 import PostGrid from '../../../components/PostGrid.astro';
 import Pagination from '../../../components/Pagination.astro';
 import { CALCULATOR_LINKS } from '../../../lib/site';
@@ -45,7 +44,6 @@ const prevUrl = page.currentPage === 2 ? '/blog/' : page.url.prev;
     />
 
     <div class="mx-auto mt-16 max-w-4xl">
-      <AdSlot name="blog-index" />
       <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
     </div>
   </div>
