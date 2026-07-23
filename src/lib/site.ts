@@ -5,6 +5,13 @@ export const SITE_NAME = 'Solar Panel Calculator';
 export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
 export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
 
+// Web3Forms access key for the contact form. Create a free key at
+// https://web3forms.com using the destination inbox (volanosdi@gmail.com) —
+// the key is tied to that address and is safe to expose client-side. While
+// this is '' the contact form shows a "not configured yet" message instead of
+// submitting. Paste the key you receive by email here.
+export const WEB3FORMS_ACCESS_KEY = '8be85f48-7911-4155-8722-b02a2201fcfc';
+
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';
 

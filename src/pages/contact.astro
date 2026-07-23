@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { WEB3FORMS_ACCESS_KEY, SITE_NAME } from '../lib/site';
 ---
 
 <BaseLayout
@@ -14,18 +15,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
     </header>
 
-    {/*
-      TODO: connect this form to a real backend. Options:
-      - Formspark: set action="https://submit-form.com/YOUR_FORM_ID" method="POST"
-      - Tally: replace the form with a Tally embed
-      - Custom API route: point action to a Cloudflare Worker / Pages Function
-    */}
     <form
-      action="#"
+      action="https://api.web3forms.com/submit"
       method="POST"
       class="mt-10 grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:grid-cols-2 sm:p-8"
       data-contact-form
     >
+      {/* Web3Forms configuration (hidden). access_key is tied to the
+          destination inbox and is set in src/lib/site.ts. */}
+      <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+      <input type="hidden" name="subject" value={`New contact message – ${SITE_NAME}`} />
+      <input type="hidden" name="from_name" value={`${SITE_NAME} contact form`} />
+      {/* Honeypot: bots fill this, real users can't see it. Web3Forms rejects
+          any submission where it is checked. */}
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
       <div>
         <label for="contact-name" class="block text-sm font-medium text-slate-700">Name</label>
         <input
@@ -61,25 +65,79 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="sm:col-span-2">
         <button
           type="submit"
-          class="w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-brand-700 sm:w-auto"
+          class="w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:cursor-default disabled:opacity-70 sm:w-auto"
         >
           Send Message
         </button>
       </div>
+      <p
+        data-form-status
+        role="status"
+        aria-live="polite"
+        class="hidden text-sm sm:col-span-2"
+      ></p>
     </form>
   </div>
 </BaseLayout>
 
 <script>
-  // Placeholder handler until a real form backend is connected (see TODO above).
+  // Submit the contact form to Web3Forms over fetch so the visitor stays on the
+  // page, and surface a success/error message. The access_key (from
+  // src/lib/site.ts) determines the destination inbox; while it is empty the
+  // form explains it isn't configured instead of sending a broken request.
   document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
-    form.addEventListener('submit', (event) => {
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const status = form.querySelector<HTMLParagraphElement>('[data-form-status]');
+    const accessKey = form.querySelector<HTMLInputElement>('input[name="access_key"]')?.value ?? '';
+
+    const showStatus = (message: string, kind: 'success' | 'error') => {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.remove('hidden', 'text-brand-700', 'text-red-600');
+      status.classList.add(kind === 'success' ? 'text-brand-700' : 'text-red-600');
+    };
+
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+      if (!accessKey) {
+        showStatus(
+          'The contact form isn’t fully set up yet. Please email us directly at volanosdi@gmail.com.',
+          'error',
+        );
+        return;
+      }
+
+      const originalText = button?.textContent ?? 'Send Message';
       if (button) {
-        button.textContent = 'Thanks! Message noted.';
         button.disabled = true;
-        button.classList.add('opacity-70', 'cursor-default');
+        button.textContent = 'Sending…';
+      }
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form),
+        });
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          form.reset();
+          showStatus('Thanks! Your message has been sent — we’ll get back to you soon.', 'success');
+          if (button) button.textContent = 'Message sent';
+        } else {
+          throw new Error(data.message || 'Submission failed');
+        }
+      } catch {
+        showStatus(
+          'Sorry, something went wrong. Please try again, or email us directly at volanosdi@gmail.com.',
+          'error',
+        );
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
       }
     });
   });
