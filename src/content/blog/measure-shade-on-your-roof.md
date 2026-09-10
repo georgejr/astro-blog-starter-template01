@@ -1,7 +1,7 @@
 ---
 title: "How to Measure Shade on Your Own Roof Before Going Solar"
 description: "How to measure shade for solar yourself: simple observation methods, phone apps, and the seasonal sun-path logic that tells you whether your roof gets enough sun."
-publishDate: 2027-02-02T08:00:00Z
+publishDate: 2032-04-06T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

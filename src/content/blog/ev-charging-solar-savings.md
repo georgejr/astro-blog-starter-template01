@@ -1,7 +1,7 @@
 ---
 title: "Charging an EV With Solar: What It Does to Your Savings"
 description: "EV charging with solar savings, quantified: what a self-produced kilowatt-hour does to your cost per mile versus gasoline and grid power, plus the timing caveats."
-publishDate: 2026-10-27T16:00:00Z
+publishDate: 2028-07-11T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

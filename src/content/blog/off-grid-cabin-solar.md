@@ -1,7 +1,7 @@
 ---
 title: "Solar for a Seasonal Cabin: Power That Waits for You"
 description: "Off grid cabin solar for seasonal use: sizing for weekend loads, keeping batteries healthy through long absences, and protecting the system from winter freeze."
-publishDate: 2026-09-25T16:00:00Z
+publishDate: 2027-04-20T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

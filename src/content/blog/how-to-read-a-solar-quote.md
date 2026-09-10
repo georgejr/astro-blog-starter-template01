@@ -1,7 +1,7 @@
 ---
 title: "Reading a Solar Quote Line by Line"
 description: "How to read a solar quote without guessing: what each spec, production number, price line, and financing term actually means before you sign a solar proposal."
-publishDate: 2026-09-11T08:00:00Z
+publishDate: 2026-09-29T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar quotes

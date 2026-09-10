@@ -1,7 +1,7 @@
 ---
 title: "Solar Panels on a Slate Roof: What Makes It Tricky"
 description: "Solar panels on a slate roof are possible but demanding — brittle tiles, specialized hooks, and scarce installers push labor 10-25% above a shingle job."
-publishDate: 2026-12-26T16:00:00Z
+publishDate: 2030-10-29T08:00:00Z
 category: "Roof & Shading"
 tags:
   - slate roof

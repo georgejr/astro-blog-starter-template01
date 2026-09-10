@@ -1,7 +1,7 @@
 ---
 title: "Hidden Solar Costs Your Installer Might Not Mention"
 description: "The hidden costs of solar panels hide in adders and upgrades a headline quote often leaves out. Here's what pushes the final price past the sticker number."
-publishDate: 2026-09-18T08:00:00Z
+publishDate: 2027-01-05T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

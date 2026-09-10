@@ -1,7 +1,7 @@
 ---
 title: "Solar in the Great Lakes Region: Lake-Effect Clouds and Snow"
 description: "Solar in the Great Lakes region works around persistent lake-effect clouds and heavy snow, so accurate production modeling and winter planning drive good sizing."
-publishDate: 2027-03-09T08:00:00Z
+publishDate: 2033-08-09T08:00:00Z
 category: "State Guides"
 tags:
   - state guide

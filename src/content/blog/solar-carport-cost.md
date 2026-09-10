@@ -1,7 +1,7 @@
 ---
 title: "Solar Carports: Pricing a Panel-Topped Parking Spot"
 description: "What a solar carport cost really includes versus a standard rooftop install: the structural premium per watt, when it beats a ground mount, and how to price one."
-publishDate: 2026-11-02T08:00:00Z
+publishDate: 2028-09-26T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

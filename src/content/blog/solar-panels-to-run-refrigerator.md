@@ -1,7 +1,7 @@
 ---
 title: "Powering a Refrigerator With Solar: The Real Panel Math"
 description: "How many solar panels to run a refrigerator? Usually one, sometimes two. Here's the daily-kWh math for grid-tied offset and true off-grid fridge setups."
-publishDate: 2026-10-02T08:00:00Z
+publishDate: 2027-07-20T08:00:00Z
 category: "System Sizing"
 tags:
   - appliances

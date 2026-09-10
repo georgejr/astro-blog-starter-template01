@@ -1,7 +1,7 @@
 ---
 title: "Is 100% Offset the Goal? Picking an Offset That Saves the Most"
 description: "The best solar offset percentage isn't always 100%. Where exports pay below retail, aiming a little under full offset often saves the most money."
-publishDate: 2026-12-29T08:00:00Z
+publishDate: 2030-12-03T08:00:00Z
 category: "Savings & ROI"
 tags:
   - offset

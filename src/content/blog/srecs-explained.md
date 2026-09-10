@@ -1,7 +1,7 @@
 ---
 title: "SRECs: Earning Certificates for the Power Your Panels Make"
 description: "SRECs let you earn tradable certificates for the electricity your panels generate. Here's what an SREC is, how you earn one per MWh, why prices swing, and how to sell them."
-publishDate: 2026-10-25T08:00:00Z
+publishDate: 2028-06-06T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - srecs

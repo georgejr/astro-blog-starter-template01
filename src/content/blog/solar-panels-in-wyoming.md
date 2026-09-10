@@ -1,7 +1,7 @@
 ---
 title: "Wyoming Solar: High-Altitude Sun Versus the Cheapest Coal Power"
 description: "Solar panels in Wyoming get abundant high-altitude sun, but the nation's cheapest coal power and a net-metering system cap stretch out the payback. Here's the honest math."
-publishDate: 2027-02-12T16:00:00Z
+publishDate: 2032-08-31T08:00:00Z
 category: "State Guides"
 tags:
   - wyoming

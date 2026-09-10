@@ -1,4 +1,26 @@
-export const SITE_NAME = 'Solar Panel Calculator';
+export const SITE_NAME = 'SunMetricLab';
+export const SITE_URL = 'https://sunmetriclab.com';
+
+/**
+ * Date the modeled data inputs (state sun hours, electricity rates, price
+ * tiers) were last reviewed. Shown as "Last updated" on the data pages and
+ * emitted as `dateModified` in their structured data. Bump it whenever
+ * src/data/state-solar.ts, city-solar.ts or state-notes/* change.
+ */
+export const DATA_LAST_UPDATED = '2026-09-10';
+export const DATA_FIRST_PUBLISHED = '2026-07-13';
+
+/**
+ * Status of the 30% federal Residential Clean Energy Credit (IRC 25D). The
+ * July 2025 federal budget law ended it for expenditures made after
+ * December 31, 2025, so a homeowner-purchased system installed in 2026 no
+ * longer qualifies; third-party-owned (leased / PPA) systems can still carry
+ * the separate commercial credit through the installer for a limited time.
+ * The calculators keep the credit as an optional toggle so figures stay
+ * comparable with quotes that include it.
+ */
+export const FEDERAL_CREDIT_NOTE =
+  'The 30% federal Residential Clean Energy Credit ended for systems paid for after December 31, 2025 under the 2025 federal budget law. Net-after-credit figures apply only if you still qualify (for example a 2025 expenditure, or a leased system where the installer passes a credit through). Confirm with a tax professional.';
 
 // Third-party integration IDs. Leave empty until the service is connected —
 // the matching component renders nothing while the value is ''.
@@ -30,7 +52,7 @@ export const NAV_LINKS: NavLink[] = [
   { href: '/solar-battery-calculator/', label: 'Battery' },
   { href: '/solar-panel-cost-by-state/', label: 'Cost by State' },
   { href: '/blog/', label: 'Blog' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/about/', label: 'About' },
 ];
 
 export const CALCULATOR_LINKS: NavLink[] = [
@@ -49,5 +71,14 @@ export const CALCULATOR_LINKS: NavLink[] = [
   { href: '/solar-payment-comparison/', label: 'Cash vs. Loan vs. Lease Comparator' },
 ];
 
-
-
+/**
+ * Short, curated calculator set for hub/listing pages (blog index, category,
+ * tag, state and city indexes). The full CALCULATOR_LINKS list lives in the
+ * footer only, so it is not repeated as boilerplate on every page.
+ */
+export const TOP_CALCULATOR_LINKS: NavLink[] = [
+  { href: '/solar-panel-calculator/', label: 'Solar Panel Calculator' },
+  { href: '/how-many-solar-panels-do-i-need/', label: 'How Many Solar Panels Do I Need?' },
+  { href: '/solar-panel-cost-calculator/', label: 'Solar Panel Cost Calculator' },
+  { href: '/solar-payback-calculator/', label: 'Solar Payback Calculator' },
+];

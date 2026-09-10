@@ -1,7 +1,7 @@
 ---
 title: "kWh per kW: The Production Yardstick Installers Use"
 description: "Solar kWh per kW per year, called specific yield, is how installers compare regions and quotes. What a typical figure looks like across the US and how to use it."
-publishDate: 2026-11-07T16:00:00Z
+publishDate: 2028-12-12T08:00:00Z
 category: "System Sizing"
 tags:
   - specific yield

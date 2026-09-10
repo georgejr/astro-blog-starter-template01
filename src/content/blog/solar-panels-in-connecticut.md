@@ -1,7 +1,7 @@
 ---
 title: "Connecticut: Where Sky-High Electric Rates Do the Heavy Lifting"
 description: "Connecticut's electricity rates rank among the nation's highest, which is what drives solar value there. How the buy-all vs. netting tariff choice shapes the math."
-publishDate: 2026-12-01T16:00:00Z
+publishDate: 2029-11-13T08:00:00Z
 category: "State Guides"
 tags:
   - connecticut

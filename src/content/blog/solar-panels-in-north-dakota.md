@@ -1,7 +1,7 @@
 ---
 title: "North Dakota Solar: Strong Summer Sun Against Rock-Bottom Rates"
 description: "Solar panels in North Dakota get strong summer sun but face some of the nation's cheapest power. How very low electricity rates, not weather, set the payback hurdle."
-publishDate: 2027-01-25T16:00:00Z
+publishDate: 2031-12-23T08:00:00Z
 category: "State Guides"
 tags:
   - north dakota

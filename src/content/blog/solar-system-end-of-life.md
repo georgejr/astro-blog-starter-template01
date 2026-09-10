@@ -1,7 +1,7 @@
 ---
 title: "What Happens to Solar Panels at the End of Their Life?"
 description: "Solar system end of life is rarely a sudden failure. What decommissioning, removal, and recycling really involve, and the choices an owner faces on an aging array."
-publishDate: 2027-02-27T16:00:00Z
+publishDate: 2033-03-29T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - end of life

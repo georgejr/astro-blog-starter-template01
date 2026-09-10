@@ -1,7 +1,7 @@
 ---
 title: "Panel Degradation Quietly Reshapes Your Savings — Here Is the Math"
 description: "Solar panel degradation and savings are linked, but not catastrophically. At a typical 0.5% a year, here's how much output — and money — you lose by year 25."
-publishDate: 2026-10-10T08:00:00Z
+publishDate: 2027-11-09T08:00:00Z
 category: "Savings & ROI"
 tags:
   - degradation

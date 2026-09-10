@@ -1,7 +1,7 @@
 ---
 title: "Adding a Heat Pump? Resize Your Solar Array First"
 description: "Solar panels for a heat pump mean sizing for a load you don't have yet. A heat pump often adds 2–4 kW of solar — and arrives in winter, when production is lowest."
-publishDate: 2026-10-19T16:00:00Z
+publishDate: 2028-03-21T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

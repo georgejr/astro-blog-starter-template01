@@ -1,7 +1,7 @@
 ---
 title: "How to Read an Inverter Datasheet Like an Installer"
 description: "Inverter datasheet explained field by field: rated power, MPPT voltage windows, efficiency figures, and the specs that decide if a unit fits your array."
-publishDate: 2026-09-22T08:00:00Z
+publishDate: 2027-03-02T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

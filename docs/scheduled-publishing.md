@@ -20,11 +20,21 @@ whether an article is public is decided at build time, not at request time.
 
 ## Publication cadence
 
-Generated articles are scheduled 2 per day at **08:00 UTC** and **16:00 UTC**
-(see `content-plan.json`).
+**One article per week, Tuesdays at 08:00 UTC.** The original plan
+(`content-plan.json`) scheduled 2 articles per day; that cadence was retired
+on 2026-09-10 because a faceless, twice-daily stream of generated posts is
+exactly the pattern Google's helpful-content systems demote. The remaining
+queue was re-stamped onto the weekly cadence with
+`node scripts/reschedule-weekly.mjs --write` (order preserved, so every
+cross-article link stays valid). Re-run the script (dry run first) whenever
+the queue is pruned or reordered.
 
-`.github/workflows/scheduled-publish.yml` runs at **08:05** and **16:05 UTC**
-daily. It writes the current UTC timestamp into `.scheduled-build`, commits,
+Editorial policy going forward: the weekly slot goes to one deeper,
+data-backed article (tables, worked examples, a FAQ section that the
+template turns into FAQPage schema). Thin or overlapping queued drafts should
+be merged into a single stronger piece or deleted rather than published as-is.
+
+`.github/workflows/scheduled-publish.yml` runs at **08:05 UTC on Tuesdays**. It writes the current UTC timestamp into `.scheduled-build`, commits,
 and pushes. The push triggers the existing Cloudflare Workers Git
 integration, which runs `npm run build` (content validation + style lint +
 Astro build + internal link check) and `npm run deploy`. The fresh build's
@@ -37,7 +47,7 @@ push cannot re-trigger it, so there is no workflow loop.
 ## Timing caveats
 
 - An article becomes publicly available only after the **first successful
-  build after its `publishDate`**. With the twice-daily schedule this is
+  build after its `publishDate`**. With the weekly schedule this is
   normally within ~5–20 minutes of the slot (GitHub cron can drift a few
   minutes; the Cloudflare build takes 1–2 minutes).
 - If a scheduled build fails (validation error, Cloudflare incident), the

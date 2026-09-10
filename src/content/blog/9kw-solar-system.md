@@ -1,7 +1,7 @@
 ---
 title: "What a 9kW Solar System Produces and Who It Fits"
 description: "A clear look at 9kw solar system output: how many kWh it makes in a year, the panel count and roof space it needs, and the household usage profile it suits."
-publishDate: 2027-01-19T08:00:00Z
+publishDate: 2031-09-23T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

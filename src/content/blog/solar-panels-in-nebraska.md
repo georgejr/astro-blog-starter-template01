@@ -1,7 +1,7 @@
 ---
 title: "Nebraska Solar: How an All-Public-Power State Shapes the Rules"
 description: "Solar panels in Nebraska face a landscape no other state shares: 100% public power. How municipal utilities and public power districts, not a statewide mandate, set your terms."
-publishDate: 2027-01-18T08:00:00Z
+publishDate: 2031-09-09T08:00:00Z
 category: "State Guides"
 tags:
   - nebraska

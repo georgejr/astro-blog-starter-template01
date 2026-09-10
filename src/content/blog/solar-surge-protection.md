@@ -1,7 +1,7 @@
 ---
 title: "Surge Protection for Solar: SPDs, Lightning, and Grid Spikes"
 description: "Solar surge protection uses SPDs to shield inverters and panels from voltage spikes. Here's how Type 1 and Type 2 devices differ and where each belongs."
-publishDate: 2026-11-29T08:00:00Z
+publishDate: 2029-10-09T08:00:00Z
 category: "Inverters & Components"
 tags:
   - surge protection

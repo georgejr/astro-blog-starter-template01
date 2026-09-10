@@ -1,7 +1,7 @@
 ---
 title: "Is Living Off-Grid Even Legal? Permits, Codes, and Gray Areas"
 description: "Off-grid solar is legal in most of the US, but permitting, electrical codes, and local rules complicate it. Where the real requirements and gray areas actually sit."
-publishDate: 2026-12-04T08:00:00Z
+publishDate: 2029-12-18T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

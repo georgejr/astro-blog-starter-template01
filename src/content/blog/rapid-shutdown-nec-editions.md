@@ -1,7 +1,7 @@
 ---
 title: "Rapid Shutdown Rules by Code Year: What Applies to Your Install"
 description: "Rapid shutdown NEC code editions tightened from array-level to module-level control. How the rule evolved and which edition your jurisdiction enforces on a new solar install."
-publishDate: 2027-01-15T16:00:00Z
+publishDate: 2031-08-05T08:00:00Z
 category: "Inverters & Components"
 tags:
   - rapid shutdown

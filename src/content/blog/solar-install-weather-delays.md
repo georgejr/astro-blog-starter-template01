@@ -1,7 +1,7 @@
 ---
 title: "How Weather Delays a Solar Installation and What to Do"
 description: "Which conditions force a solar installation weather delay, why crews reschedule for rain, wind, snow and heat, and how to keep a postponed install on track."
-publishDate: 2027-01-20T16:00:00Z
+publishDate: 2031-10-14T08:00:00Z
 category: "Installation"
 tags:
   - installation

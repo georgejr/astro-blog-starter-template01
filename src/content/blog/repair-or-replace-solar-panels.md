@@ -1,7 +1,7 @@
 ---
 title: "Repair or Replace? Deciding When a Solar Panel Fails"
 description: "A decision framework for solar panel repair or replace: what actually fails, why a module is rarely fixable itself, and when to swap a panel, the wiring, or leave it be."
-publishDate: 2026-10-15T16:00:00Z
+publishDate: 2028-01-25T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

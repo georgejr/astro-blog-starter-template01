@@ -1,7 +1,7 @@
 ---
 title: "What Drives Home Battery Prices? Cells, Capacity, and Installation"
 description: "A home battery quote is more than cells. Where the money goes across capacity, power electronics, and installation labor, and what actually moves the total."
-publishDate: 2026-12-03T08:00:00Z
+publishDate: 2029-12-04T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

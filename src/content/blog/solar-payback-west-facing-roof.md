@@ -1,7 +1,7 @@
 ---
 title: "Solar Payback on a West- or East-Facing Roof"
 description: "Solar payback on a west facing roof runs a little longer than south, not dramatically. How east and west orientation trim production and move your break-even."
-publishDate: 2027-03-14T08:00:00Z
+publishDate: 2033-10-18T08:00:00Z
 category: "Payback"
 tags:
   - payback

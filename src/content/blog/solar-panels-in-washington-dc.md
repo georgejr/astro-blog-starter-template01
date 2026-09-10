@@ -1,7 +1,7 @@
 ---
 title: "Washington, D.C. Solar: A Top SREC Market on City Rooftops"
 description: "Washington, D.C. runs one of the country's most valuable SREC markets, paying even small rowhouse arrays well. Here's how DC's solar economics and urban roofs really work."
-publishDate: 2027-02-17T16:00:00Z
+publishDate: 2032-11-09T08:00:00Z
 category: "State Guides"
 tags:
   - washington dc

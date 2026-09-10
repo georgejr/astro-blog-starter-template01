@@ -1,7 +1,7 @@
 ---
 title: "Solar Panels for 2,500 kWh a Month: How Big Should You Go?"
 description: "How to size solar panels for 2,500 kWh a month — the array size, panel count, and roof area a heavy-usage household actually needs, with the sizing math spelled out."
-publishDate: 2027-01-06T16:00:00Z
+publishDate: 2031-04-01T08:00:00Z
 category: "System Sizing"
 tags:
   - sizing

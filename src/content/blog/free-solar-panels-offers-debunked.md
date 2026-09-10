@@ -1,7 +1,7 @@
 ---
 title: "Those \"Free Solar Panels\" Ads: What You're Actually Signing"
 description: "\"Free solar panels\" almost always means a lease or power purchase agreement. Here's who owns the system, where the catch lives, and how to read the fine print."
-publishDate: 2026-11-30T16:00:00Z
+publishDate: 2029-10-30T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - leases

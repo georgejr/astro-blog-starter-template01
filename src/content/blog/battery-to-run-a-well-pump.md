@@ -1,7 +1,7 @@
 ---
 title: "Can a Home Battery Run a Well Pump? Sizing for a Big Surge Load"
 description: "A home battery can run a well pump, but the startup surge — not the daily energy — is what decides it. Here's how to size for both surge and water use."
-publishDate: 2026-12-21T16:00:00Z
+publishDate: 2030-08-20T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

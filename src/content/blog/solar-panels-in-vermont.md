@@ -1,7 +1,7 @@
 ---
 title: "Vermont Solar: Strong Net Metering Offsets Short Winter Days"
 description: "Solar panels in Vermont pair strong net metering and location adders with high rates to offset short, snowy winter days in a cold, renewables-friendly state."
-publishDate: 2027-02-06T16:00:00Z
+publishDate: 2032-06-08T08:00:00Z
 category: "State Guides"
 tags:
   - vermont

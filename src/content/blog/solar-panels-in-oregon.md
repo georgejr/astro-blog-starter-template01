@@ -1,7 +1,7 @@
 ---
 title: "Oregon's Two Solar Climates: Gray Coast, Sunny High Desert"
 description: "Solar panels in Oregon behave differently west and east of the Cascades. How production, sizing, and payback change from rainy Portland to sunny Bend."
-publishDate: 2026-09-26T16:00:00Z
+publishDate: 2027-05-04T08:00:00Z
 category: "State Guides"
 tags:
   - oregon

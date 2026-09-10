@@ -1,7 +1,7 @@
 ---
 title: "Inverter Lifespan: The Component You'll Likely Replace First"
 description: "Solar inverter lifespan varies by type: string inverters, microinverters, and optimizers age differently. How long each lasts and how to budget a replacement."
-publishDate: 2026-09-30T08:00:00Z
+publishDate: 2027-06-22T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

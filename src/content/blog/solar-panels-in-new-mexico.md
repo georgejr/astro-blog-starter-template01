@@ -1,7 +1,7 @@
 ---
 title: "New Mexico: The Best Sun in America, and Smaller Systems to Match"
 description: "Solar panels in New Mexico enjoy some of the country's best sun, so the same output takes fewer panels. How top-tier peak sun hours shrink the system you need."
-publishDate: 2026-11-19T08:00:00Z
+publishDate: 2029-05-22T08:00:00Z
 category: "State Guides"
 tags:
   - new mexico

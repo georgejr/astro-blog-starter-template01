@@ -1,7 +1,7 @@
 ---
 title: "Solar and Home Insurance: Separating Policy Facts from Forum Panic"
 description: "Do solar panels and home insurance mix? Rooftop solar is usually covered under your existing policy. Here's what to disclose and which forum myths to ignore."
-publishDate: 2026-09-17T16:00:00Z
+publishDate: 2026-12-29T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - insurance

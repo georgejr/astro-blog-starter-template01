@@ -1,7 +1,7 @@
 ---
 title: "Michigan Solar: Snow Losses and the Inflow-Outflow Billing Model"
 description: "Solar panels in Michigan run on inflow-outflow billing, not classic net metering. How that credits your exports below retail, plus what lake-effect snow costs."
-publishDate: 2026-11-01T16:00:00Z
+publishDate: 2028-09-19T08:00:00Z
 category: "State Guides"
 tags:
   - michigan

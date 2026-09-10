@@ -1,7 +1,7 @@
 ---
 title: "Three Homes, Three Payback Timelines: Worked Examples With Real Assumptions"
 description: "Solar payback examples with every assumption labeled: three homes, three break-even timelines you can adapt by swapping in your own numbers and rates."
-publishDate: 2026-11-19T16:00:00Z
+publishDate: 2029-05-29T08:00:00Z
 category: "Payback"
 tags:
   - payback

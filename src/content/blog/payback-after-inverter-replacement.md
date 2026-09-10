@@ -1,7 +1,7 @@
 ---
 title: "How an Inverter Replacement Resets Your Solar Payback"
 description: "A mid-life inverter replacement is a one-time cost that pushes back your solar break-even point. Here's how much it moves the number and how to plan for it."
-publishDate: 2026-12-22T16:00:00Z
+publishDate: 2030-09-03T08:00:00Z
 category: "Payback"
 tags:
   - payback

@@ -1,7 +1,7 @@
 ---
 title: "Garage, Basement, or Outside? Where Your Battery Should Live"
 description: "Solar battery placement, explained by the chemistry: how temperature, code clearances, and convenience decide whether your battery belongs in a garage, basement, or outdoors."
-publishDate: 2026-10-14T08:00:00Z
+publishDate: 2028-01-04T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

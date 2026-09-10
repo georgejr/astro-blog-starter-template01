@@ -1,7 +1,7 @@
 ---
 title: "Battery Backup for Winter Storms: Cold, Heat Loads, and Runtime"
 description: "Sizing a home battery for winter power outages means planning for cold-weather capacity loss and the heavy load of staying warm. How to size backup that lasts."
-publishDate: 2027-03-08T16:00:00Z
+publishDate: 2033-08-02T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

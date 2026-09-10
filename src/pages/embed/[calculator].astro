@@ -1,0 +1,50 @@
+---
+// Embeddable widget version of every calculator: /embed/<calculator-id>/.
+// Renders only the interactive tool inside EmbedLayout (no site chrome),
+// with an attribution link. The public page shows the copy-paste snippet
+// (see src/components/EmbedSection.astro) that loads this URL in an iframe.
+import EmbedLayout from '../../layouts/EmbedLayout.astro';
+import SolarCalculator from '../../components/SolarCalculator.astro';
+import SolarLoanCalculator from '../../components/calculators/SolarLoanCalculator.astro';
+import SolarPaybackCalculator from '../../components/calculators/SolarPaybackCalculator.astro';
+import EvChargingCalculator from '../../components/calculators/EvChargingCalculator.astro';
+import HeatPumpCalculator from '../../components/calculators/HeatPumpCalculator.astro';
+import ElectricityBillCalculator from '../../components/calculators/ElectricityBillCalculator.astro';
+import FederalTaxCreditCalculator from '../../components/calculators/FederalTaxCreditCalculator.astro';
+import SolarPaymentComparator from '../../components/calculators/SolarPaymentComparator.astro';
+import { calculators } from '../../data/calculators';
+import { EMBED_CONFIG as CONFIG } from '../../data/embed-config';
+
+export function getStaticPaths() {
+  return calculators
+    .filter((c) => CONFIG[c.id])
+    .map((c) => ({ params: { calculator: c.id }, props: { calc: c } }));
+}
+
+const { calc } = Astro.props;
+const config = CONFIG[calc.id];
+---
+
+<EmbedLayout
+  title={calc.title}
+  description={`Embeddable ${calc.title} widget by SunMetricLab.`}
+  canonicalPath={calc.href}
+>
+  {config.kind === 'solar' ? (
+    <SolarCalculator heading={calc.title} variant={config.variant} defaultBattery={config.defaultBattery ?? 'none'} />
+  ) : calc.id === 'solar-loan-calculator' ? (
+    <SolarLoanCalculator />
+  ) : calc.id === 'solar-payback-calculator' ? (
+    <SolarPaybackCalculator />
+  ) : calc.id === 'ev-charging-calculator' ? (
+    <EvChargingCalculator />
+  ) : calc.id === 'heat-pump-calculator' ? (
+    <HeatPumpCalculator />
+  ) : calc.id === 'electricity-bill-calculator' ? (
+    <ElectricityBillCalculator />
+  ) : calc.id === 'federal-tax-credit-calculator' ? (
+    <FederalTaxCreditCalculator />
+  ) : (
+    <SolarPaymentComparator />
+  )}
+</EmbedLayout>

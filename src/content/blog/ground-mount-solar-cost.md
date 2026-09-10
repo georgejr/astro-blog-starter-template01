@@ -1,7 +1,7 @@
 ---
 title: "Ground-Mounted Solar: Why It Costs More Than Rooftop"
 description: "Ground mount solar cost runs higher than rooftop — foundations, steel framing, and trenching drive the premium. Here's the breakdown, component by component."
-publishDate: 2026-10-27T08:00:00Z
+publishDate: 2028-07-04T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

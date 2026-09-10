@@ -1,7 +1,7 @@
 ---
 title: "Lifetime Solar Savings vs Monthly Savings: Two Ways to Count"
 description: "Lifetime solar savings and monthly savings measure the same system two ways. Here's how a modest monthly number compounds into the large 25-year figure."
-publishDate: 2026-10-03T16:00:00Z
+publishDate: 2027-08-10T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

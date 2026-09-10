@@ -1,7 +1,7 @@
 ---
 title: "CEC vs Peak Efficiency: Reading Inverter Ratings Honestly"
 description: "CEC weighted efficiency vs peak efficiency on an inverter spec sheet: why the two numbers differ, what the efficiency curve shows, and which one predicts real output."
-publishDate: 2026-09-14T16:00:00Z
+publishDate: 2026-11-17T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

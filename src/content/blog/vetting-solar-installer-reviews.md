@@ -1,7 +1,7 @@
 ---
 title: "Reading Solar Installer Reviews Like a Pro (and Spotting Fakes)"
 description: "How to vet a solar company through its reviews: reading past the star rating, cross-checking platforms, and recognizing the patterns that mark fake solar reviews."
-publishDate: 2026-11-21T16:00:00Z
+publishDate: 2029-06-26T08:00:00Z
 category: "Installation"
 tags:
   - installer selection

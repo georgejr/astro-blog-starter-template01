@@ -1,7 +1,7 @@
 ---
 title: "How Batteries Change the Net Metering Math"
 description: "When a solar battery and net metering compete: why storing power beats exporting it under net billing, but rarely pays under full retail net metering."
-publishDate: 2026-11-03T08:00:00Z
+publishDate: 2028-10-10T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

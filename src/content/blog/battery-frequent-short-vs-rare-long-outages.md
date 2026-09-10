@@ -1,7 +1,7 @@
 ---
 title: "Frequent Short Outages or One Long One? Size the Battery Differently"
 description: "Sizing a battery for frequent short outages is a different problem than backing up one rare multi-day failure. How outage pattern changes the power-versus-energy trade-off."
-publishDate: 2027-01-24T16:00:00Z
+publishDate: 2031-12-09T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

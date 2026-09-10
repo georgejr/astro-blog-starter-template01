@@ -2,7 +2,7 @@
 title: "Solar in the Cold, Snowy North: Snow Load and Winter Output"
 description: "Solar in cold snowy northern states is shaped by roof snow load, a real winter output dip, and the reflected-light bonus fresh snow can add on clear days."
 slug: "solar-in-cold-snowy-northern-states"
-publishDate: 2027-03-01T16:00:00Z
+publishDate: 2033-04-26T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

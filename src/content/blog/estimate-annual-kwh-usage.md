@@ -1,7 +1,7 @@
 ---
 title: "Estimating Your Annual kWh Without a Year of Bills"
 description: "How to estimate annual electricity usage when you don't have twelve months of bills: annualize one bill, meter your own load, or build it up appliance by appliance."
-publishDate: 2026-10-13T08:00:00Z
+publishDate: 2027-12-21T08:00:00Z
 category: "Electricity Usage"
 tags:
   - usage

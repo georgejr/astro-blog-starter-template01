@@ -1,7 +1,7 @@
 ---
 title: "Solar Contract Terms to Read Twice Before Signing"
 description: "The solar contract terms to check before signing: production guarantees, escalators, warranty gaps, and cancellation clauses that commonly cause disputes."
-publishDate: 2026-09-30T16:00:00Z
+publishDate: 2027-06-29T08:00:00Z
 category: "Installation"
 tags:
   - contracts

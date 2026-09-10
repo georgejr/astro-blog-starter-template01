@@ -1,7 +1,7 @@
 ---
 title: "Roof Access, Scaffolding and Safety: The Overlooked Install Logistics"
 description: "Solar installation roof access, explained: how crews reach a tricky roof, when scaffolding is needed, why site logistics affect your quote, and the safety rules behind it all."
-publishDate: 2026-12-06T16:00:00Z
+publishDate: 2030-01-22T08:00:00Z
 category: "Installation"
 tags:
   - installation

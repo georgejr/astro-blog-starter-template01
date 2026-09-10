@@ -1,7 +1,7 @@
 ---
 title: "Virginia's Solar Moment: Rising Demand, Capped Net Metering"
 description: "A guide to solar panels in Virginia: moderate sun, data-center-driven rate pressure, and net metering caps that shape when going solar pays off in the state."
-publishDate: 2026-10-26T16:00:00Z
+publishDate: 2028-06-27T08:00:00Z
 category: "State Guides"
 tags:
   - state guides

@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings on an Electric or Heat-Pump Water Heater"
 description: "How much can solar savings on an electric water heater add up to? A resistance tank draws thousands of kWh a year — here's how much solar can offset and what it's worth."
-publishDate: 2027-01-17T08:00:00Z
+publishDate: 2031-08-26T08:00:00Z
 category: "Savings & ROI"
 tags:
   - water heater

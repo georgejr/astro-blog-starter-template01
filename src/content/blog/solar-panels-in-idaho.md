@@ -1,7 +1,7 @@
 ---
 title: "Idaho Solar: Great Sun Fighting Some of the Cheapest Hydropower"
 description: "Solar panels in Idaho get strong intermountain sun but compete with cheap hydropower, so low retail rates stretch payback and net-metering terms decide the math."
-publishDate: 2026-12-24T16:00:00Z
+publishDate: 2030-10-01T08:00:00Z
 category: "State Guides"
 tags:
   - idaho

@@ -1,7 +1,7 @@
 ---
 title: "The Inverter: Your Solar System's Most Likely First Failure"
 description: "Solar inverter failure, explained: why the inverter wears out before your panels, how long inverters last, warning signs, and what replacement typically costs."
-publishDate: 2026-09-23T08:00:00Z
+publishDate: 2027-03-16T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - inverters

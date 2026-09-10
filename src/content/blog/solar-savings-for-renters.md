@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings for Renters: Your Real Options"
 description: "Solar for renters is possible, just not by bolting panels to a roof you don't own. Community solar, portable panels, landlord conversations, and the options that actually save money."
-publishDate: 2026-12-09T08:00:00Z
+publishDate: 2030-02-26T08:00:00Z
 category: "Savings & ROI"
 tags:
   - renters

@@ -1,7 +1,7 @@
 ---
 title: "Squirrels, Birds and Your Solar Array: Preventing Pest Damage"
 description: "Squirrels chewing solar panel wires and birds nesting underneath are common and preventable. How pests damage arrays, what critter guards do, and how to catch it early."
-publishDate: 2026-09-15T16:00:00Z
+publishDate: 2026-12-01T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

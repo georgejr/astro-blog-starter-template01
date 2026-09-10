@@ -1,7 +1,7 @@
 ---
 title: "South Carolina Solar: Strong Sun in a Market Still Finding Its Rules"
 description: "Solar panels in South Carolina pair solid Southeast sun with a net metering framework the state keeps renegotiating. Here's what that churn means for buyers."
-publishDate: 2026-11-25T16:00:00Z
+publishDate: 2029-08-21T08:00:00Z
 category: "State Guides"
 tags:
   - south carolina

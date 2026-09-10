@@ -1,7 +1,7 @@
 ---
 title: "Which Solar Project Costs Actually Qualify for the Federal Credit"
 description: "What costs qualify for the solar tax credit: equipment, wiring, labor, permits, and sales tax all count. Where the line falls and what to keep off it."
-publishDate: 2026-12-15T16:00:00Z
+publishDate: 2030-05-28T08:00:00Z
 category: "Incentives & Tax Credits"
 author: "SunMetricLab Editorial Team"
 tags:

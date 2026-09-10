@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Work in the Rain? What Really Happens"
 description: "Do solar panels work in the rain? Yes — they keep producing reduced power from diffuse light, and the rinse can actually help output once the sky clears."
-publishDate: 2026-12-21T08:00:00Z
+publishDate: 2030-08-13T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - myths

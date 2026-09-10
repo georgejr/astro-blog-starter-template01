@@ -1,7 +1,7 @@
 ---
 title: "Cancelling a Solar Contract: Your Rights and the Fine Print"
 description: "How to cancel a solar contract: the federal cooling-off window, where state rules add protection, and how the contract's own terms shape your options later."
-publishDate: 2026-11-14T08:00:00Z
+publishDate: 2029-03-13T08:00:00Z
 category: "Installation"
 tags:
   - contracts

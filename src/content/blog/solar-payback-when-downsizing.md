@@ -1,7 +1,7 @@
 ---
 title: "Does Solar Still Pay Back If You Plan to Downsize?"
 description: "Solar payback when downsizing: whether panels break even before your usage shrinks or you move to a smaller home, and how to size an array for a life that's contracting."
-publishDate: 2027-01-23T08:00:00Z
+publishDate: 2031-11-18T08:00:00Z
 category: "Payback"
 tags:
   - payback

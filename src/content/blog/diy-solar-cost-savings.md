@@ -1,7 +1,7 @@
 ---
 title: "DIY Solar: What You'd Actually Save on Installation"
 description: "A clear look at DIY solar cost: which parts of an installed price you can actually skip, what you still have to pay, and where self-installing gets risky."
-publishDate: 2026-10-11T08:00:00Z
+publishDate: 2027-11-23T08:00:00Z
 category: "Solar Costs"
 tags:
   - diy

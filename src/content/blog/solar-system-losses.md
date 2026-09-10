@@ -1,7 +1,7 @@
 ---
 title: "Why Your 8 kW System Never Actually Produces 8 kW"
 description: "Solar system losses explained: the stack of derate factors — temperature, inverter, soiling, wiring — that separates nameplate capacity from the power your meter actually sees."
-publishDate: 2026-12-07T16:00:00Z
+publishDate: 2030-02-05T08:00:00Z
 category: "System Sizing"
 tags:
   - system losses

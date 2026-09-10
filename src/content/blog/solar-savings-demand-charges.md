@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings When Your Utility Bills Demand Charges"
 description: "Solar savings with demand charges work differently: panels cut energy use but barely touch the peak-demand fee. Where a battery is what actually saves money."
-publishDate: 2027-03-08T08:00:00Z
+publishDate: 2033-07-26T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

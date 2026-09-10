@@ -1,7 +1,7 @@
 ---
 title: "Cut Usage First: Efficiency Moves That Shrink the System You Need"
 description: "Trimming kWh before you size an array removes panels, cost, and roof clutter. The efficiency moves worth doing to reduce electricity usage before solar."
-publishDate: 2026-11-05T08:00:00Z
+publishDate: 2028-11-07T08:00:00Z
 category: "Electricity Usage"
 tags:
   - efficiency

@@ -1,7 +1,7 @@
 ---
 title: "How Many Panels Go on a String? Voltage Windows Made Simple"
 description: "How many panels per string? A plain explanation of solar string sizing, the inverter voltage window, and why cold weather sets the limit on your array."
-publishDate: 2027-01-22T08:00:00Z
+publishDate: 2031-11-04T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

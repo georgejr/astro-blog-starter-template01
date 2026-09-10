@@ -1,7 +1,7 @@
 ---
 title: "Electric Oven and Stove Energy Use, Broken Down by the kWh"
 description: "How much electricity does an electric oven use? Real kWh figures for baking, stovetop burners, and self-cleaning — and why nameplate wattage overstates it."
-publishDate: 2026-12-26T08:00:00Z
+publishDate: 2030-10-22T08:00:00Z
 category: "Electricity Usage"
 tags:
   - appliances

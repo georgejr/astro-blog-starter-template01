@@ -1,7 +1,7 @@
 ---
 title: "The 120% Rule: When Solar Backfeed Forces a Panel Upgrade"
 description: "The solar 120 percent rule decides whether your panels can tie into the existing electrical panel or trigger a costly upgrade. Here's the busbar math, in plain English."
-publishDate: 2027-02-23T08:00:00Z
+publishDate: 2033-01-25T08:00:00Z
 category: "Inverters & Components"
 tags:
   - main panel

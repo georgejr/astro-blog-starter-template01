@@ -1,7 +1,7 @@
 ---
 title: "Solar in Hurricane-Prone Gulf States: Wind Codes and Salt Air"
 description: "Solar in gulf coast hurricane states lives or dies on wind-rated mounting, coastal building codes, and salt-air corrosion. What storm country demands from an array."
-publishDate: 2027-02-23T16:00:00Z
+publishDate: 2033-02-01T08:00:00Z
 category: "State Guides"
 tags:
   - gulf coast

@@ -1,7 +1,7 @@
 ---
 title: "Maine Solar: High Rates and Heat Pumps Make Cold-Climate Sense"
 description: "Solar panels in Maine work better than the short winters suggest. High electricity rates, net energy billing and heat-pump adoption drive surprisingly strong returns."
-publishDate: 2027-01-10T16:00:00Z
+publishDate: 2031-05-27T08:00:00Z
 category: "State Guides"
 tags:
   - maine

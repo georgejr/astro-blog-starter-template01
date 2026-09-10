@@ -1,7 +1,7 @@
 ---
 title: "New Hampshire Solar: High Rates and No Sales Tax on Your System"
 description: "Solar panels in New Hampshire: how high electric rates, no state sales tax, and net metering shape the payback math against real winter production dips."
-publishDate: 2027-01-22T16:00:00Z
+publishDate: 2031-11-11T08:00:00Z
 category: "State Guides"
 tags:
   - state guide

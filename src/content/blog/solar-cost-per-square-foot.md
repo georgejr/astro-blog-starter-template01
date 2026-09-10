@@ -1,7 +1,7 @@
 ---
 title: "Solar Cost per Square Foot Is a Misleading Metric — Use This Instead"
 description: "Solar panel cost per square foot sounds intuitive but barely predicts your bill. Here's why floor area misleads and the metric — cost per watt tied to usage — that actually works."
-publishDate: 2026-10-23T16:00:00Z
+publishDate: 2028-05-16T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

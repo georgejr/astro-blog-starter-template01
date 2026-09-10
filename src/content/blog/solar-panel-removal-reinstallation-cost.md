@@ -1,7 +1,7 @@
 ---
 title: "Removing and Reinstalling Solar Panels for a New Roof"
 description: "Roof due for replacement under your panels? What a solar detach-and-reset costs, what drives the price, and how to budget the removal and reinstallation together."
-publishDate: 2026-12-02T08:00:00Z
+publishDate: 2029-11-20T08:00:00Z
 category: "Solar Costs"
 tags:
   - costs

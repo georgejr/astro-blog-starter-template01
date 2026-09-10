@@ -1,7 +1,7 @@
 ---
 title: "Water Heaters: The Second-Biggest Load in Most Homes"
 description: "Water heater electricity usage runs 4,000–5,000 kWh a year for a resistance tank. Here's how to estimate your share and compare tank, heat-pump, and tankless units."
-publishDate: 2026-09-13T08:00:00Z
+publishDate: 2026-10-27T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

@@ -1,7 +1,7 @@
 ---
 title: "Backup-Only, Self-Consumption, or Time-of-Use: Battery Modes Decoded"
 description: "Your solar battery's app offers backup-only, self-consumption, and time-of-use modes. Here's what each solar battery mode actually does and which one matches your rate plan and goals."
-publishDate: 2026-10-24T16:00:00Z
+publishDate: 2028-05-30T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

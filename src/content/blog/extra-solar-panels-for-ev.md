@@ -1,7 +1,7 @@
 ---
 title: "How Many Extra Solar Panels Does an EV Need?"
 description: "How many extra solar panels for an EV? Work it out from your annual miles: a typical 12,000-mile driver adds roughly 6 to 8 panels. Here's the mileage-to-panels math."
-publishDate: 2027-02-16T08:00:00Z
+publishDate: 2032-10-19T08:00:00Z
 category: "Electricity Usage"
 tags:
   - ev charging

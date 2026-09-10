@@ -1,7 +1,7 @@
 ---
 title: "Financing a Home Battery: Loans, Interest, and the True Cost"
 description: "Financing a home battery adds interest and often a hidden dealer fee to an already large purchase. Here's how loan terms change the real lifetime cost of storage."
-publishDate: 2027-02-19T16:00:00Z
+publishDate: 2032-12-07T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

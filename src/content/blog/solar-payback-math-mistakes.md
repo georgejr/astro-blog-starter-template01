@@ -1,7 +1,7 @@
 ---
 title: "The Payback Math Mistakes Almost Every Solar Shopper Makes"
 description: "The solar payback calculation mistakes that quietly break DIY spreadsheets — from ignored rate hikes to gross-cost errors — and how to fix each one honestly."
-publishDate: 2026-11-11T08:00:00Z
+publishDate: 2029-01-30T08:00:00Z
 category: "Payback"
 tags:
   - payback period

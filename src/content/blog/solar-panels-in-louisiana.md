@@ -1,7 +1,7 @@
 ---
 title: "Louisiana Solar: Hurricane-Ready Panels in a Low-Rate Market"
 description: "Solar panels in Louisiana need hurricane-rated mounting for a hot, storm-exposed Gulf climate, while low rates and avoided-cost buyback push owners toward resilience and self-use."
-publishDate: 2027-01-05T16:00:00Z
+publishDate: 2031-03-18T08:00:00Z
 category: "State Guides"
 tags:
   - louisiana

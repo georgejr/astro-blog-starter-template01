@@ -1,7 +1,7 @@
 ---
 title: "Solar Generators vs. Building Your Own Panel-and-Battery System"
 description: "Solar generator vs solar panels: an all-in-one power station trades cost per watt-hour for convenience. Here's how it compares to a component-built system."
-publishDate: 2026-10-05T08:00:00Z
+publishDate: 2027-08-31T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - portable power

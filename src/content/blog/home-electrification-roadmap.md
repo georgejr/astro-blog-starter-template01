@@ -1,7 +1,7 @@
 ---
 title: "A Home Electrification Roadmap: What Order to Electrify In"
 description: "A home electrification roadmap for homeowners: the sensible order to replace gas appliances, furnace, water heater, stove and car without overloading panel or budget."
-publishDate: 2027-01-21T16:00:00Z
+publishDate: 2031-10-28T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electrification

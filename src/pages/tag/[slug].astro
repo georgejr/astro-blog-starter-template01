@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
-import { CALCULATOR_LINKS } from '../../lib/site';
+import { TOP_CALCULATOR_LINKS } from '../../lib/site';
 import { getPublishedPosts } from '../../lib/content';
 import { taxonomySlug } from '../../lib/taxonomy';
 
@@ -54,7 +54,7 @@ const { tag, posts } = Astro.props;
     </ul>
 
     <div class="mx-auto mt-16 max-w-4xl">
-      <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
+      <RelatedLinks links={TOP_CALCULATOR_LINKS} heading="Try Our Calculators" />
     </div>
   </div>
 </BaseLayout>

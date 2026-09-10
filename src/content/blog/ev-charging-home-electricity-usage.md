@@ -1,7 +1,7 @@
 ---
 title: "What an EV Does to Your Household kWh"
 description: "EV charging electricity usage at home is more predictable than it feels. How many kWh an electric car adds each month, what moves the number, and how to plan."
-publishDate: 2026-12-05T08:00:00Z
+publishDate: 2030-01-01T08:00:00Z
 category: "Electricity Usage"
 tags:
   - ev charging

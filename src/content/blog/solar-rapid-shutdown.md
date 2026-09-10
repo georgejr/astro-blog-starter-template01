@@ -1,7 +1,7 @@
 ---
 title: "Rapid Shutdown Rules: Why Your Solar Needs a Kill Switch"
 description: "Solar rapid shutdown requirements exist to keep firefighters safe on a live roof. What the code demands, the hardware that delivers it, and which systems comply."
-publishDate: 2026-10-30T08:00:00Z
+publishDate: 2028-08-15T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

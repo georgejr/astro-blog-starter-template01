@@ -1,7 +1,7 @@
 ---
 title: "15kW Solar System Cost: What a Large Home Array Runs"
 description: "A 15kW solar system cost usually lands between $37,500 and $60,000 before the federal credit. Here's the per-watt math, net cost, and who a system this large actually fits."
-publishDate: 2027-02-13T08:00:00Z
+publishDate: 2032-09-07T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

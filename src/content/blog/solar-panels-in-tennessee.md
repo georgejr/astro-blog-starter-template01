@@ -1,7 +1,7 @@
 ---
 title: "Tennessee Solar: How the TVA Grid Shapes Rooftop Payback"
 description: "Solar panels in Tennessee sit inside the TVA grid, where a federal utility and local power companies — not a conventional state commission — shape your terms."
-publishDate: 2027-02-05T16:00:00Z
+publishDate: 2032-05-25T08:00:00Z
 category: "State Guides"
 tags:
   - tennessee

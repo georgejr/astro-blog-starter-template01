@@ -5,34 +5,39 @@ const faqs = [
   {
     question: 'How many solar panels does the average US home need?',
     answer:
-      'A typical US home using around 900 kWh per month needs roughly 16–22 panels at 400 W each, depending on local sun hours. Homes in sunny states need fewer panels than homes in cloudier regions for the same usage.',
+      'A typical US home uses about 900 kWh a month, which works out to 22 panels of 400 W at 4.5 sun hours a day for a 100% offset. The same home needs about 18 panels at 5.5 sun hours (Arizona, Nevada) and 27 at 3.5 sun hours (Pacific Northwest, New England). Your own bill is a better input than the average.',
   },
   {
     question: 'How many panels do I need per 1,000 kWh of monthly usage?',
     answer:
-      'As a rule of thumb, offsetting 1,000 kWh per month takes roughly 18–24 panels at 400 W with 4–5 sun hours per day. Use the calculator above with your exact bill and rate for a tighter estimate.',
+      'Offsetting 1,000 kWh a month takes a 9.4 kW system at 4.5 sun hours, which is 24 panels of 400 W. At 4 sun hours the count rises to 27 and at 5 sun hours it drops to 21. Enter your exact bill and rate in the calculator above for a tighter figure.',
+  },
+  {
+    question: 'How many solar panels for a $200 monthly electric bill?',
+    answer:
+      'At a $0.17 per kWh rate, a $200 bill is about 1,176 kWh a month. Covering all of it at 4.5 sun hours needs an 11 kW system, or 28 panels of 400 W, on roughly 560 sq ft of roof. If your rate is higher than $0.17, the same bill means less usage and fewer panels.',
   },
   {
     question: 'Does panel wattage change how many panels I need?',
     answer:
-      'Yes — higher-wattage panels mean fewer panels for the same system size. Switching from 350 W to 450 W panels cuts the panel count by about 22%, which matters on small roofs.',
+      'Yes. Higher-wattage panels mean fewer panels for the same system size. Switching from 350 W to 450 W cuts the panel count by about 22%, so a 9.4 kW system drops from 27 panels to 21. The system size, production, and roughly the price stay the same.',
   },
   {
     question: 'How much roof space do the panels take?',
     answer:
-      'Plan on about 20 sq ft per residential panel including spacing. A 20-panel system therefore needs roughly 400 sq ft of unshaded, usable roof area, ideally facing south.',
+      'Plan on about 20 sq ft per residential panel including spacing and fire setbacks. A 20-panel system needs roughly 400 sq ft of unshaded, usable roof, ideally facing south. An east-west split needs about 10 to 20% more panels to produce the same energy.',
   },
   {
     question: 'What if my roof cannot fit enough panels?',
     answer:
-      'You can use higher-wattage panels, target a lower bill offset (say 75% instead of 100%), consider ground-mount, or simply install what fits — a partial offset still reduces your bill proportionally.',
+      'Use higher-wattage panels, target a lower offset such as 75% instead of 100%, or consider a ground mount if you have the yard. Installing what fits is still worthwhile because a partial offset cuts the bill in proportion; 15 panels instead of 22 covers about two thirds of the usage.',
   },
 ];
 ---
 
 <CalculatorLanding
   title="How Many Solar Panels Do I Need? – Free Panel Count Calculator"
-  description="Work out how many solar panels your home needs from your monthly electricity bill, local sun hours, and panel wattage. Includes roof area check."
+  description="Work out how many solar panels your home needs from your monthly electricity bill or kWh usage, local sun hours, and panel wattage. Includes roof area check and reference tables."
   h1="How Many Solar Panels Do I Need?"
   subtitle="Enter your electricity bill and get an instant panel count, plus the roof area they will need."
   faqs={faqs}
@@ -54,26 +59,181 @@ const faqs = [
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">Quick reference: panels by monthly usage</h2>
+      <h2 class="text-2xl font-bold text-slate-900">Quick answer: panels by monthly bill</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Panel counts for a 100% offset at the US average rate of $0.17 per kWh, 4.5 peak sun hours
+        a day, 400 W panels, and a 78% performance ratio. Usage is bill ÷ rate; the system size is
+        usage × 12 ÷ (4.5 × 365 × 0.78).
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Monthly bill</th>
+              <th class="py-2 pr-4 font-semibold">Usage</th>
+              <th class="py-2 pr-4 font-semibold">System size</th>
+              <th class="py-2 pr-4 font-semibold">400 W panels</th>
+              <th class="py-2 font-semibold">Roof area</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$100</td><td class="py-2 pr-4">588 kWh</td><td class="py-2 pr-4">5.5 kW</td><td class="py-2 pr-4">14</td><td class="py-2">280 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$150</td><td class="py-2 pr-4">882 kWh</td><td class="py-2 pr-4">8.3 kW</td><td class="py-2 pr-4">21</td><td class="py-2">420 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$200</td><td class="py-2 pr-4">1,176 kWh</td><td class="py-2 pr-4">11.0 kW</td><td class="py-2 pr-4">28</td><td class="py-2">560 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$250</td><td class="py-2 pr-4">1,471 kWh</td><td class="py-2 pr-4">13.8 kW</td><td class="py-2 pr-4">35</td><td class="py-2">700 sq ft</td></tr>
+            <tr><td class="py-2 pr-4">$300</td><td class="py-2 pr-4">1,765 kWh</td><td class="py-2 pr-4">16.5 kW</td><td class="py-2 pr-4">42</td><td class="py-2">840 sq ft</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Rates vary from about $0.11 in Idaho to over $0.30 in California and Hawaii. A $200 bill at $0.30 is only 667 kWh and needs 16 panels, not 28.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Panels by monthly kWh usage</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        If your bill prints kWh, use this table instead; it skips the rate and is more accurate.
+        Same assumptions: 100% offset, 4.5 sun hours, 400 W panels, 0.78 performance ratio.
+      </p>
       <div class="mt-4 overflow-x-auto">
         <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
           <thead>
             <tr class="border-b border-slate-300 text-slate-900">
               <th class="py-2 pr-4 font-semibold">Monthly usage</th>
-              <th class="py-2 pr-4 font-semibold">System size*</th>
-              <th class="py-2 font-semibold">400 W panels</th>
+              <th class="py-2 pr-4 font-semibold">Yearly usage</th>
+              <th class="py-2 pr-4 font-semibold">System size</th>
+              <th class="py-2 pr-4 font-semibold">400 W panels</th>
+              <th class="py-2 font-semibold">Roof area</th>
             </tr>
           </thead>
           <tbody class="text-slate-600">
-            <tr class="border-b border-slate-200"><td class="py-2 pr-4">500 kWh</td><td class="py-2 pr-4">~4.2 kW</td><td class="py-2">~11 panels</td></tr>
-            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,000 kWh</td><td class="py-2 pr-4">~8.4 kW</td><td class="py-2">~21 panels</td></tr>
-            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,500 kWh</td><td class="py-2 pr-4">~12.6 kW</td><td class="py-2">~32 panels</td></tr>
-            <tr><td class="py-2 pr-4">2,000 kWh</td><td class="py-2 pr-4">~16.9 kW</td><td class="py-2">~43 panels</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">500 kWh</td><td class="py-2 pr-4">6,000 kWh</td><td class="py-2 pr-4">4.7 kW</td><td class="py-2 pr-4">12</td><td class="py-2">240 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">750 kWh</td><td class="py-2 pr-4">9,000 kWh</td><td class="py-2 pr-4">7.0 kW</td><td class="py-2 pr-4">18</td><td class="py-2">360 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,000 kWh</td><td class="py-2 pr-4">12,000 kWh</td><td class="py-2 pr-4">9.4 kW</td><td class="py-2 pr-4">24</td><td class="py-2">480 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,250 kWh</td><td class="py-2 pr-4">15,000 kWh</td><td class="py-2 pr-4">11.7 kW</td><td class="py-2 pr-4">30</td><td class="py-2">600 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,500 kWh</td><td class="py-2 pr-4">18,000 kWh</td><td class="py-2 pr-4">14.0 kW</td><td class="py-2 pr-4">36</td><td class="py-2">720 sq ft</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,750 kWh</td><td class="py-2 pr-4">21,000 kWh</td><td class="py-2 pr-4">16.4 kW</td><td class="py-2 pr-4">41</td><td class="py-2">820 sq ft</td></tr>
+            <tr><td class="py-2 pr-4">2,000 kWh</td><td class="py-2 pr-4">24,000 kWh</td><td class="py-2 pr-4">18.7 kW</td><td class="py-2 pr-4">47</td><td class="py-2">940 sq ft</td></tr>
           </tbody>
         </table>
       </div>
       <p class="mt-2 text-xs text-slate-500">
-        *Assumes 100% offset, 4.5 sun hours/day, 78% performance ratio. Your numbers will differ — use the calculator above.
+        The 1,000 kWh row gets its own walkthrough in
+        <a href="/blog/how-many-solar-panels-for-1000-kwh-per-month/" class="text-brand-700 underline">how many solar panels for 1,000 kWh per month</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">How sun hours change the count</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The same 1,000 kWh a month needs very different arrays in Seattle, Kansas City, and
+        Phoenix. Peak sun hours come from NREL's solar resource maps or the PVWatts tool for your
+        address; 3.5 is typical of the Northeast and Pacific Northwest, 4.5 of the Midwest and
+        Southeast, and 5.5 of the Southwest.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Sun hours / day</th>
+              <th class="py-2 pr-4 font-semibold">System size</th>
+              <th class="py-2 pr-4 font-semibold">350 W panels</th>
+              <th class="py-2 pr-4 font-semibold">400 W panels</th>
+              <th class="py-2 font-semibold">450 W panels</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">3.5</td><td class="py-2 pr-4">12.0 kW</td><td class="py-2 pr-4">35</td><td class="py-2 pr-4">31</td><td class="py-2">27</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">4.5</td><td class="py-2 pr-4">9.4 kW</td><td class="py-2 pr-4">27</td><td class="py-2 pr-4">24</td><td class="py-2">21</td></tr>
+            <tr><td class="py-2 pr-4">5.5</td><td class="py-2 pr-4">7.7 kW</td><td class="py-2 pr-4">22</td><td class="py-2 pr-4">20</td><td class="py-2">18</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        1,000 kWh per month, 100% offset, 0.78 performance ratio. Moving from 3.5 to 5.5 sun hours cuts the array by more than a third.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Roof area, orientation, and shade</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        A modern residential panel measures roughly 3.3 to 3.7 feet by 5.4 to 6 feet, or 18 to 22 sq ft, so
+        the calculator allows 20 sq ft each. That covers the panel and a little spacing but not
+        the fire-code setbacks most jurisdictions require, usually 18 to 36 inches along the ridge
+        and edges. As a rule, count only the roof faces that are flat rectangles of usable area,
+        subtract vents and skylights, and expect the installer to fit 80 to 90% of what the raw
+        square footage suggests.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Direction matters as much as area. In the US a south-facing roof at a 20 to 35 degree
+        pitch gives the sun-hours figure on the map. Panels split between east and west faces
+        produce about 10 to 20% less over the year, and a north face 30% or more less. To keep the
+        same yearly output on an east-west roof, divide the system size by roughly 0.85: a 9.4 kW
+        south array becomes 11.0 kW, or 28 panels instead of 24. Shade is worse than orientation
+        because it hits at the panel level; a chimney or tree shadow crossing three panels every
+        afternoon can cost those panels a third of their output. Trim what can be trimmed, and
+        ask for microinverters or optimizers so one shaded panel does not drag down the string.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Panel wattage trade-offs</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Wattage changes the count, not the energy. A 9.4 kW system produces the same 12,000 kWh a
+        year whether it is 27 panels at 350 W or 21 at 450 W, and installers price by the watt, so
+        the system cost is similar. Higher wattage helps when roof space is the constraint, since
+        450 W panels cut the count by about 22% compared with 350 W ones. The trade-off is that
+        the highest-wattage panels are sometimes physically larger commercial-format modules that
+        fit awkwardly on a cut-up roof, and they can carry a small price premium. For most homes
+        with a clear south face, 400 to 430 W panels are the sensible default.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Do it by hand: a worked example</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Take a $150 monthly bill at $0.17 per kWh in a 4.5 sun-hour location, 400 W panels, and a
+        100% offset:
+      </p>
+      <ol class="mt-4 list-decimal space-y-2 pl-5 text-slate-600">
+        <li>Monthly usage: $150 ÷ $0.17 = 882 kWh.</li>
+        <li>Yearly usage: 882 × 12 = 10,588 kWh.</li>
+        <li>Yearly output per kW installed: 4.5 × 365 × 0.78 = 1,281 kWh.</li>
+        <li>System size: 10,588 ÷ 1,281 = 8.3 kW.</li>
+        <li>Panels: 8.3 ÷ 0.4 = 20.7, rounded up to <strong>21 panels</strong>.</li>
+        <li>Roof area: 21 × 20 = 420 sq ft.</li>
+      </ol>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        If you know your kWh, skip step 1. If you only want to cover 80% of the bill, multiply the
+        yearly usage by 0.8 before step 4. For the cost side, the
+        <a href="/solar-panel-cost-calculator/" class="text-brand-700 underline">solar panel cost calculator</a>
+        takes the 8.3 kW figure and applies your local price per watt and the 30% federal credit;
+        the
+        <a href="/solar-panel-size-calculator/" class="text-brand-700 underline">system size calculator</a>
+        explains where the sun-hours and performance-ratio inputs come from in more depth.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Homes with an EV or heat pump</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Last year's bill understates next year's usage if you are about to plug in a car or swap a
+        gas furnace for a heat pump. An EV driven 12,000 miles a year at 3.3 miles per kWh uses
+        about 3,600 kWh, or 300 kWh a month. Adding that to a 900 kWh home takes the count at 4.5
+        sun hours from 22 panels to 29. A heat pump depends heavily on climate and home size: a
+        well-insulated house in the Carolinas might add 2,500 kWh a year, while a large house in
+        Minnesota can add 6,000 or more, and most of it lands in winter when solar output is
+        lowest. Adding 4,800 kWh a year to the same 900 kWh home pushes it to 1,300 kWh a month and
+        31 panels.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The practical approach is to estimate the new load, add it to your monthly kWh, and enter
+        the total in the calculator, then check that the roof can hold the result. If it cannot,
+        size for today's usage plus the EV and accept a partial offset on the heating, since
+        winter production would fall short of a heat pump's demand anyway. Where your utility
+        credits exports at a low rate, the extra panels for a heat pump pay off less than a
+        battery or a time-of-use plan that charges the car at midday.
       </p>
     </section>
   </Fragment>

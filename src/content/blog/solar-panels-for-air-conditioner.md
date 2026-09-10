@@ -1,7 +1,7 @@
 ---
 title: "Sizing Solar for Central Air Conditioning"
 description: "How many solar panels to run an air conditioner? Convert your AC's size into kilowatts and cooling-season kWh, then into a panel count, with worked assumptions."
-publishDate: 2026-10-12T16:00:00Z
+publishDate: 2027-12-14T08:00:00Z
 category: "System Sizing"
 tags:
   - cooling

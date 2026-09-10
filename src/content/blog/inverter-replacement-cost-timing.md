@@ -1,7 +1,7 @@
 ---
 title: "When to Budget for a Solar Inverter Replacement"
 description: "When to replace a solar inverter and how to save for it: why the inverter usually outlives its warranty but not your panels, and what a mid-life swap costs."
-publishDate: 2027-02-03T08:00:00Z
+publishDate: 2032-04-20T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - inverters

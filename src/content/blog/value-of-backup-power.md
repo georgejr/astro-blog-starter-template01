@@ -2,7 +2,7 @@
 title: "Putting a Dollar Value on Never Losing Power"
 description: "The dollar value of backup power is more than a payback number. Here's a method to price spoiled food, hotel nights, lost work, and peace of mind into a battery."
 slug: "value-of-backup-power"
-publishDate: 2027-03-01T08:00:00Z
+publishDate: 2033-04-19T08:00:00Z
 category: "Batteries & Storage"
 author: "SunMetricLab Editorial Team"
 tags:

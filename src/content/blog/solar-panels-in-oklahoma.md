@@ -1,7 +1,7 @@
 ---
 title: "Oklahoma Solar: Plains Sun, Severe Storms, and Weak Net Metering"
 description: "Solar panels in Oklahoma get strong plains sun but face hail, severe storms, and weak net metering. Why self-consumption, not exports, drives the savings case here."
-publishDate: 2027-01-27T16:00:00Z
+publishDate: 2032-01-20T08:00:00Z
 category: "State Guides"
 tags:
   - oklahoma

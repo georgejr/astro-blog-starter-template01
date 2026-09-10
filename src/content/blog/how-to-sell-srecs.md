@@ -1,7 +1,7 @@
 ---
 title: "How to Actually Sell Your SRECs: Brokers, Markets, and Contracts"
 description: "How to sell SRECs step by step: registering your system, choosing between spot sales, brokers and aggregators, and weighing a long-term contract against the market."
-publishDate: 2027-01-23T16:00:00Z
+publishDate: 2031-11-25T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - srecs

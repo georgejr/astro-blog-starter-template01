@@ -5,27 +5,32 @@ const faqs = [
   {
     question: 'How much does a home solar battery cost?',
     answer:
-      'A small backup battery (10–13 kWh, one or two essential circuits) runs roughly $9,000 installed. A whole-home setup with multiple batteries is typically around $18,000 or more. Prices vary by brand, capacity, and installer.',
+      'A single 10–13.5 kWh battery with backup for a few essential circuits typically runs about $9,000 installed. A whole-home setup with two or three stacked units usually starts around $18,000 and can pass $25,000 if a panel upgrade is needed. Prices vary by brand, installer, and whether the battery is added with the solar system or later.',
   },
   {
     question: 'Is a solar battery worth it financially?',
     answer:
-      'Usually only if your utility has time-of-use rates, demand charges, or poor net metering — or if you value backup power during outages. With full net metering, the grid already acts as a free “battery,” so the pure ROI of a battery is often weak.',
+      'Usually only if your utility has time-of-use rates, demand charges, or net billing that pays little for exports — or if your utility runs a battery program that pays you for grid support. Under full retail net metering the grid already stores your surplus at no cost, so a battery mostly buys backup power rather than a better return.',
   },
   {
     question: 'Do I need a battery for solar panels to work?',
     answer:
-      'No. Grid-tied solar works without any battery — excess production is exported to the grid. However, most grid-tied systems shut down during outages unless you add a battery or special inverter for backup.',
+      'No. A grid-tied system sends surplus power to the grid and pulls from it at night, with no battery involved. The catch is that most grid-tied inverters shut down during an outage for line-worker safety, so without a battery (or a special inverter with a backup outlet) your panels will not power the house when the grid is down.',
   },
   {
     question: 'How long can a battery power my home?',
     answer:
-      'A 10–13 kWh battery typically runs essential loads (fridge, lights, internet, some outlets) for 12–24 hours. Whole-home backup including AC or electric heating requires significantly more capacity.',
+      'A 10–13.5 kWh battery runs a fridge, lights, internet, and a furnace fan for roughly 15–40 hours without sun, depending on the load. Add solar recharge on a clear day and essentials can run indefinitely. Whole-home backup that includes central air conditioning or electric heat needs 25–40 kWh and a battery with enough continuous output to start the compressor.',
   },
   {
-    question: 'Does the federal tax credit apply to batteries?',
+    question: 'Can I add a battery to an existing solar system?',
     answer:
-      'Yes — standalone and solar-paired batteries over 3 kWh generally qualify for the 30% federal Residential Clean Energy Credit. This calculator applies the credit to the solar system only, so treat battery figures as conservative. Confirm with a tax professional.',
+      'Yes. An AC-coupled battery has its own inverter and connects alongside any existing solar system, which is the usual retrofit path. A DC-coupled battery is cheaper and slightly more efficient but generally requires a compatible hybrid inverter, so it is easier to plan at install time. Retrofits also need a backup gateway or critical-loads panel, which is part of the installed cost.',
+  },
+  {
+    question: 'How long do solar batteries last?',
+    answer:
+      'Most lithium iron phosphate home batteries carry a 10-year warranty that guarantees about 70% of original capacity at the end of the term, often with a cap on total throughput or cycles. A well-managed battery usually keeps working past the warranty at reduced capacity, so plan on one battery replacement over a 25-year solar system life.',
   },
 ];
 ---
@@ -43,25 +48,188 @@ const faqs = [
     <p>
       Batteries are the most misunderstood part of a solar quote. They are excellent for
       <strong>backup power</strong> and for shifting usage under <strong>time-of-use rates</strong>,
-      but they rarely improve pure return on investment. This calculator shows your solar
-      estimate side by side with the added cost and extended payback of a small backup battery
-      (~$9,000) or a whole-home battery (~$18,000).
+      but under ordinary net metering they rarely improve pure return on investment. This
+      calculator shows your solar estimate side by side with the added cost and extended payback
+      of a small backup battery (~$9,000) or a whole-home battery (~$18,000).
     </p>
     <p>
       Pick a battery option below and compare the “with battery” payback against the solar-only
-      figure to see exactly what the backup capability costs you.
+      figure to see exactly what the backup capability costs you. The sections after the
+      calculator explain the math, how to size a battery from your essential loads, and the
+      specific rate structures where a battery does pay for itself.
     </p>
   </Fragment>
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">When a battery makes sense</h2>
+      <h2 class="text-2xl font-bold text-slate-900">How the calculator computes the battery figures</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The battery math is simple enough to check by hand. The calculator sizes your solar system
+        from your bill, applies the 30% federal credit to the solar cost, and divides the net cost
+        by yearly savings for the solar-only payback. It then adds a fixed battery price and divides
+        again:
+      </p>
+      <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+        payback with battery = (net solar cost + battery cost) ÷ yearly savings
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Two price points are built in: <strong>$9,000</strong> for a small backup battery and
+        <strong>$18,000</strong> for whole-home. Yearly savings stay the same either way, because the
+        model assumes the battery does not change how much of your bill the solar system offsets.
+        That is exactly right under retail net metering and conservative everywhere else.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Worked example: a $150 monthly bill at $0.17/kWh is about 10,600 kWh per year. With 4.5 sun
+        hours and the calculator’s 78% performance ratio, that needs an 8.3 kW system. At $3.00 per
+        watt the gross cost is about $24,800, the credit removes $7,440, and the net cost is roughly
+        $17,360. Yearly savings are $1,800, so the solar-only payback is 9.6 years. The $9,000 battery
+        raises it to 14.6 years; the $18,000 option pushes it to 19.6. Those extra five to ten years
+        are the price of backup power. Run the same inputs in the
+        <a href="/solar-payback-calculator/" class="text-brand-700 underline">solar payback calculator</a>
+        to confirm the baseline.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Why the tax credit is applied to solar only</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The federal Residential Clean Energy Credit does cover home batteries of 3 kWh or more,
+        with or without solar. This calculator still applies the 30% credit to the solar system only
+        and adds the battery at full price, which keeps the battery figures conservative. If you
+        expect to claim the credit on the battery too, reduce the battery cost by 30% ($9,000 becomes
+        $6,300; $18,000 becomes $12,600) or check the
+        <a href="/federal-tax-credit-calculator/" class="text-brand-700 underline">federal tax credit calculator</a>.
+        Every constant behind this site’s calculators is listed on the
+        <a href="/methodology/" class="text-brand-700 underline">methodology page</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Small backup vs. whole-home battery</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Two ratings matter: kilowatt-hours (kWh) of stored energy and kilowatts (kW) of continuous
+        output. The calculator’s options map to these typical configurations:
+      </p>
       <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
-        <li><strong>Frequent outages:</strong> backup power has real value that ROI math does not capture.</li>
-        <li><strong>Time-of-use rates:</strong> charge from solar at midday, discharge during expensive evening peaks.</li>
-        <li><strong>Poor or no net metering:</strong> storing excess production beats exporting it for pennies.</li>
-        <li><strong>Low bills with full net metering:</strong> a battery is probably not financially necessary.</li>
+        <li>
+          <strong>Small backup (~$9,000):</strong> one unit of 10–13.5 kWh, such as a Tesla
+          Powerwall 3 (13.5 kWh), a FranklinWH aPower 2 (15 kWh), or two stacked Enphase IQ 5P
+          modules (10 kWh), with 5–11.5 kW of continuous output. It feeds a critical-loads panel:
+          fridge, lights, internet, furnace fan, a few outlets.
+        </li>
+        <li>
+          <strong>Whole-home (~$18,000 and up):</strong> two or three stacked units for 27–40 kWh and
+          15–30 kW, backing up the main panel so central air conditioning, an electric range, or a
+          heat pump keeps running. $18,000 is a realistic floor for two units; three units or a
+          main-panel upgrade can push the total past $25,000.
+        </li>
       </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Sizing backup capacity from your essential loads</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        List what must keep running during an outage and how many kilowatt-hours each load uses per
+        day. A typical essentials list:
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>Refrigerator and freezer: about 1.5 kWh per day</li>
+        <li>LED lighting in a few rooms: about 0.5 kWh per day</li>
+        <li>Modem, router, and phone charging: about 0.3 kWh per day</li>
+        <li>Gas furnace blower fan in winter: about 3 kWh per day</li>
+        <li>TV, laptop, and a few small appliances: about 1 kWh per day</li>
+      </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        That adds up to roughly 6–7 kWh per day. A 13.5 kWh battery covers two days of it with no
+        sun, and on a clear day the solar system recharges it by early afternoon, so essentials can
+        run through a multi-day outage. A well pump or sump pump can draw 1–2 kW while running, so
+        check the battery’s power rating as well as its capacity.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Quick reference: battery capacity vs. hours of backup</h3>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Battery capacity</th>
+              <th class="py-2 pr-4 font-semibold">Light essentials (~300 W)</th>
+              <th class="py-2 pr-4 font-semibold">Essentials + furnace fan or well pump (~600 W)</th>
+              <th class="py-2 font-semibold">Essentials + central AC (~2 kW)</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">10 kWh</td><td class="py-2 pr-4">~30 hours</td><td class="py-2 pr-4">~15 hours</td><td class="py-2">~4–5 hours</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">13.5 kWh</td><td class="py-2 pr-4">~40 hours</td><td class="py-2 pr-4">~20 hours</td><td class="py-2">~6 hours</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">20 kWh</td><td class="py-2 pr-4">~60 hours</td><td class="py-2 pr-4">~30 hours</td><td class="py-2">~9 hours</td></tr>
+            <tr><td class="py-2 pr-4">27 kWh</td><td class="py-2 pr-4">~80 hours</td><td class="py-2 pr-4">~40 hours</td><td class="py-2">~12 hours</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Assumes 90% usable capacity and no solar recharge. Real run time depends on weather and
+        appliance duty cycles.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">When a battery improves the financial return</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The calculator treats the battery as pure cost, but in several rate environments it earns
+        money this model does not count:
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Time-of-use arbitrage:</strong> charge from solar at midday and discharge during
+          the 4–9 p.m. peak. With a 20–30 cent gap between off-peak and peak rates and a 10 kWh daily
+          cycle, that is worth $700–$1,000 per year.
+        </li>
+        <li>
+          <strong>Net billing states:</strong> under California’s NEM 3.0, exported solar earns an
+          avoided-cost rate of often 5–8 cents per kWh while evening imports cost 40 cents or more.
+          Storing the surplus is why most new California systems include a battery, and
+          solar-plus-storage there often pays back faster than solar alone.
+        </li>
+        <li>
+          <strong>Demand charges:</strong> some residential tariffs bill on your highest 15-minute
+          draw of the month. A battery that caps that peak can cut a $50–$100 monthly charge.
+        </li>
+        <li>
+          <strong>Utility battery programs and virtual power plants:</strong> ConnectedSolutions in
+          Massachusetts, Connecticut, and Rhode Island pays roughly $200–$275 per kW of average summer
+          discharge each year; Green Mountain Power in Vermont leases Powerwalls cheaply in exchange
+          for grid access; similar programs exist in California, Texas, Utah, and Hawaii. Enrollment
+          can return $500–$1,500 per year for one battery.
+        </li>
+      </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Where a battery does not help: full retail net metering with no time-of-use component. If
+        every exported kWh is credited at the price you pay to import one, the grid already stores
+        your surplus for free and the battery only adds cost and about 10% round-trip losses. The
+        decision then comes down to how much you value not losing power.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Battery degradation and warranty basics</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Nearly all current home batteries use lithium iron phosphate (LFP) cells, which tolerate
+        daily cycling well, but capacity still fades with use and time. Most warranties run 10 years
+        and guarantee at least 70% of original capacity at the end of the term, with one of two usage
+        limits attached:
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Throughput warranties</strong> cap total energy delivered, for example 37 MWh for
+          a 13.5 kWh unit, about 2,700 full cycles.
+        </li>
+        <li>
+          <strong>Cycle warranties</strong> cap full charge-discharge cycles, commonly 4,000–6,000.
+          One cycle a day reaches 4,000 in about 11 years.
+        </li>
+      </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        For planning, assume 70–80% of original capacity at year 10 and a replacement somewhere
+        between years 12 and 15, well inside the 25-year life of the panels. Budgeting that second
+        battery is the honest way to compare a solar-plus-storage quote against solar alone.
+      </p>
     </section>
   </Fragment>
 </CalculatorLanding>

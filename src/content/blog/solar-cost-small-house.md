@@ -1,7 +1,7 @@
 ---
 title: "Solar for Small Homes: Costs When You Don't Need Much"
 description: "Solar cost for a small house is low in absolute dollars but high per watt, because fixed and soft costs don't shrink with the array. Here's the real small-home math."
-publishDate: 2026-10-18T08:00:00Z
+publishDate: 2028-02-29T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

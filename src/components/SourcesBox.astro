@@ -1,0 +1,74 @@
+---
+// "Sources and methodology" block for data pages. Cites the public datasets
+// the state/city model is derived from, plus any page-specific sources.
+import { DATA_LAST_UPDATED } from '../lib/site';
+
+export interface SourceLink {
+  label: string;
+  url: string;
+  note?: string;
+}
+
+interface Props {
+  /** Page-specific sources shown before the standard model sources. */
+  extra?: SourceLink[];
+  heading?: string;
+}
+
+const { extra = [], heading = 'Sources and methodology' } = Astro.props;
+
+const STANDARD: SourceLink[] = [
+  {
+    label: 'U.S. Energy Information Administration (EIA), average residential electricity price by state',
+    url: 'https://www.eia.gov/electricity/state/',
+    note: 'basis for the rounded state electricity rates',
+  },
+  {
+    label: 'NREL National Solar Radiation Database and PVWatts',
+    url: 'https://pvwatts.nrel.gov/',
+    note: 'basis for the average daily peak sun hours',
+  },
+  {
+    label: 'NREL solar resource maps',
+    url: 'https://www.nrel.gov/gis/solar-resource-maps',
+    note: 'regional irradiance context',
+  },
+  {
+    label: 'DSIRE (Database of State Incentives for Renewables and Efficiency)',
+    url: 'https://www.dsireusa.org/',
+    note: 'state and utility incentives, net metering rules',
+  },
+  {
+    label: 'IRS, Residential Clean Energy Credit',
+    url: 'https://www.irs.gov/credits-deductions/residential-clean-energy-credit',
+    note: '30% federal credit applied in the net-cost figures',
+  },
+];
+
+const links = [...extra, ...STANDARD];
+const updated = new Date(`${DATA_LAST_UPDATED}T00:00:00Z`).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<section class="rounded-2xl border border-slate-200 bg-slate-50 p-6" aria-labelledby="sources-heading">
+  <h2 id="sources-heading" class="text-lg font-bold text-slate-900">{heading}</h2>
+  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+    Every figure on this page is computed from two published inputs (average peak sun hours and
+    the state's average residential electricity rate) plus the documented assumptions on the
+    <a href="/methodology/" class="text-brand-700 underline">methodology page</a>. It is a
+    transparent model, not a survey of installer quotes. Inputs last reviewed
+    <time datetime={DATA_LAST_UPDATED}>{updated}</time>.
+  </p>
+  <ul class="mt-4 space-y-2 text-sm text-slate-600">
+    {links.map((link) => (
+      <li>
+        <a href={link.url} rel="noopener" target="_blank" class="text-brand-700 underline">{link.label}</a>
+        {link.note && <span class="text-slate-500"> &middot; {link.note}</span>}
+      </li>
+    ))}
+  </ul>
+</section>

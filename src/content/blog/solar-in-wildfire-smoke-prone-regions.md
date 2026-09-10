@@ -1,7 +1,7 @@
 ---
 title: "Solar in Wildfire Country: Smoke Haze and Backup When Grids Cut"
 description: "Solar in wildfire-prone regions has to reckon with smoke that dims output and safety shutoffs that cut the grid. Here's why storage restores the resilience you expected."
-publishDate: 2027-03-16T16:00:00Z
+publishDate: 2033-11-22T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

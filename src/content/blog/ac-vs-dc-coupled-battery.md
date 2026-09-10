@@ -1,7 +1,7 @@
 ---
 title: "AC-Coupled vs DC-Coupled Batteries: Which Architecture Fits Your Home?"
 description: "AC coupled vs DC coupled battery systems differ in efficiency, cost, and how well they retrofit. A plain-English comparison for solar-plus-storage buyers."
-publishDate: 2026-09-29T16:00:00Z
+publishDate: 2027-06-15T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

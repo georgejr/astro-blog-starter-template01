@@ -1,7 +1,7 @@
 ---
 title: "Battery Backup for a Sump Pump: Keeping the Basement Dry"
 description: "Battery backup for a sump pump matters most when a storm knocks out power and floods the basement at once. Here's how to size storage for the pump's real duty."
-publishDate: 2026-12-28T16:00:00Z
+publishDate: 2030-11-26T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - sump pump

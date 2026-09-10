@@ -1,7 +1,7 @@
 ---
 title: "How Much Electricity Does a Dishwasher Use per Cycle?"
 description: "How much electricity a dishwasher uses per cycle and per month, why heating water dominates the number, and the hidden cost of heated drying — with the kWh math."
-publishDate: 2027-01-07T08:00:00Z
+publishDate: 2031-04-08T08:00:00Z
 category: "Electricity Usage"
 tags:
   - appliances

@@ -1,7 +1,7 @@
 ---
 title: "Chimney Shadows and Solar Panels: Planning Around the Problem"
 description: "A chimney casts a moving shadow that can quietly cut solar output. Here's how designers lay panels out around it, why one shaded panel matters, and when to just skip a spot."
-publishDate: 2027-02-14T16:00:00Z
+publishDate: 2032-09-28T08:00:00Z
 category: "Roof & Shading"
 tags:
   - shading

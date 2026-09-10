@@ -1,7 +1,7 @@
 ---
 title: "NABCEP Certification: Does It Matter Who Installs Your Panels?"
 description: "What a NABCEP certified solar installer actually is, what the certification proves about individual skill, and how much weight to give the badge when picking a company."
-publishDate: 2026-10-15T08:00:00Z
+publishDate: 2028-01-18T08:00:00Z
 category: "Installation"
 tags:
   - installers

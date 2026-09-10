@@ -1,7 +1,7 @@
 ---
 title: "Can Solar Still Save Money Without Net Metering?"
 description: "Solar savings without net metering come from self-consumption, load shifting, and storage. Here's how the math works when exports earn little or nothing."
-publishDate: 2026-09-11T16:00:00Z
+publishDate: 2026-10-06T08:00:00Z
 category: "Savings & ROI"
 tags:
   - solar savings

@@ -1,7 +1,7 @@
 ---
 title: "Utah Solar: Dry Sun, Below-Retail Export Credits"
 description: "Solar panels in Utah pair excellent high-desert sun with export credits set below retail. How Rocky Mountain Power's structure rewards using power as you make it."
-publishDate: 2026-11-15T16:00:00Z
+publishDate: 2029-04-03T08:00:00Z
 category: "State Guides"
 tags:
   - utah

@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings When You Electrify Your Whole House"
 description: "Home electrification grows your electric load but kills your gas and gasoline bills. Here's how solar savings compound across a heat pump, an EV, and electric hot water."
-publishDate: 2027-02-17T08:00:00Z
+publishDate: 2032-11-02T08:00:00Z
 category: "Savings & ROI"
 tags:
   - electrification

@@ -1,7 +1,7 @@
 ---
 title: "Adding a Battery to Existing Solar vs Installing Both Together"
 description: "Add a battery to existing solar and you'll pay for coupling hardware a bundled install avoids. Here's how a retrofit differs from doing panels and storage at once."
-publishDate: 2026-10-04T08:00:00Z
+publishDate: 2027-08-17T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

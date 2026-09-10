@@ -3,29 +3,34 @@ import CalculatorLanding from '../components/CalculatorLanding.astro';
 
 const faqs = [
   {
-    question: 'How much do solar panels cost in the US?',
+    question: 'How much do solar panels cost in the US in 2026?',
     answer:
-      'Most residential installations fall between $2.50 and $3.50 per watt installed before incentives. A typical 8 kW system therefore costs roughly $20,000–$28,000 gross, or $14,000–$19,600 after the 30% federal tax credit.',
+      'Most residential quotes fall between about $2.50 and $3.50 per watt installed before incentives, with modeled averages of $2.70 in low-cost states, $3.00 in mid-cost states, and $3.35 in high-cost states. An 8 kW system therefore runs roughly $21,600–$26,800 gross, or $15,120–$18,760 after the 30% federal tax credit.',
   },
   {
     question: 'What does “cost per watt” include?',
     answer:
-      'Installed cost per watt covers panels, inverter, racking, wiring, labor, permits, and installer overhead. It does not include batteries, roof repairs, or electrical panel upgrades, which are quoted separately.',
+      'Installed cost per watt covers panels, inverters, racking, wiring, labor, permits, interconnection paperwork, and the installer’s overhead and margin. It does not include batteries, roof repairs, tree removal, or an electrical panel upgrade, which are quoted as separate line items.',
+  },
+  {
+    question: 'Is a larger system cheaper per watt?',
+    answer:
+      'Usually. Design, permitting, inspection, and crew mobilization cost about the same whether you install 5 kW or 12 kW, so those fixed costs are spread over more watts on a larger system. It is common to see a 12 kW quote come in $0.20–$0.40 per watt below a 5 kW quote from the same installer.',
   },
   {
     question: 'How does the 30% federal tax credit work?',
     answer:
-      'The Residential Clean Energy Credit lets you deduct 30% of the total system cost from your federal income taxes. It is a credit, not a rebate — you need sufficient tax liability to use it. Consult a tax professional about your eligibility.',
+      'The Residential Clean Energy Credit reduces your federal income tax by 30% of the system cost, so a $24,000 system earns a $7,200 credit. It is a nonrefundable credit rather than a rebate: you need enough tax liability to use it, though unused credit can carry forward. Confirm your eligibility with a tax professional.',
   },
   {
     question: 'Do batteries change the cost significantly?',
     answer:
-      'Yes. A small backup battery adds roughly $9,000 and a whole-home battery around $18,000 installed. Batteries extend the payback period, so add one for backup power or time-of-use savings, not purely for ROI.',
+      'Yes. The calculator adds about $9,000 for a small backup battery and $18,000 for a whole-home battery, which on the default system raises net cost from $17,182 to $26,182 or $35,182. Batteries lengthen payback, so add one for outage protection or time-of-use savings rather than purely for return.',
   },
   {
     question: 'Why do installer quotes differ from this estimate?',
     answer:
-      'Installers price based on your actual roof complexity, equipment brand, local labor rates, and permitting costs. Get at least three quotes and compare their price per watt against this calculator to spot outliers.',
+      'Installers price your actual roof, equipment brand, local labor rates, and permitting fees, and some fold loan dealer fees into the system price. Convert every quote to price per watt by dividing the cash price by the system size in watts, then compare that figure against the calculator and against the other quotes.',
   },
 ];
 ---
@@ -41,7 +46,7 @@ const faqs = [
   <Fragment slot="intro">
     <p>
       Solar pricing is usually quoted in <strong>dollars per watt installed</strong>. National
-      averages hover around $2.75/W, but real quotes range from about $2.50 to $3.50 depending on
+      averages sit around $2.75/W, but real quotes range from about $2.50 to $3.50 depending on
       your state, roof, and equipment. This calculator first sizes a system to your electricity
       usage, then applies your chosen cost per watt to estimate the gross price, the 30% federal
       tax credit, and your final net cost.
@@ -54,14 +59,164 @@ const faqs = [
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">What drives solar installation cost</h2>
+      <h2 class="text-2xl font-bold text-slate-900">What drives installed cost per watt</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Hardware is a smaller share of a residential solar bill than most people expect. Panels,
+        inverters, and racking together typically make up well under half of the installed price.
+        The rest is labor and what the industry calls soft costs, and those vary far more from one
+        market to another than the equipment does.
+      </p>
       <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
-        <li><strong>System size:</strong> larger systems cost more in total but usually less per watt.</li>
-        <li><strong>Equipment tier:</strong> premium panels and microinverters add $0.25–$0.75/W.</li>
-        <li><strong>Roof complexity:</strong> steep, multi-plane, or tile roofs increase labor cost.</li>
-        <li><strong>Local market:</strong> labor rates and permitting fees vary widely by state and city.</li>
-        <li><strong>Batteries:</strong> optional, but they add $9,000–$18,000+ to the project.</li>
+        <li>
+          <strong>Equipment.</strong> Standard monocrystalline panels with a string inverter are the
+          baseline. Premium panels, microinverters, or power optimizers add roughly $0.25–$0.75 per
+          watt but can be worth it on shaded or multi-plane roofs.
+        </li>
+        <li>
+          <strong>Labor.</strong> A crew of three or four spends one to three days on a typical roof.
+          Electrician and roofer wages differ by a factor of two between low-cost and high-cost
+          states, which is the main reason regional prices diverge.
+        </li>
+        <li>
+          <strong>Permitting and interconnection.</strong> Building permits, electrical inspections,
+          engineering stamps, and the utility interconnection application. Some jurisdictions charge
+          a few hundred dollars; others take months and cost several thousand in fees and staff time.
+        </li>
+        <li>
+          <strong>Sales and overhead.</strong> Customer acquisition, design, project management,
+          insurance, and margin. This is the largest soft cost and the one most open to negotiation.
+        </li>
+        <li>
+          <strong>Roof type.</strong> Asphalt shingle is cheapest to work on. Clay or concrete tile,
+          standing-seam metal, and slate need special mounts and slower installation. Steep pitches
+          and many small roof planes add hours per job.
+        </li>
       </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Typical 2026 price per watt by region</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Our <a href="/solar-panel-cost-by-state/" class="text-brand-700 underline">cost by state</a>
+        comparison groups states into three tiers based on labor rates, permitting burden, and
+        market maturity. The figures are modeled averages for a cash purchase, not surveyed prices,
+        and a real quote can land $0.30–$0.50 on either side of them.
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Low-cost tier, about $2.70/W:</strong> Texas, Florida, Arizona, Nevada, New Mexico,
+          Georgia, the Carolinas, Oklahoma, Louisiana, Tennessee, and most of the Deep South.
+          Competitive installer markets and lower wages keep prices down.
+        </li>
+        <li>
+          <strong>Mid-cost tier, about $3.00/W:</strong> most of the Midwest, Mountain West, and
+          Pacific Northwest, plus Virginia, Pennsylvania, Delaware, and Colorado.
+        </li>
+        <li>
+          <strong>High-cost tier, about $3.35/W:</strong> California, New York, New Jersey,
+          Massachusetts, Connecticut, Rhode Island, Maryland, northern New England, Alaska, and
+          Hawaii. High rates in these states usually make up for the higher price at payback time.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Cost by system size and price tier</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Gross cost is size × 1,000 × price per watt; net cost subtracts the 30% federal credit.
+        Sizes of 6 to 12 kW cover the large majority of US homes.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">System</th>
+              <th class="py-2 pr-4 font-semibold">$2.70/W gross</th>
+              <th class="py-2 pr-4 font-semibold">Net</th>
+              <th class="py-2 pr-4 font-semibold">$3.00/W gross</th>
+              <th class="py-2 pr-4 font-semibold">Net</th>
+              <th class="py-2 pr-4 font-semibold">$3.35/W gross</th>
+              <th class="py-2 font-semibold">Net</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">6 kW</td><td class="py-2 pr-4">$16,200</td><td class="py-2 pr-4">$11,340</td><td class="py-2 pr-4">$18,000</td><td class="py-2 pr-4">$12,600</td><td class="py-2 pr-4">$20,100</td><td class="py-2">$14,070</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">8 kW</td><td class="py-2 pr-4">$21,600</td><td class="py-2 pr-4">$15,120</td><td class="py-2 pr-4">$24,000</td><td class="py-2 pr-4">$16,800</td><td class="py-2 pr-4">$26,800</td><td class="py-2">$18,760</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">10 kW</td><td class="py-2 pr-4">$27,000</td><td class="py-2 pr-4">$18,900</td><td class="py-2 pr-4">$30,000</td><td class="py-2 pr-4">$21,000</td><td class="py-2 pr-4">$33,500</td><td class="py-2">$23,450</td></tr>
+            <tr><td class="py-2 pr-4">12 kW</td><td class="py-2 pr-4">$32,400</td><td class="py-2 pr-4">$22,680</td><td class="py-2 pr-4">$36,000</td><td class="py-2 pr-4">$25,200</td><td class="py-2 pr-4">$40,200</td><td class="py-2">$28,140</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Net figures assume you can use the full federal credit. Batteries and add-ons are extra.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">How to compare quotes</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Quotes for the same house rarely propose the same system size, so the total price alone
+        tells you little. Divide the cash price by the system size in watts to get price per watt,
+        and compare that. A $26,400 quote for 24 panels at 400 W is a 9,600 W system at $2.75/W; a
+        $22,000 quote for 18 of the same panels is 7,200 W at $3.06/W and is the more expensive
+        offer per watt despite the lower total.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Ask each installer for the cash price even if you intend to finance. Solar loans often
+        carry dealer fees of 10–30% that are built into the financed system price, which inflates
+        the apparent price per watt and shrinks your federal credit relative to what you actually
+        pay in cash. The
+        <a href="/solar-payment-comparison/" class="text-brand-700 underline">cash vs. loan vs. lease comparator</a>
+        shows how those fees change the lifetime cost.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Common add-ons outside the price per watt</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Battery storage.</strong> The calculator’s battery option adds about $9,000 for a
+          small backup unit or $18,000 for whole-home storage. Batteries qualify for the same 30%
+          federal credit. Size one with the
+          <a href="/solar-battery-calculator/" class="text-brand-700 underline">solar battery calculator</a>.
+        </li>
+        <li>
+          <strong>Main panel upgrade.</strong> Homes with a 100 A service panel or no spare breaker
+          space often need a 200 A upgrade, commonly $2,000–$4,000 and more where the utility has to
+          replace the service drop.
+        </li>
+        <li>
+          <strong>Roof work.</strong> If your roof has fewer than ten years of life left, re-roofing
+          before the install avoids paying to remove and reinstall the array later. Partial
+          re-roofing under the array footprint is a cheaper middle option.
+        </li>
+        <li>
+          <strong>Site work.</strong> Tree trimming, trenching for a ground mount, or a long conduit
+          run to a detached garage are billed separately.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Incentives beyond the federal credit</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The calculator applies only the 30% federal Residential Clean Energy Credit, which you can
+        check in detail with the
+        <a href="/federal-tax-credit-calculator/" class="text-brand-700 underline">federal tax credit calculator</a>.
+        Many states and utilities layer more on top, and each one lowers your net cost further.
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li><strong>State tax credits</strong> in states such as New York, South Carolina, and Arizona, typically capped at a few thousand dollars.</li>
+        <li><strong>Upfront rebates</strong> from utilities or state programs, paid per watt installed or as a flat amount.</li>
+        <li><strong>Solar renewable energy certificates (SRECs)</strong> or performance payments in New Jersey, Massachusetts, Illinois, and a few other states, paid over time rather than at purchase.</li>
+        <li><strong>Property and sales tax exemptions</strong>, which do not change the quote but remove costs you would otherwise pay.</li>
+      </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        As an example, a $24,000 system with a $7,200 federal credit and a $1,000 state rebate nets
+        out at $15,800 rather than $16,800. Utility rebates can reduce the cost basis on which the
+        federal credit is calculated, while state tax credits generally do not, so confirm the order
+        of operations with a tax professional before counting on a specific figure.
+      </p>
     </section>
   </Fragment>
 </CalculatorLanding>

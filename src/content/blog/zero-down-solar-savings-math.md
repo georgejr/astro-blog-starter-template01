@@ -1,7 +1,7 @@
 ---
 title: "The Real Savings Math Behind $0-Down Solar Deals"
 description: "$0-down solar means a loan, not free panels. Here's the real zero down solar savings math — dealer fees, the tax-credit paydown, and how to check if you're truly ahead each month."
-publishDate: 2026-10-24T08:00:00Z
+publishDate: 2028-05-23T08:00:00Z
 category: "Savings & ROI"
 tags:
   - financing

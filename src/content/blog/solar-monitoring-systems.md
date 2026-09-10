@@ -1,7 +1,7 @@
 ---
 title: "Solar Monitoring Systems: What Your App Is Really Telling You"
 description: "A plain-English guide to your solar monitoring system: what the app measures, how production and consumption monitoring differ, and which numbers signal a healthy array."
-publishDate: 2026-10-14T16:00:00Z
+publishDate: 2028-01-11T08:00:00Z
 category: "Inverters & Components"
 tags:
   - monitoring

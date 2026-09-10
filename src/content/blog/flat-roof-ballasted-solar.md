@@ -1,7 +1,7 @@
 ---
 title: "Ballasted Solar on Flat Roofs: How Panels Stay Put Without Holes"
 description: "Flat roof solar panels often use ballasted racking that holds the array down with weight, not roof penetrations. How it works and whether your roof can carry it."
-publishDate: 2026-09-29T08:00:00Z
+publishDate: 2027-06-08T08:00:00Z
 category: "Roof & Shading"
 tags:
   - flat roof

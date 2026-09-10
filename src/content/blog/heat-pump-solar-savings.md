@@ -1,7 +1,7 @@
 ---
 title: "Heat Pumps and Solar: A Savings Multiplier for Electric Homes"
 description: "Why pairing a heat pump with solar panels savings compound: how a COP near 3 turns cheap solar kilowatt-hours into heat, versus running a gas furnace alongside."
-publishDate: 2026-11-02T16:00:00Z
+publishDate: 2028-10-03T08:00:00Z
 category: "Savings & ROI"
 tags:
   - heat pump

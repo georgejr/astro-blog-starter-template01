@@ -1,7 +1,7 @@
 ---
 title: "Leasing vs Buying Solar Panels: The Cost Difference"
 description: "Solar lease vs buy comes down to who captures the incentives and equity. Here's the long-run cost difference between leasing panels and owning them outright."
-publishDate: 2026-10-03T08:00:00Z
+publishDate: 2027-08-03T08:00:00Z
 category: "Solar Costs"
 tags:
   - leasing

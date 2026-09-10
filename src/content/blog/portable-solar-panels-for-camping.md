@@ -1,7 +1,7 @@
 ---
 title: "Portable Solar Panels for Camping: What Real-World Output Looks Like"
 description: "Why folding camping solar panels rarely hit their rated watts, how to size a portable setup for real charging windows, and what output to actually expect in the field."
-publishDate: 2026-11-24T16:00:00Z
+publishDate: 2029-08-07T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - portable solar

@@ -1,7 +1,7 @@
 ---
 title: "Colorado Solar: High Altitude Helps, Hail Does Not"
 description: "Solar panels in Colorado get a real boost from altitude and cool, sunny air, but Front Range hail is the risk that shapes panel choice and insurance planning."
-publishDate: 2026-09-16T16:00:00Z
+publishDate: 2026-12-15T08:00:00Z
 category: "State Guides"
 tags:
   - colorado

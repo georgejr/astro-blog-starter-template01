@@ -5,27 +5,32 @@ const faqs = [
   {
     question: 'What is a good ROI for residential solar?',
     answer:
-      'A payback period of 7 years or less is generally considered excellent — over a 25-year panel lifetime that implies a strong return. Payback between 7 and 11 years is still reasonable; beyond 11 years, the financial case weakens unless electricity prices rise.',
+      'A payback of 7 years or less is strong: over a 25-year panel life the system returns more than 3.5 times its net cost in electricity savings. Payback between 7 and 11 years is moderate and still roughly doubles or triples your money over 25 years. Beyond 11 years the case depends on rates rising or extra incentives.',
   },
   {
     question: 'How is solar payback period calculated?',
     answer:
-      'Net system cost (after the 30% federal tax credit) divided by yearly electricity savings. For example, a $15,785 net cost with $2,108 yearly savings pays back in about 7.5 years.',
+      'Net system cost after the 30% federal tax credit divided by yearly electricity savings. With the default inputs, a $17,182 net cost and $1,944 of yearly savings give a payback of 8.8 years. Savings are the kWh the system offsets multiplied by your retail electricity rate.',
+  },
+  {
+    question: 'How is the 25-year savings figure calculated?',
+    answer:
+      'It is simply yearly savings multiplied by 25, so the default $1,944 a year becomes $48,600. Subtracting the $17,182 net cost leaves a $31,418 gain. The figure ignores panel degradation, which lowers it slightly, and utility rate increases, which raise it more.',
   },
   {
     question: 'Does the calculator account for rising electricity prices?',
     answer:
-      'No — it assumes today’s rate stays flat, which is conservative. US electricity prices have historically risen 2–3% per year, so your actual payback is likely somewhat faster than the estimate.',
+      'No. It holds today’s rate flat for all 25 years, which is conservative. US residential rates have risen around 2–3% a year on average over the past two decades, so real payback tends to arrive somewhat sooner than the estimate and lifetime savings run higher.',
+  },
+  {
+    question: 'Does financing change the ROI?',
+    answer:
+      'Yes, because interest is a cost the calculator does not include. Borrowing the default $17,182 net cost at 7% over 15 years means a payment of about $154 a month and roughly $10,600 of interest, which pushes the effective payback out by several years. The monthly payment is still below the $162 of monthly savings, so cash flow can be positive from day one.',
   },
   {
     question: 'What happens after the payback period?',
     answer:
-      'Panels typically carry 25-year production warranties and keep working beyond that. Every kilowatt-hour generated after payback is essentially free electricity, minus minor maintenance and a possible inverter replacement around year 12–15.',
-  },
-  {
-    question: 'Is solar a better investment than the stock market?',
-    answer:
-      'They are different: solar returns are tax-free savings, low-risk, and locked to your home, while market returns are liquid but volatile. Many homeowners treat solar as a bond-like investment with an inflation hedge on electricity prices.',
+      'Panels carry 25-year production warranties and typically keep producing beyond that at slightly reduced output. Every kWh after payback is savings minus minor upkeep: occasional cleaning, and a likely inverter replacement of $1,500–$3,000 somewhere around year 12–15 for string inverters.',
   },
 ];
 ---
@@ -43,23 +48,174 @@ const faqs = [
       The financial case for solar comes down to two numbers: what the system costs after
       incentives, and how much it saves you per year. This calculator estimates both from your
       electricity bill, then computes the <strong>payback period</strong> — the years until your
-      accumulated savings cover the net cost.
+      accumulated savings cover the net cost — and your total savings over a 25-year panel life.
     </p>
     <p>
-      The estimate is conservative: it assumes flat electricity prices and full self-consumption
-      of your chosen bill offset. Rising utility rates or good net metering typically improve the
-      real-world return.
+      The estimate is conservative in one way and generous in another: it assumes flat electricity
+      prices, but it also values every kilowatt-hour at your full retail rate. Rising utility rates
+      improve the real-world return; weak export credits reduce it.
     </p>
   </Fragment>
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">Reading your payback result</h2>
+      <h2 class="text-2xl font-bold text-slate-900">How ROI, payback, and lifetime savings are computed</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The return figures come from the same sizing model as the
+        <a href="/solar-panel-calculator/" class="text-brand-700 underline">main solar calculator</a>,
+        with the money side brought to the front. Using the defaults of a $180 monthly bill, $0.17
+        per kWh, 4.5 sun hours, 90% offset, 400 W panels, and $2.75 per watt, the model sizes an
+        8.93 kW system that produces 11,435 kWh a year, then works through three outputs.
+      </p>
       <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
-        <li><strong>Under 7 years:</strong> strong solar candidate — high rates or good sun make the math work clearly in your favor.</li>
-        <li><strong>7–11 years:</strong> moderate — still a solid long-term investment given 25-year panel lifetimes.</li>
-        <li><strong>Over 11 years:</strong> longer payback — worth revisiting if your rates rise, prices fall, or new incentives appear.</li>
+        <li>
+          <strong>Yearly savings</strong> are the kWh offset multiplied by your rate: 11,435 × $0.17
+          = $1,944, or $162 a month. The model assumes every one of those kWh replaces a kWh you
+          would otherwise buy at retail.
+        </li>
+        <li>
+          <strong>Payback</strong> is net cost divided by yearly savings. Gross cost is $24,546, the
+          30% federal credit is $7,364, and the net cost is $17,182. $17,182 ÷ $1,944 = 8.8 years.
+        </li>
+        <li>
+          <strong>Savings over 25 years</strong> are yearly savings × 25 = $48,600. Subtracting the
+          net cost gives a gain of $31,418, which is a 183% return on the money invested, or about
+          2.8 dollars of savings for every dollar spent.
+        </li>
       </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Payback in this model does not depend on the size of your bill. A bigger bill produces a
+        bigger system, and cost and savings grow together, so the ratio is set by price per watt,
+        sun hours, electricity rate, and the tax credit alone. That is why the levers discussed
+        below are about price, sun, and rate rather than system size.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Simple payback versus 25-year return</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Payback answers one question: when do I break even? It says nothing about what happens
+        afterwards, and for an asset that keeps working for 25 to 30 years that is most of the
+        story. Because the model uses flat savings, the two figures are tied together: total
+        savings equal 25 divided by the payback, expressed as a multiple of net cost. An 8.8-year
+        payback returns 2.8× the investment, a 12.5-year payback returns 2.0×, and a 5-year payback
+        returns 5.0×.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The 25-year return is not the same as an annualized investment return. It is undiscounted
+        and it ignores what the cash could have earned elsewhere. Spread evenly, a 183% gain over
+        25 years works out to roughly 7% a year in simple terms, tax-free and tied to your
+        electricity bill rather than to markets. The
+        <a href="/solar-payback-calculator/" class="text-brand-700 underline">payback calculator</a>
+        lets you explore the break-even year in more detail.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Payback sensitivity to electricity rate</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The rate you pay per kWh is the strongest driver of return. The table holds the default
+        8.93 kW system fixed at its $17,182 net cost and changes only the rate. In the calculator
+        itself, changing the rate while leaving the bill at $180 also resizes the system, but the
+        payback column comes out the same either way.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Rate</th>
+              <th class="py-2 pr-4 font-semibold">Yearly savings</th>
+              <th class="py-2 pr-4 font-semibold">Payback</th>
+              <th class="py-2 pr-4 font-semibold">25-year savings</th>
+              <th class="py-2 pr-4 font-semibold">25-year gain</th>
+              <th class="py-2 font-semibold">Rating</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$0.12/kWh</td><td class="py-2 pr-4">$1,372</td><td class="py-2 pr-4">12.5 yr</td><td class="py-2 pr-4">$34,306</td><td class="py-2 pr-4">$17,124</td><td class="py-2">Longer payback</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$0.17/kWh</td><td class="py-2 pr-4">$1,944</td><td class="py-2 pr-4">8.8 yr</td><td class="py-2 pr-4">$48,600</td><td class="py-2 pr-4">$31,418</td><td class="py-2">Moderate</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">$0.25/kWh</td><td class="py-2 pr-4">$2,859</td><td class="py-2 pr-4">6.0 yr</td><td class="py-2 pr-4">$71,471</td><td class="py-2 pr-4">$54,288</td><td class="py-2">Strong</td></tr>
+            <tr><td class="py-2 pr-4">$0.30/kWh</td><td class="py-2 pr-4">$3,431</td><td class="py-2 pr-4">5.0 yr</td><td class="py-2 pr-4">$85,765</td><td class="py-2 pr-4">$68,583</td><td class="py-2">Strong</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        8.93 kW, 11,435 kWh/yr, $2.75/W, 4.5 sun hours, 30% federal credit applied. Ratings use the
+        7-year and 11-year thresholds shown on the result card.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The $0.12 row is roughly Washington, Utah, or Idaho; $0.17 is close to the national
+        average; $0.25 to $0.30 covers California, Massachusetts, Connecticut, and Rhode Island.
+        Sun hours and installed price shift the rows up or down, which is why the
+        <a href="/solar-panel-cost-by-state/" class="text-brand-700 underline">cost by state</a>
+        page shows modeled payback for each state.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What improves solar ROI</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>High electricity rates.</strong> Every cent per kWh raises savings directly. This is
+          why the Northeast and California show short paybacks despite the highest install prices.
+        </li>
+        <li>
+          <strong>Good sun.</strong> Moving from 4.0 to 5.5 sun hours cuts payback by about 27%, since
+          the same panels produce that much more energy. Roof pitch and a south-facing orientation
+          matter for the same reason.
+        </li>
+        <li>
+          <strong>Incentives.</strong> The federal credit alone cuts payback by 30%. State credits,
+          rebates, and SRECs lower net cost or add income the calculator does not count.
+        </li>
+        <li>
+          <strong>Self-consumption.</strong> Using solar power while it is being produced, by running
+          the dishwasher, laundry, water heater, or EV charger during the day, avoids buying retail
+          power and avoids exporting at a discount.
+        </li>
+        <li>
+          <strong>Competitive quotes.</strong> Each $0.25 per watt shaved from the price shortens
+          payback by roughly 9% at the default inputs.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What hurts solar ROI</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Net billing.</strong> Where exports are credited at a wholesale or avoided-cost
+          rate, often a quarter to a half of retail, the kWh you send to the grid earn much less
+          than the calculator assumes. A battery or a lower offset can partly compensate.
+        </li>
+        <li>
+          <strong>Low electricity rates.</strong> Below about $0.14 per kWh the default system falls
+          into the longer-payback band, and it takes cheap installation or strong sun to pull it back.
+        </li>
+        <li>
+          <strong>Shading and orientation.</strong> Trees, chimneys, or an east-west roof can cut
+          production 10–30% below what your sun-hours figure suggests.
+        </li>
+        <li>
+          <strong>Financing interest and fees.</strong> Loan interest and dealer fees add to the cost
+          without adding savings. The
+          <a href="/solar-loan-calculator/" class="text-brand-700 underline">solar loan calculator</a>
+          shows the monthly payment and total interest for a given rate and term.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Degradation and rate inflation</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Two effects work in opposite directions and are both left out of the model. Panels lose
+        about 0.5% of their output each year, so year-25 production is roughly 88% of year one and
+        the true 25-year savings are about 6% lower than the flat figure. Utility rates, meanwhile,
+        have historically risen faster than that, and a 2.5% annual increase would raise the same
+        25-year savings by about a third. On balance the flat-rate estimate on this page is more
+        likely to understate your return than overstate it, provided your utility credits exports
+        near the retail rate.
+      </p>
     </section>
   </Fragment>
 </CalculatorLanding>

@@ -1,7 +1,7 @@
 ---
 title: "Oversizing vs. Undersizing: The Goldilocks Problem in Solar"
 description: "Oversizing vs undersizing a solar system both cost you, in different ways. The downsides of each and how to find the array size that fits your usage and rules."
-publishDate: 2026-11-18T16:00:00Z
+publishDate: 2029-05-15T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

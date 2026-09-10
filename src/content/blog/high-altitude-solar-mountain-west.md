@@ -1,7 +1,7 @@
 ---
 title: "High-Altitude Solar in the Mountain West: Thin Air, Intense UV"
 description: "High altitude solar in the Mountain West gets thin-air sunlight and cold-weather output boosts, but pays it back in UV stress, deep cold, and heavy snow. Here's the trade."
-publishDate: 2027-02-24T16:00:00Z
+publishDate: 2033-02-15T08:00:00Z
 category: "State Guides"
 tags:
   - mountain west

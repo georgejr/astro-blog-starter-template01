@@ -3,8 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SolarCalculator from '../components/SolarCalculator.astro';
 import DisclaimerBox from '../components/DisclaimerBox.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
+import FaqSection from '../components/FaqSection.astro';
 import { CALCULATOR_LINKS, SITE_NAME, SITE_TAGLINE } from '../lib/site';
-import { webAppSchema } from '../lib/schema';
+import { faqSchema, webAppSchema } from '../lib/schema';
 
 const whyItems = [
   {
@@ -31,8 +32,51 @@ const estimateItems = [
   'Optional battery recommendation',
 ];
 
+// Monthly bill at $0.17/kWh, 4.5 sun hours, 100% offset, 400 W panels, $2.75/W, 30% credit.
+const quickReference = [
+  { bill: '$100', kw: '5.5 kW', panels: 14, net: '$10,606' },
+  { bill: '$150', kw: '8.3 kW', panels: 21, net: '$15,909' },
+  { bill: '$200', kw: '11.0 kW', panels: 28, net: '$21,213' },
+  { bill: '$250', kw: '13.8 kW', panels: 35, net: '$26,516' },
+  { bill: '$300', kw: '16.5 kW', panels: 42, net: '$31,819' },
+];
+
+const faqs = [
+  {
+    question: 'Is this solar calculator free and accurate?',
+    answer:
+      'It is free, runs entirely in your browser, and asks for no contact details. Accuracy depends on your inputs: with the kWh and rate from your actual bill and sun hours from NREL PVWatts, the system size is usually within 10 to 15 percent of what an installer proposes. Cost and payback are estimates based on a national average price per watt, so treat them as a starting point for comparing quotes, not a final number.',
+  },
+  {
+    question: 'How many solar panels does an average US home need?',
+    answer:
+      'A typical US home uses around 10,500 kWh per year. Covering all of it with 4.5 peak sun hours and a 78% performance ratio takes about 8.2 kW, which is 21 panels at 400 W each. Homes with electric heat, an EV, or a pool often need 30 or more panels, while small, efficient homes in sunny states may need fewer than 15.',
+  },
+  {
+    question: 'How much does a solar system cost after the federal tax credit?',
+    answer:
+      'At the default $2.75 per watt, an 8 kW system costs $22,000 before incentives. The 30% federal residential clean energy credit brings that down to $15,400. Real quotes range from roughly $2.30 to $3.50 per watt depending on your state, roof, and equipment, so a system the same size could net anywhere from about $12,900 to $19,600.',
+  },
+  {
+    question: 'What payback period is good for solar?',
+    answer:
+      'The calculator rates a payback of 7 years or less as strong, 7 to 11 years as moderate, and over 11 years as long. Since panels are warrantied for 25 years, even an 11-year payback leaves well over a decade of near-free electricity. Short paybacks come from high electricity rates, good sun, and competitive installation pricing.',
+  },
+  {
+    question: 'Does the calculator include state incentives?',
+    answer:
+      'No. It applies only the 30% federal tax credit. State rebates, utility programs, SREC income, and property or sales tax exemptions vary widely, so they are left out rather than guessed. If you qualify for one, subtract it from the net cost shown here and your payback will be shorter than the estimate.',
+  },
+  {
+    question: 'Do I need a battery?',
+    answer:
+      'Not for the savings shown here, which assume your utility credits exported power at the retail rate. A battery becomes worth considering if your utility pays much less for exports, charges time-of-use rates, or if you want backup during outages. The calculator lets you add a $9,000 or $18,000 battery to see how it changes total cost and payback.',
+  },
+];
+
 const structuredData = [
   webAppSchema(SITE_NAME, SITE_TAGLINE, new URL('/', Astro.site).href),
+  faqSchema(faqs),
 ];
 ---
 
@@ -117,6 +161,186 @@ const structuredData = [
         </dl>
       </div>
     </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h2 class="text-3xl font-bold text-slate-900">How the solar calculator works</h2>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      The calculator runs the same four steps an installer's sizing sheet does, using the
+      numbers you enter instead of national averages. Every input is editable, so if you know
+      your real usage or have a quote in hand, replace the defaults and the results update
+      immediately.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 1: Usage from your bill</h3>
+    <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+      monthly kWh = monthly bill ÷ rate per kWh<br />
+      yearly kWh = monthly kWh × 12
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Dividing your bill by your rate gives monthly consumption. Compare that figure with the
+      kWh printed on your statement. If it is far off, your rate input is probably a supply-only
+      rate that leaves out delivery charges; use your total bill divided by total kWh instead.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 2: System size from sun hours</h3>
+    <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+      system kW = (yearly kWh × offset) ÷ (sun hours × 365 × 0.78)
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Offset is the share of your usage you want solar to cover; the default is 90%. Peak sun
+      hours are the daily equivalent of full-strength sunlight for your area, typically 3.5 in
+      the Northeast and Pacific Northwest and over 6 in the desert Southwest. The 0.78 performance
+      ratio accounts for inverter losses, wiring, heat, dust, and panel mismatch, so the size you
+      get is the DC rating you will see on a quote, not an ideal-conditions number.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 3: Panel count and roof area</h3>
+    <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+      panels = system kW ÷ panel kW, rounded up<br />
+      roof area = panels × 20 sq ft
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Panel count is rounded up to the next whole panel. Each residential panel is roughly 17.5
+      square feet, and the 20 square feet allowance adds room for racking gaps and fire setbacks.
+      If you enter your usable roof area, the calculator tells you whether the array fits. For a
+      panel-by-panel breakdown, use the
+      <a href="/how-many-solar-panels-do-i-need/" class="text-brand-700 underline">how many solar panels do I need</a>
+      calculator.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 4: Cost, tax credit, savings, and payback</h3>
+    <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
+      gross cost = system kW × 1,000 × cost per watt<br />
+      tax credit = gross cost × 30%<br />
+      net cost = gross cost − tax credit<br />
+      yearly savings = (yearly kWh × offset) × rate per kWh<br />
+      payback years = net cost ÷ yearly savings
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      The default $2.75 per watt is a national average for a turnkey residential install in
+      2026, and the 30% figure is the federal residential clean energy credit. Savings assume
+      every kilowatt-hour you produce replaces one you would have bought at your retail rate.
+      The <a href="/solar-panel-cost-calculator/" class="text-brand-700 underline">solar panel cost calculator</a>
+      and <a href="/solar-payback-calculator/" class="text-brand-700 underline">solar payback calculator</a>
+      go deeper on the last two lines.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Worked example with the default inputs</h3>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Take a $180 monthly bill at $0.17 per kWh, 4.5 sun hours, a 90% offset, 400 W panels, and
+      $2.75 per watt. Usage is 180 ÷ 0.17 = 1,059 kWh per month, or 12,706 kWh per year. The
+      90% target is 11,435 kWh. System size is 11,435 ÷ (4.5 × 365 × 0.78) = 8.93 kW, which
+      rounds up to 23 panels covering about 460 square feet. Gross cost is 8.93 kW × 1,000 ×
+      $2.75 = $24,546; the credit is $7,364, leaving a net cost of $17,182. Yearly savings are
+      11,435 kWh × $0.17 = $1,944, so payback is $17,182 ÷ $1,944 = 8.8 years, which the
+      calculator labels a moderate solar candidate.
+    </p>
+  </section>
+
+  <!-- What to have ready -->
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h2 class="text-3xl font-bold text-slate-900">What to have ready</h2>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Three numbers do most of the work. The defaults suit a typical US household, but your own
+      figures make the estimate considerably more useful.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">A recent utility bill</h3>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Look for the kWh used and the rate per kWh. Usage swings with the seasons, so a bill from a
+      mild month, or better, the 12-month usage chart most utilities print, gives a fairer
+      annual picture than a July or January statement. If your bill does not show a single rate,
+      divide the total amount due by the kWh used. For a state benchmark, the
+      <a href="https://www.eia.gov/electricity/state/" rel="noopener" class="text-brand-700 underline">EIA state electricity profiles</a>
+      list average residential prices.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">A roof area estimate</h3>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      Count only the unshaded, south-, east-, or west-facing sections where panels could actually
+      go, not the whole footprint of the house. A satellite view with a measuring tool gets you
+      close enough; a 23-panel array needs about 460 square feet.
+    </p>
+
+    <h3 class="mt-6 text-xl font-semibold text-slate-900">Local peak sun hours</h3>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      The most reliable source is
+      <a href="https://pvwatts.nrel.gov/" rel="noopener" class="text-brand-700 underline">NREL PVWatts</a>,
+      which reports solar radiation in kWh per square meter per day for any US address; that
+      number is your peak sun hours. If you skip this step, 4.5 is a fair middle value for most
+      of the country outside the Southwest and the far north.
+    </p>
+  </section>
+
+  <!-- Assumptions and limits -->
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h2 class="text-3xl font-bold text-slate-900">Assumptions and limits</h2>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      The model is deliberately simple so every line of the result can be checked by hand. A few
+      things are fixed or left out as a result.
+    </p>
+    <ul class="mt-4 list-disc space-y-3 pl-5 leading-relaxed text-slate-600">
+      <li>
+        The performance ratio is fixed at 78%. Heavy shading, a north-facing roof, or a very flat
+        pitch would push real output below that, and a well-sited system in a cool, sunny climate
+        can slightly exceed it.
+      </li>
+      <li>
+        Savings are valued at your full retail rate, which assumes one-to-one net metering. Where
+        utilities credit exports below retail, such as California under NEM 3.0 and a growing
+        number of other states, savings will be lower unless you shift usage or add storage. The
+        <a href="/solar-battery-calculator/" class="text-brand-700 underline">solar battery calculator</a>
+        covers that case.
+      </li>
+      <li>
+        No panel degradation or utility rate escalation is modeled. Panels lose roughly 0.5% of
+        output per year while rates have historically risen 2 to 3% per year, so over a
+        25-year life the two effects roughly cancel, but payback in any single year will differ.
+      </li>
+      <li>
+        Installer pricing varies by region, roof complexity, and equipment. See
+        <a href="/solar-panel-cost-by-state/" class="text-brand-700 underline">solar panel cost by state</a>
+        for typical per-watt ranges, and the
+        <a href="/methodology/" class="text-brand-700 underline">methodology page</a>
+        for the sources behind every default.
+      </li>
+    </ul>
+
+    <h3 class="mt-8 text-xl font-semibold text-slate-900">Quick reference: bill to system size</h3>
+    <p class="mt-4 leading-relaxed text-slate-600">
+      At $0.17 per kWh, 4.5 sun hours, 100% offset, 400 W panels, and $2.75 per watt after the
+      30% credit. Net cost is based on the exact kW figure, so it is slightly under what the
+      rounded-up panel count would cost.
+    </p>
+    <div class="mt-4 overflow-x-auto">
+      <table class="w-full text-left text-sm text-slate-700">
+        <thead class="border-b border-slate-300 text-xs font-semibold tracking-wide text-slate-500 uppercase">
+          <tr>
+            <th scope="col" class="py-2 pr-4">Monthly bill</th>
+            <th scope="col" class="py-2 pr-4">System size</th>
+            <th scope="col" class="py-2 pr-4">Panels (400 W)</th>
+            <th scope="col" class="py-2">Net cost</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {quickReference.map((row) => (
+            <tr>
+              <td class="py-2 pr-4 font-medium text-slate-900">{row.bill}</td>
+              <td class="py-2 pr-4">{row.kw}</td>
+              <td class="py-2 pr-4">{row.panels}</td>
+              <td class="py-2">{row.net}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <FaqSection faqs={faqs} />
   </section>
 
   <!-- Disclaimer + calculator links -->

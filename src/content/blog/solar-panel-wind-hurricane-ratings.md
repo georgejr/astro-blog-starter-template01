@@ -1,7 +1,7 @@
 ---
 title: "Hurricane and High-Wind Ratings for Rooftop Solar"
 description: "A solar panel wind rating tells you what uplift a system can survive. How ratings work, why the attachment matters more than the module, and coastal specifics."
-publishDate: 2026-10-29T08:00:00Z
+publishDate: 2028-08-01T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

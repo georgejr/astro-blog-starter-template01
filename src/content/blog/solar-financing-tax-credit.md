@@ -1,7 +1,7 @@
 ---
 title: "Solar Loans and the Tax Credit: How Financing Changes the Math"
 description: "How solar loans are structured around the federal tax credit, what re-amortization means, and what happens to your payment if you keep the refund instead of paying it down."
-publishDate: 2026-11-24T08:00:00Z
+publishDate: 2029-07-31T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - solar loans

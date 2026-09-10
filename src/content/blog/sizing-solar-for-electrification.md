@@ -2,7 +2,7 @@
 title: "Sizing Solar for a Fully Electrified Home: EV, Heat Pump, Induction"
 description: "Sizing solar for home electrification means planning for a much bigger electric load — heat pump, EV, water heater, induction — not the bill you have today."
 slug: "sizing-solar-for-electrification"
-publishDate: 2027-02-28T08:00:00Z
+publishDate: 2033-04-05T08:00:00Z
 category: "Electricity Usage"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -2,7 +2,7 @@
 title: "How Much Solar Saves If You Run a Hot Tub Year-Round"
 description: "Solar savings with a hot tub: how to estimate the year-round electricity a spa uses, how many panels offset it, and how it changes your overall solar payback."
 slug: "solar-savings-hot-tub"
-publishDate: 2027-03-02T16:00:00Z
+publishDate: 2033-05-10T08:00:00Z
 category: "Savings & ROI"
 author: "SunMetricLab Editorial Team"
 tags:

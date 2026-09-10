@@ -1,7 +1,7 @@
 ---
 title: "Solar in Mountainous, Forested Terrain: Ridgelines and Shade"
 description: "In mountainous, forested terrain, ridgeline horizon shading and tree cover matter more than regional sun figures. Here's why sun-path and shade analysis drive the design."
-publishDate: 2027-03-18T16:00:00Z
+publishDate: 2033-12-20T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

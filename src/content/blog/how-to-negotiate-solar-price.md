@@ -1,7 +1,7 @@
 ---
 title: "Can You Negotiate a Solar Quote? Yes — Here's How"
 description: "Negotiate solar panel price with leverage that works: use competing bids, cost per watt, and line-item detail to lower an install price without cutting quality."
-publishDate: 2026-09-23T16:00:00Z
+publishDate: 2027-03-23T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

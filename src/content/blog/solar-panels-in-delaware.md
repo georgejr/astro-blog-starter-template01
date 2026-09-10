@@ -1,7 +1,7 @@
 ---
 title: "Delaware Solar and the SREC Market That Sweetens the Math"
 description: "Solar panels in Delaware pair moderate-to-high rates with a tradable SREC market, adding a second revenue stream on top of ordinary bill savings."
-publishDate: 2026-12-20T16:00:00Z
+publishDate: 2030-08-06T08:00:00Z
 category: "State Guides"
 tags:
   - delaware

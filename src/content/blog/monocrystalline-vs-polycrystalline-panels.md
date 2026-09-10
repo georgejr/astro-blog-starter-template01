@@ -1,7 +1,7 @@
 ---
 title: "Monocrystalline vs Polycrystalline Panels: Does It Matter?"
 description: "Monocrystalline vs polycrystalline solar panels used to be a real decision. Here's why mono now dominates, and what the efficiency, space, and cost differences mean for you."
-publishDate: 2027-02-09T08:00:00Z
+publishDate: 2032-07-13T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - panel types

@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings for a Big Family in a High-Usage Home"
 description: "A large family's heavy electricity use lets solar erase a bigger share of the bill than a small home—because solar displaces your most expensive top-tier power first."
-publishDate: 2027-02-22T16:00:00Z
+publishDate: 2033-01-18T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

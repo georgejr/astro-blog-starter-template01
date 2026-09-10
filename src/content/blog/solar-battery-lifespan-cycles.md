@@ -1,7 +1,7 @@
 ---
 title: "Solar Battery Lifespan: Cycles, Years, and What Wears Them Out"
 description: "Solar battery lifespan is set by two clocks—cycles and calendar years. How long home batteries last, what warranties promise, and what accelerates degradation."
-publishDate: 2026-09-14T08:00:00Z
+publishDate: 2026-11-10T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - solar batteries

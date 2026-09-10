@@ -1,7 +1,7 @@
 ---
 title: "How Much Solar It Takes to Run an RV Air Conditioner Off-Grid"
 description: "Running an RV air conditioner off-grid on solar is really a battery and inverter problem. Here's the panel, battery, and soft-start math that makes it work."
-publishDate: 2027-03-15T08:00:00Z
+publishDate: 2033-11-01T08:00:00Z
 category: "Off-Grid & Mobile"
 author: "SunMetricLab Editorial Team"
 tags:

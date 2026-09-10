@@ -1,7 +1,7 @@
 ---
 title: "How to File a Homeowners Insurance Claim for Solar Damage"
 description: "A step-by-step guide to filing a homeowners insurance claim for storm-damaged solar panels — documenting the damage, working the claim, and deciding repair vs. replace."
-publishDate: 2027-01-08T16:00:00Z
+publishDate: 2031-04-29T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - insurance

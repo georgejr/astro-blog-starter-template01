@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings When You Work From Home All Day"
 description: "Working from home changes the solar math: being there at noon lets you consume your own production instead of exporting it, and that boosts savings."
-publishDate: 2026-12-20T08:00:00Z
+publishDate: 2030-07-30T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

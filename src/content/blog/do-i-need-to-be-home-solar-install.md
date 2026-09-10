@@ -1,7 +1,7 @@
 ---
 title: "Do You Need to Be Home When Solar Panels Are Installed?"
 description: "Do you need to be home for solar installation? Usually only at key moments, not the whole job. What requires access, and how to prep pets, parking, and power."
-publishDate: 2026-12-14T16:00:00Z
+publishDate: 2030-05-14T08:00:00Z
 category: "Installation"
 tags:
   - installation

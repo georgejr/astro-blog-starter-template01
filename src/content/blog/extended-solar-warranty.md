@@ -1,7 +1,7 @@
 ---
 title: "Extended Solar Warranties: Worth the Extra Cost?"
 description: "Is an extended solar panel warranty worth buying? An honest cost-benefit look at what extensions insure, where systems really fail, and when the math works."
-publishDate: 2026-10-08T08:00:00Z
+publishDate: 2027-10-12T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - warranties

@@ -1,7 +1,7 @@
 ---
 title: "Indiana Solar After Net Metering: Why Self-Use Now Rules the Math"
 description: "Solar panels in Indiana pay off differently now that full net metering has been phased out. Self-consumption and storage carry the economics — here's the logic."
-publishDate: 2026-12-29T16:00:00Z
+publishDate: 2030-12-10T08:00:00Z
 category: "State Guides"
 tags:
   - indiana

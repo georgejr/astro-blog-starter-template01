@@ -1,7 +1,7 @@
 ---
 title: "Ground-Mounted Solar: When Skipping the Roof Makes Sense"
 description: "A homeowner's comparison of ground mount vs roof mount solar: cost premiums, output gains, permitting, and the situations where leaving the roof empty is the smart call."
-publishDate: 2026-11-20T16:00:00Z
+publishDate: 2029-06-12T08:00:00Z
 category: "Roof & Shading"
 tags:
   - ground mount

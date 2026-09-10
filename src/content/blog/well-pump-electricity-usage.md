@@ -1,7 +1,7 @@
 ---
 title: "How Much Electricity a Well Pump Uses and Why It Spikes"
 description: "How much electricity does a well pump use? A look at a submersible pump's intermittent but heavy draw, its startup surge, and how it shows up on your monthly kWh."
-publishDate: 2027-02-01T16:00:00Z
+publishDate: 2032-03-30T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

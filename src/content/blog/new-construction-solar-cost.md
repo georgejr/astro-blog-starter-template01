@@ -1,7 +1,7 @@
 ---
 title: "Solar on New Construction: Bundled Cost vs a Later Retrofit"
 description: "Weighing solar on new construction cost against a later retrofit: what a builder's package bundles, where the markup hides, and how the tax credit applies."
-publishDate: 2027-03-05T08:00:00Z
+publishDate: 2033-06-14T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

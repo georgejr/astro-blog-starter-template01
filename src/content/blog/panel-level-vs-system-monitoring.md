@@ -1,7 +1,7 @@
 ---
 title: "Panel-Level vs System-Level Monitoring: Do You Need the Detail?"
 description: "Panel-level monitoring for solar shows each module's output; system-level shows the whole array. Here's when per-panel detail earns its cost and when it just satisfies curiosity."
-publishDate: 2026-10-22T08:00:00Z
+publishDate: 2028-04-25T08:00:00Z
 category: "Inverters & Components"
 tags:
   - monitoring

@@ -1,7 +1,7 @@
 ---
 title: "Adding a Battery to Solar That Is Already Ten Years Old"
 description: "How to add a battery to old solar panels built around a legacy string inverter — why AC coupling usually fits, and when replacing the inverter makes more sense."
-publishDate: 2027-02-06T08:00:00Z
+publishDate: 2032-06-01T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

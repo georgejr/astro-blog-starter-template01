@@ -1,7 +1,7 @@
 ---
 title: "Powering a Refrigerator Off-Grid Without Draining the Bank"
 description: "How much solar and battery it takes to run a refrigerator off-grid, why a DC compressor fridge changes the math, and how to size for cloudy days honestly."
-publishDate: 2027-02-04T08:00:00Z
+publishDate: 2032-05-04T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

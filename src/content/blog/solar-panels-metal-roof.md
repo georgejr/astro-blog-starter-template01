@@ -1,7 +1,7 @@
 ---
 title: "Metal Roofs and Solar: A Better Match Than You Might Think"
 description: "Solar panels on a metal roof often mount with clamps and no penetrations. How standing-seam and corrugated roofs compare to shingles, and what to check first."
-publishDate: 2026-09-13T16:00:00Z
+publishDate: 2026-11-03T08:00:00Z
 category: "Roof & Shading"
 tags:
   - metal roof

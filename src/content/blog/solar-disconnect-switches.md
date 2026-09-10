@@ -1,7 +1,7 @@
 ---
 title: "AC and DC Disconnects: The Switches That Make Solar Safe to Service"
 description: "Solar disconnect switches explained: what the AC and DC disconnects do, why utilities and electricians require them, and where they sit in your system."
-publishDate: 2027-03-13T08:00:00Z
+publishDate: 2033-10-04T08:00:00Z
 category: "Inverters & Components"
 tags:
   - components

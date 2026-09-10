@@ -1,7 +1,7 @@
 ---
 title: "Permits and Inspections for Adding a Home Battery, Step by Step"
 description: "Adding a home battery triggers a permit and inspection process that surprises many owners. Here's each step, why fire codes get involved, and how long the sequence usually runs."
-publishDate: 2027-02-16T16:00:00Z
+publishDate: 2032-10-26T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

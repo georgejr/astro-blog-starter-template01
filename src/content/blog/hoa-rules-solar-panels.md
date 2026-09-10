@@ -1,7 +1,7 @@
 ---
 title: "HOA Rules and Solar Panels: Your Rights and Aesthetic Options"
 description: "HOA solar panel rules, explained: what an association can and can't restrict, how state solar access laws limit them, and low-profile ways to keep an array approvable."
-publishDate: 2026-10-13T16:00:00Z
+publishDate: 2027-12-28T08:00:00Z
 category: "Roof & Shading"
 tags:
   - hoa

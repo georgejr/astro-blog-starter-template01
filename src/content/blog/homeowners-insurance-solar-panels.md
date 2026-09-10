@@ -1,7 +1,7 @@
 ---
 title: "Does Homeowners Insurance Cover Solar Panels?"
 description: "Does homeowners insurance cover solar panels? Usually yes when they're roof-mounted and owned. Here's how coverage, claims, and premiums actually work."
-publishDate: 2026-10-01T08:00:00Z
+publishDate: 2027-07-06T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - home insurance

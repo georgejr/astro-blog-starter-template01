@@ -1,7 +1,7 @@
 ---
 title: "Depth of Discharge, Explained for Home Battery Owners"
 description: "Battery depth of discharge tells you how much of a home battery you can actually use. Here's what DoD means, how it sets usable capacity, and why specs quote it."
-publishDate: 2026-09-19T08:00:00Z
+publishDate: 2027-01-19T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

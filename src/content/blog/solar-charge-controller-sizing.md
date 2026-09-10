@@ -1,7 +1,7 @@
 ---
 title: "How to Size a Solar Charge Controller for Amps and Volts"
 description: "How to size a solar charge controller: a simple method to calculate the amp rating and voltage window an MPPT controller needs for your panel array and battery bank."
-publishDate: 2027-01-13T16:00:00Z
+publishDate: 2031-07-08T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

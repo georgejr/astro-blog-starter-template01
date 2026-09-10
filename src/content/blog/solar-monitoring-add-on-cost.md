@@ -1,7 +1,7 @@
 ---
 title: "What Solar Monitoring Add-Ons Cost and When They're Worth It"
 description: "Solar monitoring cost, explained: what consumption and panel-level monitoring add to a quote, what the hardware actually does, and when the upgrade earns its price."
-publishDate: 2027-01-29T16:00:00Z
+publishDate: 2032-02-17T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

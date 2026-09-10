@@ -1,9 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DisclaimerBox from '../../components/DisclaimerBox.astro';
-import RelatedLinks from '../../components/RelatedLinks.astro';
-import { CALCULATOR_LINKS, SITE_NAME } from '../../lib/site';
+import SourcesBox from '../../components/SourcesBox.astro';
+import CalculatorCta from '../../components/CalculatorCta.astro';
+import AuthorByline from '../../components/AuthorByline.astro';
+import { DATA_LAST_UPDATED, FEDERAL_CREDIT_NOTE } from '../../lib/site';
 import { articleSchema, breadcrumbSchema } from '../../lib/schema';
+import { ogPageUrl } from '../../lib/og-pages';
+import { DEFAULT_AUTHOR } from '../../data/authors';
+import { stateNotes } from '../../data/state-notes';
 import { CITIES, cityAsState, cityState, citySlug } from '../../data/city-solar';
 import {
   ASSUMPTIONS,
@@ -23,72 +28,119 @@ export function getStaticPaths() {
 const { c } = Astro.props;
 const s = cityAsState(c);
 const state = cityState(c);
+const notes = stateNotes(state.abbr);
+const otherCities = CITIES.filter((x) => x.stateAbbr === c.stateAbbr && x.name !== c.name);
 
-const usd = (n) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
-const kwh = (n) => `${(Math.round(n / 10) * 10).toLocaleString('en-US')} kWh`;
+const usd = (n: number) => `$${(Math.round(n / 100) * 100).toLocaleString('en-US')}`;
+const kwh = (n: number) => `${(Math.round(n / 10) * 10).toLocaleString('en-US')} kWh`;
 const kw = ASSUMPTIONS.representativeKw;
 const sizes = [6, 8, 10];
 const payback = paybackYears(kw, s);
+const statePayback = paybackYears(kw, state);
 const creditPct = Math.round(ASSUMPTIONS.federalCreditRate * 100);
 
 const sunDesc =
   c.sunHours >= 5.5 ? 'well above the national average' : c.sunHours >= 4.5 ? 'about average for the US' : 'below the national average';
+const vsState =
+  Math.abs(c.sunHours - state.sunHours) < 0.05
+    ? `matching the ${state.name} statewide average`
+    : c.sunHours > state.sunHours
+      ? `a little sunnier than the ${state.name} average of ${state.sunHours.toFixed(1)}`
+      : `slightly below the ${state.name} average of ${state.sunHours.toFixed(1)}`;
 
 const canonicalUrl = new URL(`/solar-panel-cost-by-city/${citySlug(c)}/`, Astro.site).href;
+const ogImage = ogPageUrl(`city-${citySlug(c)}`, Astro.site);
+const publishedIso = '2026-07-15T00:00:00Z';
+const modifiedIso = `${DATA_LAST_UPDATED}T00:00:00Z`;
+const updated = new Date(modifiedIso).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+
+const title = `Solar Panel Cost in ${c.name}, ${c.stateAbbr}: 2026 Estimate & Payback`;
+const description = `Modeled solar panel costs in ${c.name}, ${c.stateAbbr}: 6/8/10 kW system prices, yearly savings and payback from ${c.name}'s ${c.sunHours.toFixed(1)} sun hours and the ${state.name} electricity rate, plus local net metering and utility notes.`;
+
 const structuredData = [
   articleSchema({
+    type: 'Article',
     headline: `Solar Panel Cost in ${c.name}, ${c.stateAbbr} (2026 Estimate)`,
-    description: `Modeled solar panel cost, savings, and payback for ${c.name}, ${c.stateAbbr}.`,
+    description,
     url: canonicalUrl,
-    datePublished: '2026-07-15T00:00:00Z',
-    author: SITE_NAME,
-    publisher: SITE_NAME,
+    datePublished: publishedIso,
+    dateModified: modifiedIso,
+    author: DEFAULT_AUTHOR,
+    image: ogImage,
+    keywords: [`solar panel cost ${c.name}`, `${c.name} solar payback`, `${state.name} net metering`],
+    articleSection: 'Solar Panel Cost by City',
   }),
   breadcrumbSchema([
     { name: 'Home', url: new URL('/', Astro.site).href },
     { name: 'Solar Panel Cost by City', url: new URL('/solar-panel-cost-by-city/', Astro.site).href },
-    { name: c.name, url: canonicalUrl },
+    { name: `${c.name}, ${c.stateAbbr}`, url: canonicalUrl },
   ]),
 ];
+
+const paragraphClass = 'mt-3 leading-relaxed text-slate-700';
 ---
 
 <BaseLayout
-  title={`Solar Panel Cost in ${c.name}, ${c.stateAbbr}: 2026 Estimate & Payback`}
-  description={`A modeled estimate of solar panel costs in ${c.name}, ${c.stateAbbr}: 6/8/10 kW system prices after the federal credit, yearly savings, and payback based on local sun hours and the state electricity rate.`}
+  title={title}
+  description={description}
   structuredData={structuredData}
+  ogImage={ogImage}
+  ogImageAlt={`Solar panel cost in ${c.name}, ${c.stateAbbr}: modeled payback ${payback.toFixed(1)} years`}
+  ogType="article"
+  publishedTime={publishedIso}
+  modifiedTime={modifiedIso}
+  authorName={DEFAULT_AUTHOR.name}
 >
   <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <nav class="text-sm font-medium text-brand-700" aria-label="Breadcrumb">
-      <a href="/solar-panel-cost-by-city/" class="hover:underline">&larr; All cities</a>
+      <ol class="flex flex-wrap items-center gap-1">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li aria-hidden="true" class="text-slate-300">/</li>
+        <li><a href="/solar-panel-cost-by-city/" class="hover:underline">Solar Panel Cost by City</a></li>
+        <li aria-hidden="true" class="text-slate-300">/</li>
+        <li class="text-slate-500" aria-current="page">{c.name}, {c.stateAbbr}</li>
+      </ol>
     </nav>
     <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
       Solar Panel Cost in {c.name}, {c.stateAbbr} (2026 Estimate)
     </h1>
+    <AuthorByline author={DEFAULT_AUTHOR} />
+    <p class="mt-1 text-sm text-slate-500">
+      Data last updated <time datetime={DATA_LAST_UPDATED}>{updated}</time>
+    </p>
 
     <p class="mt-6 leading-relaxed text-slate-700">
-      {c.name} averages about <strong>{c.sunHours.toFixed(1)} peak sun hours a day</strong> ({sunDesc}),
+      {c.name} averages about <strong>{c.sunHours.toFixed(1)} peak sun hours a day</strong> ({sunDesc}, {vsState}),
       and pairs with {state.name}'s approximate residential rate near <strong>{s.rateCents}¢/kWh</strong>.
       In the model used here, an {kw} kW system produces roughly
       <strong>{kwh(annualProduction(kw, c.sunHours))}</strong> a year and trims about
       <strong>{usd(annualSavings(kw, s))}</strong> off annual electricity costs, paying back its net
-      cost in about <strong>{payback.toFixed(1)} years</strong>. Local shading, roof, and your
-      utility's export terms move the real figure.
+      cost in about <strong>{payback.toFixed(1)} years</strong>
+      {Math.abs(payback - statePayback) >= 0.1 && (
+        <span> (versus {statePayback.toFixed(1)} years for {state.name} as a whole)</span>
+      )}. Local shading, roof, and your utility's export terms move the real figure.
     </p>
 
     <h2 class="mt-10 text-2xl font-bold text-slate-900">Estimated system cost and payback in {c.name}</h2>
     <p class="mt-2 text-slate-600">
-      Costs assume roughly ${ASSUMPTIONS.grossPricePerWatt[s.tier].toFixed(2)}/watt installed;
-      net cost is after the {creditPct}% federal Residential Clean Energy Credit. Savings use {c.name}'s
-      sun hours and {state.name}'s rate.
+      Costs assume roughly ${ASSUMPTIONS.grossPricePerWatt[s.tier].toFixed(2)}/watt installed; the net
+      column applies a {creditPct}% federal credit for comparison with quotes that include it. Savings use
+      {c.name}'s sun hours and {state.name}'s rate.
     </p>
 
     <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
       <table class="w-full min-w-[520px] border-collapse text-sm">
+        <caption class="sr-only">Modeled solar cost, production, savings and payback in {c.name} by system size</caption>
         <thead>
           <tr class="bg-slate-50 text-left text-slate-600">
             <th class="px-4 py-3 font-semibold">System size</th>
             <th class="px-4 py-3 font-semibold">Gross cost</th>
-            <th class="px-4 py-3 font-semibold">Net after credit</th>
+            <th class="px-4 py-3 font-semibold">Net after {creditPct}% credit</th>
             <th class="px-4 py-3 font-semibold">Yearly production</th>
             <th class="px-4 py-3 font-semibold">Yearly savings</th>
             <th class="px-4 py-3 font-semibold">Payback</th>
@@ -108,20 +160,52 @@ const structuredData = [
         </tbody>
       </table>
     </div>
+    <p class="mt-3 text-xs leading-relaxed text-slate-500">{FEDERAL_CREDIT_NOTE}</p>
 
-    <h2 class="mt-10 text-2xl font-bold text-slate-900">Incentives and rates around {c.name}</h2>
-    <p class="mt-2 leading-relaxed text-slate-700">
-      The 30% federal Residential Clean Energy Credit applies everywhere and is already in the net
-      figures above. Beyond it, what your exported power is worth is set at the state and utility
-      level: {state.name} generally uses {netMeteringPosture(state)}. Because that moves payback more
-      than almost any local factor, confirm your own utility's current terms. For the full state
-      picture — property/sales-tax treatment and net-metering structure — see the
-      <a href={`/solar-panel-cost-by-state/${stateSlug(state)}/`} class="text-brand-700 underline">{state.name} solar cost guide</a>.
+    <CalculatorCta
+      ids={['solar-panel-calculator', 'how-many-solar-panels-do-i-need']}
+      lead={`Replace the ${c.name} averages with your own bill and roof:`}
+    />
+
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Net metering and utilities around {c.name}</h2>
+    {notes ? (
+      <>
+        {notes.netMetering.slice(0, 1).map((p) => <p class={paragraphClass}>{p}</p>)}
+        {notes.utilities.map((p) => <p class={paragraphClass}>{p}</p>)}
+      </>
+    ) : (
+      <p class={paragraphClass}>
+        What your exported power is worth is set at the state and utility level: {state.name} generally
+        uses {netMeteringPosture(state)}. Confirm your own utility's current terms before you sign.
+      </p>
+    )}
+    <p class={paragraphClass}>
+      For the full state picture, including incentives, property and sales tax treatment and the
+      complete net metering notes, see the
+      <a href={`/solar-panel-cost-by-state/${stateSlug(state)}/`} class="text-brand-700 underline">{state.name} solar cost page</a>.
     </p>
 
+    {otherCities.length > 0 && (
+      <section class="mt-10">
+        <h2 class="text-2xl font-bold text-slate-900">Other {state.name} cities</h2>
+        <ul class="mt-3 flex flex-wrap gap-2">
+          {otherCities.map((x) => (
+            <li>
+              <a
+                href={`/solar-panel-cost-by-city/${citySlug(x)}/`}
+                class="inline-block rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium text-brand-700 hover:border-brand-300 hover:bg-brand-50"
+              >
+                {x.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <div class="mt-10 space-y-10">
+      <SourcesBox extra={notes?.sources ?? []} />
       <DisclaimerBox />
-      <RelatedLinks links={CALCULATOR_LINKS} heading="Estimate your own system" />
     </div>
   </article>
 </BaseLayout>

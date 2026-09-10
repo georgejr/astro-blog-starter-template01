@@ -1,7 +1,7 @@
 ---
 title: "Keeping Solar Monitoring Online: Wi-Fi, Ethernet, and Dead Spots"
 description: "A solar monitoring wifi connection that keeps dropping hides your production data. Why inverter gateways go offline, and how to keep them online for good."
-publishDate: 2027-03-06T16:00:00Z
+publishDate: 2033-07-05T08:00:00Z
 category: "Inverters & Components"
 tags:
   - monitoring

@@ -1,7 +1,7 @@
 ---
 title: "How Many Solar Panels Do You Need for 800 kWh a Month?"
 description: "Sizing solar panels for 800 kWh per month depends on your sun hours and panel wattage. The kW size, panel count, and roof space a modest household needs."
-publishDate: 2026-12-13T08:00:00Z
+publishDate: 2030-04-23T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

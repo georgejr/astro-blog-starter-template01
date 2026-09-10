@@ -1,7 +1,7 @@
 ---
 title: "Grounding and Bonding a Solar System, Explained for Homeowners"
 description: "Solar panel grounding and bonding, made clear. What equipment grounding and bonding actually do, how your array ties to earth, and why it matters for safety and lightning."
-publishDate: 2027-01-31T16:00:00Z
+publishDate: 2032-03-16T08:00:00Z
 category: "Inverters & Components"
 tags:
   - components

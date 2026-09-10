@@ -1,7 +1,7 @@
 ---
 title: "Should You Aim for 100% Solar Offset?"
 description: "A 100 percent solar offset sounds like the obvious target, but local export rates and rate design often make a slightly smaller system the smarter buy."
-publishDate: 2026-11-11T16:00:00Z
+publishDate: 2029-02-06T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

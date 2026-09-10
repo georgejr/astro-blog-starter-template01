@@ -1,7 +1,7 @@
 ---
 title: "Why Your Usage Swings With the Seasons"
 description: "Seasonal electricity usage patterns can more than double from mild months to peak ones. What drives the swings and why annual averages hide them."
-publishDate: 2026-09-28T16:00:00Z
+publishDate: 2027-06-01T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting a Sudden Drop in Solar Production"
 description: "Solar panels producing less than usual? A systematic checklist to isolate why output dropped — seasonal, shading, soiling, or hardware — before you call for service."
-publishDate: 2026-11-07T08:00:00Z
+publishDate: 2028-12-05T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - troubleshooting

@@ -1,7 +1,7 @@
 ---
 title: "Your EV as a Home Backup Battery: Vehicle-to-Home Basics"
 description: "Vehicle-to-home backup power uses your EV's battery to run the house in an outage. Here's the hardware and wiring it takes — and how V2H compares to a wall battery."
-publishDate: 2026-11-28T16:00:00Z
+publishDate: 2029-10-02T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - vehicle-to-home

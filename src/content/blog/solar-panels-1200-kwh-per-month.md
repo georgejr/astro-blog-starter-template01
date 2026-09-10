@@ -1,7 +1,7 @@
 ---
 title: "Sizing Solar for a 1,200 kWh Monthly Electric Bill"
 description: "A 1,200 kWh monthly bill points to a roughly 9 to 10 kW solar system, but your sun hours and roof space move that number more than any rule of thumb."
-publishDate: 2026-12-25T16:00:00Z
+publishDate: 2030-10-15T08:00:00Z
 category: "System Sizing"
 tags:
   - sizing

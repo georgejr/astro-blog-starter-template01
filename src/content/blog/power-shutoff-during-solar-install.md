@@ -1,7 +1,7 @@
 ---
 title: "Will Your Power Be Off During a Solar Installation?"
 description: "Will power be off during solar installation? Usually only for a short window when the crew ties into your panel — here's when it happens and how long."
-publishDate: 2026-12-27T08:00:00Z
+publishDate: 2030-11-05T08:00:00Z
 category: "Installation"
 tags:
   - installation

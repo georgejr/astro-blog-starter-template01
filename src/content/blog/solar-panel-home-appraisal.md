@@ -1,7 +1,7 @@
 ---
 title: "How Appraisers Actually Value Solar Panels on a Home"
 description: "How a solar panel home appraisal really works: the income and cost approaches, why owned systems and leases differ, and what makes value hold or vanish."
-publishDate: 2026-11-10T16:00:00Z
+publishDate: 2029-01-23T08:00:00Z
 category: "Savings & ROI"
 tags:
   - home value

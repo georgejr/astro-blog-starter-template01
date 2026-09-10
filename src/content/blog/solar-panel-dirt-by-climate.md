@@ -1,7 +1,7 @@
 ---
 title: "Moss, Lichen, Dust or Pollen: Panel Grime by Climate"
 description: "What actually settles on solar panels depends on where you live. How moss, lichen, dust, and pollen differ in how they cling, what they cost in output, and how each is cleaned."
-publishDate: 2026-11-22T08:00:00Z
+publishDate: 2029-07-03T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - soiling

@@ -1,7 +1,7 @@
 ---
 title: "Is Leasing Solar a Bad Idea? An Honest Look"
 description: "Is leasing solar worth it? A lease isn't automatically bad — it trades the tax credit and best savings for zero upfront cost. Who each path actually suits."
-publishDate: 2027-02-05T08:00:00Z
+publishDate: 2032-05-18T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - leasing

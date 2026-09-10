@@ -1,7 +1,7 @@
 ---
 title: "Do You Have to Itemize to Claim the Solar Tax Credit?"
 description: "Do you have to itemize for the solar tax credit? No. The residential clean energy credit is claimed whether you take the standard deduction or itemize. Here's why."
-publishDate: 2027-03-14T16:00:00Z
+publishDate: 2033-10-25T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

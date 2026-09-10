@@ -1,7 +1,7 @@
 ---
 title: "Solar in the Pacific Northwest: Bright Summers, Dark Wet Winters"
 description: "Pacific Northwest solar lives or dies on banking a big summer surplus against a dark winter. Here's how Washington and Oregon homeowners should size and value a system."
-publishDate: 2027-02-19T08:00:00Z
+publishDate: 2032-11-30T08:00:00Z
 category: "State Guides"
 tags:
   - pacific northwest

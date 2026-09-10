@@ -1,7 +1,7 @@
 ---
 title: "20kW Solar System Cost: Pricing a High-Usage Whole-Home Array"
 description: "A 20 kW solar system suits homes with electric heat, pools, or multiple EVs. Here's the realistic installed cost, panel count, and whether a system this big is worth building."
-publishDate: 2027-02-20T08:00:00Z
+publishDate: 2032-12-14T08:00:00Z
 category: "Solar Costs"
 tags:
   - costs

@@ -1,7 +1,7 @@
 ---
 title: "How Much Does a Heat Pump Add to Your Electric Bill?"
 description: "How much a heat pump adds to your electric bill, why winter kWh spikes, and how to estimate the seasonal dollar impact of switching from gas or oil heat."
-publishDate: 2027-02-04T16:00:00Z
+publishDate: 2032-05-11T08:00:00Z
 category: "Electricity Usage"
 tags:
   - heat pump

@@ -1,62 +1,141 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { AUTHORS, DEFAULT_AUTHOR } from '../data/authors';
+import { DATA_FIRST_PUBLISHED, DATA_LAST_UPDATED, SITE_NAME } from '../lib/site';
+import { breadcrumbSchema, organizationSchema, personSchema, webPageSchema } from '../lib/schema';
+import { ogPageUrl } from '../lib/og-pages';
+
+const canonicalUrl = new URL('/about/', Astro.site).href;
+const title = `About ${SITE_NAME}: who builds the calculators and checks the numbers`;
+const description =
+  'SunMetricLab is an independent solar estimating site: free calculators, modeled state and city cost data, and guides written and reviewed by a named editor. No lead selling.';
+
+const structuredData = [
+  webPageSchema({
+    name: title,
+    description,
+    url: canonicalUrl,
+    datePublished: `${DATA_FIRST_PUBLISHED}T00:00:00Z`,
+    dateModified: `${DATA_LAST_UPDATED}T00:00:00Z`,
+  }),
+  { '@context': 'https://schema.org', ...organizationSchema(), founder: personSchema(DEFAULT_AUTHOR) },
+  { '@context': 'https://schema.org', ...personSchema(DEFAULT_AUTHOR) },
+  breadcrumbSchema([
+    { name: 'Home', url: new URL('/', Astro.site).href },
+    { name: 'About', url: canonicalUrl },
+  ]),
+];
+
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .map((p) => p[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
+<BaseLayout
+  title={title}
+  description={description}
+  structuredData={structuredData}
+  ogImage={ogPageUrl('about', Astro.site)}
 >
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <nav class="text-sm font-medium text-brand-700" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Home</a>
+      <span class="mx-2 text-slate-300">/</span>
+      <span class="text-slate-500">About</span>
+    </nav>
+    <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">About {SITE_NAME}</h1>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+    <div class="mt-8 space-y-5 leading-relaxed text-slate-700">
+      <p>
+        {SITE_NAME} exists to answer one question honestly: what would rooftop solar actually cost and
+        save for your house? Most online solar estimates are either too vague to act on or built to
+        collect your phone number for installers. This site does neither. The calculators run entirely
+        in your browser, ask for nothing but the numbers on your bill, and show the formula behind
+        every result.
+      </p>
+      <p>
+        The site has three parts. The <a href="/solar-panel-calculator/" class="text-brand-700 underline">calculators</a>
+        size a system, price it, and estimate savings and payback from your own inputs. The
+        <a href="/solar-panel-cost-by-state/" class="text-brand-700 underline">state</a> and
+        <a href="/solar-panel-cost-by-city/" class="text-brand-700 underline">city cost pages</a> apply
+        the same model to published sun-hour and electricity-rate data, with editorial notes on each
+        state's net metering rules, incentives and utilities. The <a href="/blog/" class="text-brand-700 underline">guides</a>
+        explain the concepts those numbers depend on, from performance ratios to export credits.
+      </p>
+    </div>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Who is behind it</h2>
+    <div class="mt-6 space-y-6">
+      {AUTHORS.map((author) => (
+        <section id={author.id} class="flex gap-5 rounded-2xl border border-slate-200 bg-white p-6">
+          <div
+            class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xl font-bold text-white"
+            aria-hidden="true"
+          >
+            {initials(author.name)}
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-slate-900">{author.name}</h3>
+            <p class="text-sm text-slate-500">{author.title}</p>
+            <p class="mt-3 leading-relaxed text-slate-700">{author.bio}</p>
+            {author.sameAs.length > 0 && (
+              <ul class="mt-3 flex flex-wrap gap-3 text-sm">
+                {author.sameAs.map((link) => (
+                  <li>
+                    <a href={link} rel="me noopener" target="_blank" class="text-brand-700 underline">
+                      {new URL(link).hostname.replace(/^www\./, '')}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </section>
+      ))}
+    </div>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">How the numbers are produced</h2>
+    <div class="mt-4 space-y-4 leading-relaxed text-slate-700">
+      <p>
+        Every figure on the site is computed from documented formulas and public data: NREL solar
+        resource data for sun hours, U.S. Energy Information Administration averages for electricity
+        rates, IRS guidance for the federal credit, and DSIRE plus state utility commission filings for
+        net metering and incentive rules. The full set of formulas, constants and limitations is on the
+        <a href="/methodology/" class="text-brand-700 underline">methodology page</a>, and every data page
+        shows when its inputs were last reviewed.
+      </p>
+      <p>
+        Guides are planned from a topic map, drafted, checked against the modeling assumptions, passed
+        through automated checks for unsupported claims and template phrasing, and reviewed by the editor
+        before they go live. When a program rule changes or a reader reports an error, the article is
+        corrected and its updated date is set.
+      </p>
+    </div>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Independence and funding</h2>
+    <div class="mt-4 space-y-4 leading-relaxed text-slate-700">
+      <p>
+        {SITE_NAME} does not sell leads, does not take payment from installers for placement, and does
+        not rank or recommend specific companies. The site is supported by display advertising, which
+        never influences the formulas or the editorial notes. Calculator results are not stored or sent
+        anywhere.
+      </p>
+      <p>
+        Estimates are planning tools, not quotes. Real costs depend on your roof, your utility's export
+        terms, local permitting and the installers competing for your job. Get several written quotes
+        and compare them on price per watt.
+      </p>
+    </div>
+
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Contact</h2>
+    <p class="mt-4 leading-relaxed text-slate-700">
+      Corrections, data questions and partnership requests go through the
+      <a href="/contact/" class="text-brand-700 underline">contact page</a>. If you run a site and want to
+      use a calculator, every calculator page has a free embed snippet with attribution.
+    </p>
+  </article>
+</BaseLayout>

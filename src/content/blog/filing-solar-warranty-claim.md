@@ -1,7 +1,7 @@
 ---
 title: "Filing a Solar Panel Warranty Claim Without the Runaround"
 description: "How to file a solar panel warranty claim: figuring out which warranty applies, who to call, the proof you need, and how to keep a claim from stalling."
-publishDate: 2027-01-21T08:00:00Z
+publishDate: 2031-10-21T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - warranty

@@ -1,7 +1,7 @@
 ---
 title: "Solar vs the Stock Market: Comparing the Real Return"
 description: "Solar vs stock market investment, compared honestly. Why the tax-free, inflation-linked return on solar isn't the same animal as an index fund, and how to weigh both."
-publishDate: 2027-01-30T08:00:00Z
+publishDate: 2032-02-24T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

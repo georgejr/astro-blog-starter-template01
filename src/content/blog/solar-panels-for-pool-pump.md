@@ -1,7 +1,7 @@
 ---
 title: "What It Takes to Run a Pool Pump on Solar"
 description: "How many solar panels does it take to run a pool pump? It depends on the pump type and runtime more than the panels. Here's the sizing math, worked out honestly."
-publishDate: 2026-10-08T16:00:00Z
+publishDate: 2027-10-19T08:00:00Z
 category: "System Sizing"
 tags:
   - pool pump

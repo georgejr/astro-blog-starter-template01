@@ -1,7 +1,7 @@
 ---
 title: "Will a Battery Actually Save You Money on Time-of-Use Rates?"
 description: "The real breakeven math on home battery arbitrage: whether the peak-to-off-peak price spread on a time-of-use rate covers the cost of cycling a battery every day."
-publishDate: 2027-01-05T08:00:00Z
+publishDate: 2031-03-11T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

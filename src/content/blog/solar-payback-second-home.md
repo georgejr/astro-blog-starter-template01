@@ -1,7 +1,7 @@
 ---
 title: "Solar Payback on a Vacation or Second Home"
 description: "Solar payback on a second home runs longer than a primary residence. Low occupancy and light usage stretch break-even — here's the math and when it still makes sense."
-publishDate: 2027-01-12T16:00:00Z
+publishDate: 2031-06-24T08:00:00Z
 category: "Payback"
 tags:
   - payback period

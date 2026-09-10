@@ -1,7 +1,7 @@
 ---
 title: "How to Compare Home Batteries Without Getting Lost in Brand Names"
 description: "How to compare home batteries on what matters: usable kWh, continuous power, round-trip efficiency, and warranty — a brand-neutral checklist for cutting through the spec sheets."
-publishDate: 2027-02-09T16:00:00Z
+publishDate: 2032-07-20T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

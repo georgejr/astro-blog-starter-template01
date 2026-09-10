@@ -1,7 +1,7 @@
 ---
 title: "South Dakota Solar: No Net-Metering Mandate, So Self-Use Wins"
 description: "Solar panels in South Dakota face no statewide net-metering rule, so payback depends on using your own power. How cold-climate owners design around self-consumption."
-publishDate: 2027-01-29T08:00:00Z
+publishDate: 2032-02-10T08:00:00Z
 category: "State Guides"
 tags:
   - south dakota

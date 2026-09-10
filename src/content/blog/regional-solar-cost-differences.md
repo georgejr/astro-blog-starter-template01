@@ -1,7 +1,7 @@
 ---
 title: "Why the Same Solar System Costs More in Some States"
 description: "The panels cost the same everywhere. Why a solar system costs more in some states comes down to labor rates, permitting friction, sales tax, and local competition."
-publishDate: 2027-03-17T16:00:00Z
+publishDate: 2033-12-06T08:00:00Z
 category: "Solar Costs"
 author: "SunMetricLab Editorial Team"
 tags:

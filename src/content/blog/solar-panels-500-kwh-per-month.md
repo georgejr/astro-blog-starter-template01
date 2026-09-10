@@ -1,7 +1,7 @@
 ---
 title: "How Many Panels Cover 500 kWh a Month?"
 description: "How many solar panels for 500 kWh per month? A worked estimate of system size and panel count for light electricity users, by region and panel wattage."
-publishDate: 2026-09-26T08:00:00Z
+publishDate: 2027-04-27T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

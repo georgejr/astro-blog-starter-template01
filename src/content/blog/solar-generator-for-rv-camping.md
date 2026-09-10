@@ -1,7 +1,7 @@
 ---
 title: "Solar Generators for RV and Camping: What Size You Need"
 description: "Sizing a solar generator for RV and camping trips comes down to your watt-hours per day and how you recharge. Here's how to match capacity and input to your loads honestly."
-publishDate: 2027-02-11T16:00:00Z
+publishDate: 2032-08-17T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - rv

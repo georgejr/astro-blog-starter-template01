@@ -1,7 +1,7 @@
 ---
 title: "Skylights, Vents, and Chimneys: Planning Panels Around Roof Obstacles"
 description: "How roof obstructions shape a solar panel layout: the setbacks, shading, and access rules behind skylights, vents, and chimneys — and how designers work around them."
-publishDate: 2026-11-12T16:00:00Z
+publishDate: 2029-02-20T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof layout

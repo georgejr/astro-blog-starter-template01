@@ -1,7 +1,7 @@
 ---
 title: "Calculating Solar ROI Like an Investor"
 description: "How to calculate solar ROI as an annualized return you can compare to other investments. The formulas, the assumptions that matter, and a worked example."
-publishDate: 2026-09-27T16:00:00Z
+publishDate: 2027-05-18T08:00:00Z
 category: "Savings & ROI"
 tags:
   - roi

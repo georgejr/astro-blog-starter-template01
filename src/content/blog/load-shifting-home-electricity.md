@@ -1,7 +1,7 @@
 ---
 title: "Load Shifting Basics: Moving Usage Instead of Cutting It"
 description: "Load shifting electricity means running flexible appliances at cheaper hours instead of cutting usage. Here's when it saves money and how to build a daily routine."
-publishDate: 2026-11-27T16:00:00Z
+publishDate: 2029-09-18T08:00:00Z
 category: "Electricity Usage"
 tags:
   - load shifting

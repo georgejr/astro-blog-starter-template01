@@ -1,7 +1,7 @@
 ---
 title: "Tiny Home Solar: Small Roof, Full-Size Expectations"
 description: "Tiny house solar forces a hard tradeoff: a small roof can host only a few panels, yet occupants still want a fridge, laundry, and heat. Load priority is everything."
-publishDate: 2026-09-17T08:00:00Z
+publishDate: 2026-12-22T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - tiny home

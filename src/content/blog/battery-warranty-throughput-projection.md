@@ -1,7 +1,7 @@
 ---
 title: "Will You Ever Hit Your Battery Warranty Throughput Limit?"
 description: "Wondering how much battery throughput will I use over ten years? Here's how to project your annual energy throughput and whether normal use ever reaches the warranty cap."
-publishDate: 2027-02-24T08:00:00Z
+publishDate: 2033-02-08T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - battery warranty

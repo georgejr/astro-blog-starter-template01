@@ -1,7 +1,7 @@
 ---
 title: "Reading an Inverter Efficiency Curve, Not Just the Headline Number"
 description: "The headline solar inverter efficiency curve number hides how efficiency shifts with load. Why an oversized inverter loses ground at low output and how to read the curve."
-publishDate: 2027-01-27T08:00:00Z
+publishDate: 2032-01-13T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

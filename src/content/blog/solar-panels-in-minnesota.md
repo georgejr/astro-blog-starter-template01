@@ -1,7 +1,7 @@
 ---
 title: "Minnesota Proves Cold Weather Is a Solar Feature, Not a Bug"
 description: "Solar panels in Minnesota benefit from cold, clear winters that raise efficiency — and the state pioneered value-of-solar pricing as an alternative to net metering."
-publishDate: 2026-11-08T08:00:00Z
+publishDate: 2028-12-19T08:00:00Z
 category: "State Guides"
 tags:
   - minnesota

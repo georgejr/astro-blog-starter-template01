@@ -1,7 +1,7 @@
 ---
 title: "Planning to Add Panels Later? Size for Expansion Now"
 description: "Adding solar panels to an existing system is far cheaper when you plan for it up front. Here's what to size for expansion now — inverter, panel, and wiring."
-publishDate: 2026-11-25T08:00:00Z
+publishDate: 2029-08-14T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

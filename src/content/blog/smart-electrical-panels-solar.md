@@ -1,7 +1,7 @@
 ---
 title: "Smart Electrical Panels: Circuit-Level Control for Solar Homes"
 description: "How a smart electrical panel manages circuits dynamically, when it replaces a critical load subpanel, and what circuit-level energy management adds to a solar and battery home."
-publishDate: 2026-11-21T08:00:00Z
+publishDate: 2029-06-19T08:00:00Z
 category: "Inverters & Components"
 tags:
   - smart panel

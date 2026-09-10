@@ -1,7 +1,7 @@
 ---
 title: "12V, 24V, or 48V? Choosing a System Voltage That Scales"
 description: "12v vs 24v vs 48v solar comes down to current. Higher voltage means thinner wire and lower losses. Here's where each tier fits and where it stops making sense."
-publishDate: 2026-10-17T08:00:00Z
+publishDate: 2028-02-15T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

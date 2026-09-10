@@ -1,7 +1,7 @@
 ---
 title: "Can You Refinance a Solar Loan, and Does It Actually Save Money?"
 description: "Refinancing a solar loan can lower a punishing interest rate, but dealer fees and closing costs decide whether the move actually leaves you ahead."
-publishDate: 2026-12-25T08:00:00Z
+publishDate: 2030-10-08T08:00:00Z
 category: "Solar Costs"
 tags:
   - financing

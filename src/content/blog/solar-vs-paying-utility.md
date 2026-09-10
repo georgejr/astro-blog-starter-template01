@@ -1,7 +1,7 @@
 ---
 title: "Is Solar Cheaper Than Just Paying the Electric Company?"
 description: "Is solar cheaper than paying the electric company? Framed as prepaying decades of power, here's when solar's lifetime cost beats a rising utility bill and when it doesn't."
-publishDate: 2027-01-25T08:00:00Z
+publishDate: 2031-12-16T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - savings

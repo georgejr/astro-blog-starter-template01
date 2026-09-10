@@ -1,7 +1,7 @@
 ---
 title: "Solar Battery vs a Whole-House Standby Generator"
 description: "A solar battery and a whole-house standby generator solve overlapping problems in opposite ways. Compare runtime, fuel, maintenance, and long-term ownership cost."
-publishDate: 2027-03-16T08:00:00Z
+publishDate: 2033-11-15T08:00:00Z
 category: "Myths & Comparisons"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Desert Southwest Solar: Managing Heat, Dust, and Monsoon Season"
 description: "Desert Southwest solar sits under elite sun but fights heat derating, dust soiling, and monsoon storms. Here's how each one shaves output and what to do about it."
-publishDate: 2027-02-20T16:00:00Z
+publishDate: 2032-12-21T08:00:00Z
 category: "State Guides"
 tags:
   - desert southwest

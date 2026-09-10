@@ -1,7 +1,7 @@
 ---
 title: "Tiered Rates: Why Your 900th kWh Costs More Than Your First"
 description: "Tiered electricity rates explained: how usage blocks are priced, why heavy months cost disproportionately more, and what that means for solar and your bill."
-publishDate: 2026-11-12T08:00:00Z
+publishDate: 2029-02-13T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity rates

@@ -1,7 +1,7 @@
 ---
 title: "Can Solar Panels Be Installed in Winter? What to Expect"
 description: "Solar panels can be installed in winter, but snow, frozen roofs, and short days affect scheduling and safety. Here's what changes when you book a cold-season install."
-publishDate: 2027-01-08T08:00:00Z
+publishDate: 2031-04-22T08:00:00Z
 category: "Installation"
 tags:
   - installation

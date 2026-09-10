@@ -1,7 +1,7 @@
 ---
 title: "Will Solar Void Your Roof Warranty? Penetrations, Flashing, and Fixes"
 description: "Does solar void a roof warranty? How mounting penetrations, flashing, and installer paperwork actually affect coverage — and how to protect it before you sign."
-publishDate: 2026-11-05T16:00:00Z
+publishDate: 2028-11-14T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof warranty

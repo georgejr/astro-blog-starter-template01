@@ -1,7 +1,7 @@
 ---
 title: "Critical Load Panels: Wiring Your Home for Backup Priorities"
 description: "What a critical load panel is, which circuits belong on it, and how this backup subpanel lets a modest battery protect what matters during an outage."
-publishDate: 2026-11-13T16:00:00Z
+publishDate: 2029-03-06T08:00:00Z
 category: "Inverters & Components"
 tags:
   - backup power

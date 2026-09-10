@@ -5,27 +5,32 @@ const faqs = [
   {
     question: 'How accurate is this solar panel calculator?',
     answer:
-      'It gives a realistic ballpark based on your electricity bill, local sun hours, and typical US installation prices. Actual results depend on your roof orientation, shading, utility rules, and installer quotes, so treat it as a starting point, not a final design.',
+      'It is a sizing and budgeting estimate, not a design. Usage is derived from your bill and rate, production from your sun hours and a fixed 78% performance ratio, and cost from a single price per watt. Roof direction, shading, your utility’s export rules, and the actual quotes you receive will move the real numbers by 10–20% or more in either direction.',
   },
   {
     question: 'What information do I need to use the calculator?',
     answer:
-      'Just your average monthly electricity bill and your electricity rate (both are on your utility bill). Everything else — sun hours, panel wattage, cost per watt — has sensible US defaults you can adjust.',
+      'Only your average monthly electricity bill and your electricity rate in dollars per kWh, both printed on your utility bill. Sun hours, panel wattage, and installed cost per watt start at typical US defaults (4.5 hours, 400 W, $2.75/W) that you can change once you have better local numbers.',
+  },
+  {
+    question: 'Why does my payback stay the same when I change the bill?',
+    answer:
+      'Because a bigger bill sizes a bigger system, and both cost and savings scale with system size. In this model payback depends only on price per watt, sun hours, electricity rate, and the tax credit. Your bill decides how large the system and the dollar amounts are, not how fast it pays back.',
   },
   {
     question: 'Does the calculator include the federal tax credit?',
     answer:
-      'Yes. By default it applies the 30% federal Residential Clean Energy Credit to the gross installation cost. You can toggle it off if you are not eligible. State and local incentives are not included.',
+      'Yes. By default it subtracts 30% of the gross cost for the federal Residential Clean Energy Credit, so the default $24,546 system shows a $7,364 credit and a $17,182 net cost. Turn it off if you cannot use the credit. State rebates, SRECs, and utility incentives are not included and would lower the net cost further.',
   },
   {
-    question: 'How is the payback period calculated?',
+    question: 'What does the 78% performance ratio mean?',
     answer:
-      'Payback period is the net installation cost (after the tax credit) divided by your estimated yearly savings. A payback under 7 years is generally considered strong; over 11 years suggests solar may be less attractive at current prices.',
+      'A panel rated at 400 W does not deliver 400 W to your house. Inverter losses, wiring, dirt, heat, and mismatch typically remove about 20–25% of the nameplate output, so the calculator counts only 78% of the theoretical production. NREL’s PVWatts tool uses a similar default loss assumption.',
   },
   {
     question: 'Can I use this calculator outside the United States?',
     answer:
-      'The defaults assume US prices and the US federal tax credit, but you can adjust the electricity rate, cost per watt, and sun hours to roughly model other countries. Disable the tax credit for non-US estimates.',
+      'Partly. The formulas are universal, so you can enter a local electricity rate, sun hours, and installed cost per watt for any country. Disable the 30% federal tax credit, since that is a US-only incentive, and remember that the cost defaults reflect US residential pricing.',
   },
 ];
 ---
@@ -53,15 +58,161 @@ const faqs = [
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">How the estimate works</h2>
-      <ol class="mt-4 list-decimal space-y-2 pl-5 text-slate-600">
-        <li>Your monthly bill divided by your electricity rate gives your monthly usage in kWh.</li>
-        <li>Your yearly usage times your desired bill offset gives the target solar production.</li>
-        <li>Target production, local sun hours, and a 78% system performance ratio give the system size in kW.</li>
-        <li>System size divided by panel wattage gives the panel count (rounded up).</li>
-        <li>System size times the installed cost per watt gives the gross cost; the 30% federal tax credit is subtracted if enabled.</li>
-        <li>Net cost divided by yearly savings gives the payback period.</li>
-      </ol>
+      <h2 class="text-2xl font-bold text-slate-900">How each number is calculated</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The calculator runs four steps in order, and every output on the result card comes from
+        one of them. The worked example below uses the default inputs: a $180 monthly bill, an
+        electricity rate of $0.17 per kWh, 4.5 peak sun hours per day, a 90% bill offset, 400 W
+        panels, and an installed cost of $2.75 per watt. The full set of assumptions is documented
+        on the <a href="/methodology/" class="text-brand-700 underline">methodology page</a>.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 1: bill to usage</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Monthly usage is your bill divided by your rate: $180 ÷ $0.17 = 1,059 kWh per month, or
+        12,706 kWh per year. The 90% offset sets a production target of 11,435 kWh per year. A
+        lower offset is sensible if your roof is small or your utility pays little for exported
+        power; 100% is the usual choice under full retail net metering.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 2: usage to system size</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Each kilowatt of panels produces roughly sun hours × 365 days × 0.78 in a year. At 4.5
+        sun hours that is 1,281 kWh per kW per year. The 0.78 performance ratio accounts for
+        inverter, wiring, soiling, and temperature losses. Dividing the target by that yield gives
+        the system size: 11,435 ÷ 1,281 = 8.93 kW.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 3: system size to panels and roof area</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Panel count is system size divided by panel wattage, rounded up: 8.93 kW ÷ 0.4 kW = 22.3,
+        so 23 panels. At about 20 square feet per panel including spacing, the array needs roughly
+        460 sq ft of usable roof. If you enter your own roof area, the card tells you whether the
+        panels fit. For a deeper look at panel count alone, use the
+        <a href="/how-many-solar-panels-do-i-need/" class="text-brand-700 underline">panel count calculator</a>.
+      </p>
+
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Step 4: cost, savings, and payback</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Gross cost is system size × 1,000 × price per watt: 8.93 kW × 1,000 × $2.75 = $24,546. The
+        30% federal credit removes $7,364, leaving a net cost of $17,182. Yearly savings are the
+        production target times your rate: 11,435 kWh × $0.17 = $1,944, or $162 a month. Payback is
+        net cost divided by yearly savings: $17,182 ÷ $1,944 = 8.8 years. The
+        <a href="/solar-panel-cost-calculator/" class="text-brand-700 underline">cost calculator</a>
+        and <a href="/solar-roi-calculator/" class="text-brand-700 underline">ROI calculator</a>
+        run the same model with the cost and return figures brought to the front.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">How to read the result card</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The badge at the top of the card is driven entirely by payback. A payback of 7 years or
+        less is labeled a strong solar candidate, 7 to 11 years is moderate, and anything longer is
+        flagged as a longer payback period. The default example lands at 8.8 years, in the moderate
+        band, which is typical for a mid-priced state with average sun and a rate near the US
+        average.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        One property of this model surprises people: changing your bill changes the system size and
+        the dollar amounts, but not the payback. Cost and savings both scale with the number of
+        kilowatts, so the ratio between them depends only on price per watt, sun hours, electricity
+        rate, and the tax credit. To shorten payback you need cheaper installation, more sun, a
+        higher rate, or extra incentives, not a bigger or smaller system.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Three example homes</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        All three rows use the default rate, sun hours, offset, panel wattage, and price per watt.
+        Only the monthly bill changes.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[40rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Home</th>
+              <th class="py-2 pr-4 font-semibold">Monthly bill</th>
+              <th class="py-2 pr-4 font-semibold">Usage</th>
+              <th class="py-2 pr-4 font-semibold">System</th>
+              <th class="py-2 pr-4 font-semibold">Panels</th>
+              <th class="py-2 pr-4 font-semibold">Net cost</th>
+              <th class="py-2 pr-4 font-semibold">Yearly savings</th>
+              <th class="py-2 font-semibold">Payback</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">Small</td><td class="py-2 pr-4">$100</td><td class="py-2 pr-4">588 kWh/mo</td><td class="py-2 pr-4">4.96 kW</td><td class="py-2 pr-4">13 (260 sq ft)</td><td class="py-2 pr-4">$9,546</td><td class="py-2 pr-4">$1,080</td><td class="py-2">8.8 yr</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">Average</td><td class="py-2 pr-4">$180</td><td class="py-2 pr-4">1,059 kWh/mo</td><td class="py-2 pr-4">8.93 kW</td><td class="py-2 pr-4">23 (460 sq ft)</td><td class="py-2 pr-4">$17,182</td><td class="py-2 pr-4">$1,944</td><td class="py-2">8.8 yr</td></tr>
+            <tr><td class="py-2 pr-4">Large</td><td class="py-2 pr-4">$300</td><td class="py-2 pr-4">1,765 kWh/mo</td><td class="py-2 pr-4">14.88 kW</td><td class="py-2 pr-4">38 (760 sq ft)</td><td class="py-2 pr-4">$28,637</td><td class="py-2 pr-4">$3,240</td><td class="py-2">8.8 yr</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Net cost is after the 30% federal credit. Gross costs are $13,637, $24,546, and $40,910.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Where to get accurate inputs</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Monthly bill and rate:</strong> average twelve months of bills rather than using
+          one month, since summer cooling or winter heating can double usage. Divide the total
+          dollars by the total kWh on those bills for a rate that includes delivery charges and
+          taxes, which matters more than the bare supply rate.
+        </li>
+        <li>
+          <strong>Sun hours:</strong> NREL’s free
+          <a href="https://pvwatts.nrel.gov/" rel="noopener" class="text-brand-700 underline">PVWatts calculator</a>
+          returns the annual solar resource for your address in kWh/m²/day, which is the same unit
+          as peak sun hours. Most of the contiguous US falls between 3.7 and 6.5.
+        </li>
+        <li>
+          <strong>Electricity rates:</strong> the
+          <a href="https://www.eia.gov/electricity/state/" rel="noopener" class="text-brand-700 underline">EIA state electricity profiles</a>
+          publish average residential rates by state if you do not have a bill in front of you.
+        </li>
+        <li>
+          <strong>Cost per watt:</strong> start with $2.70 in low-cost markets such as Texas,
+          Florida, and Arizona, $3.00 in mid-cost states, and $3.35 in high-cost states such as
+          California, Massachusetts, and New York. Replace it with the price per watt from real
+          quotes as soon as you have them.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What the calculator does not model</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The model is deliberately simple so that every number can be traced back to your inputs.
+        That means several real-world effects are left out.
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          <strong>Panel degradation.</strong> Output declines by roughly 0.5% per year, so a system
+          produces about 88% of its first-year energy in year 25. Savings in later years will be a
+          little lower than the flat figure shown.
+        </li>
+        <li>
+          <strong>Utility rate increases.</strong> Savings are calculated at today’s rate. Residential
+          rates have historically risen by a few percent a year, which shortens real payback.
+        </li>
+        <li>
+          <strong>Export compensation.</strong> The model values every kWh at the retail rate. Under
+          net billing, as in California, Arizona, and Nevada, exported power is credited below
+          retail, and the savings on the exported share are smaller.
+        </li>
+        <li>
+          <strong>Financing.</strong> Costs are treated as cash. Loan interest, dealer fees, and
+          lease escalators change the picture substantially.
+        </li>
+        <li>
+          <strong>Roof orientation and shading.</strong> A north-facing or partly shaded array yields
+          less than the sun-hours figure implies. PVWatts can model tilt and azimuth for you.
+        </li>
+      </ul>
     </section>
   </Fragment>
 </CalculatorLanding>

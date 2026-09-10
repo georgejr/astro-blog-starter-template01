@@ -1,7 +1,7 @@
 ---
 title: "Grid-Tied With Battery vs Off-Grid: How Far Can Storage Take You?"
 description: "Grid tied with battery vs off grid: what a home battery actually buys you, why true independence needs far more storage, and how climate decides the gap."
-publishDate: 2026-11-13T08:00:00Z
+publishDate: 2029-02-27T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

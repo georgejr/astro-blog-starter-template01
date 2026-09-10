@@ -1,7 +1,7 @@
 ---
 title: "Space Heaters and Electricity: The True Cost of Plug-In Heat"
 description: "Space heater electricity usage adds up fast: a 1,500-watt unit draws 1.5 kWh per hour. Here's what plug-in heat really costs per hour, per day, and across a winter."
-publishDate: 2027-02-14T08:00:00Z
+publishDate: 2032-09-21T08:00:00Z
 category: "Electricity Usage"
 tags:
   - heating

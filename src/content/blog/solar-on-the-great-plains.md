@@ -1,7 +1,7 @@
 ---
 title: "Solar on the Great Plains: Wind, Hail Country, and Open Land"
 description: "Solar on the Great Plains means siting for relentless wind and hail-belt storms, while wide-open land makes ground-mounted arrays an unusually attractive option."
-publishDate: 2027-03-07T16:00:00Z
+publishDate: 2033-07-19T08:00:00Z
 category: "State Guides"
 tags:
   - state guide

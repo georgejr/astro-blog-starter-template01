@@ -1,7 +1,7 @@
 ---
 title: "When Solar Companies Subcontract the Install: Risks and Questions"
 description: "Many solar installers subcontract the actual roof work. Here's what solar installer subcontracting changes about accountability, warranties, and the questions that expose it."
-publishDate: 2026-10-22T16:00:00Z
+publishDate: 2028-05-02T08:00:00Z
 category: "Installation"
 tags:
   - installation

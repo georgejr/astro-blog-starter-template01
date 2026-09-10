@@ -1,7 +1,7 @@
 ---
 title: "DIY Solar Payback: Faster Break-Even, Bigger Risks"
 description: "DIY solar payback can beat a professional install by cutting labor and overhead — but permitting, warranty, and interconnection risks can erase the head start."
-publishDate: 2026-10-28T08:00:00Z
+publishDate: 2028-07-18T08:00:00Z
 category: "Payback"
 tags:
   - payback

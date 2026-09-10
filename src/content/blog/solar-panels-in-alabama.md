@@ -1,7 +1,7 @@
 ---
 title: "Solar in Alabama: Strong Sun, Steep Utility Fees on Rooftop Power"
 description: "Solar panels in Alabama get plenty of Deep South sun, but utility fees and weak export credits reshape the math. How to design a system that still pays."
-publishDate: 2026-12-10T08:00:00Z
+publishDate: 2030-03-12T08:00:00Z
 category: "State Guides"
 tags:
   - alabama

@@ -1,7 +1,7 @@
 ---
 title: "Coastal Solar: Beating Salt-Air Corrosion Near the Ocean"
 description: "Coastal solar and salt air corrosion: why racking, connectors, and hardware near the ocean need marine-grade materials, and what that changes about your install."
-publishDate: 2027-03-13T16:00:00Z
+publishDate: 2033-10-11T08:00:00Z
 category: "State Guides"
 tags:
   - coastal

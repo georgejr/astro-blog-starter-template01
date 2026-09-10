@@ -1,7 +1,7 @@
 ---
 title: "What Powers an All-Electric Home and How Many kWh It Takes"
 description: "All electric home electricity usage climbs once heating, hot water, and cooking run on power instead of gas. Here's a realistic total-kWh picture and what drives it."
-publishDate: 2027-02-26T08:00:00Z
+publishDate: 2033-03-08T08:00:00Z
 category: "Electricity Usage"
 tags:
   - all-electric

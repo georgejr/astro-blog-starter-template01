@@ -1,7 +1,7 @@
 ---
 title: "Inverter Warranties Compared: 10, 12, or 25 Years?"
 description: "A solar inverter warranty can run 10, 12, or 25 years by type. Here's what the length actually signals, what the coverage includes, and what it quietly excludes."
-publishDate: 2026-10-07T08:00:00Z
+publishDate: 2027-09-28T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

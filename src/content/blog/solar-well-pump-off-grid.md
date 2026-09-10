@@ -1,7 +1,7 @@
 ---
 title: "Running an Off-Grid Well Pump on Solar Power"
 description: "An off-grid solar well pump can lift water without grid power or a big battery bank — by storing water instead of electricity. Here's how to size the array."
-publishDate: 2026-12-23T16:00:00Z
+publishDate: 2030-09-17T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

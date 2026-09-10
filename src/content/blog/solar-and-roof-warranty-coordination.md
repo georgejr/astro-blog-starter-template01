@@ -1,7 +1,7 @@
 ---
 title: "Who Pays if Solar Panels Cause a Roof Leak?"
 description: "Solar roof leak responsibility can fall between your roofer and your installer. Here's how the warranties overlap and how to coordinate them so a leak isn't your problem."
-publishDate: 2027-01-07T16:00:00Z
+publishDate: 2031-04-15T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

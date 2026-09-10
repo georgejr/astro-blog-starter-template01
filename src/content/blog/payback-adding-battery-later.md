@@ -1,7 +1,7 @@
 ---
 title: "How Adding a Battery Later Changes Your Solar Payback"
 description: "Bolting a battery onto existing solar years later has its own payback math. Here's how a retrofit compares with buying storage upfront, and when waiting actually helps."
-publishDate: 2027-02-10T16:00:00Z
+publishDate: 2032-08-03T08:00:00Z
 category: "Payback"
 tags:
   - batteries

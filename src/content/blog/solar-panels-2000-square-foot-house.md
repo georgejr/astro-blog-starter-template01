@@ -1,7 +1,7 @@
 ---
 title: "Solar for a 2,000 Sq Ft House — and Why Square Footage Misleads"
 description: "How many solar panels for a 2000 sq ft home? A rough answer exists, but square footage is a poor guide. Your electricity usage, not floor area, sets the system size."
-publishDate: 2026-09-19T16:00:00Z
+publishDate: 2027-01-26T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

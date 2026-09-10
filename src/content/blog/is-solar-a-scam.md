@@ -1,7 +1,7 @@
 ---
 title: "Is Solar a Scam? Sorting the Real Risks From the Hype"
 description: "Is solar a scam? The panels and savings are real physics — but the sales pitches around them often aren't. How to separate legitimate solar from the tactics that earn it a bad name."
-publishDate: 2027-01-16T08:00:00Z
+publishDate: 2031-08-12T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - scams

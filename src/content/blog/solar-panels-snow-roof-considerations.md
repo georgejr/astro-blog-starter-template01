@@ -1,7 +1,7 @@
 ---
 title: "Solar in Snow Country: Roof Design Choices That Pay Off"
 description: "Solar panels on a snow roof lose some winter production, but pitch, orientation, and structural design decide how much. Here's what actually matters in snow country."
-publishDate: 2026-10-21T16:00:00Z
+publishDate: 2028-04-18T08:00:00Z
 category: "Roof & Shading"
 tags:
   - snow

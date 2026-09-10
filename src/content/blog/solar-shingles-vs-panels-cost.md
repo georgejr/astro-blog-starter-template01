@@ -1,7 +1,7 @@
 ---
 title: "Solar Shingles vs Panels: A Cost Comparison"
 description: "Solar shingles cost far more than conventional panels per watt, but they replace your roof too. How the two price out and when building-integrated solar makes sense."
-publishDate: 2026-11-08T16:00:00Z
+publishDate: 2028-12-26T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar shingles

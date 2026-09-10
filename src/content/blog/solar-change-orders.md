@@ -1,7 +1,7 @@
 ---
 title: "Change Orders on a Solar Project: When Extra Costs Are Legitimate"
 description: "A solar change order adds cost mid-project. How to tell a legitimate charge from a padded one, what your contract should already cover, and how to respond."
-publishDate: 2026-11-06T16:00:00Z
+publishDate: 2028-11-28T08:00:00Z
 category: "Installation"
 tags:
   - change orders

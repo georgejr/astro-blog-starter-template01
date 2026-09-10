@@ -1,7 +1,7 @@
 ---
 title: "Upgrading Your RV to a Lithium Battery for Solar"
 description: "Switching an RV from lead-acid to lithium for solar changes usable capacity, charging, and converter compatibility. What to check before you buy an rv lithium battery for solar."
-publishDate: 2027-01-24T08:00:00Z
+publishDate: 2031-12-02T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - rv

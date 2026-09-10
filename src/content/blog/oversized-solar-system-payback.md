@@ -1,7 +1,7 @@
 ---
 title: "The Oversizing Penalty: When Extra Panels Slow Your Payback"
 description: "Oversized solar system payback math: why panels beyond your usage export at a discount, hit diminishing returns, and can stretch payback instead of shrinking it."
-publishDate: 2026-10-12T08:00:00Z
+publishDate: 2027-12-07T08:00:00Z
 category: "Payback"
 tags:
   - payback

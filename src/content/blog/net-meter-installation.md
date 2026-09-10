@@ -1,7 +1,7 @@
 ---
 title: "The Net Meter Swap: The Utility's Part of Going Solar"
 description: "Net meter installation for solar is the utility's bidirectional meter swap that measures the power you export. Why it gates permission to operate and when it happens."
-publishDate: 2027-02-27T08:00:00Z
+publishDate: 2033-03-22T08:00:00Z
 category: "Installation"
 tags:
   - interconnection

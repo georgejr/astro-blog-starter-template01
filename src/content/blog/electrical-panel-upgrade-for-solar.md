@@ -1,7 +1,7 @@
 ---
 title: "Will You Need an Electrical Panel Upgrade for Solar?"
 description: "Does solar require an electrical panel upgrade? It depends on your busbar and the 120% rule. Here's how to tell, the workarounds that avoid it, and what it adds."
-publishDate: 2026-11-29T16:00:00Z
+publishDate: 2029-10-16T08:00:00Z
 category: "Installation"
 tags:
   - panel upgrade

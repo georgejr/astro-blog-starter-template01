@@ -1,7 +1,7 @@
 ---
 title: "How Big a Battery Keeps a Fridge and Freezer Cold in an Outage?"
 description: "A solar battery to run a refrigerator and freezer needs less capacity than most people expect. How to size storage that keeps food cold through a typical outage."
-publishDate: 2026-12-12T08:00:00Z
+publishDate: 2030-04-09T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - battery backup

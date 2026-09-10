@@ -1,7 +1,7 @@
 ---
 title: "Used Solar Panels: Bargain or False Economy?"
 description: "What used solar panels really cost, where the secondhand savings come from, and the warranty, efficiency, and permitting catches that decide whether they are worth it."
-publishDate: 2026-11-22T16:00:00Z
+publishDate: 2029-07-10T08:00:00Z
 category: "Solar Costs"
 tags:
   - used panels

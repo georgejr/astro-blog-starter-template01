@@ -1,7 +1,7 @@
 ---
 title: "Rising Electricity Rates Are Quietly Shortening Solar Payback"
 description: "How electricity rate increases shorten solar payback: why static-rate estimates run long, and how assumed utility inflation compounds your avoided-cost savings."
-publishDate: 2026-09-12T08:00:00Z
+publishDate: 2026-10-13T08:00:00Z
 category: "Payback"
 tags:
   - solar payback

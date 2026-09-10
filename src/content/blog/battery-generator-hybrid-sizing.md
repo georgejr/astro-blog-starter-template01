@@ -1,7 +1,7 @@
 ---
 title: "Pairing a Battery With a Generator: How to Size a Smaller Pack"
 description: "Sizing a battery with a backup generator lets you buy a smaller pack. How to split the job so the battery covers quiet overnight loads and the generator handles runtime."
-publishDate: 2027-01-28T08:00:00Z
+publishDate: 2032-01-27T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

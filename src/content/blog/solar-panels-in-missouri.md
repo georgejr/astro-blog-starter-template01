@@ -1,7 +1,7 @@
 ---
 title: "Missouri Solar: Utility Rebates and Four-Season Production Swings"
 description: "Solar panels in Missouri lean on utility rebate programs and must plan around big summer-to-winter output swings. How rebates, net metering, and climate shape the payback."
-publishDate: 2027-01-15T08:00:00Z
+publishDate: 2031-07-29T08:00:00Z
 category: "State Guides"
 tags:
   - missouri

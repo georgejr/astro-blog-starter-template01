@@ -2,7 +2,7 @@
 title: "Solar Savings for an All-Electric Home With No Gas Bill"
 description: "Solar savings for an all-electric home run larger because everything—heat, hot water, cooking—runs on the meter solar offsets. Here's why the math favors electric-only houses."
 slug: "solar-savings-all-electric-home"
-publishDate: 2027-01-03T16:00:00Z
+publishDate: 2031-02-18T08:00:00Z
 category: "Savings & ROI"
 author: "SunMetricLab Editorial Team"
 tags:

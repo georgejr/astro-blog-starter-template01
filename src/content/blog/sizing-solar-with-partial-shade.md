@@ -1,7 +1,7 @@
 ---
 title: "Sizing Solar When Shade Takes Part of Your Roof Off the Table"
 description: "Sizing a solar system with partial shade means designing around the panels that actually perform. How to read a shaded roof and pick a system size that pays."
-publishDate: 2027-03-10T08:00:00Z
+publishDate: 2033-08-23T08:00:00Z
 category: "System Sizing"
 tags:
   - sizing

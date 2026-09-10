@@ -1,7 +1,7 @@
 ---
 title: "Keeping a Home Office Online: Battery Sizing for Remote Work"
 description: "A home office draws far less than most people think. Here's how to size a modest battery that keeps computers, monitors, and internet running through an outage."
-publishDate: 2027-03-15T16:00:00Z
+publishDate: 2033-11-08T08:00:00Z
 category: "Batteries & Storage"
 author: "SunMetricLab Editorial Team"
 tags:

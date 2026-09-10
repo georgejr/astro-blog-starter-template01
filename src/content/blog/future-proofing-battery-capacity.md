@@ -1,7 +1,7 @@
 ---
 title: "Sizing a Battery Today for the Heat Pump and EV You Add Later"
 description: "Future-proofing home battery capacity means buying for today but planning for a heat pump and EV later. How to size storage now so it still fits after you electrify."
-publishDate: 2027-01-17T16:00:00Z
+publishDate: 2031-09-02T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

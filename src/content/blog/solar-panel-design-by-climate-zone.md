@@ -1,7 +1,7 @@
 ---
 title: "Matching Solar Design to Your Climate Zone: A Regional Guide"
 description: "Solar panel design by climate zone: how heat, snow load, wind, and corrosion each demand different choices, from temperature coefficients to mounting and hardware."
-publishDate: 2027-03-19T16:00:00Z
+publishDate: 2034-01-03T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

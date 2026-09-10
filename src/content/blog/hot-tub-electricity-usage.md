@@ -1,7 +1,7 @@
 ---
 title: "Hot Tubs and Your Power Bill: What They Really Cost to Run"
 description: "How much electricity does a hot tub use? A realistic look at hot tub kWh per month, what makes the number swing, and how it lands on your electric bill."
-publishDate: 2027-01-19T16:00:00Z
+publishDate: 2031-09-30T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

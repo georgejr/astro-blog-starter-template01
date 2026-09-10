@@ -1,7 +1,7 @@
 ---
 title: "How Much a Critical-Load Backup Panel Adds to Your Solar Bill"
 description: "Planning partial backup? Budget the critical load panel cost — the subpanel, rewiring, and labor to separate essential circuits — before your battery quote surprises you."
-publishDate: 2027-01-26T16:00:00Z
+publishDate: 2032-01-06T08:00:00Z
 category: "Solar Costs"
 tags:
   - costs

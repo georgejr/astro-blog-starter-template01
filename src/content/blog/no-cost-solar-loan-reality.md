@@ -1,7 +1,7 @@
 ---
 title: "The 'No-Cost' Solar Loan: What's Really Baked Into the Price"
 description: "A no-cost or zero-out-of-pocket solar loan isn't free — a rate buydown quietly raises the system price. Here's how to find the cash-equivalent cost before you sign."
-publishDate: 2027-01-06T08:00:00Z
+publishDate: 2031-03-25T08:00:00Z
 category: "Solar Costs"
 tags:
   - financing

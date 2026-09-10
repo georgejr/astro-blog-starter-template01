@@ -1,7 +1,7 @@
 ---
 title: "Where Installers Run Conduit and Wiring for Your Solar"
 description: "Solar panel conduit routing shapes how your install looks. Here's where wiring runs from array to inverter to panel, when interior runs are possible, and what each choice costs."
-publishDate: 2027-02-15T08:00:00Z
+publishDate: 2032-10-05T08:00:00Z
 category: "Installation"
 tags:
   - installation

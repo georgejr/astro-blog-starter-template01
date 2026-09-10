@@ -1,7 +1,7 @@
 ---
 title: "Does a Utility Rebate Shrink Your Federal Solar Tax Credit?"
 description: "Does a utility rebate reduce the solar tax credit? Usually yes — the rebate comes off your cost first, then the 30% federal credit is figured on the smaller number. Here's the order."
-publishDate: 2027-02-11T08:00:00Z
+publishDate: 2032-08-10T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

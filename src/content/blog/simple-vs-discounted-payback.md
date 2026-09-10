@@ -1,7 +1,7 @@
 ---
 title: "Simple vs. Discounted Payback: Which Number Should You Trust?"
 description: "Simple payback vs discounted payback for solar: discounting future savings pushes the break-even later. Here's how much, why it happens, and when it matters."
-publishDate: 2026-11-27T08:00:00Z
+publishDate: 2029-09-11T08:00:00Z
 category: "Payback"
 tags:
   - payback period

@@ -1,7 +1,7 @@
 ---
 title: "3kW Solar System Cost: Pricing a Small, Low-Usage Setup"
 description: "3kW solar system cost, what it produces, and why per-watt pricing runs higher at tiny sizes because fixed soft costs get spread across fewer watts."
-publishDate: 2027-02-07T16:00:00Z
+publishDate: 2032-06-22T08:00:00Z
 category: "Solar Costs"
 tags:
   - costs

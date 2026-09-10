@@ -1,7 +1,7 @@
 ---
 title: "Sizing an Inverter So You Can Add Panels Down the Road"
 description: "Thinking of adding solar panels later? Here's how to leave inverter headroom now without paying for idle capacity, and how string, micro, and hybrid choices change it."
-publishDate: 2027-03-18T08:00:00Z
+publishDate: 2033-12-13T08:00:00Z
 category: "Inverters & Components"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Solar PPAs: Paying for Power Instead of Panels"
 description: "A solar PPA cost isn't a system price — it's a per-kWh rate you pay for power a third party's panels make. Here's how PPA pricing and escalators really work."
-publishDate: 2026-10-09T16:00:00Z
+publishDate: 2027-11-02T08:00:00Z
 category: "Solar Costs"
 tags:
   - ppa

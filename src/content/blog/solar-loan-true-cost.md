@@ -1,7 +1,7 @@
 ---
 title: "What a Solar Loan Really Adds to Your System's Price"
 description: "Solar loan cost goes beyond the sticker: dealer fees and interest can add thousands. How to find the true cost of financing solar versus paying cash."
-publishDate: 2026-09-27T08:00:00Z
+publishDate: 2027-05-11T08:00:00Z
 category: "Solar Costs"
 tags:
   - financing

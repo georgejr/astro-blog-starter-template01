@@ -1,7 +1,7 @@
 ---
 title: "How Home Size Shapes Electricity Usage"
 description: "Electricity usage by home size, explained: why square footage is a weak predictor, what actually scales with a bigger house, and typical kWh ranges."
-publishDate: 2026-09-21T08:00:00Z
+publishDate: 2027-02-16T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

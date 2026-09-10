@@ -1,7 +1,7 @@
 ---
 title: "Sales Tax Exemptions on Solar Equipment, Explained"
 description: "A solar sales tax exemption trims the upfront cost by waiving state tax on equipment. Here's what it usually covers, how much it saves, and what to verify."
-publishDate: 2026-10-16T08:00:00Z
+publishDate: 2028-02-01T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - incentives

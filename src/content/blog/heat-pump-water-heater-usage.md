@@ -1,7 +1,7 @@
 ---
 title: "Heat Pump Water Heater Electricity Use vs Electric Resistance"
 description: "Heat pump water heater electricity usage runs roughly a third of a standard resistance tank. Here's the kWh math, the catches, and where the savings come from."
-publishDate: 2026-12-28T08:00:00Z
+publishDate: 2030-11-19T08:00:00Z
 category: "Electricity Usage"
 tags:
   - water heater

@@ -1,7 +1,7 @@
 ---
 title: "The Smallest Solar System Worth Installing"
 description: "Below a certain size, fixed permitting and labor costs make a solar install hard to justify. Where the practical floor sits and how to think about a minimum system."
-publishDate: 2026-12-01T08:00:00Z
+publishDate: 2029-11-06T08:00:00Z
 category: "System Sizing"
 tags:
   - sizing

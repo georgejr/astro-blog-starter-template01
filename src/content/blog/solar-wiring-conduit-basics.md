@@ -1,7 +1,7 @@
 ---
 title: "From Roof to Breaker: Solar Wiring and Conduit Basics"
 description: "A plain map of solar panel wiring basics: how power moves from the panels through conduit and the inverter to your main breaker panel, and where each piece lives."
-publishDate: 2026-11-06T08:00:00Z
+publishDate: 2028-11-21T08:00:00Z
 category: "Inverters & Components"
 tags:
   - wiring

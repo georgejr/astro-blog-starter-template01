@@ -1,7 +1,7 @@
 ---
 title: "The Right DC-to-AC Ratio Changes With Your Climate"
 description: "The best DC to AC ratio for hot climates runs higher than for cool, sunny ones. Why heat, haze, and altitude change how much you should oversize your array."
-publishDate: 2026-12-12T16:00:00Z
+publishDate: 2030-04-16T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

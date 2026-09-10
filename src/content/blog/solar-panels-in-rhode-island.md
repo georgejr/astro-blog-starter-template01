@@ -1,7 +1,7 @@
 ---
 title: "Rhode Island Solar: High Rates and a Strong State Growth Program"
 description: "Solar panels in Rhode Island pair high New England electricity rates with a robust state renewable-growth program. Why dense coastal rooftops pay off despite limited space."
-publishDate: 2027-01-28T16:00:00Z
+publishDate: 2032-02-03T08:00:00Z
 category: "State Guides"
 tags:
   - rhode island

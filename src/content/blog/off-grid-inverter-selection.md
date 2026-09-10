@@ -2,7 +2,7 @@
 title: "Choosing an Off-Grid Inverter: Sine Wave, Surge, and Charging"
 description: "How to choose an off grid inverter: match continuous and surge wattage to your loads, pick pure sine wave, and decide whether an inverter-charger fits your system."
 slug: "off-grid-inverter-selection"
-publishDate: 2027-01-03T08:00:00Z
+publishDate: 2031-02-11T08:00:00Z
 category: "Off-Grid & Mobile"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Solar Panel Recycling: What Happens at the End of the Line"
 description: "Solar panel recycling in the US is real but uneven. Here's what a panel is made of, where old modules actually go, and your honest disposal options at end of life."
-publishDate: 2026-10-23T08:00:00Z
+publishDate: 2028-05-09T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - recycling

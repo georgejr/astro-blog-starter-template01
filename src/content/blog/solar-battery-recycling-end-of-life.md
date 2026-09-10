@@ -1,7 +1,7 @@
 ---
 title: "When a Solar Battery Dies: End of Life, Recycling, and Second Uses"
 description: "Solar battery recycling, explained: what 'end of life' really means for a home battery, why a retired pack still holds most of its capacity, and where it goes next."
-publishDate: 2026-12-09T16:00:00Z
+publishDate: 2030-03-05T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

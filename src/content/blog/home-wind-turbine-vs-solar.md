@@ -2,7 +2,7 @@
 title: "Home Wind Turbine vs Solar Panels: Which Makes Sense?"
 description: "Home wind turbine vs solar panels: why rooftop solar beats small residential wind for almost every house, and the rare sites where a turbine actually competes."
 slug: "home-wind-turbine-vs-solar"
-publishDate: 2027-02-28T16:00:00Z
+publishDate: 2033-04-12T08:00:00Z
 category: "Myths & Comparisons"
 author: "SunMetricLab Editorial Team"
 tags:

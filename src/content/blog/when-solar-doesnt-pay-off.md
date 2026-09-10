@@ -1,7 +1,7 @@
 ---
 title: "When Solar Doesn’t Pay Off: Honest Scenarios to Check First"
 description: "The honest cases for when solar doesn’t pay off: low bills, weak sun, poor export rates, short tenure, and shaded roofs. Test your own situation before you sign."
-publishDate: 2026-11-04T16:00:00Z
+publishDate: 2028-10-31T08:00:00Z
 category: "Payback"
 tags:
   - payback

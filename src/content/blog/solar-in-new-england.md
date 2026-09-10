@@ -1,7 +1,7 @@
 ---
 title: "Solar in New England: High Rates, Old Roofs, and Real Winters"
 description: "Solar in New England pairs high electricity rates with older roofs and genuine winters. How the rate math, roof assessment, and heat pumps shape the decision."
-publishDate: 2027-03-06T08:00:00Z
+publishDate: 2033-06-28T08:00:00Z
 category: "State Guides"
 tags:
   - state guide

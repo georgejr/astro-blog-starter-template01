@@ -1,7 +1,7 @@
 ---
 title: "Why Solar Savings Swing With the Seasons"
 description: "Solar savings by season swing hard between summer surplus and winter shortfall. Here's why monthly bills bounce and how annual banking evens the whole thing out."
-publishDate: 2026-09-18T16:00:00Z
+publishDate: 2027-01-12T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import PostGrid from '../../components/PostGrid.astro';
 import Pagination from '../../components/Pagination.astro';
-import { CALCULATOR_LINKS } from '../../lib/site';
+import { TOP_CALCULATOR_LINKS } from '../../lib/site';
 import { getPublishedPosts, BLOG_PAGE_SIZE } from '../../lib/content';
 import { CATEGORIES, taxonomySlug } from '../../lib/taxonomy';
 
@@ -51,7 +51,7 @@ const categories = CATEGORIES.filter((category) =>
     />
 
     <div class="mx-auto mt-16 max-w-4xl">
-      <RelatedLinks links={CALCULATOR_LINKS} heading="Try Our Calculators" />
+      <RelatedLinks links={TOP_CALCULATOR_LINKS} heading="Try Our Calculators" />
     </div>
   </div>
 </BaseLayout>

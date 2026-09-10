@@ -1,7 +1,7 @@
 ---
 title: "Solar Savings on Summer Air Conditioning Bills"
 description: "Solar and air conditioning are a natural pair because both peak at midday. Here's how well solar production offsets summer cooling costs, and where rate design changes it."
-publishDate: 2027-03-17T08:00:00Z
+publishDate: 2033-11-29T08:00:00Z
 category: "Savings & ROI"
 author: "SunMetricLab Editorial Team"
 tags:

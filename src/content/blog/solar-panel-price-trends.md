@@ -1,7 +1,7 @@
 ---
 title: "Why Solar Keeps Getting Cheaper — and What Could Change That"
 description: "Solar panel price trends over decades: the learning-curve forces that drove costs down, why the hardware fell faster than the total, and what could slow or reverse the decline."
-publishDate: 2026-12-08T16:00:00Z
+publishDate: 2030-02-19T08:00:00Z
 category: "Solar Costs"
 tags:
   - price trends

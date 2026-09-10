@@ -2,7 +2,7 @@
 title: "Backup Gateways vs Transfer Switches: What Actually Islands a Home"
 description: "Solar backup gateway vs transfer switch: what each device does to safely disconnect from the grid and power your house from a battery during an outage."
 slug: "backup-gateway-transfer-switch"
-publishDate: 2027-03-02T08:00:00Z
+publishDate: 2033-05-03T08:00:00Z
 category: "Inverters & Components"
 author: "SunMetricLab Editorial Team"
 tags:

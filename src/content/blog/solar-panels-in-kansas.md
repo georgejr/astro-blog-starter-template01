@@ -2,7 +2,7 @@
 title: "Kansas Solar: Big Plains Sun Versus Demand Charges on Rooftops"
 description: "Solar panels in Kansas get powerful Great Plains sun, but demand charges and weak export credit mean your bill structure matters as much as sunshine to the payoff."
 slug: "solar-panels-in-kansas"
-publishDate: 2027-01-01T16:00:00Z
+publishDate: 2031-01-21T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

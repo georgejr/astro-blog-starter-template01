@@ -1,7 +1,7 @@
 ---
 title: "Which Input Moves Solar Payback the Most? A Sensitivity Check"
 description: "Solar payback sensitivity, ranked. Which assumption swings your break-even year the most, from electricity rate to install price, and which ones barely move the needle."
-publishDate: 2027-01-30T16:00:00Z
+publishDate: 2032-03-02T08:00:00Z
 category: "Payback"
 tags:
   - payback

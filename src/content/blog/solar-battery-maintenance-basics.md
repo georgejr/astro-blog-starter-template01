@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Batteries Need Maintenance? A Realistic Owner Checklist"
 description: "What routine care a modern lithium home battery actually needs: firmware updates, the checks that matter, and the environmental factors that quietly shorten battery life."
-publishDate: 2026-11-23T16:00:00Z
+publishDate: 2029-07-24T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - battery maintenance

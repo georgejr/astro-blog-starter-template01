@@ -1,7 +1,7 @@
 ---
 title: "Incentives Change: Protecting Your Solar Decision From Policy Shifts"
 description: "Solar incentives can shrink or change over time. A framework for making a sound solar decision that holds up even if the credits and rates you counted on move."
-publishDate: 2026-12-03T16:00:00Z
+publishDate: 2029-12-11T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - incentives

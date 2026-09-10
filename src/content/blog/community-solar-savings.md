@@ -1,7 +1,7 @@
 ---
 title: "Community Solar: Savings Without Putting Anything on Your Roof"
 description: "Community solar lets you subscribe to a shared array and credit your bill without installing panels. How the savings work, what's typical, and where the catches are."
-publishDate: 2026-12-02T16:00:00Z
+publishDate: 2029-11-27T08:00:00Z
 category: "Savings & ROI"
 tags:
   - community solar

@@ -1,7 +1,7 @@
 ---
 title: "Beyond Payback: The NPV and IRR View of a Solar Investment"
 description: "Payback ignores everything after break-even. How net present value and internal rate of return evaluate solar the way you'd judge any investment, with a worked example."
-publishDate: 2026-12-04T16:00:00Z
+publishDate: 2029-12-25T08:00:00Z
 category: "Payback"
 tags:
   - npv

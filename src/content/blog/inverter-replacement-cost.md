@@ -1,7 +1,7 @@
 ---
 title: "What a Solar Inverter Replacement Really Costs, Line by Line"
 description: "A line-by-line look at solar inverter replacement cost — hardware, labor, permits, and monitoring — and how to tell when your warranty should cover the bill."
-publishDate: 2027-01-04T08:00:00Z
+publishDate: 2031-02-25T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

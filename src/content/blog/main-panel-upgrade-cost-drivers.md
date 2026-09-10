@@ -1,7 +1,7 @@
 ---
 title: "Main Panel Upgrade for Solar: What Actually Drives the Cost"
 description: "The main service panel upgrade cost is a common solar surprise. Here's why solar triggers it, what pushes the price up or down, and how to sometimes avoid it."
-publishDate: 2027-01-18T16:00:00Z
+publishDate: 2031-09-16T08:00:00Z
 category: "Solar Costs"
 tags:
   - panel upgrade

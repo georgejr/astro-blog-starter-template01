@@ -1,7 +1,7 @@
 ---
 title: "How to Track Your Solar Panels' Real Degradation Over Time"
 description: "Learn how to track solar panel degradation using your own production data, why weather muddies the picture, and how to tell normal aging from a fault worth investigating."
-publishDate: 2027-02-15T16:00:00Z
+publishDate: 2032-10-12T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - degradation

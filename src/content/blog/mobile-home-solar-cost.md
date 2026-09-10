@@ -1,7 +1,7 @@
 ---
 title: "What Solar Costs on a Mobile or Manufactured Home"
 description: "Solar panels on a mobile home cost depends less on the panels than on the roof, the land, and whether you go rooftop or ground-mount. Here's how the price really breaks down."
-publishDate: 2027-02-25T08:00:00Z
+publishDate: 2033-02-22T08:00:00Z
 category: "Solar Costs"
 tags:
   - mobile home

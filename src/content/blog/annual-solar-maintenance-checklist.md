@@ -1,7 +1,7 @@
 ---
 title: "The Annual Solar Checkup: A Simple Maintenance Routine"
 description: "A practical solar panel maintenance checklist: the once-a-year inspection routine that catches small problems early, what you can check safely, and when to call a pro."
-publishDate: 2026-12-07T08:00:00Z
+publishDate: 2030-01-29T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

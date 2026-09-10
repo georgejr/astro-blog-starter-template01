@@ -1,7 +1,7 @@
 ---
 title: "What Your Smart Meter Knows About You"
 description: "What does a smart meter track? Your home's total electricity use in short intervals — not appliance by appliance, and not what online rumors claim."
-publishDate: 2026-10-06T08:00:00Z
+publishDate: 2027-09-14T08:00:00Z
 category: "Electricity Usage"
 tags:
   - smart meters

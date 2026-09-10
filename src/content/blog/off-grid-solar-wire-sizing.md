@@ -1,7 +1,7 @@
 ---
 title: "Off-Grid Solar Wire Gauge: Sizing Cable for 12V and 24V"
 description: "Sizing off-grid solar wire means balancing ampacity for safety against voltage drop for performance. Here's how to pick cable gauge for 12V and 24V panel, battery, and inverter runs."
-publishDate: 2027-02-22T08:00:00Z
+publishDate: 2033-01-11T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

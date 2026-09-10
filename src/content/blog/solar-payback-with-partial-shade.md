@@ -2,7 +2,7 @@
 title: "Solar Payback With Partial Shade on the Roof"
 description: "Solar payback with shade stretches as lost production adds years to break-even. Here's how much partial shading really costs and when a shaded roof still pays off."
 slug: "solar-payback-with-partial-shade"
-publishDate: 2027-01-02T08:00:00Z
+publishDate: 2031-01-28T08:00:00Z
 category: "Payback"
 author: "SunMetricLab Editorial Team"
 tags:

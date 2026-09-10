@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Raise Your Home's Value?"
 description: "Do solar panels increase home value? What research on home sales generally finds about the resale premium, why owned beats leased, and how appraisals treat solar."
-publishDate: 2026-11-09T08:00:00Z
+publishDate: 2029-01-02T08:00:00Z
 category: "Savings & ROI"
 tags:
   - home value

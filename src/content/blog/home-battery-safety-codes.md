@@ -1,7 +1,7 @@
 ---
 title: "Home Battery Safety: UL 9540, Fire Codes, and Setback Rules"
 description: "Home battery safety standards decoded: what UL 9540 certifies, how fire codes like NFPA 855 set spacing and setbacks, and why chemistry and placement matter."
-publishDate: 2026-10-19T08:00:00Z
+publishDate: 2028-03-14T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

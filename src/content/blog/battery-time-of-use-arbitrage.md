@@ -1,7 +1,7 @@
 ---
 title: "Charging Cheap, Discharging Smart: Off-Peak Battery Arbitrage"
 description: "Battery time of use arbitrage means charging on cheap off-peak power and discharging during expensive peaks. The spread math, round-trip losses, and when it pays."
-publishDate: 2026-10-29T16:00:00Z
+publishDate: 2028-08-08T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

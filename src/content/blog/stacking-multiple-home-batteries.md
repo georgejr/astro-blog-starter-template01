@@ -1,7 +1,7 @@
 ---
 title: "Stacking Multiple Home Batteries: How Expansion Really Works"
 description: "Can you stack solar batteries to add capacity later? Usually yes for energy — but power and brand compatibility set real limits. Here's how expansion works."
-publishDate: 2026-10-10T16:00:00Z
+publishDate: 2027-11-16T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

@@ -1,7 +1,7 @@
 ---
 title: "How Much Your Loan APR Stretches Solar Payback"
 description: "Each point of solar loan APR quietly pushes your break-even further out. Here's a worked example of how interest rate reshapes solar payback for a financed system."
-publishDate: 2027-02-21T08:00:00Z
+publishDate: 2032-12-28T08:00:00Z
 category: "Payback"
 tags:
   - payback

@@ -1,7 +1,7 @@
 ---
 title: "Hawaii Solar: The Highest Rates in America Meet a Saturated Grid"
 description: "Solar panels in Hawaii face the nation's highest electricity rates but a saturated island grid, where self-supply programs make a battery essential to capture value."
-publishDate: 2026-12-22T08:00:00Z
+publishDate: 2030-08-27T08:00:00Z
 category: "State Guides"
 tags:
   - hawaii

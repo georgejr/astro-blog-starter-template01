@@ -2,13 +2,31 @@
 // vitest can exercise them; scripts/validate-content.ts is the CLI wrapper.
 import { CATEGORIES } from '../../src/lib/taxonomy';
 import { calculators } from '../../src/data/calculators';
+import { STATE_SOLAR, stateSlug } from '../../src/data/state-solar';
+import { CITIES, citySlug } from '../../src/data/city-solar';
 import type { PlanEntry, RawArticle } from './load';
 
 const CALCULATOR_IDS = new Set(calculators.map((c) => c.id));
 const CALCULATOR_HREFS = new Set(calculators.map((c) => c.href));
 
 // Static, always-existing site routes article bodies may link to.
-const STATIC_ROUTES = new Set(['/', '/blog/', '/about/', '/contact/', '/privacy-policy/', '/terms/']);
+const STATIC_ROUTES = new Set([
+  '/',
+  '/blog/',
+  '/about/',
+  '/methodology/',
+  '/contact/',
+  '/privacy-policy/',
+  '/terms/',
+  '/solar-panel-cost-by-state/',
+  '/solar-panel-cost-by-city/',
+]);
+
+// Data pages generated from src/data: /solar-panel-cost-by-state/<state>/ and
+// /solar-panel-cost-by-city/<city-st>/. Articles may link to them so state
+// guides and state data pages can cross-reference each other.
+const STATE_ROUTES = new Set(STATE_SOLAR.map((s) => `/solar-panel-cost-by-state/${stateSlug(s)}/`));
+const CITY_ROUTES = new Set(CITIES.map((c) => `/solar-panel-cost-by-city/${citySlug(c)}/`));
 
 // Labeled template blocks that must never appear in article bodies.
 export const FORBIDDEN_BLOCK_RE =
@@ -127,8 +145,8 @@ export function validateArticles(articles: RawArticle[]): ValidationIssue[] {
           err(`body links to ${link}, which publishes after this article`);
         continue;
       }
-      if (CALCULATOR_HREFS.has(link) || STATIC_ROUTES.has(link)) continue;
-      err(`body links to unknown internal path ${link} (allowed: calculators, /blog/<slug>/, static pages)`);
+      if (CALCULATOR_HREFS.has(link) || STATIC_ROUTES.has(link) || STATE_ROUTES.has(link) || CITY_ROUTES.has(link)) continue;
+      err(`body links to unknown internal path ${link} (allowed: calculators, /blog/<slug>/, state/city pages, static pages)`);
     }
 
     if (FORBIDDEN_BLOCK_RE.test(article.body)) {

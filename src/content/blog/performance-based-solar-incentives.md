@@ -1,7 +1,7 @@
 ---
 title: "Performance-Based Solar Incentives vs Upfront Rebates"
 description: "Performance-based solar incentives pay you over years for the power you actually make, while upfront rebates pay once. How PBIs are metered, paid, and compared."
-publishDate: 2027-02-03T16:00:00Z
+publishDate: 2032-04-27T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - incentives

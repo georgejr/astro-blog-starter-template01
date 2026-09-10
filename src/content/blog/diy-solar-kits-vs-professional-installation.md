@@ -1,7 +1,7 @@
 ---
 title: "DIY Solar Kits vs. Professional Installation: An Honest Ledger"
 description: "A clear-eyed look at DIY solar vs professional installation: what you actually save, the permitting and interconnection work, and the risks of a self-install."
-publishDate: 2026-10-31T16:00:00Z
+publishDate: 2028-09-05T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - diy solar

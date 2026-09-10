@@ -1,7 +1,7 @@
 ---
 title: "Utility Solar Rebates: How They Work and How to Claim One"
 description: "How utility solar rebates work versus the federal tax credit: the upfront-versus-tax-time difference, how installers process them, and how to claim one cleanly."
-publishDate: 2026-11-03T16:00:00Z
+publishDate: 2028-10-17T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - incentives

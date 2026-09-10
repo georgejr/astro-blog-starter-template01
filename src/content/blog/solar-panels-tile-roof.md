@@ -1,7 +1,7 @@
 ---
 title: "Installing Solar on Clay and Concrete Tile Roofs"
 description: "Solar panels on a tile roof: how installers mount around brittle clay and concrete tiles, why breakage happens, and what the extra labor adds to the price."
-publishDate: 2026-09-21T16:00:00Z
+publishDate: 2027-02-23T08:00:00Z
 category: "Roof & Shading"
 tags:
   - tile roof

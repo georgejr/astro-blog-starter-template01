@@ -1,7 +1,7 @@
 ---
 title: "Panel Degradation and Payback: Does Fading Output Matter?"
 description: "Solar panel degradation payback fears are mostly overblown. Panels lose output slowly each year, and here's how much that slow fade really moves your break-even point."
-publishDate: 2026-09-20T16:00:00Z
+publishDate: 2027-02-09T08:00:00Z
 category: "Payback"
 tags:
   - degradation

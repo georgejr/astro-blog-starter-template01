@@ -1,7 +1,7 @@
 ---
 title: "Rentals, Vacation Homes and the Solar Credit: Where the Line Falls"
 description: "Solar tax credit rental property rules, explained: why a second home you live in can qualify, why a pure rental usually can't, and where the line falls."
-publishDate: 2026-09-25T08:00:00Z
+publishDate: 2027-04-13T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

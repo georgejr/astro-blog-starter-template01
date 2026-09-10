@@ -1,7 +1,7 @@
 ---
 title: "Workmanship vs Equipment Warranties: Who Fixes What on Your Roof"
 description: "A solar workmanship warranty and an equipment warranty cover different failures. Here's who pays when a panel dies, an inverter quits, or the roof leaks."
-publishDate: 2026-10-07T16:00:00Z
+publishDate: 2027-10-05T08:00:00Z
 category: "Installation"
 tags:
   - warranties

@@ -1,7 +1,7 @@
 ---
 title: "Solar Payback When You Finance the System With a HELOC"
 description: "Solar payback with a HELOC bends with variable interest and interest-only draws. How home-equity financing reshapes the break-even math versus a fixed solar loan."
-publishDate: 2026-12-11T16:00:00Z
+publishDate: 2030-04-02T08:00:00Z
 category: "Payback"
 tags:
   - financing

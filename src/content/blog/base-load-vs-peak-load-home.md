@@ -1,7 +1,7 @@
 ---
 title: "Base Load vs Peak Load: Reading the Shape of Your Power Use"
 description: "Base load vs peak load home electricity, explained. Separate your always-on draw from short spikes and see why the distinction drives solar and battery sizing."
-publishDate: 2027-03-10T16:00:00Z
+publishDate: 2033-08-30T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

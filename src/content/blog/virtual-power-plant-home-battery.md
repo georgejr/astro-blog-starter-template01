@@ -1,7 +1,7 @@
 ---
 title: "Virtual Power Plants: Sharing Your Battery With the Grid"
 description: "A virtual power plant pools home batteries the grid can call on at peak. How VPP programs work, what enrolling means for control and compensation, and the trade-offs."
-publishDate: 2026-11-09T16:00:00Z
+publishDate: 2029-01-09T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - virtual power plant

@@ -1,7 +1,7 @@
 ---
 title: "What It Costs to Run an All-Electric Home Each Month"
 description: "A realistic all electric home running cost breakdown — heating, hot water, cooking and an EV all on one meter — with worked kWh math you can adapt to your own bills."
-publishDate: 2027-01-09T08:00:00Z
+publishDate: 2031-05-06T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electrification

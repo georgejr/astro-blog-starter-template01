@@ -1,7 +1,7 @@
 ---
 title: "Going Big: When a 15 kW Solar System Makes Sense"
 description: "A 15kw solar system produces roughly 16,000–24,000 kWh a year. Here's the panel count, roof space, cost range, and the households that genuinely need this much."
-publishDate: 2026-09-12T16:00:00Z
+publishDate: 2026-10-20T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

@@ -1,14 +1,17 @@
 ---
 // Generic calculator/tool landing page. Mirrors CalculatorLanding's layout
-// (hero, intro, tool, explanation, FAQ, disclaimer, related links, ads,
-// structured data) but takes the interactive tool through a `tool` slot so
-// each non-solar-sizing calculator can supply its own form and logic.
+// (hero, intro, tool, explanation, FAQ, disclaimer, embed snippet, related
+// links, structured data) but takes the interactive tool through a `tool`
+// slot so each non-solar-sizing calculator can supply its own form and logic.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FaqSection, { type FaqItem } from './FaqSection.astro';
 import RelatedLinks from './RelatedLinks.astro';
 import DisclaimerBox from './DisclaimerBox.astro';
-import { faqSchema, webAppSchema } from '../lib/schema';
-import { CALCULATOR_LINKS, type NavLink } from '../lib/site';
+import EmbedSection from './EmbedSection.astro';
+import { faqSchema, webAppSchema, breadcrumbSchema } from '../lib/schema';
+import { type NavLink } from '../lib/site';
+import { calculatorIdForPath, relatedCalculators } from '../data/calculator-related';
+import { ogPageUrl } from '../lib/og-pages';
 
 interface Props {
   title: string;
@@ -21,15 +24,28 @@ interface Props {
 
 const { title, description, h1, subtitle, faqs, relatedLinks } = Astro.props;
 
-const related = relatedLinks ?? CALCULATOR_LINKS.filter((link) => link.href !== Astro.url.pathname);
+const calculatorId = calculatorIdForPath(Astro.url.pathname);
+const related: NavLink[] =
+  relatedLinks ?? relatedCalculators(calculatorId ?? '').map((c) => ({ href: c.href, label: c.title }));
 
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 const structuredData = [
-  webAppSchema(h1, description, new URL(Astro.url.pathname, Astro.site).href),
+  webAppSchema(h1, description, canonicalUrl),
   faqSchema(faqs),
+  breadcrumbSchema([
+    { name: 'Home', url: new URL('/', Astro.site).href },
+    { name: h1, url: canonicalUrl },
+  ]),
 ];
 ---
 
-<BaseLayout title={title} description={description} structuredData={structuredData}>
+<BaseLayout
+  title={title}
+  description={description}
+  structuredData={structuredData}
+  ogImage={calculatorId ? ogPageUrl(calculatorId, Astro.site) : undefined}
+  ogImageAlt={h1}
+>
   <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
     <header class="mx-auto max-w-3xl text-center">
       <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{h1}</h1>
@@ -51,6 +67,7 @@ const structuredData = [
 
     <div class="mt-14 space-y-14">
       <FaqSection faqs={faqs} />
+      {calculatorId && <EmbedSection id={calculatorId} title={h1} href={Astro.url.pathname} />}
       <RelatedLinks links={related} />
     </div>
   </article>

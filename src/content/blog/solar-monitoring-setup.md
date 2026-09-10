@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Your Solar Monitoring App After Installation"
 description: "How to set up solar monitoring after installation: register the app, connect the inverter to Wi-Fi, and confirm every panel reports before the crew leaves."
-publishDate: 2027-03-11T16:00:00Z
+publishDate: 2033-09-13T08:00:00Z
 category: "Installation"
 tags:
   - installation

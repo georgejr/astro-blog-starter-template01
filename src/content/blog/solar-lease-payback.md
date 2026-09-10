@@ -1,7 +1,7 @@
 ---
 title: "Why Leased Solar Has No Payback Period (and Why That Matters)"
 description: "A solar lease payback period doesn't exist the way it does for ownership — you never front the capital. Here's how to judge a lease or PPA on the right terms."
-publishDate: 2026-10-20T16:00:00Z
+publishDate: 2028-04-04T08:00:00Z
 category: "Payback"
 tags:
   - leasing

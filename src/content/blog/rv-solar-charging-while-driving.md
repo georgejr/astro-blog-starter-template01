@@ -2,7 +2,7 @@
 title: "Does RV Rooftop Solar Charge While You Drive?"
 description: "Does RV solar charge while driving? Yes — panels keep producing in motion, working alongside your alternator and a DC-DC charger. Here's how it fits together."
 slug: "rv-solar-charging-while-driving"
-publishDate: 2027-03-04T16:00:00Z
+publishDate: 2033-06-07T08:00:00Z
 category: "Off-Grid & Mobile"
 author: "SunMetricLab Editorial Team"
 tags:

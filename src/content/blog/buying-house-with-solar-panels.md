@@ -1,7 +1,7 @@
 ---
 title: "Buying a Home That Already Has Solar Panels"
 description: "What to check before buying a house with existing solar: whether the system is owned, leased, or financed, how net metering transfers, and the questions that protect the buyer."
-publishDate: 2026-11-23T08:00:00Z
+publishDate: 2029-07-17T08:00:00Z
 category: "Savings & ROI"
 tags:
   - home buying

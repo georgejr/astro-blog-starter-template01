@@ -1,7 +1,7 @@
 ---
 title: "West Virginia Solar: Cheap Coal Power and Ridgeline Shade"
 description: "Solar panels in West Virginia face two headwinds: some of the nation's cheapest power and heavily wooded, mountainous terrain. Here's how the payback math really shakes out."
-publishDate: 2027-02-08T16:00:00Z
+publishDate: 2032-07-06T08:00:00Z
 category: "State Guides"
 tags:
   - west virginia

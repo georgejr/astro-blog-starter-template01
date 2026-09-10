@@ -1,7 +1,7 @@
 ---
 title: "Bifacial Panels: Is the Price Premium Worth It on a Home?"
 description: "Bifacial solar panel cost, weighed honestly: what the rear side actually adds, where the extra output shows up, and when a home roof sees little of it."
-publishDate: 2026-11-10T08:00:00Z
+publishDate: 2029-01-16T08:00:00Z
 category: "Solar Costs"
 tags:
   - bifacial panels

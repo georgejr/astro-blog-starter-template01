@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Cause Fires? The Actual Risk, in Context"
 description: "Do solar panels cause fires? Rarely, and the real failure modes are specific. Here's what actually starts solar fires and the code safeguards built against them."
-publishDate: 2026-10-01T16:00:00Z
+publishDate: 2027-07-13T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - fire safety

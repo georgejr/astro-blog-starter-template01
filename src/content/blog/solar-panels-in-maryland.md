@@ -1,7 +1,7 @@
 ---
 title: "Maryland Solar: A Mid-Atlantic Blend of Grants and Certificates"
 description: "Solar panels in Maryland work under a layered structure — an upfront grant, an ongoing certificate market, net metering, and tax exemptions. How the pieces fit and why it matters."
-publishDate: 2026-12-08T08:00:00Z
+publishDate: 2030-02-12T08:00:00Z
 category: "State Guides"
 tags:
   - maryland

@@ -2,7 +2,7 @@
 title: "Why Solar Payback Runs Long Where Electricity Is Cheap"
 description: "Solar payback with low electricity rates stretches because savings are small — here's why cheap power lengthens break-even and what would actually shorten it."
 slug: "solar-payback-low-electricity-rates"
-publishDate: 2027-03-03T16:00:00Z
+publishDate: 2033-05-24T08:00:00Z
 category: "Payback"
 author: "SunMetricLab Editorial Team"
 tags:

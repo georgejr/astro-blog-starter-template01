@@ -1,7 +1,7 @@
 ---
 title: "Do You Get the Solar Tax Credit If You Lease Your Panels?"
 description: "If you lease solar panels or sign a PPA, you don't claim the federal tax credit—the company that owns the panels does. Here's why ownership is the dividing line."
-publishDate: 2027-02-21T16:00:00Z
+publishDate: 2033-01-04T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

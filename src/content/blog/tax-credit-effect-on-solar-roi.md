@@ -1,7 +1,7 @@
 ---
 title: "How Much the Federal Tax Credit Improves Your Solar ROI"
 description: "The federal tax credit's impact on solar ROI is bigger than most people expect. Here's how the 30% credit reshapes payback and lifetime return, with worked numbers."
-publishDate: 2027-02-08T08:00:00Z
+publishDate: 2032-06-29T08:00:00Z
 category: "Savings & ROI"
 tags:
   - tax credit

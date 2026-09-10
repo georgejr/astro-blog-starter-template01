@@ -1,7 +1,7 @@
 ---
 title: "Illinois Solar: Modest Sun, Unusually Strong Program Design"
 description: "Solar panels in Illinois pay off less through sunshine than through state program design. Here's how Illinois structures its incentives, credits, and export rules."
-publishDate: 2026-10-02T16:00:00Z
+publishDate: 2027-07-27T08:00:00Z
 category: "State Guides"
 tags:
   - illinois

@@ -1,7 +1,7 @@
 ---
 title: "Why You Should Never Put an Inverter in a Hot Attic"
 description: "Solar inverter heat derating explained: why attic heat throttles output on the hottest afternoons and shortens inverter life, and where the hardware should go."
-publishDate: 2027-02-07T08:00:00Z
+publishDate: 2032-06-15T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

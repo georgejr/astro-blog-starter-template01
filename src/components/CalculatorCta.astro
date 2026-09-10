@@ -1,0 +1,38 @@
+---
+// Contextual call-to-action linking an article (or data page) to the one or
+// two calculators that actually matter for it. Used instead of the generic
+// all-calculators list so internal links carry topical context.
+import { calculatorById } from '../data/calculator-related';
+
+interface Props {
+  ids: string[];
+  /** Optional lead-in sentence rendered above the buttons. */
+  lead?: string;
+  limit?: number;
+}
+
+const { ids, lead, limit = 2 } = Astro.props;
+const calcs = ids
+  .map((id) => calculatorById(id))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .slice(0, limit);
+---
+
+{calcs.length > 0 && (
+  <aside class="not-prose my-10 rounded-2xl border border-brand-200 bg-brand-50 p-6" aria-label="Related calculator">
+    {lead && <p class="text-sm font-medium text-brand-900">{lead}</p>}
+    <ul class={`mt-3 grid gap-3 ${calcs.length > 1 ? 'sm:grid-cols-2' : ''}`}>
+      {calcs.map((c) => (
+        <li>
+          <a
+            href={c.href}
+            class="group block rounded-xl border border-brand-200 bg-white p-4 transition hover:border-brand-400 hover:shadow-sm"
+          >
+            <span class="block font-semibold text-brand-800 group-hover:underline">{c.cta} &rarr;</span>
+            <span class="mt-1 block text-sm text-slate-600">{c.blurb}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </aside>
+)}

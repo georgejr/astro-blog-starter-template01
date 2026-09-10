@@ -1,7 +1,7 @@
 ---
 title: "Solar or a Generator for Outages? They Solve Different Problems"
 description: "Solar vs generator for power outages isn't one winner. A generator buys unlimited runtime on fuel; a solar battery buys silent, automatic, everyday resilience."
-publishDate: 2026-10-17T16:00:00Z
+publishDate: 2028-02-22T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - backup power

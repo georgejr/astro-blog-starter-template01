@@ -1,7 +1,7 @@
 ---
 title: "Solar Panels in Ohio: A Case Study in Marginal Economics"
 description: "Do solar panels in Ohio make sense? The sun is fine — it's the low electricity rates that make it a borderline market where household usage decides the outcome."
-publishDate: 2026-10-09T08:00:00Z
+publishDate: 2027-10-26T08:00:00Z
 category: "State Guides"
 tags:
   - ohio

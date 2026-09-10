@@ -1,7 +1,7 @@
 ---
 title: "Wisconsin Solar: A Utility-by-Utility Buyback Patchwork"
 description: "Solar panels in Wisconsin pay back differently depending on which utility serves you, because buyback rates are set locally. Add lake-effect clouds and snow, and the map matters."
-publishDate: 2027-02-10T08:00:00Z
+publishDate: 2032-07-27T08:00:00Z
 category: "State Guides"
 tags:
   - wisconsin

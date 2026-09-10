@@ -1,7 +1,7 @@
 ---
 title: "Electric vs Gas Appliances: Which Costs More to Run?"
 description: "Electric vs gas appliance running cost comes down to local prices and efficiency. A method to compare a dryer, stove, or water heater on your own rates."
-publishDate: 2027-03-12T16:00:00Z
+publishDate: 2033-09-27T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

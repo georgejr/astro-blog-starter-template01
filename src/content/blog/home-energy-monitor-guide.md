@@ -1,7 +1,7 @@
 ---
 title: "Home Energy Monitors: Watching Your Usage in Real Time"
 description: "A home energy monitor clamps onto your mains to show real-time and circuit-level electricity use. How the devices work, what the data reveals, and who needs one."
-publishDate: 2026-10-28T16:00:00Z
+publishDate: 2028-07-25T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

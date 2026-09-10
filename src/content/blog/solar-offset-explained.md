@@ -1,7 +1,7 @@
 ---
 title: "What Does a 100% Solar Offset Actually Mean for Your Bill?"
 description: "Solar offset meaning, decoded: 100% offset sizes your system to your yearly usage, not to a $0 bill. Here's why usage offset and bill offset aren't the same thing."
-publishDate: 2026-10-18T16:00:00Z
+publishDate: 2028-03-07T08:00:00Z
 category: "Savings & ROI"
 tags:
   - solar offset

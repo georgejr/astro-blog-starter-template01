@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Work Better in Extreme Heat? Not Quite"
 description: "Do solar panels work in extreme heat? Yes, but hot cells lose voltage and output. How the temperature coefficient works and why sun hours still win."
-publishDate: 2026-12-17T08:00:00Z
+publishDate: 2030-06-18T08:00:00Z
 category: "Myths & Comparisons"
 author: "SunMetricLab Editorial Team"
 tags:

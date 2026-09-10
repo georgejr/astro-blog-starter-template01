@@ -1,7 +1,7 @@
 ---
 title: "How Much Solar Saves When You Run a Swimming Pool Pump"
 description: "Solar savings with a pool depend on the pump, heater, and timing. How to estimate the kWh a pool adds and how much of it home solar can realistically offset."
-publishDate: 2026-12-11T08:00:00Z
+publishDate: 2030-03-26T08:00:00Z
 category: "Savings & ROI"
 tags:
   - pool

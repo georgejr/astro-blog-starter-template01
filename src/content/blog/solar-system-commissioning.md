@@ -1,7 +1,7 @@
 ---
 title: "Solar Commissioning: The Final Checks Before Your System Goes Live"
 description: "Solar system commissioning is the final round of testing before your array goes live — the electrical checks, the production verification, and the documents to keep."
-publishDate: 2026-10-30T16:00:00Z
+publishDate: 2028-08-22T08:00:00Z
 category: "Installation"
 tags:
   - installation

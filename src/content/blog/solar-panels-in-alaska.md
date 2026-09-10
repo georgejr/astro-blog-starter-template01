@@ -1,7 +1,7 @@
 ---
 title: "Solar in Alaska: Midnight-Sun Summers and Long, Dark Winters"
 description: "Solar panels in Alaska swing from near-endless summer daylight to dark winters, and remote rates rank among the nation's highest. How the math shifts."
-publishDate: 2026-12-17T16:00:00Z
+publishDate: 2030-06-25T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Premium vs Budget Solar Panels: What the Price Gap Buys"
 description: "Premium vs budget solar panels: what the higher price actually pays for, when it earns its keep, and when a value-tier module is the smarter call for your roof."
-publishDate: 2026-11-17T08:00:00Z
+publishDate: 2029-04-24T08:00:00Z
 category: "Solar Costs"
 tags:
   - panel tiers

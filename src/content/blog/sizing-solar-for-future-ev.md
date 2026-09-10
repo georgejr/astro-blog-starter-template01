@@ -1,7 +1,7 @@
 ---
 title: "Sizing Your Solar Array for an EV You Haven't Bought Yet"
 description: "Sizing solar for a future EV means building charging headroom into today's system. How many extra panels an electric car needs, and whether to add them now or later."
-publishDate: 2027-02-25T16:00:00Z
+publishDate: 2033-03-01T08:00:00Z
 category: "System Sizing"
 tags:
   - ev

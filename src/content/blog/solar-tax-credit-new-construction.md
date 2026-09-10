@@ -1,7 +1,7 @@
 ---
 title: "Solar on New Construction: Timing the Credit Correctly"
 description: "The solar tax credit on new construction usually goes to the homebuyer, not the builder, and applies the year you move in. Here's how the timing works."
-publishDate: 2026-09-16T08:00:00Z
+publishDate: 2026-12-08T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - new construction

@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Pay Off in Cloudy Climates?"
 description: "Do solar panels save money in cloudy climates? How diffuse light, electricity rates, and net metering decide whether low-sun regions still make solar pay."
-publishDate: 2026-09-24T08:00:00Z
+publishDate: 2027-03-30T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

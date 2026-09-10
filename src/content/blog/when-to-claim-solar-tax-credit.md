@@ -1,7 +1,7 @@
 ---
 title: "When Can You Claim the Solar Tax Credit? Timing Rules Explained"
 description: "When can you claim the solar tax credit? It hinges on the placed-in-service date, not when you paid or signed. Here's how the timing rules actually work."
-publishDate: 2026-12-23T08:00:00Z
+publishDate: 2030-09-10T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

@@ -1,7 +1,7 @@
 ---
 title: "Flat vs Pitched Roofs for Solar: The Real Trade-Offs"
 description: "Flat vs pitched roof solar comes down to tilt, layout density, and mounting cost. An honest look at how each roof type shapes output, price, and panel placement."
-publishDate: 2027-02-26T16:00:00Z
+publishDate: 2033-03-15T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

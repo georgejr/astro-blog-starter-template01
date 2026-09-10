@@ -1,7 +1,7 @@
 ---
 title: "How Much Power Does a 12kW Solar System Really Make?"
 description: "A 12kW solar system produces roughly 13,000 to 20,000 kWh a year depending on location and orientation. Here's the real production math, monthly shape, and panel count."
-publishDate: 2027-02-13T16:00:00Z
+publishDate: 2032-09-14T08:00:00Z
 category: "System Sizing"
 tags:
   - system size

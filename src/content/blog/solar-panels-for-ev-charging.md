@@ -1,7 +1,7 @@
 ---
 title: "How Many Extra Panels Does an EV Really Require?"
 description: "How many solar panels to charge an EV? Translate annual driving miles into kilowatt-hours, then into panel count, with a clear sizing table and worked math."
-publishDate: 2026-10-26T08:00:00Z
+publishDate: 2028-06-20T08:00:00Z
 category: "System Sizing"
 tags:
   - ev charging

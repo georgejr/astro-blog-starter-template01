@@ -1,7 +1,7 @@
 ---
 title: "Do You Even Need Power Optimizers on an Unshaded Roof?"
 description: "Do you need power optimizers without shade? On a clean, unshaded roof the case is weaker than the sales pitch suggests. Here's what optimizers actually buy you, and what they cost."
-publishDate: 2027-02-12T08:00:00Z
+publishDate: 2032-08-24T08:00:00Z
 category: "Inverters & Components"
 tags:
   - optimizers

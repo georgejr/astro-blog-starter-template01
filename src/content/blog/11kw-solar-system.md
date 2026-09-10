@@ -1,7 +1,7 @@
 ---
 title: "11kW Solar Systems: Panel Count, Output, and Ideal Homes"
 description: "An 11kw solar system: how many panels it takes, how many kWh it makes in a year, the roof space it needs, and the kind of high-usage household it actually fits."
-publishDate: 2027-02-01T08:00:00Z
+publishDate: 2032-03-23T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

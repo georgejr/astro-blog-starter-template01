@@ -1,7 +1,7 @@
 ---
 title: "Are Solar Rebates Taxable Income? What the IRS Expects"
 description: "Are solar rebates taxable income? Utility and state rebates are usually treated as a price reduction, not income — but they lower the basis for your federal credit."
-publishDate: 2027-01-13T08:00:00Z
+publishDate: 2031-07-01T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - tax credit

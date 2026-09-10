@@ -1,7 +1,7 @@
 ---
 title: "How Accurate Are Satellite Solar Estimates for Your Roof?"
 description: "Satellite solar estimate accuracy, explained honestly: what online mapping tools get right, where they miss, and when a site survey changes the numbers you were quoted."
-publishDate: 2026-12-05T16:00:00Z
+publishDate: 2030-01-08T08:00:00Z
 category: "Roof & Shading"
 tags:
   - solar estimates

@@ -1,7 +1,7 @@
 ---
 title: "Baseline Allowances: The Fine Print That Sets Your Rate Tier"
 description: "What a baseline allowance on your electric bill really is, how utilities calculate the baseline quantity, and how it quietly sets the price of every kilowatt-hour."
-publishDate: 2026-11-20T08:00:00Z
+publishDate: 2029-06-05T08:00:00Z
 category: "Electricity Usage"
 tags:
   - electricity usage

@@ -1,7 +1,7 @@
 ---
 title: "Hotspots, Microcracks and PID: Solar Panel Defects Decoded"
 description: "How solar panel hotspots and microcracks form, what potential induced degradation does, and the defect signs that separate a real fault from normal aging."
-publishDate: 2026-10-31T08:00:00Z
+publishDate: 2028-08-29T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

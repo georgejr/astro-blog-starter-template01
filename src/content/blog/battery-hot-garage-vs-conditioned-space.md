@@ -1,7 +1,7 @@
 ---
 title: "Home Battery in a Hot Garage vs a Conditioned Room: Does It Matter?"
 description: "Putting a solar battery in a hot garage versus a conditioned room affects output and lifespan. Here's what heat really does to a lithium pack and when the location matters."
-publishDate: 2027-01-14T16:00:00Z
+publishDate: 2031-07-22T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

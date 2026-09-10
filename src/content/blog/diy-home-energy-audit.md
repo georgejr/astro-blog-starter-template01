@@ -1,7 +1,7 @@
 ---
 title: "The DIY Home Energy Audit: Find Your Waste in an Afternoon"
 description: "A DIY home energy audit finds most of your waste without hiring a pro. Here's the room-by-room walkthrough, what to check first, and where a self-audit hits its limits."
-publishDate: 2026-10-21T08:00:00Z
+publishDate: 2028-04-11T08:00:00Z
 category: "Electricity Usage"
 tags:
   - energy audit

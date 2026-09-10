@@ -1,7 +1,7 @@
 ---
 title: "Inverter Noise and Placement: Garage, Exterior Wall, or Utility Room?"
 description: "Solar inverter noise, explained: how loud inverters really get, why they hum, and where to mount one — garage, exterior wall, or utility room — to avoid heat and annoyance."
-publishDate: 2026-12-06T08:00:00Z
+publishDate: 2030-01-15T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

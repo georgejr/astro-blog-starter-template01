@@ -2,7 +2,7 @@
 title: "Iowa Solar: Farm-Country Ground Mounts and Steady Net Metering"
 description: "Solar panels in Iowa pair retained net metering with abundant rural land for ground mounts. Here's how farm-scale arrays, cold winters, and export credit shape the math."
 slug: "solar-panels-in-iowa"
-publishDate: 2026-12-31T08:00:00Z
+publishDate: 2030-12-31T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

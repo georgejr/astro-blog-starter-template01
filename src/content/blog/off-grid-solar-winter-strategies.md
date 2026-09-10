@@ -1,7 +1,7 @@
 ---
 title: "Surviving Winter Off-Grid: Strategies for the Darkest Months"
 description: "Off grid solar in winter demands steeper tilt, an oversized array, and generator discipline. How to size for the darkest months instead of the sunniest ones."
-publishDate: 2026-11-04T08:00:00Z
+publishDate: 2028-10-24T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

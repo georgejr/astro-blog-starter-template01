@@ -1,7 +1,7 @@
 ---
 title: "How Much Battery Does an All-Electric Home Really Need?"
 description: "Sizing a home battery for an all-electric house with heat pumps and induction cooking. Why electric heat changes the math and how to size backup you can actually afford."
-publishDate: 2027-01-31T08:00:00Z
+publishDate: 2032-03-09T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

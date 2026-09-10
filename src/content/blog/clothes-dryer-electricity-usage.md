@@ -1,7 +1,7 @@
 ---
 title: "How Much Electricity Does a Clothes Dryer Actually Use?"
 description: "How much electricity does a dryer use? A typical electric dryer draws 2.5 to 5 kWh per load. What that adds up to monthly and how it compares to other loads."
-publishDate: 2026-12-13T16:00:00Z
+publishDate: 2030-04-30T08:00:00Z
 category: "Electricity Usage"
 tags:
   - appliances

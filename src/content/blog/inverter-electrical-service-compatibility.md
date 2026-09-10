@@ -1,7 +1,7 @@
 ---
 title: "Will Your Electrical Service Handle Solar? Volts, Phases, and Amps"
 description: "Your home's voltage, phase, and service amperage decide which solar inverter fits and whether you need a panel upgrade. Here's how installers actually check."
-publishDate: 2027-02-18T08:00:00Z
+publishDate: 2032-11-16T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

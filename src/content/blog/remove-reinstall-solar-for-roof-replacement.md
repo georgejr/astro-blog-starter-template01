@@ -1,7 +1,7 @@
 ---
 title: "Removing and Reinstalling Solar Panels for a New Roof"
 description: "Need to re-roof under an existing array? How detach-and-reset works, what it typically costs to remove and reinstall solar panels for a roof, and how to avoid it."
-publishDate: 2027-01-20T08:00:00Z
+publishDate: 2031-10-07T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

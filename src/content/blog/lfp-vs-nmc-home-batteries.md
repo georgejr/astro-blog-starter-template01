@@ -1,7 +1,7 @@
 ---
 title: "LFP vs NMC Home Batteries: The Chemistry Choice That Matters"
 description: "LFP vs NMC battery chemistry for home storage, compared on safety, lifespan, energy density, and temperature behavior — and why home batteries have tilted toward LFP."
-publishDate: 2026-09-10T16:00:00Z
+publishDate: 2026-09-22T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

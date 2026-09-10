@@ -1,7 +1,7 @@
 ---
 title: "Turn 12 Months of Bills Into the Right System Size"
 description: "How to size a solar system from annual kWh: the exact arithmetic to convert a year of usage into a target kilowatt rating, and why it beats rules of thumb."
-publishDate: 2026-11-01T08:00:00Z
+publishDate: 2028-09-12T08:00:00Z
 category: "System Sizing"
 tags:
   - system sizing

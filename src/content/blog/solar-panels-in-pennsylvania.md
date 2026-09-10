@@ -1,7 +1,7 @@
 ---
 title: "Pennsylvania Solar: What a Soft Certificate Market Means for You"
 description: "Solar panels in Pennsylvania earn most of their value from net metering, not the state's soft SREC market. Here's how PA solar renewable credits really fit in."
-publishDate: 2026-10-16T16:00:00Z
+publishDate: 2028-02-08T08:00:00Z
 category: "State Guides"
 tags:
   - pennsylvania

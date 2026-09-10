@@ -2,7 +2,7 @@
 title: "Solar in the Humid Southeast: Heavy AC Loads and Storm Season"
 description: "Solar in the humid Southeast is sized around heavy air-conditioning loads, frequent storms, and haze, with cooling-season sun that lines up with demand."
 slug: "solar-in-the-humid-southeast"
-publishDate: 2027-03-03T08:00:00Z
+publishDate: 2033-05-17T08:00:00Z
 category: "State Guides"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Why Home Batteries Age Even When You Barely Use Them"
 description: "Battery calendar aging vs cycle aging: a home battery loses capacity with time and with use. Here's how both mechanisms work and why a lightly used pack still fades."
-publishDate: 2027-01-10T08:00:00Z
+publishDate: 2031-05-20T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

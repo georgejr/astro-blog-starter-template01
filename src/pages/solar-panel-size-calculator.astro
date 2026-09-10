@@ -5,34 +5,39 @@ const faqs = [
   {
     question: 'What does system size in kW actually mean?',
     answer:
-      'It is the combined rated output of all panels under ideal test conditions (kilowatts peak, kWp). An 8 kW system has, for example, 20 panels of 400 W each. Real-world output is lower due to weather, temperature, and system losses.',
+      'It is the combined rated output of all panels under standard test conditions, written as kW or kWp (kilowatts peak). An 8 kW system is, for example, 20 panels of 400 W each. Real output is lower than the rating because of heat, wiring, inverter conversion, and dirt, which is why the calculator applies a 78% performance ratio.',
   },
   {
     question: 'What size solar system does a typical home need?',
     answer:
-      'Most US homes land between 6 and 12 kW. Homes with electric heating, EVs, or pools often need more; efficient homes in sunny states need less. Your electricity bill is the best sizing input.',
+      'A home using about 900 kWh a month needs roughly 8.4 kW at 4.5 sun hours a day for a 100% offset, which is 22 panels of 400 W. The same usage needs about 6.9 kW at 5.5 sun hours and 10.8 kW at 3.5 sun hours. Most US homes land between 6 and 12 kW, and your utility bill is the input that matters most.',
+  },
+  {
+    question: 'Can I size a solar system from my home’s square footage?',
+    answer:
+      'No. Two 2,000 sq ft homes can use 500 kWh and 2,000 kWh a month depending on heating type, air conditioning, pool pumps, and EV charging, and the second home needs four times the system. Size from your last 12 months of kWh on the utility bill, not from floor area.',
   },
   {
     question: 'Why does the calculator use a 78% performance ratio?',
     answer:
-      'Panels lose output to heat, wiring, inverter conversion, soiling, and mismatch. A performance ratio of 0.75–0.80 is a standard industry assumption for well-installed residential systems; we use 0.78.',
+      'Panels lose output to heat, wiring resistance, inverter conversion, soiling, and panel mismatch. A performance ratio of 0.75 to 0.80 is the standard assumption for a well-installed residential system, and 0.78 sits in the middle of that range. It means a 10 kW array delivers about 7.8 kW-equivalent of usable AC energy per sun hour.',
   },
   {
     question: 'Should I oversize my solar system?',
     answer:
-      'Modest oversizing (10–20%) can make sense if you expect an EV or heat pump soon, and if your utility allows it. Oversizing far beyond your usage rarely pays off where net metering credits export at below-retail rates.',
+      'Modest oversizing of 10 to 20% can make sense if you expect to add an EV or heat pump within a couple of years and your utility allows it. Oversizing well beyond your usage rarely pays where exported power is credited below the retail rate, because the extra kWh earn only a few cents each.',
   },
   {
     question: 'How does system size relate to yearly production?',
     answer:
-      'Yearly kWh ≈ system kW × daily sun hours × 365 × performance ratio. An 8 kW system with 4.5 sun hours produces roughly 10,200 kWh per year at a 0.78 performance ratio.',
+      'Yearly kWh is roughly system kW multiplied by daily sun hours, 365, and the performance ratio. An 8 kW system at 4.5 sun hours produces about 10,200 kWh a year at 0.78. Each 1 kW of capacity delivers roughly 1,000 kWh a year at 3.5 sun hours, 1,280 kWh at 4.5, and 1,570 kWh at 5.5.',
   },
 ];
 ---
 
 <CalculatorLanding
   title="Solar Panel Size Calculator – System Size in kW"
-  description="Calculate the solar system size (kW) your home needs from your electricity usage, sun hours, and desired bill offset. Free kWp sizing tool."
+  description="Calculate the solar system size (kW) your home needs from your electricity usage, sun hours, and desired bill offset. Free kWp sizing tool with worked examples."
   h1="Solar Panel Size Calculator"
   subtitle="Convert your electricity usage into the right system size in kilowatts — and see the panels, cost, and payback that go with it."
   faqs={faqs}
@@ -53,13 +58,190 @@ const faqs = [
 
   <Fragment slot="explanation">
     <section>
-      <h2 class="text-2xl font-bold text-slate-900">The sizing formula</h2>
+      <h2 class="text-2xl font-bold text-slate-900">The sizing formula, step by step</h2>
       <p class="mt-4 rounded-xl bg-slate-100 p-4 font-mono text-sm text-slate-800">
         system kW = target yearly kWh ÷ (sun hours × 365 × 0.78)
       </p>
-      <p class="mt-4 text-slate-600">
-        Example: to produce 11,000 kWh per year with 4.5 sun hours per day, you need
-        11,000 ÷ (4.5 × 365 × 0.78) ≈ <strong>8.6 kW</strong> — about 22 panels at 400 W.
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The calculator runs the same four steps an installer's design software does. Take a home
+        that uses 900 kWh a month, gets 4.5 sun hours a day, and wants to cover 100% of its usage:
+      </p>
+      <ol class="mt-4 list-decimal space-y-2 pl-5 text-slate-600">
+        <li>Yearly usage: 900 kWh × 12 = 10,800 kWh.</li>
+        <li>Target production: 10,800 kWh × 100% offset = 10,800 kWh.</li>
+        <li>Yearly output per kW installed: 4.5 × 365 × 0.78 = 1,281 kWh per kW.</li>
+        <li>System size: 10,800 ÷ 1,281 = <strong>8.4 kW</strong>.</li>
+      </ol>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        From there the tool divides by panel wattage and rounds up (8.4 ÷ 0.4 = 21.1, so 22 panels
+        at 400 W), allows 20 sq ft per panel for roof space (440 sq ft), and multiplies kW by your
+        installed cost per watt: at $3.00 per watt the example is $25,290 before the 30% federal
+        tax credit and about $17,700 after it. The
+        <a href="/how-many-solar-panels-do-i-need/" class="text-brand-700 underline">how many solar panels do I need</a>
+        page runs the same math from the panel-count angle.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Where each input comes from</h2>
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Usage, from your utility bill</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        The calculator converts your monthly bill into kWh by dividing by your rate. Better is to
+        read the kWh directly: most
+        bills print a 12- or 13-month usage bar chart. Add the 12 monthly figures rather than
+        multiplying one month by 12, because a July bill in Texas or a January bill in Minnesota
+        can be double the annual average. If you use the bill shortcut, take the rate from the
+        same bill as total charge divided by total kWh, so delivery fees and taxes are included.
+      </p>
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Sun hours, from NREL data</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        "Sun hours" means peak sun hours: the daily average of solar energy on the array,
+        expressed as hours of full 1,000 W/m² sun. The National
+        Renewable Energy Laboratory's solar resource maps put most of the Southwest at 5.5 to 6.5
+        hours, the Southeast and Plains at 4.5 to 5.5, and the Northeast, Pacific Northwest, and
+        upper Midwest at 3.5 to 4.5. For a single address, NREL's free PVWatts tool gives the
+        figure for your roof tilt and direction. When in doubt, use the lower end of the range.
+      </p>
+      <h3 class="mt-6 text-xl font-semibold text-slate-900">Offset, your choice</h3>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Offset is the share of yearly usage you want the system to produce. 100% is the usual
+        target under full net metering. Pick 70 to 90% if your utility credits exports below the
+        retail rate or your roof is tight, and 110 to 120% only when a specific new load is coming.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">What the 78% performance ratio includes</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Panel ratings are measured at 25°C cell temperature under lab light. A roof in July runs
+        far hotter, and every step between the panel and your breaker box loses a little. The 0.78
+        ratio bundles the typical losses:
+      </p>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>Heat: 5 to 10%, since output falls roughly 0.3 to 0.4% per °C above 25°C.</li>
+        <li>Inverter conversion from DC to AC: 3 to 4%.</li>
+        <li>Wiring, connectors, and panel mismatch: 2 to 4%.</li>
+        <li>Soiling from dust and pollen, plus occasional snow: 2 to 5%.</li>
+        <li>Availability and small shading losses: 1 to 3%.</li>
+      </ul>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Heavy shading or a poorly oriented roof are not included; handle those by lowering the
+        sun-hours input. Full assumptions are on the
+        <a href="/methodology/" class="text-brand-700 underline">methodology page</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">System size by monthly usage and sun hours</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        System size in kW for a 100% offset at a 0.78 performance ratio.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">Monthly usage</th>
+              <th class="py-2 pr-4 font-semibold">3.5 sun hours</th>
+              <th class="py-2 pr-4 font-semibold">4.5 sun hours</th>
+              <th class="py-2 font-semibold">5.5 sun hours</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">500 kWh</td><td class="py-2 pr-4">6.0 kW</td><td class="py-2 pr-4">4.7 kW</td><td class="py-2">3.8 kW</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">750 kWh</td><td class="py-2 pr-4">9.0 kW</td><td class="py-2 pr-4">7.0 kW</td><td class="py-2">5.7 kW</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,000 kWh</td><td class="py-2 pr-4">12.0 kW</td><td class="py-2 pr-4">9.4 kW</td><td class="py-2">7.7 kW</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,250 kWh</td><td class="py-2 pr-4">15.1 kW</td><td class="py-2 pr-4">11.7 kW</td><td class="py-2">9.6 kW</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">1,500 kWh</td><td class="py-2 pr-4">18.1 kW</td><td class="py-2 pr-4">14.0 kW</td><td class="py-2">11.5 kW</td></tr>
+            <tr><td class="py-2 pr-4">2,000 kWh</td><td class="py-2 pr-4">24.1 kW</td><td class="py-2 pr-4">18.7 kW</td><td class="py-2">15.3 kW</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        kW = monthly kWh × 12 ÷ (sun hours × 365 × 0.78). A Phoenix home and a Seattle home with the same bill need systems that differ by more than half.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">From kilowatts to panels</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Panel count is system kW divided by panel kW, rounded up. Residential panels sold in 2026
+        mostly fall between 400 and 450 W; 350 W still appears in older quotes and budget lines.
+      </p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-300 text-slate-900">
+              <th class="py-2 pr-4 font-semibold">System size</th>
+              <th class="py-2 pr-4 font-semibold">350 W panels</th>
+              <th class="py-2 pr-4 font-semibold">400 W panels</th>
+              <th class="py-2 font-semibold">450 W panels</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">4 kW</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">10</td><td class="py-2">9</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">6 kW</td><td class="py-2 pr-4">18</td><td class="py-2 pr-4">15</td><td class="py-2">14</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">8 kW</td><td class="py-2 pr-4">23</td><td class="py-2 pr-4">20</td><td class="py-2">18</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">10 kW</td><td class="py-2 pr-4">29</td><td class="py-2 pr-4">25</td><td class="py-2">23</td></tr>
+            <tr class="border-b border-slate-200"><td class="py-2 pr-4">12 kW</td><td class="py-2 pr-4">35</td><td class="py-2 pr-4">30</td><td class="py-2">27</td></tr>
+            <tr><td class="py-2 pr-4">15 kW</td><td class="py-2 pr-4">43</td><td class="py-2 pr-4">38</td><td class="py-2">34</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Rounded up to whole panels; allow about 20 sq ft of roof each.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Common sizing mistakes</h2>
+      <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+        <li>
+          Sizing from square footage. Floor area says nothing about whether you heat with gas or
+          electricity, run a pool pump, or charge a car. Usage in kWh is the only reliable input.
+        </li>
+        <li>
+          Sizing from one bill. A single summer or winter month can be 50% above or below the
+          annual average. Use 12 months.
+        </li>
+        <li>
+          Ignoring loads you are about to add. An EV driven 12,000 miles a year adds roughly 3,600
+          kWh, or about 2.8 kW of system at 4.5 sun hours; a heat pump replacing a gas furnace can
+          add more. Fold these in now, since adding panels later means a second permit and
+          possibly a new inverter.
+        </li>
+        <li>
+          Oversizing where export credits are low. If your utility pays 4 cents for exported kWh
+          and charges 17 cents for imports, every panel beyond your daytime self-consumption earns
+          a quarter of what the first panels earn. There, a 70 to 90% offset or a battery usually
+          beats a bigger array.
+        </li>
+        <li>
+          Using daylight hours as sun hours. Fourteen hours of June daylight in Boston still
+          averages only about 4.5 peak sun hours over the year.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-slate-900">Why an installer's number may differ</h2>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        A site visit adds constraints this calculator cannot see. The usable roof shrinks once
+        fire-code setbacks (typically 18 to 36 inches from ridges and edges), vents, and skylights
+        are drawn in, so the installer may put fewer panels on the best face and a few on a less
+        ideal one. They run hourly shade analysis rather than a flat derate, and they choose the
+        inverter deliberately: a DC-to-AC ratio of 1.2 to 1.3 is normal, meaning a 9 kW array on a
+        7.6 kW inverter. That "clips" a little output on the brightest spring afternoons but raises
+        production on every other day and keeps the inverter within interconnection limits. A
+        modest gap from your estimate is normal; a proposal 30% larger with no new load to justify
+        it is worth questioning.
+      </p>
+      <p class="mt-4 leading-relaxed text-slate-600">
+        Before settling on an offset, check how your state and utility credit exported power in
+        the
+        <a href="/solar-panel-cost-by-state/" class="text-brand-700 underline">state-by-state cost and export-rules guide</a>,
+        since that decides whether the last few kilowatts pay for themselves. The
+        <a href="/solar-panel-cost-calculator/" class="text-brand-700 underline">cost calculator</a>
+        then turns your kW figure into a price with the federal credit applied.
       </p>
     </section>
   </Fragment>

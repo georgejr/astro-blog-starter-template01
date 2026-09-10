@@ -1,7 +1,7 @@
 ---
 title: "The Solar Site Survey: Why It Can Change Your Quote"
 description: "A solar site survey is where a preliminary design meets your real roof and electrical panel. What surveyors check, and why the final design or price can shift after."
-publishDate: 2026-09-15T08:00:00Z
+publishDate: 2026-11-24T08:00:00Z
 category: "Installation"
 tags:
   - installation

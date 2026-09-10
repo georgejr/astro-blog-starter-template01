@@ -1,7 +1,7 @@
 ---
 title: "USDA REAP Grants: Solar Funding for Farms and Rural Businesses"
 description: "A USDA REAP solar grant can fund part of a system for farms and rural small businesses. How eligibility, the grant cap, and the competitive application really work."
-publishDate: 2026-11-15T08:00:00Z
+publishDate: 2029-03-27T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - reap

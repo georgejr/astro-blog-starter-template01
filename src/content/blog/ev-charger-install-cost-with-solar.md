@@ -1,7 +1,7 @@
 ---
 title: "What It Costs to Add an EV Charger During a Solar Install"
 description: "The real EV charger installation cost, broken into wiring, breaker, and labor — and why bundling a Level 2 charger with your solar job cuts a chunk of it out."
-publishDate: 2027-01-14T08:00:00Z
+publishDate: 2031-07-15T08:00:00Z
 category: "Solar Costs"
 tags:
   - ev charging

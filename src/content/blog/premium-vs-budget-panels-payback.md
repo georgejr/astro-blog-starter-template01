@@ -1,7 +1,7 @@
 ---
 title: "Premium Panels vs. Budget Panels: Which Pays Back First?"
 description: "Premium vs budget solar panels payback isn't obvious: higher efficiency costs more upfront but not always more per watt. Here's when the premium earns back."
-publishDate: 2026-10-05T16:00:00Z
+publishDate: 2027-09-07T08:00:00Z
 category: "Payback"
 tags:
   - panels

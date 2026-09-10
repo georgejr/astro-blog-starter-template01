@@ -1,7 +1,7 @@
 ---
 title: "PWM vs. MPPT Charge Controllers: When the Cheap One Is Fine"
 description: "PWM vs MPPT charge controller comes down to system size and voltage. Here's what a charge controller does, where MPPT's harvest gain pays off, and when a basic PWM is the honest pick."
-publishDate: 2026-10-25T16:00:00Z
+publishDate: 2028-06-13T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - off-grid

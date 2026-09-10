@@ -1,7 +1,7 @@
 ---
 title: "Measure Your Usable Roof Area for Solar Without Climbing a Ladder"
 description: "How to measure your roof for solar panels safely from the ground: separate gross area from usable area, apply a pitch factor, and turn square feet into panel count."
-publishDate: 2026-11-28T08:00:00Z
+publishDate: 2029-09-25T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof measurement

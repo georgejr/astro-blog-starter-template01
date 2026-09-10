@@ -1,7 +1,7 @@
 ---
 title: "Thin-Film vs. Crystalline Panels: Why Rooftops Picked a Winner"
 description: "Thin film vs crystalline solar panels comes down to efficiency and space. Why crystalline dominates home roofs while thin film thrives in other niches entirely."
-publishDate: 2026-11-16T16:00:00Z
+publishDate: 2029-04-17T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - thin film

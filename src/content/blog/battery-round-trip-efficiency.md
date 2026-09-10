@@ -1,7 +1,7 @@
 ---
 title: "Round-Trip Efficiency: The Hidden Number in Battery Specs"
 description: "Battery round trip efficiency, explained: how much energy a home battery loses charging and discharging, why the number varies, and what it costs you in practice."
-publishDate: 2026-09-24T16:00:00Z
+publishDate: 2027-04-06T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

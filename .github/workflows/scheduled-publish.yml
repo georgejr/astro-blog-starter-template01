@@ -3,16 +3,18 @@
 # The site deploys through Cloudflare Workers Builds (Git integration): every
 # push to main triggers `npm run build` + `npm run deploy` on Cloudflare.
 # Scheduled articles are revealed by BUILD TIME, so a build must happen after
-# each publication slot (08:00 / 16:00 UTC). This workflow touches a marker
-# file shortly after each slot and pushes, which triggers the Cloudflare
-# build. It runs ONLY on schedule/manual dispatch — its own push cannot
-# retrigger it, so no workflow loop is possible.
+# each publication slot. Editorial cadence is ONE article per week, published
+# Tuesdays at 08:00 UTC (see docs/scheduled-publishing.md and
+# scripts/reschedule-weekly.mjs). This workflow touches a marker file shortly
+# after the slot and pushes, which triggers the Cloudflare build. It runs
+# ONLY on schedule/manual dispatch — its own push cannot retrigger it, so no
+# workflow loop is possible. After the deploy, Cloudflare's `postdeploy` hook
+# submits the sitemap URLs to IndexNow (scripts/submit-indexnow.mjs).
 name: scheduled-publish
 
 on:
   schedule:
-    - cron: "5 8 * * *"
-    - cron: "5 16 * * *"
+    - cron: "5 8 * * 2"
   workflow_dispatch:
 
 permissions:

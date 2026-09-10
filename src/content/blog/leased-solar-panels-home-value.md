@@ -1,7 +1,7 @@
 ---
 title: "Owned vs Leased Solar: The Home Value Difference"
 description: "Do leased solar panels add value or complicate a sale? Ownership status decides. Here's how owned and leased systems diverge sharply at the closing table."
-publishDate: 2026-11-26T16:00:00Z
+publishDate: 2029-09-04T08:00:00Z
 category: "Savings & ROI"
 tags:
   - home value

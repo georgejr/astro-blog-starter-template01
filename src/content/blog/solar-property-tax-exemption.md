@@ -1,7 +1,7 @@
 ---
 title: "Property Tax Exemptions for Solar: Why Your Assessment May Not Rise"
 description: "A solar property tax exemption keeps the value your panels add off your assessment in many states. Here's how these exemptions work and why they vary so much."
-publishDate: 2026-10-04T16:00:00Z
+publishDate: 2027-08-24T08:00:00Z
 category: "Incentives & Tax Credits"
 tags:
   - property tax

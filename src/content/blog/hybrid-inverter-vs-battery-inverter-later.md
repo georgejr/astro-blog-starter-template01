@@ -1,7 +1,7 @@
 ---
 title: "Hybrid Inverter Now or a Separate Battery Inverter Later?"
 description: "Should you buy a hybrid inverter now or add a separate battery inverter later? The choice hinges on how sure you are about storage and what each path really costs."
-publishDate: 2026-12-24T08:00:00Z
+publishDate: 2030-09-24T08:00:00Z
 category: "Inverters & Components"
 tags:
   - inverters

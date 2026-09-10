@@ -2,7 +2,7 @@
 title: "Sizing a Battery to Carry a Whole Home Through a Multi-Day Outage"
 description: "Sizing a battery for a multi-day power outage means pairing storage with solar recharge. Here's how to size both to run a whole house for several days off-grid."
 slug: "battery-sizing-multi-day-outage"
-publishDate: 2026-12-31T16:00:00Z
+publishDate: 2031-01-07T08:00:00Z
 category: "Batteries & Storage"
 author: "SunMetricLab Editorial Team"
 tags:

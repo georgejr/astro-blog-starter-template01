@@ -1,7 +1,7 @@
 ---
 title: "What Solar Panel Maintenance Actually Costs Each Year"
 description: "Solar maintenance cost per year is lower than most people expect. A realistic annual operating budget — cleaning, monitoring, and the inverter you'll replace once."
-publishDate: 2027-03-12T08:00:00Z
+publishDate: 2033-09-20T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

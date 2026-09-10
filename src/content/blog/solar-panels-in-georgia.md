@@ -1,7 +1,7 @@
 ---
 title: "Georgia Solar: Great Sun, Stingy Export Rules"
 description: "Solar panels in Georgia get excellent sun but export credits near wholesale avoided cost. That makes self-consumption — and often a battery — the key to the math."
-publishDate: 2026-10-20T08:00:00Z
+publishDate: 2028-03-28T08:00:00Z
 category: "State Guides"
 tags:
   - georgia

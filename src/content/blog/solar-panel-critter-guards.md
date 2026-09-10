@@ -1,7 +1,7 @@
 ---
 title: "Critter Guards for Solar Panels: Options and Costs"
 description: "Solar panel critter guard cost runs from a few hundred to a couple thousand dollars. Here's how mesh guards and bird netting compare, and when to add them."
-publishDate: 2026-12-27T16:00:00Z
+publishDate: 2030-11-12T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - critter guard

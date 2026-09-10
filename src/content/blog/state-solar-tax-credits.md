@@ -2,7 +2,7 @@
 title: "State Solar Tax Credits: How They Stack on the Federal One"
 description: "State solar tax credits are separate from the federal one. Here's how a state income-tax credit is claimed and how it stacks with the 30% federal credit."
 slug: "state-solar-tax-credits"
-publishDate: 2027-03-04T08:00:00Z
+publishDate: 2033-05-31T08:00:00Z
 category: "Incentives & Tax Credits"
 author: "SunMetricLab Editorial Team"
 tags:

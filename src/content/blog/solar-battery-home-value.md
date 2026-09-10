@@ -1,7 +1,7 @@
 ---
 title: "Does a Home Battery Add Resale Value the Way Panels Do?"
 description: "Owned solar panels tend to lift home value; a home battery is murkier. Whether storage raises resale and appraisal or is treated as a depreciating appliance."
-publishDate: 2027-01-26T08:00:00Z
+publishDate: 2031-12-30T08:00:00Z
 category: "Savings & ROI"
 tags:
   - batteries

@@ -1,7 +1,7 @@
 ---
 title: "Solar as a Hedge Against Rising Electricity Rates"
 description: "How solar works as a hedge against rising electricity rates: you prepay for production, so each utility rate increase quietly raises the value of power you already own."
-publishDate: 2026-10-11T16:00:00Z
+publishDate: 2027-11-30T08:00:00Z
 category: "Savings & ROI"
 tags:
   - savings

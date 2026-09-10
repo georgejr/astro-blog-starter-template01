@@ -1,7 +1,7 @@
 ---
 title: "Shore Power Plus Solar: The Hybrid RV Setup Most People Want"
 description: "Combining RV shore power and solar lets your rig charge from hookups or the sun without rewiring between them. How the hybrid setup is wired and how it prioritizes."
-publishDate: 2026-11-16T08:00:00Z
+publishDate: 2029-04-10T08:00:00Z
 category: "Off-Grid & Mobile"
 tags:
   - rv solar

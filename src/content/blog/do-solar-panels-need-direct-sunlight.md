@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Need Direct Sunlight to Work?"
 description: "Solar panels do not need direct sunlight to produce power. Here's how much they make from diffuse light on cloudy days and in partial shade, with the numbers behind it."
-publishDate: 2027-02-18T16:00:00Z
+publishDate: 2032-11-23T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - myths

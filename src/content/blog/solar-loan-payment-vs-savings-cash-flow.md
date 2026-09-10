@@ -1,7 +1,7 @@
 ---
 title: "Will Your Solar Loan Payment Beat Your Monthly Savings?"
 description: "Solar loan payment vs savings: whether financed solar is cash-flow positive month to month, why winter months can turn negative, and how to check before you sign."
-publishDate: 2027-01-11T16:00:00Z
+publishDate: 2031-06-10T08:00:00Z
 category: "Savings & ROI"
 tags:
   - solar loans

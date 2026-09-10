@@ -1,7 +1,7 @@
 ---
 title: "The Cost of Adding Panels to an Existing Solar System"
 description: "The cost to add solar panels to an existing system runs higher per watt than the first install. Here's why the second batch is pricier — and when it's still worth it."
-publishDate: 2026-11-26T08:00:00Z
+publishDate: 2029-08-28T08:00:00Z
 category: "Solar Costs"
 tags:
   - solar costs

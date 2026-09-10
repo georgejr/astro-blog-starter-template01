@@ -1,7 +1,7 @@
 ---
 title: "How Much Extra Battery to Buy for Winter and Years of Wear"
 description: "How much extra battery capacity to buy so cold weather and years of degradation don't leave you short: sizing headroom for winter derate and capacity fade."
-publishDate: 2027-03-05T16:00:00Z
+publishDate: 2033-06-21T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - batteries

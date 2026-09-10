@@ -1,7 +1,7 @@
 ---
 title: "Net Metering Grandfathering: Locking In the Deal You Signed Up For"
 description: "Net metering grandfathering lets existing solar owners keep their original terms when rules change. What it protects, what it doesn't, and how long it lasts."
-publishDate: 2026-09-10T08:00:00Z
+publishDate: 2026-09-15T08:00:00Z
 category: "Savings & ROI"
 tags:
   - net metering

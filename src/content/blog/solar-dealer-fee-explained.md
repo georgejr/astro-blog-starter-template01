@@ -1,7 +1,7 @@
 ---
 title: "What a Solar Dealer Fee Really Costs You on a Financed System"
 description: "A solar dealer fee is the hidden markup that makes a financed system cost more than cash. How the fee works, where it hides, and how to price around it."
-publishDate: 2026-12-10T16:00:00Z
+publishDate: 2030-03-19T08:00:00Z
 category: "Solar Costs"
 tags:
   - financing

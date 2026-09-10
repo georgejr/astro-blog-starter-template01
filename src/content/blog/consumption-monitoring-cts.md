@@ -1,7 +1,7 @@
 ---
 title: "What Those Current Transformer Clamps in Your Panel Are For"
 description: "Solar consumption monitoring CTs are the clamps your installer put around wires in your panel. Here's what they measure and why whole-home data matters for self-use."
-publishDate: 2027-01-11T08:00:00Z
+publishDate: 2031-06-03T08:00:00Z
 category: "Inverters & Components"
 tags:
   - monitoring

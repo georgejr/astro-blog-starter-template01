@@ -1,7 +1,7 @@
 ---
 title: "Selling a House With Solar Panels: What to Expect"
 description: "Selling a house with solar panels is smooth when you own them and thornier when you don't. How ownership type, paperwork, and appraisal shape the sale."
-publishDate: 2026-11-17T16:00:00Z
+publishDate: 2029-05-01T08:00:00Z
 category: "Savings & ROI"
 tags:
   - home sale

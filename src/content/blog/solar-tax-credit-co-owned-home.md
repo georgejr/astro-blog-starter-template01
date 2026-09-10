@@ -2,7 +2,7 @@
 title: "Claiming the Solar Tax Credit on a Co-Owned Home"
 description: "The solar tax credit for a co-owned home splits between owners by what each paid. Here's how unmarried co-owners divide the 30% credit across separate tax returns."
 slug: "solar-tax-credit-co-owned-home"
-publishDate: 2027-01-02T16:00:00Z
+publishDate: 2031-02-04T08:00:00Z
 category: "Incentives & Tax Credits"
 author: "SunMetricLab Editorial Team"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Mississippi Solar: Deep-South Sun in an Emerging Rooftop Market"
 description: "Solar panels in Mississippi enjoy abundant Deep-South sun but modest export credits, so the economics hinge on covering heavy summer cooling loads directly."
-publishDate: 2027-01-12T08:00:00Z
+publishDate: 2031-06-17T08:00:00Z
 category: "State Guides"
 tags:
   - mississippi

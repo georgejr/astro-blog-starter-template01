@@ -1,7 +1,7 @@
 ---
 title: "Upgrading an Aging Solar System: Add, Replace or Repower?"
 description: "A decade-old solar array still works, but its options differ. How to weigh adding panels, replacing failed hardware, or repowering the whole system for a US home."
-publishDate: 2026-11-30T08:00:00Z
+publishDate: 2029-10-23T08:00:00Z
 category: "Maintenance & Lifespan"
 tags:
   - maintenance

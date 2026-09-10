@@ -1,7 +1,7 @@
 ---
 title: "Using a Home Battery to Dodge Residential Demand Charges"
 description: "A residential demand charge bills you for your single highest spike of usage. Here's how a home battery shaves those brief peaks, and whether it actually pays off."
-publishDate: 2027-03-19T08:00:00Z
+publishDate: 2033-12-27T08:00:00Z
 category: "Batteries & Storage"
 author: "SunMetricLab Editorial Team"
 tags:

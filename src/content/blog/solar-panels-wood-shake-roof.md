@@ -1,7 +1,7 @@
 ---
 title: "Can You Put Solar Panels on a Wood Shake Roof?"
 description: "Solar panels on a wood shake roof are possible but tricky: special mounting, fire rules, and a shorter roof life all matter. What cedar-roof owners should weigh."
-publishDate: 2026-12-14T08:00:00Z
+publishDate: 2030-05-07T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roofing

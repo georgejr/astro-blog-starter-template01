@@ -1,7 +1,7 @@
 ---
 title: "Which Roof Shapes Work Best for Solar Panels?"
 description: "The best roof shape for solar isn't complicated: big, uninterrupted planes facing the right way. How gable, hip, gambrel, and flat roofs change your panel count."
-publishDate: 2027-03-11T08:00:00Z
+publishDate: 2033-09-06T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof

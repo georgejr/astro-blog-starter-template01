@@ -1,7 +1,7 @@
 ---
 title: "The Hidden Line Items: Maintenance and Inverter Costs in Payback Math"
 description: "Most solar payback estimates assume zero upkeep. How realistic maintenance costs and a mid-life inverter replacement change the true payback period."
-publishDate: 2026-09-28T08:00:00Z
+publishDate: 2027-05-25T08:00:00Z
 category: "Payback"
 tags:
   - payback

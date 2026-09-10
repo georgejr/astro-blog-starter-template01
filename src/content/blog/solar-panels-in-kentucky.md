@@ -1,7 +1,7 @@
 ---
 title: "Kentucky Solar: Coal-Cheap Power and Shrinking Export Credits"
 description: "Solar panels in Kentucky face low coal-fueled rates and a shift from retail net metering to avoided-cost export credits — here's how to size a system that still pays."
-publishDate: 2027-01-04T16:00:00Z
+publishDate: 2031-03-04T08:00:00Z
 category: "State Guides"
 tags:
   - kentucky

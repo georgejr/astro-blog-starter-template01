@@ -1,7 +1,7 @@
 ---
 title: "Complex Rooflines: Fitting Solar Around Dormers, Hips, and Valleys"
 description: "Solar panels on a complex roof of dormers, hips and valleys usually work. Here's how designers fit panels across small planes — and what it costs in output."
-publishDate: 2026-10-06T16:00:00Z
+publishDate: 2027-09-21T08:00:00Z
 category: "Roof & Shading"
 tags:
   - roof design

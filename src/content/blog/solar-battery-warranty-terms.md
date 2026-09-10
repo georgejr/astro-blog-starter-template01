@@ -1,7 +1,7 @@
 ---
 title: "Reading a Solar Battery Warranty: Cycles, Throughput, and Fine Print"
 description: "A solar battery warranty can expire on years, cycles, or throughput, whichever comes first. How to read guaranteed end capacity and the fine print that voids it."
-publishDate: 2026-11-18T08:00:00Z
+publishDate: 2029-05-08T08:00:00Z
 category: "Batteries & Storage"
 tags:
   - battery warranty

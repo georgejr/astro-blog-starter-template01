@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Raise Your Property Taxes?"
 description: "Do solar panels raise property taxes? In most states the added home value is exempt from assessment. Here's how assessments and solar exemptions actually work."
-publishDate: 2027-01-09T16:00:00Z
+publishDate: 2031-05-13T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - property tax

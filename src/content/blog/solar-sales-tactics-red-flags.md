@@ -1,7 +1,7 @@
 ---
 title: "Solar Sales Tactics That Should Make You Pause"
 description: "Solar sales tactics decoded: the pressure techniques, misleading math, and too-good claims that signal a pitch built to close you, not to serve you."
-publishDate: 2026-09-22T16:00:00Z
+publishDate: 2027-03-09T08:00:00Z
 category: "Installation"
 tags:
   - solar sales

@@ -1,7 +1,7 @@
 ---
 title: "What Happens When Your Solar Install Fails Inspection"
 description: "Solar failed inspection? The common reasons installs get flagged, who fixes them, how re-inspection works, and why a failure rarely means anything is actually wrong."
-publishDate: 2027-02-02T16:00:00Z
+publishDate: 2032-04-13T08:00:00Z
 category: "Installation"
 tags:
   - installation

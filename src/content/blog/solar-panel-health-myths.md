@@ -1,7 +1,7 @@
 ---
 title: "Do Solar Panels Cause Health Problems? The EMF Myth"
 description: "Do solar panels cause health problems? Home solar carries no established health risk. What the evidence says about EMF, panel toxicity, and fire fears."
-publishDate: 2027-03-07T08:00:00Z
+publishDate: 2033-07-12T08:00:00Z
 category: "Myths & Comparisons"
 tags:
   - myths
