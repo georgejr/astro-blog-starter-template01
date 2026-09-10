@@ -1,5 +1,5 @@
 // IndexNow helpers (pure, testable). See https://www.indexnow.org/documentation
-export const INDEXNOW_KEY = 'b80a112afefb4a8c97e9e763e1a8ae9c';
+export const INDEXNOW_KEY = '37e585025db3488d82a224caac7eaafc';
 export const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
 export const MAX_URLS_PER_REQUEST = 10_000;
 
