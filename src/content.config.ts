@@ -27,8 +27,8 @@ const blog = defineCollection({
     relatedCalculators: z.array(z.string()).default([]),
     relatedArticles: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
-    /** Author id or name from src/data/authors.ts; unknown values resolve to the default named author. */
-    author: z.string().default('gyorgy-zsibrita'),
+    /** Author id or name from src/data/authors.ts; unknown values resolve to the default author. */
+    author: z.string().default('editorial-team'),
     // Optional headline figure for the generated OG/share image. When present,
     // the OG card renders it as a mini-infographic; otherwise a title card.
     ogStat: z

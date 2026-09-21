@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import PostGrid from '../../components/PostGrid.astro';
 import Pagination from '../../components/Pagination.astro';
+import BannerSlot from '../../components/BannerSlot.astro';
 import { TOP_CALCULATOR_LINKS } from '../../lib/site';
 import { getPublishedPosts, BLOG_PAGE_SIZE } from '../../lib/content';
 import { CATEGORIES, taxonomySlug } from '../../lib/taxonomy';
@@ -41,6 +42,8 @@ const categories = CATEGORIES.filter((category) =>
         </nav>
       )}
     </header>
+
+    <BannerSlot placement="listing" />
 
     <PostGrid posts={posts} />
 

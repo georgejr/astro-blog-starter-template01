@@ -4,7 +4,7 @@ import { CATEGORIES } from '../../src/lib/taxonomy';
 import { calculators } from '../../src/data/calculators';
 import { STATE_SOLAR, stateSlug } from '../../src/data/state-solar';
 import { CITIES, citySlug } from '../../src/data/city-solar';
-import type { PlanEntry, RawArticle } from './load';
+import type { RawArticle } from './load';
 
 const CALCULATOR_IDS = new Set(calculators.map((c) => c.id));
 const CALCULATOR_HREFS = new Set(calculators.map((c) => c.href));
@@ -53,23 +53,33 @@ function publishTime(article: RawArticle): number | null {
 
 const MARKDOWN_LINK_RE = /\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g;
 
-export function extractInternalLinks(body: string): string[] {
-  const links: string[] = [];
-  for (const match of body.matchAll(MARKDOWN_LINK_RE)) {
-    const href = match[1];
-    if (href.startsWith('/')) links.push(href.split('#')[0]);
-  }
-  return links;
+/** Every markdown link target in a body, as written. */
+export function extractLinks(body: string): string[] {
+  return [...body.matchAll(MARKDOWN_LINK_RE)].map((match) => match[1]);
 }
+
+export function extractInternalLinks(body: string): string[] {
+  return extractLinks(body)
+    .filter((href) => href.startsWith('/'))
+    .map((href) => href.split('#')[0]);
+}
+
+// Link targets that work from any page: site-absolute paths, in-page
+// anchors, absolute web URLs, mail and phone links. Anything else (e.g.
+// "blog/foo/" or "htps://...") resolves relative to the article URL and
+// breaks.
+const SUPPORTED_HREF_RE = /^(?:\/|#|https?:\/\/[^\s/]+\.[^\s/]+|mailto:|tel:)/;
 
 /**
  * Validates all articles as a set. Every article-to-article reference
- * (frontmatter relatedArticles AND markdown body links) is checked against
- * the TARGET's publishDate relative to the SOURCE's publishDate — a source
- * may never reference an article published after itself, regardless of when
- * validation runs.
+ * (frontmatter relatedArticles AND markdown body links) must point at an
+ * article that is either already published at `now` or publishes no later
+ * than the source itself. Either way the target exists in every build in
+ * which the source is live, so a link can never point at an unpublished
+ * page. (Older articles may therefore link to newer ones once those are
+ * live; a scheduled article may only link to targets published before it.)
  */
-export function validateArticles(articles: RawArticle[]): ValidationIssue[] {
+export function validateArticles(articles: RawArticle[], now: Date = new Date()): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const bySlug = new Map<string, RawArticle>();
 
@@ -114,10 +124,15 @@ export function validateArticles(articles: RawArticle[]): ValidationIssue[] {
     }
   }
 
-  // Cross-article references, judged at the source article's publish time.
+  // Cross-article references (see the doc comment above for the rule).
+  const nowTime = now.getTime();
   for (const article of articles) {
     const sourceTime = publishTime(article);
     const err = (message: string) => issues.push({ file: article.file, message });
+    const tooLate = (target: RawArticle) => {
+      const targetTime = publishTime(target);
+      return sourceTime !== null && targetTime !== null && targetTime > Math.max(sourceTime, nowTime);
+    };
 
     for (const slug of (article.data.relatedArticles as string[] | undefined) ?? []) {
       const target = bySlug.get(slug);
@@ -126,9 +141,8 @@ export function validateArticles(articles: RawArticle[]): ValidationIssue[] {
         continue;
       }
       if (target.data.draft === true) err(`relatedArticles references draft article "${slug}"`);
-      const targetTime = publishTime(target);
-      if (sourceTime !== null && targetTime !== null && targetTime > sourceTime)
-        err(`relatedArticles references "${slug}" published after this article`);
+      if (tooLate(target))
+        err(`relatedArticles references "${slug}", which is not published yet and publishes after this article`);
     }
 
     for (const link of extractInternalLinks(article.body)) {
@@ -140,79 +154,26 @@ export function validateArticles(articles: RawArticle[]): ValidationIssue[] {
           continue;
         }
         if (target.data.draft === true) err(`body links to draft article ${link}`);
-        const targetTime = publishTime(target);
-        if (sourceTime !== null && targetTime !== null && targetTime > sourceTime)
-          err(`body links to ${link}, which publishes after this article`);
+        if (tooLate(target))
+          err(`body links to ${link}, which is not published yet and publishes after this article`);
         continue;
       }
       if (CALCULATOR_HREFS.has(link) || STATIC_ROUTES.has(link) || STATE_ROUTES.has(link) || CITY_ROUTES.has(link)) continue;
       err(`body links to unknown internal path ${link} (allowed: calculators, /blog/<slug>/, state/city pages, static pages)`);
     }
 
+    // Scaffolds from `npm run post -- new` carry TODO markers; never publish them.
+    if (article.data.draft !== true && /\bTODO\b/.test(`${article.data.title} ${article.data.description} ${article.body}`))
+      err('contains TODO placeholders — finish the article or set draft: true');
+
+    for (const href of extractLinks(article.body)) {
+      if (!SUPPORTED_HREF_RE.test(href))
+        err(`unsupported link target "${href}" — use /site/path/, https://full.url or mailto:`);
+    }
+
     if (FORBIDDEN_BLOCK_RE.test(article.body)) {
       const label = article.body.match(FORBIDDEN_BLOCK_RE)?.[1];
       err(`forbidden labeled block "${label}:" — weave this into prose instead`);
-    }
-  }
-
-  return issues;
-}
-
-/** Validates the 300-article generation plan for internal consistency. */
-export function validatePlan(plan: PlanEntry[], existingArticles: RawArticle[]): ValidationIssue[] {
-  const issues: ValidationIssue[] = [];
-  const err = (slug: string, message: string) => issues.push({ file: `plan:${slug}`, message });
-
-  if (plan.length !== 500) {
-    issues.push({ file: 'content-plan.json', message: `plan must contain exactly 500 entries, found ${plan.length}` });
-  }
-
-  const planSlugs = new Set<string>();
-  const keywords = new Map<string, string>();
-  const existingSlugs = new Set(existingArticles.map((a) => a.slug));
-  const existingKeywords = new Set(
-    existingArticles.map((a) => String(a.data.primaryKeyword ?? '').toLowerCase().trim()).filter(Boolean),
-  );
-  const byPlanSlug = new Map(plan.map((entry) => [entry.slug, entry]));
-
-  for (const entry of plan) {
-    if (!entry.title?.trim()) err(entry.slug, 'empty title');
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.slug)) err(entry.slug, `invalid slug "${entry.slug}"`);
-    if (planSlugs.has(entry.slug)) err(entry.slug, 'duplicate slug within plan');
-    planSlugs.add(entry.slug);
-    if (existingSlugs.has(entry.slug) && !byPlanSlug.get(entry.slug)?.pillar) {
-      // A plan slug may match an existing file only once that file was generated from the plan.
-      const generated = existingArticles.find((a) => a.slug === entry.slug);
-      if (generated && String(generated.data.primaryKeyword).toLowerCase() !== entry.primaryKeyword.toLowerCase()) {
-        err(entry.slug, 'slug collides with an existing article that is not this plan entry');
-      }
-    }
-
-    const time = Date.parse(entry.publishDate);
-    if (Number.isNaN(time)) err(entry.slug, `invalid publishDate "${entry.publishDate}"`);
-    if (!entry.publishDate?.endsWith('Z')) err(entry.slug, 'publishDate must be UTC (end with Z)');
-
-    if (!(CATEGORIES as readonly string[]).includes(entry.category))
-      err(entry.slug, `invalid category "${entry.category}"`);
-
-    const keyword = entry.primaryKeyword?.toLowerCase().trim();
-    if (!keyword) {
-      err(entry.slug, 'empty primaryKeyword');
-    } else {
-      const dupe = keywords.get(keyword);
-      if (dupe) err(entry.slug, `duplicate primaryKeyword "${keyword}" (also in plan:${dupe})`);
-      keywords.set(keyword, entry.slug);
-      if (existingKeywords.has(keyword)) {
-        const owner = existingArticles.find(
-          (a) => String(a.data.primaryKeyword ?? '').toLowerCase().trim() === keyword,
-        );
-        if (owner && owner.slug !== entry.slug)
-          err(entry.slug, `primaryKeyword "${keyword}" already used by existing article ${owner.file}`);
-      }
-    }
-
-    for (const id of entry.relatedCalculators ?? []) {
-      if (!CALCULATOR_IDS.has(id)) err(entry.slug, `unknown calculator id "${id}"`);
     }
   }
 

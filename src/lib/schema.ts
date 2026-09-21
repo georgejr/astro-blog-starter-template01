@@ -20,8 +20,19 @@ export function organizationSchema(): object {
   };
 }
 
-/** Person node for a named author (embedded in Article and on /about/). */
+/** Author node (Person or Organization) embedded in Article and on /about/. */
 export function personSchema(author: Author): object {
+  if (author.type === 'Organization') {
+    return {
+      '@type': 'Organization',
+      '@id': abs(`${author.url}#${author.id}`),
+      name: author.name,
+      description: author.bio,
+      url: abs(author.url),
+      ...(author.sameAs.length > 0 ? { sameAs: author.sameAs } : {}),
+      parentOrganization: organizationSchema(),
+    };
+  }
   return {
     '@type': 'Person',
     '@id': abs(`${author.url}#${author.id}`),

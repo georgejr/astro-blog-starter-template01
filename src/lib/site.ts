@@ -22,17 +22,41 @@ export const DATA_FIRST_PUBLISHED = '2026-07-13';
 export const FEDERAL_CREDIT_NOTE =
   'The 30% federal Residential Clean Energy Credit ended for systems paid for after December 31, 2025 under the 2025 federal budget law. Net-after-credit figures apply only if you still qualify (for example a 2025 expenditure, or a leased system where the installer passes a credit through). Confirm with a tax professional.';
 
-// Third-party integration IDs. Leave empty until the service is connected —
-// the matching component renders nothing while the value is ''.
-export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL'; // Google Analytics 4
-export const GOOGLE_SITE_VERIFICATION = ''; // Search Console meta tag `content` value
+// ---------------------------------------------------------------------------
+// OWNER-SPECIFIC ACCOUNTS. Every value below belongs to whoever operates the
+// site. A new owner replaces them with their own (see docs/handover.md).
+// Setting a value to '' switches the matching integration off: the component
+// renders nothing and no third-party request is made.
+// ---------------------------------------------------------------------------
 
-// Web3Forms access key for the contact form. Create a free key at
-// https://web3forms.com using the destination inbox (volanosdi@gmail.com) —
-// the key is tied to that address and is safe to expose client-side. While
-// this is '' the contact form shows a "not configured yet" message instead of
-// submitting. Paste the key you receive by email here.
+/** Google Analytics 4 measurement ID ("G-XXXXXXXXXX"). */
+export const GA_MEASUREMENT_ID = 'G-0ZKTHM0BCL';
+
+/** Google Search Console HTML-tag verification: the meta tag's `content` value. */
+export const GOOGLE_SITE_VERIFICATION = '';
+
+/** Ahrefs Web Analytics `data-key` (the script tag from Ahrefs → Web Analytics). */
+export const AHREFS_ANALYTICS_KEY = 'LzaizpfW8j/SrIjJj3xu7g';
+
+/** Impact.com (affiliate network) site-ownership verification token. */
+export const IMPACT_SITE_VERIFICATION = '81060dfc-271c-4176-9cb0-0fd0b5a598ed';
+
+/**
+ * Web3Forms access key for the contact form (https://web3forms.com). The key
+ * is tied to the inbox that receives the messages and is safe to expose
+ * client-side. While '' the form shows a "not configured" message instead of
+ * submitting.
+ */
 export const WEB3FORMS_ACCESS_KEY = '8be85f48-7911-4155-8722-b02a2201fcfc';
+
+/**
+ * Fallback address shown in contact-form error messages. '' hides the
+ * "email us directly" sentence.
+ */
+export const CONTACT_EMAIL = 'volanosdi@gmail.com';
+
+// The IndexNow key lives in scripts/lib/indexnow.mjs (its key file must also
+// exist as public/<key>.txt) and the ad-network seller list in public/ads.txt.
 
 export const SITE_TAGLINE =
   'Estimate your solar system size, cost, savings, and payback time in minutes.';

@@ -1,64 +1,67 @@
-# Astro Starter Kit: Blog
+# SunMetricLab — solar calculators and guides
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/astro-blog-starter-template)
+Source of [sunmetriclab.com](https://sunmetriclab.com): free solar
+calculators for US homeowners, modeled solar cost pages for every state and
+45 cities, and a blog of ~500 articles published on a weekly schedule.
 
-![Astro Template Preview](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+Static [Astro 5](https://astro.build) site, Tailwind CSS 4, deployed as
+static assets on Cloudflare Workers. No server, database or CMS — content
+is Markdown in git.
 
-<!-- dash-content-start -->
-
-Create a blog with Astro and deploy it on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Built-in Observability logging
-
-<!-- dash-content-end -->
-
-## Getting Started
-
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+## Quick start
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/astro-blog-starter-template
+npm ci
+npm run dev        # http://localhost:4321
+npm test           # unit tests
+npm run build      # validation + production build (what Cloudflare runs)
 ```
 
-A live public deployment of this template is available at [https://astro-blog-starter-template.templates.workers.dev](https://astro-blog-starter-template.templates.workers.dev)
+Node 20 or newer (developed on Node 22).
 
-## 🚀 Project Structure
+## Everyday tasks
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+| Task | Command / file | Guide |
+| --- | --- | --- |
+| Write a new article | `npm run post -- new --title "…" --category "…"` | [content-guide.md](docs/content-guide.md) |
+| Publish / schedule / unpublish | `npm run post -- publish\|schedule\|unpublish <slug>` | [content-guide.md](docs/content-guide.md#6-publishing-and-scheduling) |
+| What's live and queued | `npm run post -- status` | |
+| Link articles, calculators, external URLs | `npm run link -- add\|find\|related\|list\|backlinks …` | [linking.md](docs/linking.md) |
+| Add or change a banner / ad | `npm run banner -- add\|list\|disable …` or `src/data/banners.json` | [banners.md](docs/banners.md) |
+| Deploy | push to `main` (Cloudflare builds automatically) | [deployment.md](docs/deployment.md) |
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+On Windows PowerShell 5.1 (which drops npm's `--`), run the CLIs directly:
+`npx tsx scripts/post.ts status`.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## Documentation
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [docs/handover.md](docs/handover.md) — **new owner start here**: accounts to replace, day-one checklist, open items
+- [docs/architecture.md](docs/architecture.md) — how the site is built, directory map, routes
+- [docs/content-guide.md](docs/content-guide.md) — adding and editing articles by hand or CLI
+- [docs/linking.md](docs/linking.md) — internal, related and external (incl. affiliate) links
+- [docs/banners.md](docs/banners.md) — banner slots, image and ad-code banners
+- [docs/deployment.md](docs/deployment.md) — Cloudflare, GitHub Action, IndexNow, rollback
+- [docs/scheduled-publishing.md](docs/scheduled-publishing.md) — build-time publishing model and cadence
+- [docs/editorial-guidelines.md](docs/editorial-guidelines.md) — writing rules enforced by the build
 
-## 🧞 Commands
+AI coding assistants: [AGENTS.md](AGENTS.md) (Codex and others),
+[CLAUDE.md](CLAUDE.md) (Claude Code, plus slash commands in
+`.claude/commands/`), [.github/copilot-instructions.md](.github/copilot-instructions.md)
+(GitHub Copilot, plus prompt files in `.github/prompts/`).
 
-All commands are run from the root of the project, from a terminal:
+## Commands
 
-| Command                           | Action                                           |
-| :-------------------------------- | :----------------------------------------------- |
-| `npm install`                     | Installs dependencies                            |
-| `npm run dev`                     | Starts local dev server at `localhost:4321`      |
-| `npm run build`                   | Build your production site to `./dist/`          |
-| `npm run preview`                 | Preview your build locally, before deploying     |
-| `npm run astro ...`               | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help`         | Get help using the Astro CLI                     |
-| `npm run build && npm run deploy` | Deploy your production site to Cloudflare        |
-| `npm wrangler tail`               | View real-time logs for all Workers              |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command | Action |
+| --- | --- |
+| `npm run dev` | Dev server at `localhost:4321` |
+| `npm run build` | `validate:content` → `lint:content-style` → `astro build` → `check:links` |
+| `npm run preview` | Serve `dist/` locally |
+| `npm run deploy` | `wrangler deploy`, then IndexNow ping (`postdeploy`) |
+| `npm test` | Vitest unit tests |
+| `npm run post` / `link` / `banner` | Content CLIs (see above) |
+| `npm run indexnow:dry` | Show URLs IndexNow would receive |
 
 ## Credit
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Started from the Cloudflare Astro blog template, itself based on
+[Bear Blog](https://github.com/HermanMartinus/bearblog/).

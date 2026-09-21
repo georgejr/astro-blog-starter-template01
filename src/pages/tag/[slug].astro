@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import BannerSlot from '../../components/BannerSlot.astro';
 import { TOP_CALCULATOR_LINKS } from '../../lib/site';
 import { getPublishedPosts } from '../../lib/content';
 import { taxonomySlug } from '../../lib/taxonomy';
@@ -44,6 +45,8 @@ const { tag, posts } = Astro.props;
         {posts.length} {posts.length === 1 ? 'article' : 'articles'} with this tag.
       </p>
     </header>
+
+    <BannerSlot placement="listing" />
 
     <ul class="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
       {posts.map((post) => (

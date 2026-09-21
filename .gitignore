@@ -1,12 +1,19 @@
+# dependencies and build output
 node_modules/
 dist/
 .astro/
-.DS_Store
-*.log
+.wrangler/
+
+# secrets
 .env
 .env.*
-ChatGPT Image 2026. júl. 13. 16_44_56.png
-*.docx
-9449AC06-5920-4264-B8A2-B7177B56D3C8.JPEG
-ChatGPT Image 2026. júl. 13. 16_44_19.png
-uluna-landing.zip
+.dev.vars
+
+# logs and OS / editor litter
+*.log
+.DS_Store
+Thumbs.db
+~$*
+
+# personal AI-assistant settings (shared settings stay in .claude/settings.json)
+.claude/settings.local.json

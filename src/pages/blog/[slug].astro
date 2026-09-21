@@ -5,6 +5,7 @@ import DisclaimerBox from '../../components/DisclaimerBox.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import CalculatorCta from '../../components/CalculatorCta.astro';
+import BannerSlot from '../../components/BannerSlot.astro';
 import { articleSchema, breadcrumbSchema, extractFaqsFromMarkdown, faqSchema } from '../../lib/schema';
 import { articlePath, getPrevNext, getPublishedPaths } from '../../lib/content';
 import { taxonomySlug } from '../../lib/taxonomy';
@@ -114,6 +115,8 @@ const ctaLead =
       loading="eager"
     />
 
+    <BannerSlot placement="article-top" category={post.data.category} slug={slug} />
+
     {linkedState && (
       <p class="mt-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
         Looking for the numbers? The
@@ -139,6 +142,8 @@ const ctaLead =
     >
       <Content />
     </div>
+
+    <BannerSlot placement="article-bottom" category={post.data.category} slug={slug} />
 
     <CalculatorCta ids={post.data.relatedCalculators} lead={ctaLead} limit={2} />
 

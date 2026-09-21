@@ -10,32 +10,46 @@ articles alike must follow them.
 ---
 title: "Natural, editorial title"
 description: "Meta description, ~140–160 chars, contains the primary keyword naturally."
-publishDate: 2026-08-01T08:00:00Z   # UTC, from content-plan.json — never invent
+publishDate: 2026-08-01T08:00:00Z   # UTC ISO timestamp (Z suffix)
+draft: false                        # true = never published, whatever the date
 category: "Solar Costs"             # exactly one of src/lib/taxonomy.ts CATEGORIES
 tags:
   - short tag                       # 2–4 lowercase topical tags
-primaryKeyword: "exact plan keyword"
+primaryKeyword: "main search phrase" # unique across all articles (validated)
 secondaryKeywords:
-  - from the plan
+  - related phrase
 relatedCalculators:
   - solar-panel-cost-calculator     # ids from src/data/calculators.ts only
 relatedArticles:
-  - earlier-article-slug            # 0–3 slugs; publishDate must be <= this article's
+  - earlier-article-slug            # 0–3 slugs (timing rule below)
 ---
 ```
 
-The filename (minus `.md`) is the slug and the URL: `/blog/<slug>/`.
+The filename (minus `.md`) is the slug and the URL: `/blog/<slug>/`. The full
+field reference (including `updatedDate`, `ogStat`, `author`) is in
+[content-guide.md](content-guide.md).
 
 ## Linking rules
 
-- Body links may target ONLY:
+Details and CLI commands: [linking.md](linking.md).
+
+- Internal body links may target:
   - calculator pages listed in `src/data/calculators.ts` (use exact hrefs),
-  - `/blog/<slug>/` where the target's `publishDate` is **on or before** this
-    article's own `publishDate` (never later — validated),
-  - the static pages `/`, `/blog/`, `/about/`, `/contact/`.
+  - `/blog/<slug>/` — the target must already be live, or publish **on or
+    before** this article's own `publishDate` (validated at build time),
+  - state and city data pages (`/solar-panel-cost-by-state/<state>/`,
+    `/solar-panel-cost-by-city/<city-st>/`),
+  - the static pages `/`, `/blog/`, `/about/`, `/methodology/`, `/contact/`,
+    `/privacy-policy/`, `/terms/` and the two state/city index pages.
 - 1–3 contextual article links and 1–2 calculator links per article, placed
   where they genuinely help; if no eligible target fits, write plain text.
-- Never link to a category, tag, or external page from article bodies.
+- Don't link to category or tag pages from article bodies (the template
+  already does).
+- External links are allowed when they cite a primary source (NREL, EIA, IRS,
+  DSIRE, a utility tariff page) or are a deliberate partner/affiliate link.
+  Use full `https://` URLs. Paid or affiliate links must carry
+  `rel="sponsored"`: add the domain to `src/data/external-links.json` or mark
+  the link with the title `"sponsored"`.
 
 ## Voice and structure
 
@@ -86,7 +100,12 @@ The filename (minus `.md`) is the slug and the URL: `/blog/<slug>/`.
   have generally landed between $2.50 and $4.00 per watt before incentives;
   treat quotes outside that band as a prompt to ask questions") and
   time-stable phrasing for policy topics (structures, not dollar amounts).
-- The federal Residential Clean Energy Credit may be described as 30% with a
-  pointer to IRS guidance; avoid asserting other programs are currently open.
+- The 30% federal Residential Clean Energy Credit (IRC 25D) ended for
+  expenditures after December 31, 2025 (2025 federal budget law). Never
+  present it as available for a system bought in 2026 or later; the site's
+  standard wording is `FEDERAL_CREDIT_NOTE` in `src/lib/site.ts`. Many
+  articles written before September 2026 still describe the credit as
+  current and should be corrected when they are next edited. Avoid asserting
+  other programs are currently open.
 - Filler transitions (moreover, furthermore, additionally, in conclusion,
   it is important to note…) at most rarely, when genuinely natural.

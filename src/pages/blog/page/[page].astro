@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import PostGrid from '../../../components/PostGrid.astro';
 import Pagination from '../../../components/Pagination.astro';
+import BannerSlot from '../../../components/BannerSlot.astro';
 import { TOP_CALCULATOR_LINKS } from '../../../lib/site';
 import { getPublishedPosts, BLOG_PAGE_SIZE } from '../../../lib/content';
 
@@ -33,6 +34,8 @@ const prevUrl = page.currentPage === 2 ? '/blog/' : page.url.prev;
       </h1>
       <p class="mt-4 text-lg text-slate-600">Page {page.currentPage} of {page.lastPage}.</p>
     </header>
+
+    <BannerSlot placement="listing" />
 
     <PostGrid posts={page.data} />
 

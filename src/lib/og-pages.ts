@@ -14,7 +14,7 @@ const kw = ASSUMPTIONS.representativeKw;
 
 export const OG_PAGES: OgPage[] = [
   { slug: 'site', title: 'Free Solar Panel Calculator: Size, Cost, Savings and Payback', category: 'Solar Calculator' },
-  { slug: 'about', title: 'About SunMetricLab: who writes and checks the numbers', category: 'About' },
+  { slug: 'about', title: 'About SunMetricLab: how the numbers are made and checked', category: 'About' },
   { slug: 'methodology', title: 'How our solar estimates are calculated', category: 'Methodology' },
   { slug: 'blog', title: 'Solar Blog: sizing, costs, incentives and state guides', category: 'Blog' },
   { slug: 'cost-by-state', title: 'Solar Panel Cost by State (2026 modeled estimates)', category: 'Cost by State' },

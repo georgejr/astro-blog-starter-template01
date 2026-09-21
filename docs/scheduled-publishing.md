@@ -20,14 +20,18 @@ whether an article is public is decided at build time, not at request time.
 
 ## Publication cadence
 
-**One article per week, Tuesdays at 08:00 UTC.** The original plan
-(`content-plan.json`) scheduled 2 articles per day; that cadence was retired
+**One article per week, Tuesdays at 08:00 UTC.** The original generation
+plan scheduled 2 articles per day; that cadence was retired
 on 2026-09-10 because a faceless, twice-daily stream of generated posts is
 exactly the pattern Google's helpful-content systems demote. The remaining
 queue was re-stamped onto the weekly cadence with
 `node scripts/reschedule-weekly.mjs --write` (order preserved, so every
 cross-article link stays valid). Re-run the script (dry run first) whenever
 the queue is pruned or reordered.
+
+To publish, schedule or unpublish a single article, use
+`npm run post -- publish|schedule|unpublish <slug>` (see
+[content-guide.md](content-guide.md#6-publishing-and-scheduling)).
 
 Editorial policy going forward: the weekly slot goes to one deeper,
 data-backed article (tables, worked examples, a FAQ section that the

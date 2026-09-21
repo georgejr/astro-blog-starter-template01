@@ -3,8 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import SearchConsole from '../components/SearchConsole.astro';
-import ServiceWorkerCleanup from '../components/ServiceWorkerCleanup.astro';
-import { SITE_NAME } from '../lib/site';
+import { AHREFS_ANALYTICS_KEY, IMPACT_SITE_VERIFICATION, SITE_NAME } from '../lib/site';
 import '../styles/global.css';
 
 interface Props {
@@ -54,15 +53,13 @@ const shareAlt = ogImageAlt ?? title;
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Remove any previously-installed third-party ad service worker -->
-    <ServiceWorkerCleanup />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
-    <meta name="impact-site-verification" value="81060dfc-271c-4176-9cb0-0fd0b5a598ed" />
+    {IMPACT_SITE_VERIFICATION && <meta name="impact-site-verification" value={IMPACT_SITE_VERIFICATION} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} blog`} href="/rss.xml" />
@@ -100,7 +97,9 @@ const shareAlt = ogImageAlt ?? title;
     ))}
     <SearchConsole />
     <GoogleAnalytics />
-    <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="LzaizpfW8j/SrIjJj3xu7g" async></script>
+    {AHREFS_ANALYTICS_KEY && (
+      <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key={AHREFS_ANALYTICS_KEY} async></script>
+    )}
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />

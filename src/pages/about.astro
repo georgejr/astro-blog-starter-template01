@@ -6,9 +6,9 @@ import { breadcrumbSchema, organizationSchema, personSchema, webPageSchema } fro
 import { ogPageUrl } from '../lib/og-pages';
 
 const canonicalUrl = new URL('/about/', Astro.site).href;
-const title = `About ${SITE_NAME}: who builds the calculators and checks the numbers`;
+const title = `About ${SITE_NAME}: how the calculators and data are built and checked`;
 const description =
-  'SunMetricLab is an independent solar estimating site: free calculators, modeled state and city cost data, and guides written and reviewed by a named editor. No lead selling.';
+  'SunMetricLab is an independent solar estimating site: free calculators, modeled state and city cost data, and guides checked against a published methodology. No lead selling.';
 
 const structuredData = [
   webPageSchema({
@@ -18,7 +18,7 @@ const structuredData = [
     datePublished: `${DATA_FIRST_PUBLISHED}T00:00:00Z`,
     dateModified: `${DATA_LAST_UPDATED}T00:00:00Z`,
   }),
-  { '@context': 'https://schema.org', ...organizationSchema(), founder: personSchema(DEFAULT_AUTHOR) },
+  { '@context': 'https://schema.org', ...organizationSchema() },
   { '@context': 'https://schema.org', ...personSchema(DEFAULT_AUTHOR) },
   breadcrumbSchema([
     { name: 'Home', url: new URL('/', Astro.site).href },
@@ -68,7 +68,7 @@ const initials = (name: string) =>
       </p>
     </div>
 
-    <h2 class="mt-10 text-2xl font-bold text-slate-900">Who is behind it</h2>
+    <h2 class="mt-10 text-2xl font-bold text-slate-900">Who makes it</h2>
     <div class="mt-6 space-y-6">
       {AUTHORS.map((author) => (
         <section id={author.id} class="flex gap-5 rounded-2xl border border-slate-200 bg-white p-6">

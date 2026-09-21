@@ -1,0 +1,56 @@
+---
+// One ad/banner slot. Renders the best matching banner from
+// src/data/banners.json for this placement, or nothing. Resolved at build
+// time (see src/lib/banners.ts and docs/banners.md).
+import bannerData from '../data/banners.json';
+import { isExternalHref, selectBanner, type Banner, type BannerPlacement } from '../lib/banners';
+import { BUILD_TIME } from '../lib/publishing';
+
+interface Props {
+  placement: BannerPlacement;
+  /** Category of the current article / category page (for targeting). */
+  category?: string;
+  /** Slug of the current article (for targeting). */
+  slug?: string;
+  class?: string;
+}
+
+const { placement, category, slug, class: className = '' } = Astro.props;
+const banner = selectBanner(bannerData as Banner[], { placement, category, slug, now: BUILD_TIME });
+
+const sponsored = banner?.sponsored !== false;
+const external = banner?.href ? isExternalHref(banner.href) : false;
+const newTab = banner?.newTab ?? external;
+const rel = [sponsored && 'sponsored nofollow', newTab && 'noopener'].filter(Boolean).join(' ') || undefined;
+const label = banner?.label ?? (sponsored ? 'Advertisement' : '');
+---
+
+{banner && (
+  <aside class:list={['not-prose my-8', className]} aria-label={label || 'Promotion'} data-banner={banner.id}>
+    {label && <p class="mb-1 text-center text-[11px] tracking-wide text-slate-400 uppercase">{label}</p>}
+    {banner.html ? (
+      <div class="flex justify-center" set:html={banner.html} />
+    ) : (
+      <a
+        href={banner.href}
+        rel={rel}
+        target={newTab ? '_blank' : undefined}
+        class="mx-auto block"
+        style={`max-width: ${banner.width}px`}
+      >
+        <picture>
+          {banner.imageMobile && <source media="(max-width: 639px)" srcset={banner.imageMobile} />}
+          <img
+            src={banner.image}
+            alt={banner.alt}
+            width={banner.width}
+            height={banner.height}
+            loading="lazy"
+            decoding="async"
+            class="h-auto w-full rounded-lg"
+          />
+        </picture>
+      </a>
+    )}
+  </aside>
+)}
